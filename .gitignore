@@ -79,3 +79,6 @@ __pycache__/
 # OS
 .DS_Store
 Thumbs.db
+
+# Offline harness build output
+/Tools/headless/.build/
