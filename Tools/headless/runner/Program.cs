@@ -18,6 +18,12 @@ public static class Program
             case "soak": PG.EditorTools.NatureSoak.Run(); return UnityEditor.EditorApplication.ExitCode;
             case "units": PG.EditorTools.NatureSoak.RunUnits(); return UnityEditor.EditorApplication.ExitCode;
             case "feed": PG.EditorTools.NatureSoak.FeedDebug(); return 0;
+            case "predprey": return PG.EditorTools.UnitAcceptance.PredatorPrey(db);
+            case "starve": return PG.EditorTools.UnitAcceptance.Starvation(db);
+            case "unitdet": return PG.EditorTools.UnitAcceptance.Determinism(db);
+            case "acceptance": PG.EditorTools.UnitAcceptance.Run(); return UnityEditor.EditorApplication.ExitCode;
+            case "wolf": WolfDebug.Run(db, args.Length > 1 ? ulong.Parse(args[1]) : 11); return 0;
+            case "profile": Profile.Run(db, args.Length > 1 ? int.Parse(args[1]) : 5000, args.Length > 2 ? int.Parse(args[2]) : 600, MapSizePreset.Huge); return 0;
         }
         Console.WriteLine("unknown command"); return 2;
     }

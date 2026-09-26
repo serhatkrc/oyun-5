@@ -1,5 +1,21 @@
 # Changelog
 
+## [Unreleased] — Faz 3 tamamlama
+
+### Düzeltildi
+- Yumurtadaki birimler acıkmıyor (yumurtlayan türlerde açlık ölümleri; DECISIONS #50).
+- Etoburlar görüşte av yokken yerinde sayıyordu: aç avcı artık kokuyla (48 tile) ava doğru ya da uzağa dolaşır; kovalama isabetle uzar, saldırı beklemesinde hedefe yapışık kalır; av, avın boyuyla doyurur (#52).
+- Bebek evresindeki yavrular (ör. kurt) annelerinin yanında emzirilir; önceden avlanamadıkları için hepsi açlıktan ölüyordu (#53).
+- Yol bulma: kısa hedeflerde düz çizgi kısayolu, uzun dolambaçlı kısa hedefler `Unreachable` (#51). Birim eylem sistemi 6,7 → 1,0 ms/tick (headless ölçüm).
+
+### Eklendi
+- `follow_herd` ve `pack_hunt` nöronları (alt tür trait'leri gelene kadar tüm hayvanlara), etçil varsayılan görüşü 14 (#52).
+- Editör: `PixelGenesis/Unit Acceptance` (3.12 #4 avcı/av 5 seed, #5 açlık, #9 5.000 tick / 2.000 birim determinizm).
+- Araç: `Tools/headless` (Unity olmadan derleme kontrolü ve simülasyon), `Tools/headless/make_meta.py`.
+
+### Bilinen eksik
+- 3.12 #4: kurtlar 5 seed'in hiçbirinde 30 yıl dayanmıyor (önce 3–7 yıl, şimdi 6–25 yıl). Darboğaz üreme hızı (12 ay gebelik, 1 yavru, eşlerin dağınıklığı).
+
 ## [Unreleased] — Faz 3: Birim çekirdeği
 
 ### Eklendi

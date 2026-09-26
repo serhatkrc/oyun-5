@@ -27,10 +27,11 @@ namespace PG.Sim
     public sealed class UnitThinkSystem : ISimSystem
     {
         public const int ThinkNormal = 10, ThinkCombat = 4, ThinkSleep = 40;
-        public const float MateRadius = 24f, HerdRadius = 40f;
+        public const float MateRadius = 24f, HerdRadius = 40f, HerdNear = 10f;
+        public const int HuntBelow = 60;
 
         UnitWorld _w;
-        readonly Func<int, int, bool> _isThreat, _isEnemy, _isPrey, _isMate, _isKin;
+        readonly Func<int, int, bool> _isThreat, _isEnemy, _isPrey, _isMate, _isKin, _isKinHunting;
 
         public UnitThinkSystem()
         {
@@ -39,6 +40,7 @@ namespace PG.Sim
             _isPrey = IsPrey;
             _isMate = IsMate;
             _isKin = IsKin;
+            _isKinHunting = IsKinHunting;
         }
 
         public SimPhase Phase => SimPhase.UnitsThink;
@@ -97,11 +99,18 @@ namespace PG.Sim
 
             bool needs = !u.Has(i, UnitFlags.NoNeeds);
             var stage = (AgeStage)u.Age[i];
-            if (needs && u.Saturation[i] < 70)
+            // eat below 70; hunters go after live prey only when hunger > 40 (Bölüm 3.8.2 `hunt`)
+            if (needs && u.Saturation[i] < (sp.Diet == Diet.Carn ? HuntBelow : 70))
             {
                 float hunger = (100 - u.Saturation[i]) * 1.2f * (u.Saturation[i] == 0 ? 2f : 1f);
                 bool eatsPlants = sp.Diet == Diet.Herb || sp.Diet == Diet.Omni;
                 int prey = sp.Diet != Diet.Herb && stage != AgeStage.Baby ? _w.Nearest(i, sight, _isPrey) : -1;
+                // pack_hunt (Bölüm 3.8.2): join a kin already chasing prey, +50 (every hunter for now; subspecies traits come in Bölüm 4)
+                if (sp.Diet == Diet.Carn && stage != AgeStage.Baby)
+                {
+                    int packmate = _w.Nearest(i, sight, _isKinHunting);
+                    if (packmate >= 0) Consider(UnitTask.Hunt, hunger + 50f, u.Target[packmate], ref rng);
+                }
                 if (prey >= 0 && !eatsPlants) Consider(UnitTask.Hunt, hunger * 1.1f, u.IdOf(prey), ref rng);
                 else if (prey >= 0 && u.Saturation[i] < 25) Consider(UnitTask.Hunt, hunger, u.IdOf(prey), ref rng);
                 else Consider(UnitTask.FindFood, hunger, EntityId.None, ref rng);
@@ -118,6 +127,14 @@ namespace PG.Sim
                     int kin = _w.Nearest(i, HerdRadius, _isKin);
                     if (kin >= 0) Consider(UnitTask.Follow, 30f, u.IdOf(kin), ref rng);
                 }
+            }
+            // follow_herd (Bölüm 3.8.2): until subspecies traits exist (Bölüm 4) every non-monster animal keeps loosely to its kind;
+            // checked every third think to keep the wide query cheap (DECISIONS #52)
+            else if (!sp.IsMonster && stage != AgeStage.Baby && (u.NextThink[i] / ThinkNormal + i) % 3 == 0
+                     && _w.Nearest(i, HerdNear, _isKin) < 0)
+            {
+                int kin = _w.Nearest(i, HerdRadius, _isKin);
+                if (kin >= 0) Consider(UnitTask.Follow, 15f, u.IdOf(kin), ref rng);
             }
             if (stage == AgeStage.Baby && u.IsAlive(u.Mother[i]) && math.distance(u.Pos[i], u.Pos[u.Mother[i].Index]) > 3f)
                 Consider(UnitTask.Follow, 60f, u.Mother[i], ref rng);
@@ -195,6 +212,12 @@ namespace PG.Sim
 
         bool IsKin(int self, int other) => _w.Store.Species[self] == _w.Store.Species[other];
 
+        bool IsKinHunting(int self, int other)
+        {
+            var u = _w.Store;
+            return u.Species[self] == u.Species[other] && (UnitTask)u.Task[other] == UnitTask.Hunt && u.IsAlive(u.Target[other]);
+        }
+
         bool IsMate(int self, int other)
         {
             var u = _w.Store;
@@ -209,12 +232,22 @@ namespace PG.Sim
     // Phase 4: runs the current task's actions and moves the unit.
     public sealed class UnitActSystem : ISimSystem
     {
-        public const int ChaseGiveUpTicks = 120; // two months
+        public const int ChaseGiveUpTicks = 240; // without landing a hit (DECISIONS #52)
         public const int SeekGiveUpTicks = 900;  // walking to a mate / parent / herd across the map
         public const int FoodSearchRadius = 10;
         public const int GrazeSaturation = 12;
         public const int FarFoodRadius = 32;
         public const int SleepEnergyPerTick = 1;
+        public const int KillMealPerSize = 45;
+        public const float ScentRadius = 48f;
+
+        readonly Func<int, int, bool> _isPrey;
+
+        public UnitActSystem()
+        {
+            _isPrey = (self, other) => _w.Prey(self, other);
+        }
+       
 
         UnitWorld _w;
         NatureState _nature;
@@ -343,10 +376,10 @@ namespace PG.Sim
                         u.Timer[i] = 20;
                         return false;
                     }
-                    // nothing close: head for vegetated ground further away (sampled), else give up for a while
+                    // nothing close: head for vegetated ground further away (sampled)
+                    var mob = PathService.MobilityOf(u, i);
                     if (sp.Diet == Diet.Herb || sp.Diet == Diet.Omni)
                     {
-                        var mob = PathService.MobilityOf(u, i);
                         for (int t = 0; t < 24; t++)
                         {
                             int2 d = u.Tile(i) + new int2(rng.Range(-FarFoodRadius, FarFoodRadius + 1), rng.Range(-FarFoodRadius, FarFoodRadius + 1));
@@ -356,7 +389,30 @@ namespace PG.Sim
                             return false;
                         }
                     }
-                    u.NextThink[i] += 20; // don't re-search every think
+                    // still nothing (hunters without prey in sight): roam far as a Wander, so spotting prey or food
+                    // interrupts it at the next think; hunters head for prey they can scent (DECISIONS #52)
+                    bool overLand = mob == Mobility.Fly && sp.Habitat != Habitat.Water;
+                    if (sp.Diet != Diet.Herb)
+                    {
+                        int scent = _w.Nearest(i, ScentRadius, _isPrey);
+                        if (scent >= 0 && _w.Paths.NearestStandable(u.Tile(scent), mob, out int2 near))
+                        {
+                            u.Task[i] = (byte)UnitTask.Wander;
+                            u.TargetTile[i] = near;
+                            u.Action[i] = 1;
+                            return false;
+                        }
+                    }
+                    for (int t = 0; t < 12; t++)
+                    {
+                        int2 d = u.Tile(i) + new int2(rng.Range(-FarFoodRadius, FarFoodRadius + 1), rng.Range(-FarFoodRadius, FarFoodRadius + 1));
+                        if (!_w.Paths.CanStand(d.x, d.y, mob)) continue;
+                        if (overLand && (!_w.Map.InBounds(d.x, d.y) || _w.Map.IsWater(d.x, d.y))) continue;
+                        u.Task[i] = (byte)UnitTask.Wander;
+                        u.TargetTile[i] = d;
+                        u.Action[i] = 1;
+                        return false;
+                    }
                     return true;
                 case 1:
                 case 3:
@@ -471,7 +527,9 @@ namespace PG.Sim
             var target = u.Target[i];
             if (!u.IsAlive(target))
             {
-                if ((UnitTask)u.Task[i] == UnitTask.Hunt && u.Action[i] == 1) u.Saturation[i] = (byte)math.min(100, u.Saturation[i] + 20 * (int)u.Stat(i, StatId.Size) + 20);
+                // the meal scales with the prey's size (its slot is still readable: deaths flush at the end of the tick) (DECISIONS #52)
+                if ((UnitTask)u.Task[i] == UnitTask.Hunt && u.Action[i] == 1)
+                    u.Saturation[i] = (byte)math.min(100, u.Saturation[i] + KillMealPerSize * (int)u.SpeciesOf(target.Index).BaseStats[(int)StatId.Size] + 20);
                 return true;
             }
             int t = target.Index;
@@ -483,10 +541,16 @@ namespace PG.Sim
             {
                 _w.ClearPath(i);
                 if (u.Pos[t].x != u.Pos[i].x) u.Facing[i] = (byte)(u.Pos[t].x < u.Pos[i].x ? 1 : 0);
-                if (u.AttackCooldown[i] > 0) return false;
+                if (u.AttackCooldown[i] > 0)
+                {
+                    // stay on the target between blows instead of letting it walk out of reach (DECISIONS #52)
+                    if (range <= 1.5f && dist > 0.9f) _w.StepToward(i, u.Pos[t], dt);
+                    return false;
+                }
                 u.AttackCooldown[i] = (short)math.max(2, (int)(20f / u.Stat(i, StatId.AtkSpd)));
                 if (range > 1.5f) _w.LaunchProjectile(i, u.Pos[t], u.Stat(i, StatId.Dmg), 0f, false);
                 else _w.MeleeHit(i, t, ref rng, tick);
+                u.Timer[i] = 0; // landing hits is progress: give up only after a chase without contact (DECISIONS #52)
                 if (u.State[t] != UnitStore.StateAlive) u.Action[i] = 1; // killed: hunters eat
                 return false;
             }

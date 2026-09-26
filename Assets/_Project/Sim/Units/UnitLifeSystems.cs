@@ -200,12 +200,22 @@ namespace PG.Sim
             var sp = u.SpeciesOf(i);
             var laws = nature.Laws;
 
-            // needs
-            if (!u.Has(i, UnitFlags.NoNeeds))
+            // needs; eggs live on the yolk (DECISIONS #50)
+            bool inEgg = w.StInEgg >= 0 && u.HasStatus(i, w.StInEgg);
+            if (!u.Has(i, UnitFlags.NoNeeds) && !inEgg)
             {
                 if (laws.IsOn(w.LawHunger))
                 {
-                    int sat = u.Saturation[i] - (int)math.round(8f * u.Stat(i, StatId.HungerRate));
+                    int drop = (int)math.round(8f * u.Stat(i, StatId.HungerRate));
+                    // nursing: a baby next to its fed mother does not go hungry; the mother eats for two (DECISIONS #53)
+                    var mother = u.Mother[i];
+                    if (u.Age[i] == (byte)AgeStage.Baby && u.IsAlive(mother) && u.Saturation[mother.Index] > 20
+                        && math.distancesq(u.Pos[i], u.Pos[mother.Index]) <= NurseRadius * NurseRadius)
+                    {
+                        u.Saturation[mother.Index] = (byte)math.max(0, u.Saturation[mother.Index] - drop / 2);
+                        drop = 0;
+                    }
+                    int sat = u.Saturation[i] - drop;
                     u.Saturation[i] = (byte)math.clamp(sat, 0, 100);
                     if (u.Saturation[i] == 0)
                     {
@@ -247,7 +257,7 @@ namespace PG.Sim
             }
 
             // natural healing when fed
-            if (u.Saturation[i] > 30 || u.Has(i, UnitFlags.NoNeeds)) w.Heal(i, u.Stat(i, StatId.Hp) * NaturalHealPerMonth);
+            if (u.Saturation[i] > 30 || u.Has(i, UnitFlags.NoNeeds) || inEgg) w.Heal(i, u.Stat(i, StatId.Hp) * NaturalHealPerMonth);
 
             // aging
             float age = u.AgeYears(i, tick);
@@ -294,6 +304,7 @@ namespace PG.Sim
         }
 
         public const int CrowdLimit = 12;
+        public const float NurseRadius = 8f;
         public const float NaturalHealPerMonth = 0.05f;
 
         // Same-species units in the 3x3 zone cells around the unit (24x24 tiles).

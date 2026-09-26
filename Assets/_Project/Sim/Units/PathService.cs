@@ -21,6 +21,8 @@ namespace PG.Sim
         public const int RequestsPerTick = 64;
         public const int MaxTileExpansions = 12000;
         public const int NearbyFreeRadius = 3;
+        public const int StraightMaxRange = 32;   // DECISIONS #51: clear straight lines skip A* (no budget)
+        public const float MaxDetour = 3f, DetourSlack = 64f; // region route longer than this -> Unreachable (DECISIONS #51)
 
         readonly WorldMap _map;
         readonly RegionGraph _regions;
@@ -58,6 +60,8 @@ namespace PG.Sim
         }
 
         public int SolvedThisTick { get; private set; }
+        // diagnostics only (not simulation state)
+        public long StatSearches, StatExpansions, StatFailed, StatStraight, StatDetour;
         public int Budget { get; set; } = RequestsPerTick;
 
         public void BeginTick() => SolvedThisTick = 0;
@@ -135,6 +139,13 @@ namespace PG.Sim
                 if (!_regions.SameIsland(from.x, from.y, to.x, to.y, cls)) return PathStatus.Unreachable;
             }
 
+            if (StraightLine(from, to, m))
+            {
+                StatStraight++;
+                handle = Store(_scratch);
+                return PathStatus.Ready;
+            }
+
             if (SolvedThisTick >= Budget) return PathStatus.OverBudget;
             SolvedThisTick++;
 
@@ -142,18 +153,22 @@ namespace PG.Sim
             if (m == Mobility.Land || m == Mobility.Water)
             {
                 var cls = m == Mobility.Land ? MoveClass.Land : MoveClass.Water;
-                corridor = RegionCorridor(_regions.RegionAt(from.x, from.y, cls), _regions.RegionAt(to.x, to.y, cls));
+                corridor = RegionCorridor(_regions.RegionAt(from.x, from.y, cls), _regions.RegionAt(to.x, to.y, cls), out float route);
                 if (!corridor) return PathStatus.Unreachable;
+                // a short hop that needs a long way round (across an inlet or lake) is not worth a tile search
+                if (route > Octile(from, to) * MaxDetour + DetourSlack) { StatDetour++; return PathStatus.Unreachable; }
             }
 
-            if (!TileAStar(from, to, m, corridor)) return PathStatus.Failed;
+            StatSearches++;
+            if (!TileAStar(from, to, m, corridor)) { StatFailed++; return PathStatus.Failed; }
             handle = Store(_scratch);
             return PathStatus.Ready;
         }
 
         // Layer 2: A* over the region graph; marks the regions on the found route (and their neighbours, for slack).
-        bool RegionCorridor(int start, int goal)
+        bool RegionCorridor(int start, int goal, out float route)
         {
+            route = 0f;
             int cap = _regions.RegionCapacity;
             if (_regionStamp == null || _regionStamp.Length < cap)
             {
@@ -192,6 +207,7 @@ namespace PG.Sim
                 }
             }
             if (!found) return false;
+            route = _regionG[goal];
 
             _corridorValue = _stamp;
             for (int r = goal; r >= 0; r = _regionParent[r])
@@ -227,6 +243,7 @@ namespace PG.Sim
                 _closedStamp[cur] = searchStamp;
                 if (cur == goal) { found = true; break; }
                 if (++expansions > MaxTileExpansions) break;
+                StatExpansions++;
                 int cx = cur % w, cy = cur / w;
                 for (int d = 0; d < 8; d++)
                 {
@@ -255,6 +272,28 @@ namespace PG.Sim
             for (int t = goal; t >= 0 && t != start; t = _tileParent[t]) _scratch.Add(new int2(t % w, t / w));
             _scratch.Reverse();
             if (_scratch.Count > MaxPathLength) _scratch.RemoveRange(MaxPathLength, _scratch.Count - MaxPathLength); // re-requested at the end
+            return true;
+        }
+
+        // Straight walk (8-dir steps, no corner cutting) when every tile on the way is standable.
+        bool StraightLine(int2 from, int2 to, Mobility m)
+        {
+            int2 d = to - from;
+            if (math.max(math.abs(d.x), math.abs(d.y)) > StraightMaxRange) return false;
+            _scratch.Clear();
+            int2 p = from, step = (int2)math.sign(d);
+            int adx = math.abs(d.x), ady = math.abs(d.y), err = adx - ady;
+            while (!math.all(p == to))
+            {
+                int e2 = 2 * err;
+                int2 next = p;
+                if (e2 > -ady) { err -= ady; next.x += step.x; }
+                if (e2 < adx) { err += adx; next.y += step.y; }
+                if (!CanStand(next.x, next.y, m)) return false;
+                if (next.x != p.x && next.y != p.y && (!CanStand(next.x, p.y, m) || !CanStand(p.x, next.y, m))) return false;
+                _scratch.Add(next);
+                p = next;
+            }
             return true;
         }
 

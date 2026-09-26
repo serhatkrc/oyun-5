@@ -156,6 +156,8 @@ namespace PG.Content
         [JsonIgnore] public bool IsUndeadCategory => Category == "undead";
         [JsonIgnore] public bool IsCiv => Category == "civ" || SapientAtStart;
 
+        public const float PredatorSight = 14f;
+
         // Stat defaults when species.json does not set a value.
         public static float DefaultStat(StatId id)
         {
@@ -194,6 +196,9 @@ namespace PG.Content
                     if (StatKeys.TryGet(kv.Key, out var id)) BaseStats[(int)id] = kv.Value;
                     else errors.Add($"{Id}: unknown stat '{kv.Key}'");
                 }
+
+            // hunters see further than grazers unless species.json says otherwise (DECISIONS #52)
+            if (Diet == Diet.Carn && (StatValues == null || !StatValues.ContainsKey("sight"))) BaseStats[(int)StatId.Sight] = PredatorSight;
 
             var a = Abilities ?? new SpeciesAbilities();
             var grants = new List<int>();
