@@ -6,10 +6,12 @@ using UnityEngine.UIElements;
 namespace PG.UI
 {
     // Owns the UI Toolkit panel and routes input: hotkeys -> clock/tool, pointer -> camera and PowerTool.
+    // With no power selected a left click (press and release without dragging) inspects the tile (DECISIONS #61).
     public sealed class UiRoot : MonoBehaviour
     {
         const string ThemeResource = "PG_Theme";
         const string StyleResource = "PG_Hud";
+        const float ClickSlopPixels = 6f;
 
         IGameHost _host;
         GameInput _input;
@@ -20,8 +22,11 @@ namespace PG.UI
         HudView _hud;
         WorldGenWindow _worldGen;
         SaveLoadWindow _saves;
+        CityWindow _city;
         DebugOverlay _debug;
         bool _spaceUsedForDrag;
+        bool _inspectPress;
+        Vector2 _pressPointer;
 
         public PowerTool Tool => _tool;
 
@@ -40,6 +45,7 @@ namespace PG.UI
             _debug = new DebugOverlay(layer);
             _worldGen = new WorldGenWindow(layer, host);
             _saves = new SaveLoadWindow(layer, host, Toast);
+            _city = new CityWindow(layer, host);
             _hud.NewWorldClicked += () =>
             {
                 _saves.Close();
@@ -65,6 +71,7 @@ namespace PG.UI
         void OnWorldChanged()
         {
             var sim = _host.Sim;
+            _city.Close(); // city indices belong to the previous world
             if (sim == null) return;
             _camera.Bind(sim.World.Width, sim.World.Height);
             _hud.RebuildPowers();
@@ -110,11 +117,12 @@ namespace PG.UI
                         _worldGen.Close();
                         _saves.Close();
                     }
-                    else
+                    else if (_tool.Active)
                     {
                         _tool.Cancel();
                         _hud.RefreshSelection();
                     }
+                    else _city.Close();
                 }
 
                 // Space: tap = pause, hold + left drag = pan.
@@ -130,6 +138,7 @@ namespace PG.UI
             var tile = new Vector2Int(Mathf.FloorToInt(world.x), Mathf.FloorToInt(world.y));
             bool held = _input.UsePower.IsPressed() && !spaceDrag && !windowOpen && !_camera.IsDragging;
             _tool.Update(_host, tile, held, _input.UsePower.WasPressedThisFrame(), overUi);
+            UpdateInspect(pointer, tile, overUi, windowOpen, typing, spaceDrag);
 
             var map = _host.Sim.World;
             if (_tool.Active && !overUi && !windowOpen && map.InBounds(tile.x, tile.y)) _cursor.Show(tile, _tool.Radius, _tool.Shape);
@@ -137,7 +146,28 @@ namespace PG.UI
 
             _hud.Update();
             _worldGen.Update();
+            _city.Update();
             _debug.Update(_host, world);
+        }
+
+        // Inspect mode = no power selected. A click that started on the map and did not drag opens the city there.
+        void UpdateInspect(Vector2 pointer, Vector2Int tile, bool overUi, bool windowOpen, bool typing, bool spaceDrag)
+        {
+            if (_input.UsePower.WasPressedThisFrame())
+            {
+                _inspectPress = !_tool.Active && !overUi && !windowOpen && !typing && !_input.PanModifier.IsPressed();
+                _pressPointer = pointer;
+            }
+            if (!_inspectPress) return;
+            if (_tool.Active || spaceDrag || _camera.IsDragging || (pointer - _pressPointer).sqrMagnitude > ClickSlopPixels * ClickSlopPixels)
+            {
+                _inspectPress = false;
+                return;
+            }
+            if (!_input.UsePower.WasReleasedThisFrame()) return;
+            _inspectPress = false;
+            int city = CityWindow.CityAt(_host.Sim, tile.x, tile.y);
+            if (city >= 0) _city.Open(city);
         }
 
         bool IsPointerOverUi(Vector2 screen)

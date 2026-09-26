@@ -9,6 +9,7 @@
 - Birim işleri: inşaatçı, çiftçi (tarla açma/ekme/hasat), oduncu/taşçı, toplayıcı, madenci, balıkçı, avcı, demirci, fırıncı, çoban, devriye; `Work` ve `Migrate` görevleri; ekipman etkileri stat formülünde.
 - Persistence: bölüm 11 (şehirler, binalar, eşyalar, birimlerin şehir sütunları); yüklemede kaplamalar ve region'lar yeniden kurulur.
 - Editör: `PixelGenesis/Civ Soak` (5.12 #1, #3–#8).
+- UI: basit şehir penceresi — güç seçili değilken şehir zone'una ya da binaya tıklayınca açılır (tür, merkez ve kademe, kuruluş yılı, lider, nüfus/konut, mutluluk, altın, kıtlık, depo doluluğu, yiyecek, stok listesi, meslek sayısı/kotası, tür başına bina sayısı + inşaattakiler; 4 Hz, yalnızca okur; DECISIONS #61). Üst çubukta şehir sayısı ve medeni nüfus. F3'te şehir/bina/eşya sayıları, imleç altındaki zone'un şehri, bina (id, durum, ilerleme %, can, sakin) ve birimin şehri/mesleği/taşıdığı kaynak.
 
 ### Değişti
 - Ateşten kaçma nöronu; evi olan şehirliler sıcak/soğuktan korunur (#59). Şehirlerde hayvan kalabalık sınırı yerine konut sınırı.

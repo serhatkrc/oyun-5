@@ -27,5 +27,20 @@ S = [
 ("ui.load_warnings","Kayıttaki bazı içerikler bulunamadı:","Some saved content was not found:"),
 ("ui.era_fmt","{0} · {1} yıl","{0} · {1} yrs"),("ui.era_frozen_fmt","{0} · sabit","{0} · frozen"),
 ("ui.era_changed_fmt","Yeni çağ: {0}","A new era begins: {0}"),("ui.disaster_fmt","Afet: {0}","Disaster: {0}"),
+# Faz 4: HUD civ summary and the basic city window (Bölüm 8.5 simple version)
+("ui.hud.civ_fmt","Şehir {0} · Medeni nüfus {1}","Cities {0} · Civilized {1}"),
+("ui.city.dead_fmt","{0} (yıkıldı)","{0} (fallen)"),
+("ui.city.species","Tür","Species"),("ui.city.center","Merkez","Centre"),
+("ui.city.center_fmt","{0} · kademe {1}","{0} · tier {1}"),
+("ui.city.founded","Kuruluş","Founded"),("ui.city.founded_fmt","Yıl {0} ({1} yıl önce)","Year {0} ({1} years ago)"),
+("ui.city.leader","Lider","Leader"),("ui.city.leader_fmt","{0}, {1} yaş","{0}, age {1}"),
+("ui.city.population","Nüfus","Population"),("ui.city.population_fmt","{0} / {1} konut","{0} / {1} housing"),
+("ui.city.happiness","Mutluluk","Happiness"),("ui.city.gold","Altın","Gold"),
+("ui.city.famine","Kıtlık","Famine"),("ui.city.famine_fmt","{0} ay","{0} months"),
+("ui.city.storage","Depo","Storage"),("ui.city.food","Yiyecek","Food"),
+("ui.city.stock","Stok","Stock"),("ui.city.jobs","Meslekler","Jobs"),("ui.city.buildings","Binalar","Buildings"),
+("ui.city.amount_fmt","{0} {1}","{0} {1}"),("ui.city.job_fmt","{0} {1}/{2}","{0} {1}/{2}"),
+("ui.city.building_fmt","{0} ×{1}","{0} ×{1}"),("ui.city.building_construction_fmt","{0} ×{1} (+{2} inşaatta)","{0} ×{1} (+{2} under construction)"),
+("ui.city.none","-","-"),("ui.city.empty","Yok","None"),
 ]
 save("ui_strings",[dict(id=a,tr=b,en=c) for a,b,c in S],"Arayüz Metinleri",["id","tr","en"])
