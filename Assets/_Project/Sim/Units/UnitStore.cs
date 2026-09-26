@@ -61,7 +61,7 @@ namespace PG.Sim
     public sealed class UnitStore : IDisposable
     {
         public const int StatCount = (int)StatId.Count;
-        public const int StatusSlots = 8, SpellSlots = 4;
+        public const int StatusSlots = 8, SpellSlots = 4, EquipSlots = 7, HapSlots = 8;
         public const byte StateFree = 0, StateAlive = 1, StateDying = 2;
         public const int InitialCapacity = 1024;
 
@@ -109,6 +109,17 @@ namespace PG.Sim
         public NativeArray<EntityId> Mother, Father, Mate;
         public NativeArray<int2> Home;
         public NativeArray<byte> Wants;         // bit 0: wants to mate (monthly fertility roll)
+        // civilization (Bölüm 5) — saved by the civ section (CivSave), not section 10
+        public NativeArray<int> City;           // -1 = none
+        public NativeArray<byte> Job;           // JobDef index + 1, 0 = none
+        public NativeArray<int> HomeBuilding, WorkBuilding; // -1 = none
+        public NativeArray<short> CarryRes;     // resource index, -1 = empty hands
+        public NativeArray<byte> CarryAmount;
+        public NativeArray<byte> WorkOp;        // current step of the job (CivWork)
+        public NativeArray<int> Equip;          // capacity * EquipSlots, item index, -1 = empty
+        public NativeArray<ushort> HapEvent;    // capacity * HapSlots, HappinessEventDef index + 1, 0 = empty
+        public NativeArray<byte> HapLeft;       // months left per happiness slot
+        public IItemSource Items;               // equipment effects (set by CivState)
 
         public NativeList<int> Alive;
         public NativeList<Corpse> Corpses;
@@ -208,6 +219,19 @@ namespace PG.Sim
             Mate[i] = EntityId.None;
             Home[i] = new int2(-1, -1);
             Wants[i] = 0;
+            City[i] = -1;
+            Job[i] = 0;
+            HomeBuilding[i] = -1;
+            WorkBuilding[i] = -1;
+            CarryRes[i] = -1;
+            CarryAmount[i] = 0;
+            WorkOp[i] = 0;
+            for (int s = 0; s < EquipSlots; s++) Equip[i * EquipSlots + s] = -1;
+            for (int s = 0; s < HapSlots; s++)
+            {
+                HapEvent[i * HapSlots + s] = 0;
+                HapLeft[i * HapSlots + s] = 0;
+            }
 
             Age[i] = (byte)UnitStats.StageFor(sp, AgeYears(i, tick));
             StatsDirty[i] = 1;
@@ -354,6 +378,7 @@ namespace PG.Sim
             Grow(ref Mate, capacity);
             Grow(ref Home, capacity);
             Grow(ref Wants, capacity);
+            ForEachCivArray(new Grower(capacity));
             Capacity = capacity;
         }
 
@@ -439,6 +464,36 @@ namespace PG.Sim
             v.Visit(ref SpellCooldown, SpellSlots); v.Visit(ref Mother, 1); v.Visit(ref Father, 1); v.Visit(ref Mate, 1); v.Visit(ref Home, 1); v.Visit(ref Wants, 1);
         }
 
+        // Civ arrays (Bölüm 5) live in their own save section so section 10 keeps its layout.
+        void ForEachCivArray<TV>(TV v) where TV : IArrayVisitor
+        {
+            v.Visit(ref City, 1); v.Visit(ref Job, 1); v.Visit(ref HomeBuilding, 1); v.Visit(ref WorkBuilding, 1);
+            v.Visit(ref CarryRes, 1); v.Visit(ref CarryAmount, 1); v.Visit(ref WorkOp, 1); v.Visit(ref Equip, EquipSlots);
+            v.Visit(ref HapEvent, HapSlots); v.Visit(ref HapLeft, HapSlots);
+        }
+
+        public void WriteCiv(BinaryWriter w) => ForEachCivArray(new Writer(w, HighWater));
+
+        public void ReadCiv(BinaryReader r) => ForEachCivArray(new Reader(r, HighWater));
+
+        // Defaults for a save without the civ section: nobody belongs anywhere.
+        public void ResetCiv()
+        {
+            for (int i = 0; i < HighWater; i++)
+            {
+                City[i] = -1; Job[i] = 0; HomeBuilding[i] = -1; WorkBuilding[i] = -1; CarryRes[i] = -1; CarryAmount[i] = 0; WorkOp[i] = 0;
+                for (int s = 0; s < EquipSlots; s++) Equip[i * EquipSlots + s] = -1;
+                for (int s = 0; s < HapSlots; s++) { HapEvent[i * HapSlots + s] = 0; HapLeft[i * HapSlots + s] = 0; }
+            }
+        }
+
+        readonly struct Grower : IArrayVisitor
+        {
+            readonly int _capacity;
+            public Grower(int capacity) { _capacity = capacity; }
+            public void Visit<T>(ref NativeArray<T> array, int stride) where T : struct => Grow(ref array, _capacity * stride);
+        }
+
         readonly struct Writer : IArrayVisitor
         {
             readonly BinaryWriter _w;
@@ -480,6 +535,7 @@ namespace PG.Sim
         public void Dispose()
         {
             ForEachArray(new Disposer());
+            ForEachCivArray(new Disposer());
             if (Stats.IsCreated) Stats.Dispose();
             if (StatsDirty.IsCreated) StatsDirty.Dispose();
             if (BaseFlags.IsCreated) BaseFlags.Dispose();

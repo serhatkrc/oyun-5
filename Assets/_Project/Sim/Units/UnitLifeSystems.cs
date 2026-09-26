@@ -41,6 +41,7 @@ namespace PG.Sim
                 Father = father >= 0 ? u.IdOf(father) : EntityId.None,
                 Subspecies = u.Subspecies[mother],
             }, tick, ref rng);
+            u.City[id.Index] = u.City[mother]; // Bölüm 6.1: babies take the mother's city
             w.Events?.Publish(new UnitBornEvent(u.Uid[id.Index], u.Species[id.Index], u.Uid[mother], father >= 0 ? u.Uid[father] : 0));
             return id.Index;
         }
@@ -236,18 +237,13 @@ namespace PG.Sim
                 u.Energy[i] = (byte)math.clamp(energy, 0, 100);
             }
 
-            // happiness drift from statuses
-            float mood = 0f;
-            for (int s = 0; s < UnitStore.StatusSlots; s++)
-            {
-                int id = u.StatusId[i * UnitStore.StatusSlots + s] - 1;
-                if (id >= 0) mood += w.Content.StatusEffects[id].HappinessPerMonth;
-            }
-            u.Happiness[i] = (sbyte)math.clamp(u.Happiness[i] + (int)mood - math.sign(u.Happiness[i]), -100, 100);
+            // happiness drift from statuses; city residents get theirs from the civ monthly pass (Bölüm 5.8)
+            if (u.City[i] < 0) Mood(w, i);
 
             // temperature damage (Bölüm 2.5 thresholds)
             int2 t = u.Tile(i);
-            if (w.Map.InBounds(t.x, t.y))
+            // city folk with a home are sheltered from the weather (DECISIONS #59)
+            if (w.Map.InBounds(t.x, t.y) && u.HomeBuilding[i] < 0)
             {
                 short temp = w.Map.Zones[w.Map.ZoneIndexOf(t.x, t.y)].TemperatureC;
                 // damage grows with the distance past the threshold: 0.5 hp per degree per month (DECISIONS #49)
@@ -284,11 +280,25 @@ namespace PG.Sim
             if ((w.StPregnant >= 0 && u.HasStatus(i, w.StPregnant)) || u.Has(i, UnitFlags.Immobile)) return;
             var rep = sp.Reproduction;
             if (rep != Reproduction.Live && rep != Reproduction.Egg && rep != Reproduction.Split) return;
-            if (KinNearby(w, i) >= CrowdLimit) return; // local carrying capacity (DECISIONS #48)
+            // local carrying capacity (DECISIONS #48); city folk are limited by their homes instead (DECISIONS #55)
+            if (u.City[i] < 0 && KinNearby(w, i) >= CrowdLimit) return;
+            if (u.City[i] >= 0 && w.Civ != null && CityCrowded(w.Civ.Cities[u.City[i]])) return;
             float chance = UnitLife.BaseFertility * u.Stat(i, StatId.Fertility) * nature.Mods.FertilityMul * CapFactor(w, nature, u.Species[i]);
             if (!rng.Chance(chance)) return;
             if (rep == Reproduction.Split) UnitLife.Split(w, i, tick, ref rng);
             else u.Wants[i] |= 1;
+        }
+
+        static void Mood(UnitWorld w, int i)
+        {
+            var u = w.Store;
+            float mood = 0f;
+            for (int s = 0; s < UnitStore.StatusSlots; s++)
+            {
+                int id = u.StatusId[i * UnitStore.StatusSlots + s] - 1;
+                if (id >= 0) mood += w.Content.StatusEffects[id].HappinessPerMonth;
+            }
+            u.Happiness[i] = (sbyte)math.clamp(u.Happiness[i] + (int)mood - math.sign(u.Happiness[i]), -100, 100);
         }
 
         // Bölüm 3.7 population cap: near the cap (or over the species share) fertility x0.2; the hard cap stops births.
@@ -304,6 +314,9 @@ namespace PG.Sim
         }
 
         public const int CrowdLimit = 12;
+
+        // A city stops growing once people clearly outnumber its beds (houses come first, then children).
+        static bool CityCrowded(City city) => city.Population > city.HousingCapacity + 6;
         public const float NurseRadius = 8f;
         public const float NaturalHealPerMonth = 0.05f;
 

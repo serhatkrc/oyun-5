@@ -19,7 +19,8 @@ namespace PG.Content
         Irradiated = 1 << 10, // after an atomic bomb (Bölüm 7)
         Blessed = 1 << 11,
         Reserved = 1 << 12,   // reserved for a building foundation
-        // 13-15 free
+        Door = 1 << 13,       // the one walkable tile of a building footprint (Bölüm 5.4)
+        // 14-15 free
 
         TypeMask = Walkable | Water | DeepWater | Burnable | Buildable,
         MoveMask = Walkable | Water,

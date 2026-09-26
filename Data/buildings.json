@@ -12,7 +12,8 @@
    "requires": "",
    "function": "Şehrin ilk çekirdeği; ısınma, toplanma",
    "maxPerCity": 1,
-   "jobSlots": 0
+   "jobSlots": 0,
+   "capacity": 0
   },
   {
    "id": "bld.hall_1",
@@ -26,7 +27,8 @@
    "requires": "pop:8",
    "function": "Şehir merkezi; bayrak, vergi toplanır",
    "maxPerCity": 1,
-   "jobSlots": 0
+   "jobSlots": 0,
+   "capacity": 0
   },
   {
    "id": "bld.hall_2",
@@ -41,7 +43,8 @@
    "requires": "pop:30|hall_1",
    "function": "Sınır yarıçapı +, lider konutu",
    "maxPerCity": 1,
-   "jobSlots": 0
+   "jobSlots": 0,
+   "capacity": 0
   },
   {
    "id": "bld.hall_3",
@@ -56,7 +59,8 @@
    "requires": "pop:80|hall_2",
    "function": "Başkent olabilir; ordu kurar",
    "maxPerCity": 1,
-   "jobSlots": 0
+   "jobSlots": 0,
+   "capacity": 0
   },
   {
    "id": "bld.tent",
@@ -71,7 +75,8 @@
    "requires": "",
    "function": "2 kişilik barınak",
    "maxPerCity": 99,
-   "jobSlots": 0
+   "jobSlots": 0,
+   "capacity": 2
   },
   {
    "id": "bld.hut",
@@ -85,7 +90,8 @@
    "requires": "hall_1",
    "function": "4 kişi",
    "maxPerCity": 99,
-   "jobSlots": 0
+   "jobSlots": 0,
+   "capacity": 4
   },
   {
    "id": "bld.house",
@@ -100,7 +106,8 @@
    "requires": "hall_2",
    "function": "6 kişi; mutluluk +1",
    "maxPerCity": 99,
-   "jobSlots": 0
+   "jobSlots": 0,
+   "capacity": 6
   },
   {
    "id": "bld.manor",
@@ -115,7 +122,8 @@
    "requires": "hall_3",
    "function": "10 kişi; mutluluk +2",
    "maxPerCity": 99,
-   "jobSlots": 0
+   "jobSlots": 0,
+   "capacity": 10
   },
   {
    "id": "bld.storage",
@@ -129,7 +137,8 @@
    "requires": "hall_1",
    "function": "Kaynak deposu; toplayıcılar buraya taşır",
    "maxPerCity": 4,
-   "jobSlots": 0
+   "jobSlots": 0,
+   "capacity": 0
   },
   {
    "id": "bld.granary",
@@ -144,7 +153,8 @@
    "requires": "farm",
    "function": "Yiyecek bozulması -%50",
    "maxPerCity": 3,
-   "jobSlots": 0
+   "jobSlots": 0,
+   "capacity": 0
   },
   {
    "id": "bld.windmill",
@@ -159,7 +169,8 @@
    "requires": "granary",
    "function": "Buğday → un",
    "maxPerCity": 2,
-   "jobSlots": 1
+   "jobSlots": 1,
+   "capacity": 0
   },
   {
    "id": "bld.bakery",
@@ -173,7 +184,8 @@
    "requires": "windmill",
    "function": "Un → ekmek",
    "maxPerCity": 3,
-   "jobSlots": 1
+   "jobSlots": 1,
+   "capacity": 0
   },
   {
    "id": "bld.well",
@@ -187,7 +199,8 @@
    "requires": "hall_1",
    "function": "Yangın söndürme hızı; kuraklıkta su",
    "maxPerCity": 4,
-   "jobSlots": 0
+   "jobSlots": 0,
+   "capacity": 0
   },
   {
    "id": "bld.mine",
@@ -201,7 +214,8 @@
    "requires": "hills/mountain yakın",
    "function": "Taş ve cevher çıkarır",
    "maxPerCity": 3,
-   "jobSlots": 4
+   "jobSlots": 4,
+   "capacity": 0
   },
   {
    "id": "bld.lumber_camp",
@@ -215,7 +229,8 @@
    "requires": "orman yakın",
    "function": "Odun verimi +%30",
    "maxPerCity": 2,
-   "jobSlots": 3
+   "jobSlots": 3,
+   "capacity": 0
   },
   {
    "id": "bld.smithy",
@@ -230,7 +245,8 @@
    "requires": "hall_2",
    "function": "Silah/zırh üretir",
    "maxPerCity": 2,
-   "jobSlots": 2
+   "jobSlots": 2,
+   "capacity": 0
   },
   {
    "id": "bld.farm_shed",
@@ -244,7 +260,8 @@
    "requires": "hall_1",
    "function": "Etrafına tarla açar",
    "maxPerCity": 6,
-   "jobSlots": 4
+   "jobSlots": 4,
+   "capacity": 0
   },
   {
    "id": "bld.pasture",
@@ -258,7 +275,8 @@
    "requires": "evcil hayvan",
    "function": "Hayvan besler: süt, yün, et",
    "maxPerCity": 3,
-   "jobSlots": 1
+   "jobSlots": 1,
+   "capacity": 0
   },
   {
    "id": "bld.beehive",
@@ -272,7 +290,8 @@
    "requires": "çiçek yakın",
    "function": "Bal üretir",
    "maxPerCity": 8,
-   "jobSlots": 0
+   "jobSlots": 0,
+   "capacity": 0
   },
   {
    "id": "bld.market",
@@ -287,7 +306,8 @@
    "requires": "pop:40",
    "function": "Ticaret kervanı, altın",
    "maxPerCity": 1,
-   "jobSlots": 3
+   "jobSlots": 3,
+   "capacity": 0
   },
   {
    "id": "bld.inn",
@@ -302,7 +322,8 @@
    "requires": "pop:30",
    "function": "Göçmen çeker, mutluluk +2",
    "maxPerCity": 1,
-   "jobSlots": 1
+   "jobSlots": 1,
+   "capacity": 0
   },
   {
    "id": "bld.stable",
@@ -316,7 +337,8 @@
    "requires": "pop:40|hall_2",
    "function": "Binek hayvanları; süvari",
    "maxPerCity": 1,
-   "jobSlots": 1
+   "jobSlots": 1,
+   "capacity": 0
   },
   {
    "id": "bld.barracks",
@@ -331,7 +353,8 @@
    "requires": "hall_2",
    "function": "Asker eğitir, ordu kapasitesi",
    "maxPerCity": 2,
-   "jobSlots": 0
+   "jobSlots": 0,
+   "capacity": 0
   },
   {
    "id": "bld.watchtower",
@@ -345,7 +368,8 @@
    "requires": "hall_2",
    "function": "Menzilli otomatik savunma",
    "maxPerCity": 8,
-   "jobSlots": 1
+   "jobSlots": 1,
+   "capacity": 0
   },
   {
    "id": "bld.wall",
@@ -359,7 +383,8 @@
    "requires": "hall_2",
    "function": "Geçilmez; kuşatmada yıkılır",
    "maxPerCity": 999,
-   "jobSlots": 0
+   "jobSlots": 0,
+   "capacity": 0
   },
   {
    "id": "bld.gate",
@@ -374,7 +399,8 @@
    "requires": "wall",
    "function": "Dostlara açık",
    "maxPerCity": 8,
-   "jobSlots": 0
+   "jobSlots": 0,
+   "capacity": 0
   },
   {
    "id": "bld.docks",
@@ -388,7 +414,8 @@
    "requires": "kıyı",
    "function": "Balıkçı ve nakliye gemileri",
    "maxPerCity": 2,
-   "jobSlots": 0
+   "jobSlots": 0,
+   "capacity": 0
   },
   {
    "id": "bld.fishing_hut",
@@ -402,7 +429,8 @@
    "requires": "kıyı",
    "function": "Balık verimi",
    "maxPerCity": 4,
-   "jobSlots": 2
+   "jobSlots": 2,
+   "capacity": 0
   },
   {
    "id": "bld.shipyard",
@@ -416,7 +444,8 @@
    "requires": "docks|pop:50",
    "function": "Savaş ve sömürge gemileri",
    "maxPerCity": 1,
-   "jobSlots": 2
+   "jobSlots": 2,
+   "capacity": 0
   },
   {
    "id": "bld.library",
@@ -431,7 +460,8 @@
    "requires": "dil|pop:30",
    "function": "Kitap saklar; okuma",
    "maxPerCity": 1,
-   "jobSlots": 1
+   "jobSlots": 1,
+   "capacity": 0
   },
   {
    "id": "bld.school",
@@ -445,7 +475,8 @@
    "requires": "library",
    "function": "Çocuklara XP",
    "maxPerCity": 1,
-   "jobSlots": 1
+   "jobSlots": 1,
+   "capacity": 0
   },
   {
    "id": "bld.temple",
@@ -459,7 +490,8 @@
    "requires": "din",
    "function": "Din yayılımı, rahip, büyü",
    "maxPerCity": 1,
-   "jobSlots": 2
+   "jobSlots": 2,
+   "capacity": 0
   },
   {
    "id": "bld.grand_temple",
@@ -474,7 +506,8 @@
    "requires": "temple|başkent",
    "function": "Din merkezi; kutsal büyüler",
    "maxPerCity": 1,
-   "jobSlots": 4
+   "jobSlots": 4,
+   "capacity": 0
   },
   {
    "id": "bld.healers_house",
@@ -489,7 +522,8 @@
    "requires": "herbs",
    "function": "Hastalık iyileşmesi x2",
    "maxPerCity": 1,
-   "jobSlots": 2
+   "jobSlots": 2,
+   "capacity": 0
   },
   {
    "id": "bld.graveyard",
@@ -503,7 +537,8 @@
    "requires": "pop:20",
    "function": "Ölüler gömülür; yas süresi kısalır",
    "maxPerCity": 1,
-   "jobSlots": 0
+   "jobSlots": 0,
+   "capacity": 0
   },
   {
    "id": "bld.statue_god",
@@ -518,7 +553,8 @@
    "requires": "hall_3",
    "function": "Oyuncuya adanmış; mutluluk +3 (yarıçap)",
    "maxPerCity": 1,
-   "jobSlots": 0
+   "jobSlots": 0,
+   "capacity": 0
   },
   {
    "id": "bld.monument",
@@ -532,7 +568,8 @@
    "requires": "savaş zaferi",
    "function": "Sadakat +10",
    "maxPerCity": 2,
-   "jobSlots": 0
+   "jobSlots": 0,
+   "capacity": 0
   },
   {
    "id": "bld.pyre",
@@ -547,7 +584,8 @@
    "requires": "pop:30",
    "function": "Cesetleri yakar: şehirde zombi kalkışı olmaz",
    "maxPerCity": 1,
-   "jobSlots": 1
+   "jobSlots": 1,
+   "capacity": 0
   },
   {
    "id": "bld.nest",
@@ -561,7 +599,8 @@
    "requires": "hayvan kökenli uygarlık",
    "function": "Evrimleşmiş hayvanların ilk evi",
    "maxPerCity": 99,
-   "jobSlots": 0
+   "jobSlots": 0,
+   "capacity": 3
   },
   {
    "id": "bld.hive",
@@ -576,7 +615,8 @@
    "requires": "kovan zihni",
    "function": "Arı/karınca uygarlığı evi",
    "maxPerCity": 99,
-   "jobSlots": 0
+   "jobSlots": 0,
+   "capacity": 8
   },
   {
    "id": "bld.ruins",
@@ -588,7 +628,8 @@
    "requires": "",
    "function": "Yıkılan binadan kalır; zamanla kaybolur",
    "maxPerCity": 0,
-   "jobSlots": 0
+   "jobSlots": 0,
+   "capacity": 0
   }
  ]
 }

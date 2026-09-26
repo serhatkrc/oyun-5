@@ -1,5 +1,23 @@
 # Changelog
 
+## [Unreleased] — Faz 4: Medeniyet temeli (05.1–05.8)
+
+### Eklendi
+- Content: `ResourceDef`, `BuildingDef` (hücre boyutu → tile, maliyet, ön koşul ayrıştırma), `BuildingStyleDef`, `JobDef`, `EquipmentTypeDef`, `MaterialDef`, `ItemQualityDef`, `HappinessEventDef`, `NameSets`; `buildings.json`'a `capacity` (DECISIONS #54).
+- World: bina kaplaması (`PlaceBuilding`/`RemoveBuilding`, kapı tile'ı yürünebilir, `TileFlags.Door`), bina içinde bitki büyümez.
+- Sim (`Sim/Civ`): `CivState` (şehirler, bina ve eşya depoları, isim havuzu), şehir kurma (6+ şehirsiz akıllı yetişkin, zone puanlaması), aylık şehir döngüsü (sakinler, ev atama, beslenme, bozulma, kıtlık, vergi, ekin büyümesi, mutluluk olayları, eşya dağıtımı, lider), meslek atama, planlayıcı (merkez yükseltmesi yerinde, konut, depo, yiyecek, üretim, savunma, refah), yıllık sınır büyümesi ve göçmen grupları, bina bakımı (yangın, sel), yollar, eşya üretimi (malzeme, kalite zarı, efsanevi isimler).
+- Birim işleri: inşaatçı, çiftçi (tarla açma/ekme/hasat), oduncu/taşçı, toplayıcı, madenci, balıkçı, avcı, demirci, fırıncı, çoban, devriye; `Work` ve `Migrate` görevleri; ekipman etkileri stat formülünde.
+- Persistence: bölüm 11 (şehirler, binalar, eşyalar, birimlerin şehir sütunları); yüklemede kaplamalar ve region'lar yeniden kurulur.
+- Editör: `PixelGenesis/Civ Soak` (5.12 #1, #3–#8).
+
+### Değişti
+- Ateşten kaçma nöronu; evi olan şehirliler sıcak/soğuktan korunur (#59). Şehirlerde hayvan kalabalık sınırı yerine konut sınırı.
+- Yol bulma dolambaç kontrolü bölge merkezleri arasındaki mesafeye göre (büyük region köşelerinde yanlış `Unreachable`).
+
+### Bilinen eksik
+- 5.12 #2 (sömürge gemisi) Faz 5'te: gemiler, ticaret, göç 05.9–05.11.
+- Bina ve sınır çizimi, şehir paneli: Unity'de görsel doğrulama bekliyor.
+
 ## [Unreleased] — Faz 3 tamamlama
 
 ### Düzeltildi

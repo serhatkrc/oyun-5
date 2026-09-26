@@ -7,7 +7,7 @@ using Unity.Mathematics;
 
 namespace PG.Sim
 {
-    public enum UnitTask : byte { None, Wander, FindFood, Hunt, Attack, Flee, Sleep, Mate, Follow, Rest, GoLand, Cast }
+    public enum UnitTask : byte { None, Wander, FindFood, Hunt, Attack, Flee, Sleep, Mate, Follow, Rest, GoLand, Cast, Work, Migrate }
 
     public enum MoveResult : byte { Moving, Arrived, Waiting, Failed }
 
@@ -32,6 +32,7 @@ namespace PG.Sim
         public readonly SpatialIndex Index;
         public readonly PathService Paths;
         public NativeList<Projectile> Projectiles;
+        public CivState Civ;                     // Bölüm 5 (set by CivState.Attach)
         public readonly int[] SpeciesCount;
         readonly WorldMap _map;
         readonly ContentDB _content;
@@ -42,7 +43,7 @@ namespace PG.Sim
         public readonly int TrVeteran;
         public readonly int LawAging, LawHunger, LawReproduction, LawPopulationCap, LawAnimalSpawn;
         public readonly float[] FeatureNutrition; // by feature map value, 0 = not food for plant eaters
-        public readonly ushort BonesFeature;
+        public readonly ushort BonesFeature, RockFeature;
 
         public UnitWorld(WorldMap map, RegionGraph regions, ContentDB content, WorldLaws laws)
         {
@@ -67,6 +68,7 @@ namespace PG.Sim
             LawPopulationCap = laws.IndexOf("law.population_cap");
             LawAnimalSpawn = laws.IndexOf("law.animal_spawn");
             BonesFeature = content.Features.TryGet("feat.bones_pile", out var bones) ? bones.MapValue : (ushort)0;
+            RockFeature = content.Features.TryGet("feat.rock", out var rock) ? rock.MapValue : (ushort)0;
 
             FeatureNutrition = new float[content.Features.Count + 1];
             for (int f = 0; f < content.Features.Count; f++)

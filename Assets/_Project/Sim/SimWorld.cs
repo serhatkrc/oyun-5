@@ -16,6 +16,7 @@ namespace PG.Sim
         public readonly RegionGraph Regions;
         public readonly NatureState Nature;
         public readonly UnitWorld Units;
+        public readonly CivState Civ;
         public readonly DisasterSystem Disasters = new DisasterSystem();
         public readonly SimulationPipeline Pipeline = new SimulationPipeline();
 
@@ -36,6 +37,8 @@ namespace PG.Sim
             Nature = new NatureState(world, content, rng.WorldSeed);
             Units = new UnitWorld(world, Regions, content, Nature.Laws) { Events = Events };
             Disasters.Population = () => Units.Store.Count;
+            Civ = new CivState(world, content);
+            Civ.Attach(Units);
 
             Pipeline.Add(new BiomeSpreadSystem());
             Pipeline.Add(new FeatureGrowthSystem());
@@ -54,6 +57,11 @@ namespace PG.Sim
             Pipeline.Add(new UnitLifeSystem());
             Pipeline.Add(new UnitCleanupSystem());
             Pipeline.Add(new AnimalSpawnSystem());
+            Pipeline.Add(new SettlementSystem());
+            Pipeline.Add(new CivMonthlySystem());
+            Pipeline.Add(new CityPlannerSystem());
+            Pipeline.Add(new CivYearlySystem());
+            Pipeline.Add(new BuildingUpkeepSystem());
             Pipeline.Add(new EventsFlushSystem());
             Pipeline.Add(new RegionRebuildSystem());
         }
@@ -83,6 +91,7 @@ namespace PG.Sim
         public void Dispose()
         {
             Pipeline.Dispose();
+            Civ.Dispose();
             Units.Dispose();
             Nature.Dispose();
             Regions.Dispose();

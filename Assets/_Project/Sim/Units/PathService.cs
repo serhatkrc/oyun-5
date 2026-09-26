@@ -78,6 +78,13 @@ namespace PG.Sim
             if (_garbage > 4096 && _garbage > _points.Length / 2) Compact();
         }
 
+        public bool SameIsland(int2 a, int2 b, Mobility m)
+        {
+            if (m == Mobility.Fly) return true;
+            var cls = m == Mobility.Water ? MoveClass.Water : MoveClass.Land;
+            return _regions.SameIsland(a.x, a.y, b.x, b.y, cls);
+        }
+
         public static Mobility MobilityOf(UnitStore u, int i)
         {
             uint f = u.Flags[i];
@@ -117,7 +124,7 @@ namespace PG.Sim
             return false;
         }
 
-        public PathStatus Request(int2 from, int2 to, Mobility m, out int handle)
+        public PathStatus Request(int2 from, int2 to, Mobility m, out int handle, bool countBudget = true)
         {
             handle = -1;
             if (!_map.InBounds(from.x, from.y) || !_map.InBounds(to.x, to.y)) return PathStatus.Failed;
@@ -146,17 +153,23 @@ namespace PG.Sim
                 return PathStatus.Ready;
             }
 
-            if (SolvedThisTick >= Budget) return PathStatus.OverBudget;
-            SolvedThisTick++;
+            if (countBudget)
+            {
+                if (SolvedThisTick >= Budget) return PathStatus.OverBudget;
+                SolvedThisTick++;
+            }
 
             bool corridor = false;
             if (m == Mobility.Land || m == Mobility.Water)
             {
                 var cls = m == Mobility.Land ? MoveClass.Land : MoveClass.Water;
-                corridor = RegionCorridor(_regions.RegionAt(from.x, from.y, cls), _regions.RegionAt(to.x, to.y, cls), out float route);
+                int startRegion = _regions.RegionAt(from.x, from.y, cls), goalRegion = _regions.RegionAt(to.x, to.y, cls);
+                corridor = RegionCorridor(startRegion, goalRegion, out float route);
                 if (!corridor) return PathStatus.Unreachable;
-                // a short hop that needs a long way round (across an inlet or lake) is not worth a tile search
-                if (route > Octile(from, to) * MaxDetour + DetourSlack) { StatDetour++; return PathStatus.Unreachable; }
+                // a short hop that needs a long way round (across an inlet or lake) is not worth a tile search;
+                // the route runs between region centres, so it is compared with the centres' own distance
+                float direct = Octile(_regions.GetRegion(startRegion).Center, _regions.GetRegion(goalRegion).Center);
+                if (route > direct * MaxDetour + DetourSlack) { StatDetour++; return PathStatus.Unreachable; }
             }
 
             StatSearches++;

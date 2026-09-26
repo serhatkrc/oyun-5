@@ -23,6 +23,16 @@ public static class Program
             case "unitdet": return PG.EditorTools.UnitAcceptance.Determinism(db);
             case "acceptance": PG.EditorTools.UnitAcceptance.Run(); return UnityEditor.EditorApplication.ExitCode;
             case "wolf": WolfDebug.Run(db, args.Length > 1 ? ulong.Parse(args[1]) : 11); return 0;
+            case "civ": PG.EditorTools.CivSoak.Run(); return UnityEditor.EditorApplication.ExitCode;
+            case "village": return PG.EditorTools.CivSoak.Village(db, args.Length > 1 ? int.Parse(args[1]) : 100);
+            case "barren": return PG.EditorTools.CivSoak.Barren(db);
+            case "placement": return PG.EditorTools.CivSoak.Placement(db);
+            case "flood": return PG.EditorTools.CivSoak.Flood(db);
+            case "quality": return PG.EditorTools.CivSoak.Quality(db);
+            case "civsave": return PG.EditorTools.CivSoak.SaveLoad(db);
+            case "civperf": return PG.EditorTools.CivSoak.Performance(db);
+            case "civdebug": CivDebug.Run(db, args.Length > 1 ? int.Parse(args[1]) : 12); return 0;
+            case "temp": TempDebug.Run(db); return 0;
             case "profile": Profile.Run(db, args.Length > 1 ? int.Parse(args[1]) : 5000, args.Length > 2 ? int.Parse(args[2]) : 600, MapSizePreset.Huge); return 0;
         }
         Console.WriteLine("unknown command"); return 2;

@@ -4,6 +4,12 @@ using Unity.Mathematics;
 
 namespace PG.Sim
 {
+    // Equipment lookup for the stat formula; implemented by the civ item store (Bölüm 5.7).
+    public interface IItemSource
+    {
+        bool TryGetEffect(int item, out EquipmentTypeDef type, out float multiplier);
+    }
+
     // Bölüm 3.2: final = (base + sum add) * (1 + sum pct / 100), then age stage and level multipliers and floors.
     public static class UnitStats
     {
@@ -61,6 +67,19 @@ namespace PG.Sim
                 }
             }
             u.Flags[i] = flags;
+
+            // equipment (Bölüm 5.7): baseEffects x material x quality
+            if (u.Items != null)
+                for (int s = 0; s < UnitStore.EquipSlots; s++)
+                {
+                    int item = u.Equip[i * UnitStore.EquipSlots + s];
+                    if (item < 0 || !u.Items.TryGetEffect(item, out var type, out float mul)) continue;
+                    for (int k = 0; k < UnitStore.StatCount; k++)
+                    {
+                        stats[o + k] += type.AddStats[k] * mul;
+                        pct[k] += type.PctStats[k] * mul;
+                    }
+                }
 
             for (int s = 0; s < UnitStore.StatCount; s++) stats[o + s] *= 1f + pct[s] / 100f;
 

@@ -29,6 +29,8 @@ namespace PG.Sim
         public const int ThinkNormal = 10, ThinkCombat = 4, ThinkSleep = 40;
         public const float MateRadius = 24f, HerdRadius = 40f, HerdNear = 10f;
         public const int HuntBelow = 60;
+        public const float WorkScore = 40f, WorkInterrupt = 60f, CivMateScore = 45f;
+        public const int CivForageBelow = 20;
 
         UnitWorld _w;
         readonly Func<int, int, bool> _isThreat, _isEnemy, _isPrey, _isMate, _isKin, _isKinHunting;
@@ -77,6 +79,7 @@ namespace PG.Sim
             var best = UnitTask.Wander;
             float bestScore = 10f;
             var bestTarget = EntityId.None;
+            int2 fireAt = new int2(-1, -1);
 
             void Consider(UnitTask task, float score, EntityId target, ref SimRandom r)
             {
@@ -84,6 +87,13 @@ namespace PG.Sim
                 best = task;
                 bestScore = score;
                 bestTarget = target;
+            }
+
+            // flee from fire: burning ground within 2 tiles (Bölüm 2.8 fires; DECISIONS #59)
+            if (!u.Has(i, UnitFlags.Fly) && NearFire(i, out int2 fire))
+            {
+                Consider(UnitTask.Flee, FireFleeScore, EntityId.None, ref rng);
+                if (best == UnitTask.Flee && bestTarget == EntityId.None) fireAt = fire;
             }
 
             // flee from stronger threats
@@ -100,7 +110,9 @@ namespace PG.Sim
             bool needs = !u.Has(i, UnitFlags.NoNeeds);
             var stage = (AgeStage)u.Age[i];
             // eat below 70; hunters go after live prey only when hunger > 40 (Bölüm 3.8.2 `hunt`)
-            if (needs && u.Saturation[i] < (sp.Diet == Diet.Carn ? HuntBelow : 70))
+            // city workers leave feeding to the city (monthly stock) until they are really starving (DECISIONS #55)
+            bool cityFed = u.City[i] >= 0 && u.Job[i] != 0 && u.Saturation[i] > CivForageBelow;
+            if (needs && !cityFed && u.Saturation[i] < (sp.Diet == Diet.Carn ? HuntBelow : 70))
             {
                 float hunger = (100 - u.Saturation[i]) * 1.2f * (u.Saturation[i] == 0 ? 2f : 1f);
                 bool eatsPlants = sp.Diet == Diet.Herb || sp.Diet == Diet.Omni;
@@ -120,7 +132,8 @@ namespace PG.Sim
             if ((u.Wants[i] & 1) != 0 && stage == AgeStage.Adult)
             {
                 int mate = _w.Nearest(i, MateRadius, _isMate);
-                if (mate >= 0) Consider(UnitTask.Mate, 75f, u.IdOf(mate), ref rng);
+                // city folk court between jobs instead of dropping them (DECISIONS #55)
+                if (mate >= 0) Consider(UnitTask.Mate, u.City[i] >= 0 ? CivMateScore : 75f, u.IdOf(mate), ref rng);
                 else
                 {
                     // herd cohesion: drift toward the nearest of the kind so partners can meet
@@ -148,10 +161,16 @@ namespace PG.Sim
 
             if (ReadySpell(_w, i, enemy, out _, out _)) Consider(UnitTask.Cast, 65f, enemy >= 0 ? u.IdOf(enemy) : EntityId.None, ref rng);
 
+            // work (Bölüm 5.6): city residents with a job; hunger, sleep and danger still win
+            if (u.City[i] >= 0 && u.Job[i] != 0 && _w.Civ != null && JobAssigner.CanWork(u, i)) Consider(UnitTask.Work, WorkScore, EntityId.None, ref rng);
+
             // Tasks in progress keep running unless something clearly more urgent came up.
             bool lowPriority = current == UnitTask.None || current == UnitTask.Wander || current == UnitTask.Rest || current == UnitTask.Follow;
-            bool switchTask = lowPriority ? best != current || current == UnitTask.None : bestScore >= 90f && best != current;
+            // work is kept against small wishes (a snack, a stroll), not against real hunger, tiredness or danger (DECISIONS #55)
+            float needed = current == UnitTask.Work ? WorkInterrupt : 90f;
+            bool switchTask = lowPriority ? best != current || current == UnitTask.None : bestScore >= needed && best != current;
             if (switchTask) StartTask(i, best, bestTarget);
+            if (switchTask && best == UnitTask.Flee && bestTarget == EntityId.None && fireAt.x >= 0) u.TargetTile[i] = fireAt; // flee from here
 
             bool combat = best == UnitTask.Attack || best == UnitTask.Hunt || best == UnitTask.Flee;
             int interval = (UnitTask)u.Task[i] == UnitTask.Sleep ? ThinkSleep : combat ? ThinkCombat : ThinkNormal;
@@ -203,6 +222,24 @@ namespace PG.Sim
             return SpellRegistry.Useful(w, i, def, enemy);
         }
 
+        public const float FireFleeScore = 110f;
+
+        bool NearFire(int i, out int2 at)
+        {
+            var map = _w.Map;
+            int2 c = _w.Store.Tile(i);
+            for (int dy = -2; dy <= 2; dy++)
+                for (int dx = -2; dx <= 2; dx++)
+                {
+                    int x = c.x + dx, y = c.y + dy;
+                    if (!map.InBounds(x, y) || (map.Flags[map.Index(x, y)] & (ushort)TileFlags.Burning) == 0) continue;
+                    at = new int2(x, y);
+                    return true;
+                }
+            at = default;
+            return false;
+        }
+
         bool IsThreat(int self, int other) =>
             (_w.Hostile(other, self) || _w.Prey(other, self)) && _w.Power(other) > _w.Power(self) * 1.2f;
 
@@ -230,7 +267,7 @@ namespace PG.Sim
     }
 
     // Phase 4: runs the current task's actions and moves the unit.
-    public sealed class UnitActSystem : ISimSystem
+    public sealed partial class UnitActSystem : ISimSystem
     {
         public const int ChaseGiveUpTicks = 240; // without landing a hit (DECISIONS #52)
         public const int SeekGiveUpTicks = 900;  // walking to a mate / parent / herd across the map
@@ -241,11 +278,12 @@ namespace PG.Sim
         public const int KillMealPerSize = 45;
         public const float ScentRadius = 48f;
 
-        readonly Func<int, int, bool> _isPrey;
+        readonly Func<int, int, bool> _isPrey, _isGame;
 
         public UnitActSystem()
         {
             _isPrey = (self, other) => _w.Prey(self, other);
+            _isGame = IsGame;
         }
        
 
@@ -288,6 +326,8 @@ namespace PG.Sim
                     case UnitTask.Rest: done = u.Stamina[i] >= 60f; break;
                     case UnitTask.GoLand: done = GoLand(i, dt); break;
                     case UnitTask.Cast: done = Cast(i, tick, ref combatRng); break;
+                    case UnitTask.Work: done = Work(i, dt, tick, ref rng, ref combatRng); break;
+                    case UnitTask.Migrate: done = Migrate(i, dt); break;
                     default: done = false; break;
                 }
                 if (done)
@@ -577,7 +617,8 @@ namespace PG.Sim
             if (u.Action[i] == 0)
             {
                 var threat = u.Target[i];
-                float2 away = u.IsAlive(threat) ? u.Pos[i] - u.Pos[threat.Index] : new float2(1f, 0f);
+                // no unit to run from: the fire tile left in TargetTile by the think step
+                float2 away = u.IsAlive(threat) ? u.Pos[i] - u.Pos[threat.Index] : u.Pos[i] - ((float2)u.TargetTile[i] + 0.5f);
                 float len = math.length(away);
                 away = len > 1e-3f ? away / len : new float2(1f, 0f);
                 int2 dest = (int2)math.floor(u.Pos[i] + away * 12f);

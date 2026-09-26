@@ -121,6 +121,8 @@ namespace PG.World
             }
             if (Tables.MeltTo[type] != TileTables.NoStep) flags |= (ushort)TileFlags.Frozen;
             else flags &= unchecked((ushort)~(ushort)TileFlags.Frozen);
+            flags = BlockForBuilding(i, flags);
+            newType = (ushort)(flags & (ushort)TileFlags.TypeMask);
             Flags[i] = flags;
 
             if (Tables.Active[type] != 0 && ActivatedTiles.Length < MaxActivatedTiles) ActivatedTiles.Add(new int2(i, old));
@@ -157,6 +159,7 @@ namespace PG.World
             int i = Index(x, y);
             if (Feature[i] == feature) return;
             if (!Tables.FeatureFits(Ground[i], feature)) return;
+            if (feature != 0 && Building[i] >= 0) return; // nothing grows inside a building
             ClearFeatureCounted(x, y, i);
             if (feature != 0)
             {
@@ -223,6 +226,53 @@ namespace PG.World
             if (before == after) return;
             Flags[i] = after;
             Touch(x, y, DirtyMask.Render | DirtyMask.Save);
+        }
+
+        // --- Buildings (Bölüm 5.4): footprint tiles hold the building index and are not walkable, except the door ---
+
+        // Writes a footprint. Trees and plants under it are cleared; `door` stays walkable.
+        public void PlaceBuilding(int building, int2 origin, int w, int h, int2 door)
+        {
+            for (int y = origin.y; y < origin.y + h; y++)
+                for (int x = origin.x; x < origin.x + w; x++)
+                {
+                    if (!InBounds(x, y)) continue;
+                    int i = Index(x, y);
+                    if (Feature[i] != 0) SetFeature(x, y, 0, ChangeSource.Building);
+                    Building[i] = building;
+                    ushort flags = (ushort)((Flags[i] | (ushort)TileFlags.Reserved) & ~(ushort)TileFlags.Road);
+                    if (x == door.x && y == door.y) flags |= (ushort)TileFlags.Door;
+                    flags = BlockForBuilding(i, flags);
+                    ushort before = Flags[i];
+                    Flags[i] = flags;
+                    var mask = DirtyMask.Render | DirtyMask.Save | DirtyMask.Stats;
+                    if (((before ^ flags) & (ushort)TileFlags.MoveMask) != 0) mask |= DirtyMask.Regions;
+                    Touch(x, y, mask);
+                }
+        }
+
+        public void RemoveBuilding(int building, int2 origin, int w, int h)
+        {
+            for (int y = origin.y; y < origin.y + h; y++)
+                for (int x = origin.x; x < origin.x + w; x++)
+                {
+                    if (!InBounds(x, y)) continue;
+                    int i = Index(x, y);
+                    if (Building[i] != building) continue;
+                    Building[i] = -1;
+                    ushort before = Flags[i];
+                    ushort flags = (ushort)((before & ~(ushort)(TileFlags.TypeMask | TileFlags.Reserved | TileFlags.Door)) | Tables.TypeFlags[Ground[i]]);
+                    Flags[i] = flags;
+                    var mask = DirtyMask.Render | DirtyMask.Save | DirtyMask.Stats;
+                    if (((before ^ flags) & (ushort)TileFlags.MoveMask) != 0) mask |= DirtyMask.Regions;
+                    Touch(x, y, mask);
+                }
+        }
+
+        ushort BlockForBuilding(int i, ushort flags)
+        {
+            if (Building[i] < 0 || (flags & (ushort)TileFlags.Door) != 0) return flags;
+            return (ushort)(flags & ~(ushort)TileFlags.Walkable);
         }
 
         public void RaiseLevel(int x, int y, ChangeSource src)
@@ -309,7 +359,7 @@ namespace PG.World
                     int i = Index(x, y);
                     byte g = Ground[i];
                     ushort newType = Tables.TypeFlags[g];
-                    Flags[i] = (ushort)((Flags[i] & ~(ushort)TileFlags.TypeMask) | newType);
+                    Flags[i] = BlockForBuilding(i, (ushort)((Flags[i] & ~(ushort)TileFlags.TypeMask) | newType));
                     if (!Tables.BiomeFits(g, Biome[i])) Biome[i] = 0;
                     if (!Tables.FeatureFits(g, Feature[i])) { Feature[i] = 0; FeatureState[i] = 0; }
 

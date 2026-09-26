@@ -41,8 +41,17 @@ namespace PG.Content
         public readonly Registry<EvolutionRuleDef> EvolutionRules = new Registry<EvolutionRuleDef>("evolution_rules");
         public readonly Registry<MetamorphosisDef> Metamorphoses = new Registry<MetamorphosisDef>("metamorphoses");
         public readonly Registry<DiseaseDef> Diseases = new Registry<DiseaseDef>("diseases");
+        public readonly Registry<ResourceDef> Resources = new Registry<ResourceDef>("resources");
+        public readonly Registry<BuildingDef> Buildings = new Registry<BuildingDef>("buildings");
+        public readonly Registry<BuildingStyleDef> BuildingStyles = new Registry<BuildingStyleDef>("building_styles");
+        public readonly Registry<JobDef> Jobs = new Registry<JobDef>("jobs");
+        public readonly Registry<EquipmentTypeDef> EquipmentTypes = new Registry<EquipmentTypeDef>("equipment_types");
+        public readonly Registry<MaterialDef> Materials = new Registry<MaterialDef>("materials");
+        public readonly Registry<ItemQualityDef> ItemQualities = new Registry<ItemQualityDef>("item_qualities");
+        public readonly Registry<HappinessEventDef> HappinessEvents = new Registry<HappinessEventDef>("happiness_events");
         public GeneRules GeneRules { get; private set; } = new GeneRules();
         public ZombieRules ZombieRules { get; private set; } = new ZombieRules();
+        public NameSets NameSets { get; private set; } = new NameSets();
         // ... extended in later chapters
 
         // Leveled ground tiles indexed by level (0 = deep ocean ... MaxLevel = summit).
@@ -95,10 +104,20 @@ namespace PG.Content
             LoadFile(EvolutionRules, folder, required, serializer, errors);
             LoadFile(Metamorphoses, folder, required, serializer, errors);
             LoadFile(Diseases, folder, required, serializer, errors);
+            LoadFile(Resources, folder, required, serializer, errors);
+            LoadFile(Buildings, folder, required, serializer, errors);
+            LoadFile(BuildingStyles, folder, required, serializer, errors);
+            LoadFile(Jobs, folder, required, serializer, errors);
+            LoadFile(EquipmentTypes, folder, required, serializer, errors);
+            LoadFile(Materials, folder, required, serializer, errors);
+            LoadFile(ItemQualities, folder, required, serializer, errors);
+            LoadFile(HappinessEvents, folder, required, serializer, errors);
             var geneRules = LoadObject(folder, "gene_rules", required, errors);
             if (geneRules != null) GeneRules = GeneRules.From(geneRules);
             var zombieRules = LoadObject(folder, "zombie_rules", required, errors);
             if (zombieRules != null) ZombieRules = ZombieRules.From(zombieRules);
+            var nameSets = LoadObject(folder, "name_sets", required, errors);
+            if (nameSets != null) NameSets = NameSets.From(nameSets);
         }
 
         // Single-object files (gene_rules, zombie_rules): a mod file replaces the base object.
@@ -180,6 +199,15 @@ namespace PG.Content
             ResolveAll(Spells, errors);
             ResolveAll(UnitTraits, errors);
             ResolveAll(Species, errors);
+            ResolveAll(Resources, errors);
+            ResolveAll(Buildings, errors);
+            for (int i = 0; i < Buildings.Count; i++) Buildings[i].ResolveRequirements(this, errors);
+            ResolveAll(BuildingStyles, errors);
+            ResolveAll(Jobs, errors);
+            ResolveAll(EquipmentTypes, errors);
+            ResolveAll(Materials, errors);
+            ResolveAll(ItemQualities, errors);
+            ResolveAll(HappinessEvents, errors);
 
             int maxLevel = -1;
             for (int i = 0; i < Tiles.Count; i++) maxLevel = Math.Max(maxLevel, Tiles[i].Level);

@@ -43,8 +43,10 @@ BL=[
 ("hive","Kovan","house","3x3",200,"wood:4|honey:2","kovan zihni","Arı/karınca uygarlığı evi",99,0),
 ("ruins","Harabe","ruin","*",50,"","","Yıkılan binadan kalır; zamanla kaybolur",0,0),
 ]
+# housing capacity (residents) of house-category buildings (Bölüm 5.4; DECISIONS #54)
+CAP={"tent":2,"hut":4,"house":6,"manor":10,"nest":3,"hive":8}
 save("buildings",[dict(id="bld."+a,name=b,category=c,size=d,hp=e,cost={("res."+k.split(":")[0]):int(k.split(":")[1]) for k in ids(f.replace("|",","))},
-      requires=g,function=h,maxPerCity=i,jobSlots=j) for a,b,c,d,e,f,g,h,i,j in BL],"Binalar",["id","name","category","size","requires","function"])
+      requires=g,function=h,maxPerCity=i,jobSlots=j,capacity=CAP.get(a,0)) for a,b,c,d,e,f,g,h,i,j in BL],"Binalar",["id","name","category","size","requires","function"])
 STY=[("human","İnsan","Kerpiç/ahşap duvar, kiremit kırmızısı çatı, taş temeller","#B5533C"),
 ("elf","Elf","Ağaç gövdelerine oyulmuş evler, yaprak çatılar, kıvrımlı hatlar","#5C9B5A"),
 ("dwarf","Cüce","Kesme taş, dağa gömülü kapılar, bakır süslemeler","#7B6A5A"),
