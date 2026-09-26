@@ -26,7 +26,7 @@ public static class CivDebug
                 for (int k = 0; k < u.Alive.Length; k++) { int i = u.Alive[k]; if (u.City[i] < 0) continue; taskHist[u.Task[i]]++;
                     if (u.Task[i] == (byte)UnitTask.Work && u.Job[i] > 0) { string key = $"{db.Jobs[u.Job[i] - 1].Id}:a{u.Action[i]}:op{u.WorkOp[i]}"; actHist[key] = actHist.TryGetValue(key, out int v) ? v + 1 : 1; } }
             }
-            if (m == 360)
+            if (m == 600)
             {
                 var c0 = civ.Cities[0]; var rr = new SimRandom(3, 3);
                 foreach (var name in new[] { "bld.hut", "bld.storage", "bld.farm_shed", "bld.house", "bld.well" }) { int d = db.Buildings.IdOf(name);

@@ -58,7 +58,8 @@ namespace PG.EditorTools
                 var sw = Stopwatch.StartNew();
                 var line = new StringBuilder();
                 var deaths = new int[16];
-                int births = 0;
+                int births = 0, founded = 0;
+                sim.Events.Subscribe<CityFoundedEvent>(e => founded++);
                 sim.Events.Subscribe<UnitDiedEvent>(e => { if (e.Species == human) deaths[(int)e.Cause]++; });
                 sim.Events.Subscribe<UnitBornEvent>(e => { if (e.Species == human) births++; });
                 for (int year = 1; year <= years; year++)
@@ -76,8 +77,9 @@ namespace PG.EditorTools
                     total += c.Population;
                     maxTier = math.max(maxTier, c.HallTier);
                 }
-                bool ok = cities >= 2 && maxTier >= 2 && total >= 60;
-                Debug.Log($"[CivSoak] village {years}y ({sw.Elapsed.TotalSeconds:0.0} s):{line}\n  -> cities {cities}, best hall tier {maxTier}, civ population {total} -> {(ok ? "ok" : "FAIL")}");
+                // 5.12 #1: "at least one new city" = founded during the run, whether or not it survived
+                bool ok = founded >= 2 && maxTier >= 2 && total >= 60;
+                Debug.Log($"[CivSoak] village {years}y ({sw.Elapsed.TotalSeconds:0.0} s):{line}\n  -> cities founded {founded}, alive {cities}, best hall tier {maxTier}, civ population {total} -> {(ok ? "ok" : "FAIL")}");
                 return ok ? 0 : 1;
             }
         }

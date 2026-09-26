@@ -247,6 +247,9 @@ namespace PG.Sim
             _tileParent[start] = -1;
             _heap.Push(start, Octile(from, to));
 
+            // budget grows with the distance: short hops that need a long detour fail cheaply (DECISIONS #51)
+            float direct = Octile(from, to);
+            int limit = math.min(MaxTileExpansions, 256 + (int)(direct * direct * 3f + direct * 40f));
             int expansions = 0;
             bool found = false;
             while (_heap.Count > 0)
@@ -255,7 +258,7 @@ namespace PG.Sim
                 if (_closedStamp[cur] == searchStamp) continue;
                 _closedStamp[cur] = searchStamp;
                 if (cur == goal) { found = true; break; }
-                if (++expansions > MaxTileExpansions) break;
+                if (++expansions > limit) break;
                 StatExpansions++;
                 int cx = cur % w, cy = cur / w;
                 for (int d = 0; d < 8; d++)

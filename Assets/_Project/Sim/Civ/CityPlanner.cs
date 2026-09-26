@@ -181,10 +181,14 @@ namespace PG.Sim
             var ids = civ.Ids;
             int pop = city.Population;
 
-            // 1. centre upgrade
+            // 1. centre upgrade; while it waits for materials the city saves up for it (DECISIONS #58)
             int nextTier = city.HallTier + 1;
-            if (nextTier <= 3 && pop >= HouseThresholds[nextTier - 1] && civ.CountBuildings(city, ids.HallByTier[nextTier]) == 0
-                && TryBuild(ctx, civ, city, ids.HallByTier[nextTier], ref rng)) return true;
+            _saving = -1;
+            if (nextTier <= 3 && pop >= HouseThresholds[nextTier - 1] && civ.CountBuildings(city, ids.HallByTier[nextTier]) == 0)
+            {
+                if (TryBuild(ctx, civ, city, ids.HallByTier[nextTier], ref rng)) return true;
+                if (RequirementsMet(civ, city, ids.HallByTier[nextTier])) _saving = ids.HallByTier[nextTier];
+            }
 
             // 2. housing; no room left -> claim more land right away (DECISIONS #58)
             if (pop - city.HousingCapacity + 4 > 0 && CountInProgress(civ, city, BuildingCategory.House) < 2)
@@ -259,10 +263,24 @@ namespace PG.Sim
             return n;
         }
 
+        static int _saving = -1; // planning runs on the main thread, one city at a time
+
+        // Would paying for `d` eat into what the pending hall upgrade still needs?
+        static bool TouchesSavings(CivState civ, City city, BuildingDef d)
+        {
+            if (_saving < 0 || d.Index == _saving) return false;
+            var hall = civ.Content.Buildings[_saving];
+            for (int k = 0; k < d.CostRes.Length; k++)
+                for (int h = 0; h < hall.CostRes.Length; h++)
+                    if (hall.CostRes[h] == d.CostRes[k] && city.Stock[d.CostRes[k]] - d.CostAmount[k] < hall.CostAmount[h]) return true;
+            return false;
+        }
+
         public static bool TryBuild(in SimContext ctx, CivState civ, City city, int def, ref SimRandom rng)
         {
             if (def < 0) return false;
             var d = civ.Content.Buildings[def];
+            if (TouchesSavings(civ, city, d)) return false;
             if (d.MaxPerCity > 0 && civ.CountBuildings(city, def) >= d.MaxPerCity) return false;
             if (!RequirementsMet(civ, city, def) || !civ.CanAfford(city, d)) return false;
             if (d.IsCenter && city.CenterBuilding >= 0)
@@ -335,7 +353,13 @@ namespace PG.Sim
                 switch (r.Kind)
                 {
                     case BuildingReq.Pop: if (city.Population < r.Value) return false; break;
-                    case BuildingReq.Building: if (!civ.HasComplete(city, r.Value)) return false; break;
+                    case BuildingReq.Building:
+                    {
+                        // a hall requirement is met by that tier or any later one (the old hall is gone after an upgrade)
+                        int tier = System.Array.IndexOf(civ.Ids.HallByTier, r.Value);
+                        if (tier >= 0 ? city.HallTier < tier : !civ.HasComplete(city, r.Value)) return false;
+                        break;
+                    }
                     case BuildingReq.Coast: if (!CityTouches(civ, city, TileFlags.Water)) return false; break;
                     case BuildingReq.NearHills: if (!CityHasHills(civ, city)) return false; break;
                     case BuildingReq.NearForest: if (!CityHasTrees(civ, city)) return false; break;
