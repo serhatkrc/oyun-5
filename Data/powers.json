@@ -1,0 +1,3183 @@
+{
+ "category": "powers",
+ "count": 246,
+ "items": [
+  {
+   "id": "pw.soil",
+   "name": "Toprak",
+   "tab": "world",
+   "type": "brush",
+   "params": {
+    "op": "raise_to",
+    "target": "soil_low",
+    "add": {
+     "interval": 3.0
+    }
+   },
+   "unlockedBy": null,
+   "description": "Suyu kademeli karaya çevirir"
+  },
+  {
+   "id": "pw.sand",
+   "name": "Kum",
+   "tab": "world",
+   "type": "brush",
+   "params": {
+    "op": "set",
+    "target": "sand"
+   },
+   "unlockedBy": null,
+   "description": ""
+  },
+  {
+   "id": "pw.hills",
+   "name": "Tepe",
+   "tab": "world",
+   "type": "brush",
+   "params": {
+    "op": "raise_to",
+    "target": "hills",
+    "add": {
+     "interval": 4.0
+    }
+   },
+   "unlockedBy": null,
+   "description": ""
+  },
+  {
+   "id": "pw.mountain",
+   "name": "Dağ",
+   "tab": "world",
+   "type": "brush",
+   "params": {
+    "op": "raise_to",
+    "target": "summit",
+    "add": {
+     "interval": 4.0
+    }
+   },
+   "unlockedBy": null,
+   "description": ""
+  },
+  {
+   "id": "pw.shallow",
+   "name": "Sığ Su",
+   "tab": "world",
+   "type": "brush",
+   "params": {
+    "op": "lower_to",
+    "target": "shallow",
+    "add": {
+     "interval": 3.0
+    }
+   },
+   "unlockedBy": null,
+   "description": ""
+  },
+  {
+   "id": "pw.water",
+   "name": "Su",
+   "tab": "world",
+   "type": "brush",
+   "params": {
+    "op": "lower_to",
+    "target": "ocean",
+    "add": {
+     "interval": 3.0
+    }
+   },
+   "unlockedBy": null,
+   "description": ""
+  },
+  {
+   "id": "pw.deep_water",
+   "name": "Derin Su",
+   "tab": "world",
+   "type": "brush",
+   "params": {
+    "op": "lower_to",
+    "target": "deep_ocean",
+    "add": {
+     "interval": 3.0
+    }
+   },
+   "unlockedBy": null,
+   "description": ""
+  },
+  {
+   "id": "pw.raise",
+   "name": "Yükselt",
+   "tab": "world",
+   "type": "brush",
+   "params": {
+    "op": "raise",
+    "add": {
+     "interval": 6.0
+    }
+   },
+   "unlockedBy": null,
+   "description": "Bir kademe"
+  },
+  {
+   "id": "pw.lower",
+   "name": "Alçalt",
+   "tab": "world",
+   "type": "brush",
+   "params": {
+    "op": "lower",
+    "add": {
+     "interval": 6.0
+    }
+   },
+   "unlockedBy": null,
+   "description": "Bir kademe"
+  },
+  {
+   "id": "pw.sponge",
+   "name": "Sünger",
+   "tab": "world",
+   "type": "brush",
+   "params": {
+    "op": "sponge"
+   },
+   "unlockedBy": null,
+   "description": "Suyu kurutur"
+  },
+  {
+   "id": "pw.road",
+   "name": "Yol",
+   "tab": "world",
+   "type": "brush",
+   "params": {
+    "op": "flag",
+    "flags": [
+     "road"
+    ]
+   },
+   "unlockedBy": null,
+   "description": ""
+  },
+  {
+   "id": "pw.field",
+   "name": "Tarla",
+   "tab": "world",
+   "type": "brush",
+   "params": {
+    "op": "set",
+    "target": "field"
+   },
+   "unlockedBy": null,
+   "description": ""
+  },
+  {
+   "id": "pw.eraser",
+   "name": "Silgi",
+   "tab": "world",
+   "type": "brush",
+   "params": {
+    "op": "erase"
+   },
+   "unlockedBy": null,
+   "description": "Bina, bitki, biyom siler"
+  },
+  {
+   "id": "pw.tree",
+   "name": "Ağaç Ek",
+   "tab": "world",
+   "type": "drop",
+   "params": {
+    "spawn": "biome_tree",
+    "add": {
+     "density": 0.3
+    }
+   },
+   "unlockedBy": null,
+   "description": "Biyomun ağacını eker"
+  },
+  {
+   "id": "pw.bush",
+   "name": "Çalı Ek",
+   "tab": "world",
+   "type": "drop",
+   "params": {
+    "spawn": "feat.berry_bush",
+    "add": {
+     "density": 0.3
+    }
+   },
+   "unlockedBy": null,
+   "description": ""
+  },
+  {
+   "id": "pw.flowers",
+   "name": "Çiçek Ek",
+   "tab": "world",
+   "type": "drop",
+   "params": {
+    "spawn": "feat.flower",
+    "add": {
+     "density": 0.4
+    }
+   },
+   "unlockedBy": null,
+   "description": ""
+  },
+  {
+   "id": "pw.mushrooms",
+   "name": "Mantar Ek",
+   "tab": "world",
+   "type": "drop",
+   "params": {
+    "spawn": "feat.small_mushroom",
+    "add": {
+     "density": 0.3
+    }
+   },
+   "unlockedBy": null,
+   "description": ""
+  },
+  {
+   "id": "pw.wheat",
+   "name": "Buğday Ek",
+   "tab": "world",
+   "type": "drop",
+   "params": {
+    "spawn": "feat.wheat_crop"
+   },
+   "unlockedBy": null,
+   "description": "Sadece tarlada"
+  },
+  {
+   "id": "pw.rock",
+   "name": "Kaya",
+   "tab": "world",
+   "type": "drop",
+   "params": {
+    "spawn": "feat.rock"
+   },
+   "unlockedBy": null,
+   "description": ""
+  },
+  {
+   "id": "pw.ore_copper",
+   "name": "Bakır Damarı",
+   "tab": "world",
+   "type": "drop",
+   "params": {
+    "spawn": "feat.ore_copper"
+   },
+   "unlockedBy": null,
+   "description": ""
+  },
+  {
+   "id": "pw.ore_iron",
+   "name": "Demir Damarı",
+   "tab": "world",
+   "type": "drop",
+   "params": {
+    "spawn": "feat.ore_iron"
+   },
+   "unlockedBy": null,
+   "description": ""
+  },
+  {
+   "id": "pw.ore_silver",
+   "name": "Gümüş Damarı",
+   "tab": "world",
+   "type": "drop",
+   "params": {
+    "spawn": "feat.ore_silver"
+   },
+   "unlockedBy": null,
+   "description": ""
+  },
+  {
+   "id": "pw.ore_gold",
+   "name": "Altın Damarı",
+   "tab": "world",
+   "type": "drop",
+   "params": {
+    "spawn": "feat.ore_gold"
+   },
+   "unlockedBy": null,
+   "description": ""
+  },
+  {
+   "id": "pw.ore_skyiron",
+   "name": "Gökdemir Damarı",
+   "tab": "world",
+   "type": "drop",
+   "params": {
+    "spawn": "feat.ore_skyiron"
+   },
+   "unlockedBy": "ach.first_mine",
+   "description": ""
+  },
+  {
+   "id": "pw.ore_starore",
+   "name": "Yıldız Cevheri",
+   "tab": "world",
+   "type": "drop",
+   "params": {
+    "spawn": "feat.ore_starore"
+   },
+   "unlockedBy": "ach.first_mine",
+   "description": ""
+  },
+  {
+   "id": "pw.seed_grassland",
+   "name": "Çayır Tohumu",
+   "tab": "world",
+   "type": "drop",
+   "params": {
+    "spawn": "seed",
+    "biome": "bio.grassland"
+   },
+   "unlockedBy": null,
+   "description": "Düştüğü yerde Çayır biyomu başlatır"
+  },
+  {
+   "id": "pw.seed_birch",
+   "name": "Huşluk Tohumu",
+   "tab": "world",
+   "type": "drop",
+   "params": {
+    "spawn": "seed",
+    "biome": "bio.birch"
+   },
+   "unlockedBy": null,
+   "description": "Düştüğü yerde Huşluk biyomu başlatır"
+  },
+  {
+   "id": "pw.seed_maple",
+   "name": "Akçaağaç Koruluğu Tohumu",
+   "tab": "world",
+   "type": "drop",
+   "params": {
+    "spawn": "seed",
+    "biome": "bio.maple"
+   },
+   "unlockedBy": null,
+   "description": "Düştüğü yerde Akçaağaç Koruluğu biyomu başlatır"
+  },
+  {
+   "id": "pw.seed_forest",
+   "name": "Karışık Orman Tohumu",
+   "tab": "world",
+   "type": "drop",
+   "params": {
+    "spawn": "seed",
+    "biome": "bio.forest"
+   },
+   "unlockedBy": null,
+   "description": "Düştüğü yerde Karışık Orman biyomu başlatır"
+  },
+  {
+   "id": "pw.seed_jungle",
+   "name": "Cengel Tohumu",
+   "tab": "world",
+   "type": "drop",
+   "params": {
+    "spawn": "seed",
+    "biome": "bio.jungle"
+   },
+   "unlockedBy": null,
+   "description": "Düştüğü yerde Cengel biyomu başlatır"
+  },
+  {
+   "id": "pw.seed_swamp",
+   "name": "Bataklık Tohumu",
+   "tab": "world",
+   "type": "drop",
+   "params": {
+    "spawn": "seed",
+    "biome": "bio.swamp"
+   },
+   "unlockedBy": null,
+   "description": "Düştüğü yerde Bataklık biyomu başlatır"
+  },
+  {
+   "id": "pw.seed_savanna",
+   "name": "Savan Tohumu",
+   "tab": "world",
+   "type": "drop",
+   "params": {
+    "spawn": "seed",
+    "biome": "bio.savanna"
+   },
+   "unlockedBy": null,
+   "description": "Düştüğü yerde Savan biyomu başlatır"
+  },
+  {
+   "id": "pw.seed_desert",
+   "name": "Çöl Tohumu",
+   "tab": "world",
+   "type": "drop",
+   "params": {
+    "spawn": "seed",
+    "biome": "bio.desert"
+   },
+   "unlockedBy": null,
+   "description": "Düştüğü yerde Çöl biyomu başlatır"
+  },
+  {
+   "id": "pw.seed_rocklands",
+   "name": "Kayalık Tohumu",
+   "tab": "world",
+   "type": "drop",
+   "params": {
+    "spawn": "seed",
+    "biome": "bio.rocklands"
+   },
+   "unlockedBy": null,
+   "description": "Düştüğü yerde Kayalık biyomu başlatır"
+  },
+  {
+   "id": "pw.seed_tundra",
+   "name": "Tundra Tohumu",
+   "tab": "world",
+   "type": "drop",
+   "params": {
+    "spawn": "seed",
+    "biome": "bio.tundra"
+   },
+   "unlockedBy": null,
+   "description": "Düştüğü yerde Tundra biyomu başlatır"
+  },
+  {
+   "id": "pw.seed_snowpine",
+   "name": "Karlı Çamlık Tohumu",
+   "tab": "world",
+   "type": "drop",
+   "params": {
+    "spawn": "seed",
+    "biome": "bio.snowpine"
+   },
+   "unlockedBy": null,
+   "description": "Düştüğü yerde Karlı Çamlık biyomu başlatır"
+  },
+  {
+   "id": "pw.seed_flower",
+   "name": "Çiçek Vadisi Tohumu",
+   "tab": "world",
+   "type": "drop",
+   "params": {
+    "spawn": "seed",
+    "biome": "bio.flower"
+   },
+   "unlockedBy": null,
+   "description": "Düştüğü yerde Çiçek Vadisi biyomu başlatır"
+  },
+  {
+   "id": "pw.seed_clover",
+   "name": "Yonca Tarlası Tohumu",
+   "tab": "world",
+   "type": "drop",
+   "params": {
+    "spawn": "seed",
+    "biome": "bio.clover"
+   },
+   "unlockedBy": null,
+   "description": "Düştüğü yerde Yonca Tarlası biyomu başlatır"
+  },
+  {
+   "id": "pw.seed_mushroom",
+   "name": "Mantar Diyarı Tohumu",
+   "tab": "world",
+   "type": "drop",
+   "params": {
+    "spawn": "seed",
+    "biome": "bio.mushroom"
+   },
+   "unlockedBy": null,
+   "description": "Düştüğü yerde Mantar Diyarı biyomu başlatır"
+  },
+  {
+   "id": "pw.seed_crystal",
+   "name": "Kristal Vadisi Tohumu",
+   "tab": "world",
+   "type": "drop",
+   "params": {
+    "spawn": "seed",
+    "biome": "bio.crystal"
+   },
+   "unlockedBy": null,
+   "description": "Düştüğü yerde Kristal Vadisi biyomu başlatır"
+  },
+  {
+   "id": "pw.seed_enchanted",
+   "name": "Peri Ormanı Tohumu",
+   "tab": "world",
+   "type": "drop",
+   "params": {
+    "spawn": "seed",
+    "biome": "bio.enchanted"
+   },
+   "unlockedBy": null,
+   "description": "Düştüğü yerde Peri Ormanı biyomu başlatır"
+  },
+  {
+   "id": "pw.seed_corrupted",
+   "name": "Kara Çürüme Tohumu",
+   "tab": "world",
+   "type": "drop",
+   "params": {
+    "spawn": "seed",
+    "biome": "bio.corrupted"
+   },
+   "unlockedBy": null,
+   "description": "Düştüğü yerde Kara Çürüme biyomu başlatır"
+  },
+  {
+   "id": "pw.seed_infernal",
+   "name": "Kor Diyarı Tohumu",
+   "tab": "world",
+   "type": "drop",
+   "params": {
+    "spawn": "seed",
+    "biome": "bio.infernal"
+   },
+   "unlockedBy": null,
+   "description": "Düştüğü yerde Kor Diyarı biyomu başlatır"
+  },
+  {
+   "id": "pw.seed_candy",
+   "name": "Şekerleme Ülkesi Tohumu",
+   "tab": "world",
+   "type": "drop",
+   "params": {
+    "spawn": "seed",
+    "biome": "bio.candy"
+   },
+   "unlockedBy": null,
+   "description": "Düştüğü yerde Şekerleme Ülkesi biyomu başlatır"
+  },
+  {
+   "id": "pw.seed_citrus",
+   "name": "Turunç Bahçesi Tohumu",
+   "tab": "world",
+   "type": "drop",
+   "params": {
+    "spawn": "seed",
+    "biome": "bio.citrus"
+   },
+   "unlockedBy": null,
+   "description": "Düştüğü yerde Turunç Bahçesi biyomu başlatır"
+  },
+  {
+   "id": "pw.seed_garlic",
+   "name": "Sarımsaklık Tohumu",
+   "tab": "world",
+   "type": "drop",
+   "params": {
+    "spawn": "seed",
+    "biome": "bio.garlic"
+   },
+   "unlockedBy": null,
+   "description": "Düştüğü yerde Sarımsaklık biyomu başlatır"
+  },
+  {
+   "id": "pw.seed_celestial",
+   "name": "Gök Bahçesi Tohumu",
+   "tab": "world",
+   "type": "drop",
+   "params": {
+    "spawn": "seed",
+    "biome": "bio.celestial"
+   },
+   "unlockedBy": null,
+   "description": "Düştüğü yerde Gök Bahçesi biyomu başlatır"
+  },
+  {
+   "id": "pw.seed_ash",
+   "name": "Kül Çölü Tohumu",
+   "tab": "world",
+   "type": "drop",
+   "params": {
+    "spawn": "seed",
+    "biome": "bio.ash"
+   },
+   "unlockedBy": null,
+   "description": "Düştüğü yerde Kül Çölü biyomu başlatır"
+  },
+  {
+   "id": "pw.seed_timewarp",
+   "name": "Zaman Kıvrımı Tohumu",
+   "tab": "world",
+   "type": "drop",
+   "params": {
+    "spawn": "seed",
+    "biome": "bio.timewarp"
+   },
+   "unlockedBy": "ach.biome_master",
+   "description": "Düştüğü yerde Zaman Kıvrımı biyomu başlatır"
+  },
+  {
+   "id": "pw.seed_void",
+   "name": "Sessiz Boşluk Tohumu",
+   "tab": "world",
+   "type": "drop",
+   "params": {
+    "spawn": "seed",
+    "biome": "bio.void"
+   },
+   "unlockedBy": "ach.biome_master",
+   "description": "Düştüğü yerde Sessiz Boşluk biyomu başlatır"
+  },
+  {
+   "id": "pw.seed_coral",
+   "name": "Mercan Resifi Tohumu",
+   "tab": "world",
+   "type": "drop",
+   "params": {
+    "spawn": "seed",
+    "biome": "bio.coral"
+   },
+   "unlockedBy": "ach.biome_master",
+   "description": "Düştüğü yerde Mercan Resifi biyomu başlatır"
+  },
+  {
+   "id": "pw.seed_volcanic",
+   "name": "Volkanik Ova Tohumu",
+   "tab": "world",
+   "type": "drop",
+   "params": {
+    "spawn": "seed",
+    "biome": "bio.volcanic"
+   },
+   "unlockedBy": "ach.biome_master",
+   "description": "Düştüğü yerde Volkanik Ova biyomu başlatır"
+  },
+  {
+   "id": "pw.seed_bone",
+   "name": "Kemik Düzlüğü Tohumu",
+   "tab": "world",
+   "type": "drop",
+   "params": {
+    "spawn": "seed",
+    "biome": "bio.bone"
+   },
+   "unlockedBy": "ach.biome_master",
+   "description": "Düştüğü yerde Kemik Düzlüğü biyomu başlatır"
+  },
+  {
+   "id": "pw.seed_honey",
+   "name": "Bal Korusu Tohumu",
+   "tab": "world",
+   "type": "drop",
+   "params": {
+    "spawn": "seed",
+    "biome": "bio.honey"
+   },
+   "unlockedBy": "ach.biome_master",
+   "description": "Düştüğü yerde Bal Korusu biyomu başlatır"
+  },
+  {
+   "id": "pw.spawn_human",
+   "name": "İnsan",
+   "tab": "civ",
+   "type": "spawn",
+   "params": {
+    "species": "sp.human",
+    "add": {
+     "count": 1.0
+    }
+   },
+   "unlockedBy": null,
+   "description": "Dengeli; her biyoma uyum sağlar, hızlı çoğalır"
+  },
+  {
+   "id": "pw.spawn_elf",
+   "name": "Elf",
+   "tab": "civ",
+   "type": "spawn",
+   "params": {
+    "species": "sp.elf",
+    "add": {
+     "count": 1.0
+    }
+   },
+   "unlockedBy": null,
+   "description": "Uzun ömürlü, iyi okçu, yavaş çoğalır"
+  },
+  {
+   "id": "pw.spawn_dwarf",
+   "name": "Cüce",
+   "tab": "civ",
+   "type": "spawn",
+   "params": {
+    "species": "sp.dwarf",
+    "add": {
+     "count": 1.0
+    }
+   },
+   "unlockedBy": null,
+   "description": "Madenci ve demirci; dağlara yerleşir"
+  },
+  {
+   "id": "pw.spawn_orc",
+   "name": "Ork",
+   "tab": "civ",
+   "type": "spawn",
+   "params": {
+    "species": "sp.orc",
+    "add": {
+     "count": 1.0
+    }
+   },
+   "unlockedBy": null,
+   "description": "Savaşçı; çok hızlı çoğalır, saldırgan"
+  },
+  {
+   "id": "pw.friendship",
+   "name": "Dostluk",
+   "tab": "civ",
+   "type": "target",
+   "params": {
+    "target": "kingdom_pair",
+    "add": {
+     "opinion": 100.0
+    }
+   },
+   "unlockedBy": null,
+   "description": "İki krallığı barıştırır, ittifak şansı"
+  },
+  {
+   "id": "pw.spite",
+   "name": "Kin",
+   "tab": "civ",
+   "type": "target",
+   "params": {
+    "target": "kingdom_pair",
+    "add": {
+     "opinion": -100.0
+    }
+   },
+   "unlockedBy": null,
+   "description": "İki krallığı savaşa sürükler"
+  },
+  {
+   "id": "pw.inspire",
+   "name": "İlham",
+   "tab": "civ",
+   "type": "target",
+   "params": {
+    "target": "unit",
+    "status": "inspired"
+   },
+   "unlockedBy": null,
+   "description": ""
+  },
+  {
+   "id": "pw.rebellion_spark",
+   "name": "İsyan Kıvılcımı",
+   "tab": "civ",
+   "type": "target",
+   "params": {
+    "target": "city",
+    "add": {
+     "loyalty": -100.0
+    }
+   },
+   "unlockedBy": null,
+   "description": "Şehir isyan eder"
+  },
+  {
+   "id": "pw.crown",
+   "name": "Taç",
+   "tab": "civ",
+   "type": "target",
+   "params": {
+    "target": "unit",
+    "add": {
+     "makeKing": 1.0
+    }
+   },
+   "unlockedBy": "ach.kingmaker",
+   "description": "Birimi krallığının kralı yapar"
+  },
+  {
+   "id": "pw.relocate",
+   "name": "Sancak Değiştir",
+   "tab": "civ",
+   "type": "target",
+   "params": {
+    "target": "unit",
+    "add": {
+     "changeKingdom": 1.0
+    }
+   },
+   "unlockedBy": null,
+   "description": "Birimi başka krallığa geçirir"
+  },
+  {
+   "id": "pw.magnet",
+   "name": "Kutsal Mıknatıs",
+   "tab": "civ",
+   "type": "target",
+   "params": {
+    "grab": "units",
+    "add": {
+     "max": 50.0
+    }
+   },
+   "unlockedBy": null,
+   "description": "Birimleri tut-taşı-bırak"
+  },
+  {
+   "id": "pw.zone_add",
+   "name": "Sınır Ekle",
+   "tab": "civ",
+   "type": "brush",
+   "params": {
+    "op": "zone_add"
+   },
+   "unlockedBy": null,
+   "description": "Şehir sınırına zone ekler"
+  },
+  {
+   "id": "pw.zone_remove",
+   "name": "Sınır Kaldır",
+   "tab": "civ",
+   "type": "brush",
+   "params": {
+    "op": "zone_remove"
+   },
+   "unlockedBy": null,
+   "description": ""
+  },
+  {
+   "id": "pw.bless_city",
+   "name": "Şehri Kutsa",
+   "tab": "civ",
+   "type": "target",
+   "params": {
+    "target": "city",
+    "status": "blessed"
+   },
+   "unlockedBy": null,
+   "description": ""
+  },
+  {
+   "id": "pw.curse_city",
+   "name": "Şehri Lanetle",
+   "tab": "civ",
+   "type": "target",
+   "params": {
+    "target": "city",
+    "status": "cursed"
+   },
+   "unlockedBy": null,
+   "description": ""
+  },
+  {
+   "id": "pw.capital",
+   "name": "Başkent Yap",
+   "tab": "civ",
+   "type": "target",
+   "params": {
+    "target": "city",
+    "add": {
+     "makeCapital": 1.0
+    }
+   },
+   "unlockedBy": null,
+   "description": ""
+  },
+  {
+   "id": "pw.found_village",
+   "name": "Köy Kur",
+   "tab": "civ",
+   "type": "spawn",
+   "params": {
+    "spawn": "village"
+   },
+   "unlockedBy": null,
+   "description": "Seçili türden hazır küçük köy"
+  },
+  {
+   "id": "pw.migrants",
+   "name": "Göçmen Dalgası",
+   "tab": "civ",
+   "type": "target",
+   "params": {
+    "target": "city",
+    "add": {
+     "spawnMigrants": 10.0
+    }
+   },
+   "unlockedBy": null,
+   "description": ""
+  },
+  {
+   "id": "pw.festival",
+   "name": "Şenlik Başlat",
+   "tab": "civ",
+   "type": "target",
+   "params": {
+    "target": "city",
+    "add": {
+     "happiness": 10.0
+    }
+   },
+   "unlockedBy": null,
+   "description": ""
+  },
+  {
+   "id": "pw.spawn_wolf",
+   "name": "Kurt",
+   "tab": "creatures",
+   "type": "spawn",
+   "params": {
+    "species": "sp.wolf",
+    "add": {
+     "count": 1.0
+    }
+   },
+   "unlockedBy": null,
+   "description": "Sürü halinde avlanır"
+  },
+  {
+   "id": "pw.spawn_bear",
+   "name": "Ayı",
+   "tab": "creatures",
+   "type": "spawn",
+   "params": {
+    "species": "sp.bear",
+    "add": {
+     "count": 1.0
+    }
+   },
+   "unlockedBy": null,
+   "description": "Bal ve balık sever"
+  },
+  {
+   "id": "pw.spawn_cat",
+   "name": "Kedi",
+   "tab": "creatures",
+   "type": "spawn",
+   "params": {
+    "species": "sp.cat",
+    "add": {
+     "count": 1.0
+    }
+   },
+   "unlockedBy": null,
+   "description": "Fare avcısı"
+  },
+  {
+   "id": "pw.spawn_dog",
+   "name": "Köpek",
+   "tab": "creatures",
+   "type": "spawn",
+   "params": {
+    "species": "sp.dog",
+    "add": {
+     "count": 1.0
+    }
+   },
+   "unlockedBy": null,
+   "description": "Medenilere evcilleşir"
+  },
+  {
+   "id": "pw.spawn_rabbit",
+   "name": "Tavşan",
+   "tab": "creatures",
+   "type": "spawn",
+   "params": {
+    "species": "sp.rabbit",
+    "add": {
+     "count": 1.0
+    }
+   },
+   "unlockedBy": null,
+   "description": "Çok hızlı çoğalır"
+  },
+  {
+   "id": "pw.spawn_sheep",
+   "name": "Koyun",
+   "tab": "creatures",
+   "type": "spawn",
+   "params": {
+    "species": "sp.sheep",
+    "add": {
+     "count": 1.0
+    }
+   },
+   "unlockedBy": null,
+   "description": "Yün verir"
+  },
+  {
+   "id": "pw.spawn_cow",
+   "name": "İnek",
+   "tab": "creatures",
+   "type": "spawn",
+   "params": {
+    "species": "sp.cow",
+    "add": {
+     "count": 1.0
+    }
+   },
+   "unlockedBy": null,
+   "description": "Süt ve et"
+  },
+  {
+   "id": "pw.spawn_chicken",
+   "name": "Tavuk",
+   "tab": "creatures",
+   "type": "spawn",
+   "params": {
+    "species": "sp.chicken",
+    "add": {
+     "count": 1.0
+    }
+   },
+   "unlockedBy": null,
+   "description": "Yumurta"
+  },
+  {
+   "id": "pw.spawn_frog",
+   "name": "Kurbağa",
+   "tab": "creatures",
+   "type": "spawn",
+   "params": {
+    "species": "sp.frog",
+    "add": {
+     "count": 1.0
+    }
+   },
+   "unlockedBy": null,
+   "description": "Böcek yer; bataklıkta çoğalır"
+  },
+  {
+   "id": "pw.spawn_rat",
+   "name": "Sıçan",
+   "tab": "creatures",
+   "type": "spawn",
+   "params": {
+    "species": "sp.rat",
+    "add": {
+     "count": 1.0
+    }
+   },
+   "unlockedBy": null,
+   "description": "Veba taşır"
+  },
+  {
+   "id": "pw.spawn_monkey",
+   "name": "Maymun",
+   "tab": "creatures",
+   "type": "spawn",
+   "params": {
+    "species": "sp.monkey",
+    "add": {
+     "count": 1.0
+    }
+   },
+   "unlockedBy": null,
+   "description": "Zeki; evrime yatkın"
+  },
+  {
+   "id": "pw.spawn_penguin",
+   "name": "Penguen",
+   "tab": "creatures",
+   "type": "spawn",
+   "params": {
+    "species": "sp.penguin",
+    "add": {
+     "count": 1.0
+    }
+   },
+   "unlockedBy": null,
+   "description": "Soğukta yaşar, iyi yüzer"
+  },
+  {
+   "id": "pw.spawn_fox",
+   "name": "Tilki",
+   "tab": "creatures",
+   "type": "spawn",
+   "params": {
+    "species": "sp.fox",
+    "add": {
+     "count": 1.0
+    }
+   },
+   "unlockedBy": null,
+   "description": "Kurnaz avcı"
+  },
+  {
+   "id": "pw.spawn_crab",
+   "name": "Yengeç",
+   "tab": "creatures",
+   "type": "spawn",
+   "params": {
+    "species": "sp.crab",
+    "add": {
+     "count": 1.0
+    }
+   },
+   "unlockedBy": null,
+   "description": "Kabuklu"
+  },
+  {
+   "id": "pw.spawn_scorpion",
+   "name": "Akrep",
+   "tab": "creatures",
+   "type": "spawn",
+   "params": {
+    "species": "sp.scorpion",
+    "add": {
+     "count": 1.0
+    }
+   },
+   "unlockedBy": null,
+   "description": "Zehirli iğne"
+  },
+  {
+   "id": "pw.spawn_lizard",
+   "name": "Kertenkele",
+   "tab": "creatures",
+   "type": "spawn",
+   "params": {
+    "species": "sp.lizard",
+    "add": {
+     "count": 1.0
+    }
+   },
+   "unlockedBy": null,
+   "description": "Sıcağa dayanıklı"
+  },
+  {
+   "id": "pw.spawn_crocodile",
+   "name": "Timsah",
+   "tab": "creatures",
+   "type": "spawn",
+   "params": {
+    "species": "sp.crocodile",
+    "add": {
+     "count": 1.0
+    }
+   },
+   "unlockedBy": null,
+   "description": "Pusu avcısı"
+  },
+  {
+   "id": "pw.spawn_bee",
+   "name": "Arı",
+   "tab": "creatures",
+   "type": "spawn",
+   "params": {
+    "species": "sp.bee",
+    "add": {
+     "count": 1.0
+    }
+   },
+   "unlockedBy": null,
+   "description": "Kovan kurar; bal üretir"
+  },
+  {
+   "id": "pw.spawn_ant",
+   "name": "Karınca",
+   "tab": "creatures",
+   "type": "spawn",
+   "params": {
+    "species": "sp.ant",
+    "add": {
+     "count": 1.0
+    }
+   },
+   "unlockedBy": null,
+   "description": "Koloni halinde çalışır"
+  },
+  {
+   "id": "pw.spawn_beetle",
+   "name": "Böcek",
+   "tab": "creatures",
+   "type": "spawn",
+   "params": {
+    "species": "sp.beetle",
+    "add": {
+     "count": 1.0
+    }
+   },
+   "unlockedBy": null,
+   "description": "Sert kabuk"
+  },
+  {
+   "id": "pw.spawn_snake",
+   "name": "Yılan",
+   "tab": "creatures",
+   "type": "spawn",
+   "params": {
+    "species": "sp.snake",
+    "add": {
+     "count": 1.0
+    }
+   },
+   "unlockedBy": null,
+   "description": ""
+  },
+  {
+   "id": "pw.spawn_turtle",
+   "name": "Kaplumbağa",
+   "tab": "creatures",
+   "type": "spawn",
+   "params": {
+    "species": "sp.turtle",
+    "add": {
+     "count": 1.0
+    }
+   },
+   "unlockedBy": null,
+   "description": "Çok uzun ömür"
+  },
+  {
+   "id": "pw.spawn_deer",
+   "name": "Geyik",
+   "tab": "creatures",
+   "type": "spawn",
+   "params": {
+    "species": "sp.deer",
+    "add": {
+     "count": 1.0
+    }
+   },
+   "unlockedBy": null,
+   "description": ""
+  },
+  {
+   "id": "pw.spawn_boar",
+   "name": "Yaban Domuzu",
+   "tab": "creatures",
+   "type": "spawn",
+   "params": {
+    "species": "sp.boar",
+    "add": {
+     "count": 1.0
+    }
+   },
+   "unlockedBy": null,
+   "description": ""
+  },
+  {
+   "id": "pw.spawn_goat",
+   "name": "Keçi",
+   "tab": "creatures",
+   "type": "spawn",
+   "params": {
+    "species": "sp.goat",
+    "add": {
+     "count": 1.0
+    }
+   },
+   "unlockedBy": null,
+   "description": "Dağlara tırmanır"
+  },
+  {
+   "id": "pw.spawn_owl",
+   "name": "Baykuş",
+   "tab": "creatures",
+   "type": "spawn",
+   "params": {
+    "species": "sp.owl",
+    "add": {
+     "count": 1.0
+    }
+   },
+   "unlockedBy": null,
+   "description": ""
+  },
+  {
+   "id": "pw.spawn_crow",
+   "name": "Karga",
+   "tab": "creatures",
+   "type": "spawn",
+   "params": {
+    "species": "sp.crow",
+    "add": {
+     "count": 1.0
+    }
+   },
+   "unlockedBy": null,
+   "description": "Zeki; ölüleri izler"
+  },
+  {
+   "id": "pw.spawn_eagle",
+   "name": "Kartal",
+   "tab": "creatures",
+   "type": "spawn",
+   "params": {
+    "species": "sp.eagle",
+    "add": {
+     "count": 1.0
+    }
+   },
+   "unlockedBy": null,
+   "description": ""
+  },
+  {
+   "id": "pw.spawn_parrot",
+   "name": "Papağan",
+   "tab": "creatures",
+   "type": "spawn",
+   "params": {
+    "species": "sp.parrot",
+    "add": {
+     "count": 1.0
+    }
+   },
+   "unlockedBy": null,
+   "description": "Taklitçi; dil öğrenmeye yatkın"
+  },
+  {
+   "id": "pw.spawn_seal",
+   "name": "Fok",
+   "tab": "creatures",
+   "type": "spawn",
+   "params": {
+    "species": "sp.seal",
+    "add": {
+     "count": 1.0
+    }
+   },
+   "unlockedBy": null,
+   "description": ""
+  },
+  {
+   "id": "pw.spawn_hyena",
+   "name": "Sırtlan",
+   "tab": "creatures",
+   "type": "spawn",
+   "params": {
+    "species": "sp.hyena",
+    "add": {
+     "count": 1.0
+    }
+   },
+   "unlockedBy": null,
+   "description": ""
+  },
+  {
+   "id": "pw.spawn_lion",
+   "name": "Aslan",
+   "tab": "creatures",
+   "type": "spawn",
+   "params": {
+    "species": "sp.lion",
+    "add": {
+     "count": 1.0
+    }
+   },
+   "unlockedBy": null,
+   "description": ""
+  },
+  {
+   "id": "pw.spawn_rhino",
+   "name": "Gergedan",
+   "tab": "creatures",
+   "type": "spawn",
+   "params": {
+    "species": "sp.rhino",
+    "add": {
+     "count": 1.0
+    }
+   },
+   "unlockedBy": null,
+   "description": "Hücum eder"
+  },
+  {
+   "id": "pw.spawn_buffalo",
+   "name": "Manda",
+   "tab": "creatures",
+   "type": "spawn",
+   "params": {
+    "species": "sp.buffalo",
+    "add": {
+     "count": 1.0
+    }
+   },
+   "unlockedBy": null,
+   "description": ""
+  },
+  {
+   "id": "pw.spawn_camel",
+   "name": "Deve",
+   "tab": "creatures",
+   "type": "spawn",
+   "params": {
+    "species": "sp.camel",
+    "add": {
+     "count": 1.0
+    }
+   },
+   "unlockedBy": null,
+   "description": ""
+  },
+  {
+   "id": "pw.spawn_reindeer",
+   "name": "Ren Geyiği",
+   "tab": "creatures",
+   "type": "spawn",
+   "params": {
+    "species": "sp.reindeer",
+    "add": {
+     "count": 1.0
+    }
+   },
+   "unlockedBy": null,
+   "description": ""
+  },
+  {
+   "id": "pw.spawn_polar_bear",
+   "name": "Kutup Ayısı",
+   "tab": "creatures",
+   "type": "spawn",
+   "params": {
+    "species": "sp.polar_bear",
+    "add": {
+     "count": 1.0
+    }
+   },
+   "unlockedBy": null,
+   "description": ""
+  },
+  {
+   "id": "pw.spawn_snail",
+   "name": "Salyangoz",
+   "tab": "creatures",
+   "type": "spawn",
+   "params": {
+    "species": "sp.snail",
+    "add": {
+     "count": 1.0
+    }
+   },
+   "unlockedBy": null,
+   "description": ""
+  },
+  {
+   "id": "pw.spawn_salamander",
+   "name": "Semender",
+   "tab": "creatures",
+   "type": "spawn",
+   "params": {
+    "species": "sp.salamander",
+    "add": {
+     "count": 1.0
+    }
+   },
+   "unlockedBy": null,
+   "description": "Ateşte yaşar"
+  },
+  {
+   "id": "pw.spawn_horse_wild",
+   "name": "Yaban Atı",
+   "tab": "creatures",
+   "type": "spawn",
+   "params": {
+    "species": "sp.horse_wild",
+    "add": {
+     "count": 1.0
+    }
+   },
+   "unlockedBy": null,
+   "description": "Evcilleşince binek"
+  },
+  {
+   "id": "pw.spawn_fish",
+   "name": "Balık",
+   "tab": "creatures",
+   "type": "spawn",
+   "params": {
+    "species": "sp.fish",
+    "add": {
+     "count": 1.0
+    }
+   },
+   "unlockedBy": null,
+   "description": "Besin kaynağı"
+  },
+  {
+   "id": "pw.spawn_butterfly",
+   "name": "Kelebek",
+   "tab": "creatures",
+   "type": "spawn",
+   "params": {
+    "species": "sp.butterfly",
+    "add": {
+     "count": 1.0
+    }
+   },
+   "unlockedBy": null,
+   "description": "Tırtıldan dönüşür"
+  },
+  {
+   "id": "pw.spawn_piranha",
+   "name": "Pirana",
+   "tab": "creatures",
+   "type": "spawn",
+   "params": {
+    "species": "sp.piranha",
+    "add": {
+     "count": 1.0
+    }
+   },
+   "unlockedBy": null,
+   "description": "Suya düşeni parçalar"
+  },
+  {
+   "id": "pw.spawn_mosquito_swarm",
+   "name": "Sivrisinek Sürüsü",
+   "tab": "creatures",
+   "type": "spawn",
+   "params": {
+    "species": "sp.mosquito_swarm",
+    "add": {
+     "count": 1.0
+    }
+   },
+   "unlockedBy": null,
+   "description": "Hastalık yayar"
+  },
+  {
+   "id": "pw.spawn_dragon",
+   "name": "Ejderha",
+   "tab": "creatures",
+   "type": "spawn",
+   "params": {
+    "species": "sp.dragon",
+    "add": {
+     "count": 1.0
+    }
+   },
+   "unlockedBy": "ach.dragon_age",
+   "description": "Şehirleri yakar, altın biriktirir"
+  },
+  {
+   "id": "pw.spawn_sandworm",
+   "name": "Kum Kurdu",
+   "tab": "creatures",
+   "type": "spawn",
+   "params": {
+    "species": "sp.sandworm",
+    "add": {
+     "count": 1.0
+    }
+   },
+   "unlockedBy": null,
+   "description": "Yerin altından çıkıp yutar"
+  },
+  {
+   "id": "pw.spawn_kraken",
+   "name": "Derin Canavarı",
+   "tab": "creatures",
+   "type": "spawn",
+   "params": {
+    "species": "sp.kraken",
+    "add": {
+     "count": 1.0
+    }
+   },
+   "unlockedBy": null,
+   "description": "Gemileri batırır"
+  },
+  {
+   "id": "pw.spawn_ember_imp",
+   "name": "Kor İblisi",
+   "tab": "creatures",
+   "type": "spawn",
+   "params": {
+    "species": "sp.ember_imp",
+    "add": {
+     "count": 1.0
+    }
+   },
+   "unlockedBy": null,
+   "description": "Yarıklardan çıkar"
+  },
+  {
+   "id": "pw.spawn_rot_crawler",
+   "name": "Çürük Sürüngen",
+   "tab": "creatures",
+   "type": "spawn",
+   "params": {
+    "species": "sp.rot_crawler",
+    "add": {
+     "count": 1.0
+    }
+   },
+   "unlockedBy": null,
+   "description": ""
+  },
+  {
+   "id": "pw.spawn_candy_golem",
+   "name": "Şeker Golemi",
+   "tab": "creatures",
+   "type": "spawn",
+   "params": {
+    "species": "sp.candy_golem",
+    "add": {
+     "count": 1.0
+    }
+   },
+   "unlockedBy": null,
+   "description": ""
+  },
+  {
+   "id": "pw.spawn_gummy_bear",
+   "name": "Jöle Ayı",
+   "tab": "creatures",
+   "type": "spawn",
+   "params": {
+    "species": "sp.gummy_bear",
+    "add": {
+     "count": 1.0
+    }
+   },
+   "unlockedBy": null,
+   "description": ""
+  },
+  {
+   "id": "pw.spawn_shroomling",
+   "name": "Mantarcık",
+   "tab": "creatures",
+   "type": "spawn",
+   "params": {
+    "species": "sp.shroomling",
+    "add": {
+     "count": 1.0
+    }
+   },
+   "unlockedBy": null,
+   "description": "Spor hastalığıyla dönüşenler"
+  },
+  {
+   "id": "pw.spawn_crystal_beetle",
+   "name": "Kristal Böcek",
+   "tab": "creatures",
+   "type": "spawn",
+   "params": {
+    "species": "sp.crystal_beetle",
+    "add": {
+     "count": 1.0
+    }
+   },
+   "unlockedBy": null,
+   "description": ""
+  },
+  {
+   "id": "pw.spawn_ash_crawler",
+   "name": "Kül Sürüngeni",
+   "tab": "creatures",
+   "type": "spawn",
+   "params": {
+    "species": "sp.ash_crawler",
+    "add": {
+     "count": 1.0
+    }
+   },
+   "unlockedBy": null,
+   "description": ""
+  },
+  {
+   "id": "pw.spawn_bone_crawler",
+   "name": "Kemik Örümceği",
+   "tab": "creatures",
+   "type": "spawn",
+   "params": {
+    "species": "sp.bone_crawler",
+    "add": {
+     "count": 1.0
+    }
+   },
+   "unlockedBy": null,
+   "description": ""
+  },
+  {
+   "id": "pw.spawn_clock_crab",
+   "name": "Saat Yengeci",
+   "tab": "creatures",
+   "type": "spawn",
+   "params": {
+    "species": "sp.clock_crab",
+    "add": {
+     "count": 1.0
+    }
+   },
+   "unlockedBy": null,
+   "description": "Yaşlanmaz"
+  },
+  {
+   "id": "pw.spawn_void_moth",
+   "name": "Boşluk Güvesi",
+   "tab": "creatures",
+   "type": "spawn",
+   "params": {
+    "species": "sp.void_moth",
+    "add": {
+     "count": 1.0
+    }
+   },
+   "unlockedBy": null,
+   "description": "Manayı emer"
+  },
+  {
+   "id": "pw.spawn_flesh_mound",
+   "name": "Et Yığını",
+   "tab": "creatures",
+   "type": "spawn",
+   "params": {
+    "species": "sp.flesh_mound",
+    "add": {
+     "count": 1.0
+    }
+   },
+   "unlockedBy": null,
+   "description": "Tümör hastalığından doğar"
+  },
+  {
+   "id": "pw.spawn_devourer",
+   "name": "Yutucu Kütle",
+   "tab": "creatures",
+   "type": "spawn",
+   "params": {
+    "species": "sp.devourer",
+    "add": {
+     "count": 1.0
+    }
+   },
+   "unlockedBy": "ach.mad_scientist",
+   "description": "Değdiği birimi kendine dönüştürür"
+  },
+  {
+   "id": "pw.spawn_slime",
+   "name": "Balçık",
+   "tab": "creatures",
+   "type": "spawn",
+   "params": {
+    "species": "sp.slime",
+    "add": {
+     "count": 1.0
+    }
+   },
+   "unlockedBy": null,
+   "description": "İkiye bölünerek çoğalır"
+  },
+  {
+   "id": "pw.spawn_walking_tree",
+   "name": "Yürüyen Ağaç",
+   "tab": "creatures",
+   "type": "spawn",
+   "params": {
+    "species": "sp.walking_tree",
+    "add": {
+     "count": 1.0
+    }
+   },
+   "unlockedBy": null,
+   "description": "Ormanları korur"
+  },
+  {
+   "id": "pw.spawn_fairy",
+   "name": "Peri",
+   "tab": "creatures",
+   "type": "spawn",
+   "params": {
+    "species": "sp.fairy",
+    "add": {
+     "count": 1.0
+    }
+   },
+   "unlockedBy": null,
+   "description": "Çiçekleri büyütür"
+  },
+  {
+   "id": "pw.spawn_sky_whale_calf",
+   "name": "Gök Balinası Yavrusu",
+   "tab": "creatures",
+   "type": "spawn",
+   "params": {
+    "species": "sp.sky_whale_calf",
+    "add": {
+     "count": 1.0
+    }
+   },
+   "unlockedBy": null,
+   "description": "Gökte süzülür"
+  },
+  {
+   "id": "pw.spawn_skeleton",
+   "name": "İskelet",
+   "tab": "creatures",
+   "type": "spawn",
+   "params": {
+    "species": "sp.skeleton",
+    "add": {
+     "count": 1.0
+    }
+   },
+   "unlockedBy": null,
+   "description": "Ölü diriltmeyle doğar"
+  },
+  {
+   "id": "pw.spawn_zombie",
+   "name": "Zombi",
+   "tab": "creatures",
+   "type": "spawn",
+   "params": {
+    "species": "sp.zombie",
+    "add": {
+     "count": 1.0
+    }
+   },
+   "unlockedBy": null,
+   "description": "Isırdığını dönüştürür"
+  },
+  {
+   "id": "pw.spawn_zombie_runner",
+   "name": "Koşucu Zombi",
+   "tab": "creatures",
+   "type": "spawn",
+   "params": {
+    "species": "sp.zombie_runner",
+    "add": {
+     "count": 1.0
+    }
+   },
+   "unlockedBy": null,
+   "description": "Taze dönüşmüş; hızlı ama çabuk çürür (ömür 3 yıl)"
+  },
+  {
+   "id": "pw.spawn_zombie_brute",
+   "name": "İri Zombi",
+   "tab": "creatures",
+   "type": "spawn",
+   "params": {
+    "species": "sp.zombie_brute",
+    "add": {
+     "count": 1.0
+    }
+   },
+   "unlockedBy": null,
+   "description": "İri birimlerden (ork, ayı, dev) dönüşür; kapıları kırar"
+  },
+  {
+   "id": "pw.spawn_zombie_bloater",
+   "name": "Şişkin Zombi",
+   "tab": "creatures",
+   "type": "spawn",
+   "params": {
+    "species": "sp.zombie_bloater",
+    "add": {
+     "count": 1.0
+    }
+   },
+   "unlockedBy": null,
+   "description": "Ölünce patlar; çevresine çürük bulutu yayar"
+  },
+  {
+   "id": "pw.spawn_zombie_crawler",
+   "name": "Sürünen Zombi",
+   "tab": "creatures",
+   "type": "spawn",
+   "params": {
+    "species": "sp.zombie_crawler",
+    "add": {
+     "count": 1.0
+    }
+   },
+   "unlockedBy": null,
+   "description": "Bacaksız; pusuda bekler, yüzebilir"
+  },
+  {
+   "id": "pw.spawn_zombie_beast",
+   "name": "Zombi Hayvan",
+   "tab": "creatures",
+   "type": "spawn",
+   "params": {
+    "species": "sp.zombie_beast",
+    "add": {
+     "count": 1.0
+    }
+   },
+   "unlockedBy": null,
+   "description": "Enfekte hayvan: kendi türünün istatistikleri x0.8, hız x0.7, çürük paleti"
+  },
+  {
+   "id": "pw.spawn_zombie_dragon",
+   "name": "Çürük Ejderha",
+   "tab": "creatures",
+   "type": "spawn",
+   "params": {
+    "species": "sp.zombie_dragon",
+    "add": {
+     "count": 1.0
+    }
+   },
+   "unlockedBy": null,
+   "description": "Ölen ejderha dönüşürse; ateş yerine çürük nefes"
+  },
+  {
+   "id": "pw.spawn_zombie_lord",
+   "name": "Zombi Efendisi",
+   "tab": "creatures",
+   "type": "spawn",
+   "params": {
+    "species": "sp.zombie_lord",
+    "add": {
+     "count": 1.0
+    }
+   },
+   "unlockedBy": null,
+   "description": "Büyük sürülerde 500 zombi başına bir tane doğar; sürüyü yönetir"
+  },
+  {
+   "id": "pw.spawn_ghost",
+   "name": "Hayalet",
+   "tab": "creatures",
+   "type": "spawn",
+   "params": {
+    "species": "sp.ghost",
+    "add": {
+     "count": 1.0
+    }
+   },
+   "unlockedBy": null,
+   "description": "Duvarlardan geçer"
+  },
+  {
+   "id": "pw.spawn_necromancer",
+   "name": "Ölü Çağırıcı",
+   "tab": "creatures",
+   "type": "spawn",
+   "params": {
+    "species": "sp.necromancer",
+    "add": {
+     "count": 1.0
+    }
+   },
+   "unlockedBy": null,
+   "description": "Mezarlıklarda güçlenir"
+  },
+  {
+   "id": "pw.spawn_bloodsucker",
+   "name": "Kan Emici",
+   "tab": "creatures",
+   "type": "spawn",
+   "params": {
+    "species": "sp.bloodsucker",
+    "add": {
+     "count": 1.0
+    }
+   },
+   "unlockedBy": null,
+   "description": "Sarımsaktan kaçar"
+  },
+  {
+   "id": "pw.spawn_fire_elemental",
+   "name": "Ateş Elementali",
+   "tab": "creatures",
+   "type": "spawn",
+   "params": {
+    "species": "sp.fire_elemental",
+    "add": {
+     "count": 1.0
+    }
+   },
+   "unlockedBy": null,
+   "description": "Soğuk çağlarda erir"
+  },
+  {
+   "id": "pw.spawn_water_elemental",
+   "name": "Su Elementali",
+   "tab": "creatures",
+   "type": "spawn",
+   "params": {
+    "species": "sp.water_elemental",
+    "add": {
+     "count": 1.0
+    }
+   },
+   "unlockedBy": null,
+   "description": "Yangın söndürür"
+  },
+  {
+   "id": "pw.spawn_earth_golem",
+   "name": "Toprak Golemi",
+   "tab": "creatures",
+   "type": "spawn",
+   "params": {
+    "species": "sp.earth_golem",
+    "add": {
+     "count": 1.0
+    }
+   },
+   "unlockedBy": null,
+   "description": "Yavaş ama durdurulamaz"
+  },
+  {
+   "id": "pw.spawn_snowman",
+   "name": "Kardan Adam",
+   "tab": "creatures",
+   "type": "spawn",
+   "params": {
+    "species": "sp.snowman",
+    "add": {
+     "count": 1.0
+    }
+   },
+   "unlockedBy": null,
+   "description": "Sıcakta erir"
+  },
+  {
+   "id": "pw.spawn_storm_spirit",
+   "name": "Fırtına Ruhu",
+   "tab": "creatures",
+   "type": "spawn",
+   "params": {
+    "species": "sp.storm_spirit",
+    "add": {
+     "count": 1.0
+    }
+   },
+   "unlockedBy": null,
+   "description": ""
+  },
+  {
+   "id": "pw.spawn_dark_mage",
+   "name": "Kara Büyücü",
+   "tab": "creatures",
+   "type": "spawn",
+   "params": {
+    "species": "sp.dark_mage",
+    "add": {
+     "count": 1.0
+    }
+   },
+   "unlockedBy": null,
+   "description": "Köyleri yakar"
+  },
+  {
+   "id": "pw.spawn_white_mage",
+   "name": "Ak Büyücü",
+   "tab": "creatures",
+   "type": "spawn",
+   "params": {
+    "species": "sp.white_mage",
+    "add": {
+     "count": 1.0
+    }
+   },
+   "unlockedBy": null,
+   "description": "Yaralıları iyileştirir"
+  },
+  {
+   "id": "pw.spawn_druid",
+   "name": "Druid",
+   "tab": "creatures",
+   "type": "spawn",
+   "params": {
+    "species": "sp.druid",
+    "add": {
+     "count": 1.0
+    }
+   },
+   "unlockedBy": null,
+   "description": ""
+  },
+  {
+   "id": "pw.spawn_sky_visitor",
+   "name": "Gök Ziyaretçisi",
+   "tab": "creatures",
+   "type": "spawn",
+   "params": {
+    "species": "sp.sky_visitor",
+    "add": {
+     "count": 1.0
+    }
+   },
+   "unlockedBy": "ach.star_gazer",
+   "description": "Gemilerle iner"
+  },
+  {
+   "id": "pw.spawn_colossus",
+   "name": "Mekanik Dev",
+   "tab": "creatures",
+   "type": "spawn",
+   "params": {
+    "species": "sp.colossus",
+    "add": {
+     "count": 1.0
+    }
+   },
+   "unlockedBy": "ach.destroyer",
+   "description": "Oyuncunun yönetebildiği dev savaş makinesi"
+  },
+  {
+   "id": "pw.spawn_bandit",
+   "name": "Haydut",
+   "tab": "creatures",
+   "type": "spawn",
+   "params": {
+    "species": "sp.bandit",
+    "add": {
+     "count": 1.0
+    }
+   },
+   "unlockedBy": null,
+   "description": "Kanunsuz insanlar; köy yağmalar"
+  },
+  {
+   "id": "pw.spawn_cultist",
+   "name": "Tarikatçı",
+   "tab": "creatures",
+   "type": "spawn",
+   "params": {
+    "species": "sp.cultist",
+    "add": {
+     "count": 1.0
+    }
+   },
+   "unlockedBy": null,
+   "description": "Karanlık ritüeller"
+  },
+  {
+   "id": "pw.cloud_rain",
+   "name": "Yağmur Bulutu",
+   "tab": "nature",
+   "type": "spawn",
+   "params": {
+    "spawn": "cloud.rain"
+   },
+   "unlockedBy": null,
+   "description": "Yangın söndürür, bitki büyütür, lavı soğutur"
+  },
+  {
+   "id": "pw.cloud_snow",
+   "name": "Kar Bulutu",
+   "tab": "nature",
+   "type": "spawn",
+   "params": {
+    "spawn": "cloud.snow"
+   },
+   "unlockedBy": null,
+   "description": "Kar örtüsü, suyu dondurur"
+  },
+  {
+   "id": "pw.cloud_acid",
+   "name": "Asit Bulutu",
+   "tab": "nature",
+   "type": "spawn",
+   "params": {
+    "spawn": "cloud.acid"
+   },
+   "unlockedBy": null,
+   "description": "Tile'ı bir seviye eritir, birimlere hasar"
+  },
+  {
+   "id": "pw.cloud_lava",
+   "name": "Lav Bulutu",
+   "tab": "nature",
+   "type": "spawn",
+   "params": {
+    "spawn": "cloud.lava"
+   },
+   "unlockedBy": null,
+   "description": "Kızgın lav damlatır"
+  },
+  {
+   "id": "pw.cloud_life",
+   "name": "Yaşam Bulutu",
+   "tab": "nature",
+   "type": "spawn",
+   "params": {
+    "spawn": "cloud.life"
+   },
+   "unlockedBy": null,
+   "description": "Biyomun hayvanlarını/uygarlıklarını doğurur"
+  },
+  {
+   "id": "pw.cloud_storm",
+   "name": "Fırtına Bulutu",
+   "tab": "nature",
+   "type": "spawn",
+   "params": {
+    "spawn": "cloud.storm"
+   },
+   "unlockedBy": null,
+   "description": "Rastgele yıldırım düşürür"
+  },
+  {
+   "id": "pw.cloud_ash",
+   "name": "Kül Bulutu",
+   "tab": "nature",
+   "type": "spawn",
+   "params": {
+    "spawn": "cloud.ash"
+   },
+   "unlockedBy": null,
+   "description": "Güneşi keser: sıcaklık -5, bitki büyümesi durur"
+  },
+  {
+   "id": "pw.cloud_blessing",
+   "name": "Kutsal Bulut",
+   "tab": "nature",
+   "type": "spawn",
+   "params": {
+    "spawn": "cloud.blessing"
+   },
+   "unlockedBy": null,
+   "description": "Altındakilere 'Kutsanmış' statüsü"
+  },
+  {
+   "id": "pw.cloud_plague",
+   "name": "Veba Sisi",
+   "tab": "nature",
+   "type": "spawn",
+   "params": {
+    "spawn": "cloud.plague"
+   },
+   "unlockedBy": "ach.plague_lord",
+   "description": "Altındakilere veba bulaştırma şansı"
+  },
+  {
+   "id": "pw.cloud_rot",
+   "name": "Çürük Bulutu",
+   "tab": "nature",
+   "type": "spawn",
+   "params": {
+    "spawn": "cloud.rot"
+   },
+   "unlockedBy": null,
+   "description": "Altındakilere çürük ısırık bulaştırır"
+  },
+  {
+   "id": "pw.cloud_candy",
+   "name": "Şeker Yağmuru",
+   "tab": "nature",
+   "type": "spawn",
+   "params": {
+    "spawn": "cloud.candy"
+   },
+   "unlockedBy": null,
+   "description": "Şekerleme düşürür, yiyecek verir"
+  },
+  {
+   "id": "pw.fire",
+   "name": "Ateş",
+   "tab": "nature",
+   "type": "drop",
+   "params": {
+    "add": {
+     "fire": 120.0
+    }
+   },
+   "unlockedBy": null,
+   "description": "Tutuşturur"
+  },
+  {
+   "id": "pw.extinguish",
+   "name": "Söndür",
+   "tab": "nature",
+   "type": "brush",
+   "params": {
+    "op": "extinguish"
+   },
+   "unlockedBy": null,
+   "description": ""
+  },
+  {
+   "id": "pw.snow",
+   "name": "Kar",
+   "tab": "nature",
+   "type": "drop",
+   "params": {
+    "flags": [
+     "snow"
+    ],
+    "add": {
+     "freezeWater": 1.0
+    }
+   },
+   "unlockedBy": null,
+   "description": ""
+  },
+  {
+   "id": "pw.ice",
+   "name": "Buz",
+   "tab": "nature",
+   "type": "brush",
+   "params": {
+    "op": "freeze"
+   },
+   "unlockedBy": null,
+   "description": "Suyu dondurur"
+  },
+  {
+   "id": "pw.lava",
+   "name": "Lav",
+   "tab": "nature",
+   "type": "drop",
+   "params": {
+    "spawn": "tile.lava_hot"
+   },
+   "unlockedBy": null,
+   "description": ""
+  },
+  {
+   "id": "pw.cool_lava",
+   "name": "Lav Soğut",
+   "tab": "nature",
+   "type": "brush",
+   "params": {
+    "op": "cool_lava"
+   },
+   "unlockedBy": null,
+   "description": ""
+  },
+  {
+   "id": "pw.tornado",
+   "name": "Hortum",
+   "tab": "nature",
+   "type": "spawn",
+   "params": {
+    "spawn": "tornado",
+    "add": {
+     "durationTicks": 600.0
+    }
+   },
+   "unlockedBy": null,
+   "description": ""
+  },
+  {
+   "id": "pw.earthquake",
+   "name": "Deprem",
+   "tab": "nature",
+   "type": "target",
+   "params": {
+    "quake": "radius:30"
+   },
+   "unlockedBy": null,
+   "description": "Çatlak hattı oluşturur"
+  },
+  {
+   "id": "pw.tsunami",
+   "name": "Dev Dalga",
+   "tab": "nature",
+   "type": "target",
+   "params": {
+    "wave": "dir:auto",
+    "add": {
+     "power": 1.0
+    }
+   },
+   "unlockedBy": null,
+   "description": ""
+  },
+  {
+   "id": "pw.volcano",
+   "name": "Yanardağ",
+   "tab": "nature",
+   "type": "spawn",
+   "params": {
+    "spawn": "volcano"
+   },
+   "unlockedBy": null,
+   "description": "Yükselir, lav püskürtür"
+  },
+  {
+   "id": "pw.geyser",
+   "name": "Gayzer",
+   "tab": "nature",
+   "type": "spawn",
+   "params": {
+    "spawn": "geyser"
+   },
+   "unlockedBy": null,
+   "description": "Sıcak su fışkırtır"
+  },
+  {
+   "id": "pw.meteor",
+   "name": "Göktaşı",
+   "tab": "nature",
+   "type": "drop",
+   "params": {
+    "explosion": "medium",
+    "leaves": "ore_skyiron"
+   },
+   "unlockedBy": null,
+   "description": ""
+  },
+  {
+   "id": "pw.lightning",
+   "name": "Yıldırım",
+   "tab": "nature",
+   "type": "drop",
+   "params": {
+    "add": {
+     "dmg": 150.0,
+     "fire": 60.0,
+     "stun": 10.0
+    }
+   },
+   "unlockedBy": null,
+   "description": ""
+  },
+  {
+   "id": "pw.flood",
+   "name": "Sel",
+   "tab": "nature",
+   "type": "target",
+   "params": {
+    "flood": "radius:25"
+   },
+   "unlockedBy": null,
+   "description": ""
+  },
+  {
+   "id": "pw.plague",
+   "name": "Veba",
+   "tab": "nature",
+   "type": "target",
+   "params": {
+    "infect": "dis_plague"
+   },
+   "unlockedBy": "ach.plague_lord",
+   "description": ""
+  },
+  {
+   "id": "pw.rotbite",
+   "name": "Çürük Isırık",
+   "tab": "nature",
+   "type": "target",
+   "params": {
+    "infect": "dis_rotbite"
+   },
+   "unlockedBy": null,
+   "description": ""
+  },
+  {
+   "id": "pw.fleshgrowth",
+   "name": "Et Büyümesi",
+   "tab": "nature",
+   "type": "target",
+   "params": {
+    "infect": "dis_fleshgrowth"
+   },
+   "unlockedBy": null,
+   "description": ""
+  },
+  {
+   "id": "pw.spores",
+   "name": "Spor",
+   "tab": "nature",
+   "type": "target",
+   "params": {
+    "infect": "dis_spores"
+   },
+   "unlockedBy": null,
+   "description": ""
+  },
+  {
+   "id": "pw.madness",
+   "name": "Cinnet",
+   "tab": "nature",
+   "type": "target",
+   "params": {
+    "infect": "dis_black_madness"
+   },
+   "unlockedBy": null,
+   "description": ""
+  },
+  {
+   "id": "pw.zombie_serum",
+   "name": "Arınma Serumu",
+   "tab": "nature",
+   "type": "brush",
+   "params": {
+    "cure": "dis_rotbite",
+    "removeStatus": "turning"
+   },
+   "unlockedBy": null,
+   "description": "Dönüşmekte olanları kurtarır (zombileri değil)"
+  },
+  {
+   "id": "pw.raise_dead",
+   "name": "Ölüleri Kaldır",
+   "tab": "nature",
+   "type": "brush",
+   "params": {
+    "reanimate": "corpses",
+    "as": "zombie"
+   },
+   "unlockedBy": "ach.zombie_world",
+   "description": "Alandaki cesetler zombi olur"
+  },
+  {
+   "id": "pw.divine_light",
+   "name": "Kutsal Işık",
+   "tab": "nature",
+   "type": "brush",
+   "params": {
+    "cure": "all",
+    "status": "blessed"
+   },
+   "unlockedBy": null,
+   "description": "Hastalık, cinnet ve çürüğü temizler"
+  },
+  {
+   "id": "pw.monolith",
+   "name": "Monolit",
+   "tab": "nature",
+   "type": "spawn",
+   "params": {
+    "spawn": "monolith",
+    "add": {
+     "radius": 20.0,
+     "intervalYears": 20.0
+    }
+   },
+   "unlockedBy": "ach.first_civ",
+   "description": "Çevredeki hayvanları evrimleştirir"
+  },
+  {
+   "id": "pw.golden_brain",
+   "name": "Altın Beyin",
+   "tab": "nature",
+   "type": "spawn",
+   "params": {
+    "spawn": "lure",
+    "attract": "brain_eaters"
+   },
+   "unlockedBy": null,
+   "description": "Zombileri çeker"
+  },
+  {
+   "id": "pw.fertile_rain",
+   "name": "Bereket",
+   "tab": "nature",
+   "type": "brush",
+   "params": {
+    "add": {
+     "growPlants": 1.0
+    },
+    "pct": {
+     "fertility": 50.0
+    }
+   },
+   "unlockedBy": null,
+   "description": ""
+  },
+  {
+   "id": "pw.drought",
+   "name": "Kuraklık",
+   "tab": "nature",
+   "type": "brush",
+   "params": {
+    "dryWater": "shallow",
+    "pct": {
+     "killPlants": 30.0
+    }
+   },
+   "unlockedBy": null,
+   "description": ""
+  },
+  {
+   "id": "pw.heat",
+   "name": "Isı Dalgası",
+   "tab": "nature",
+   "type": "brush",
+   "params": {
+    "add": {
+     "temp": 20.0
+    }
+   },
+   "unlockedBy": null,
+   "description": ""
+  },
+  {
+   "id": "pw.cold",
+   "name": "Ayaz",
+   "tab": "nature",
+   "type": "brush",
+   "params": {
+    "add": {
+     "temp": -20.0
+    }
+   },
+   "unlockedBy": null,
+   "description": ""
+  },
+  {
+   "id": "pw.blessing",
+   "name": "Kutsama",
+   "tab": "nature",
+   "type": "target",
+   "params": {
+    "target": "unit",
+    "status": "blessed"
+   },
+   "unlockedBy": null,
+   "description": ""
+  },
+  {
+   "id": "pw.curse",
+   "name": "Lanet",
+   "tab": "nature",
+   "type": "target",
+   "params": {
+    "target": "unit",
+    "status": "cursed"
+   },
+   "unlockedBy": null,
+   "description": ""
+  },
+  {
+   "id": "pw.bomb",
+   "name": "Bomba",
+   "tab": "destruction",
+   "type": "drop",
+   "params": {
+    "explosion": "small",
+    "add": {
+     "radius": 4.0
+    }
+   },
+   "unlockedBy": null,
+   "description": ""
+  },
+  {
+   "id": "pw.dynamite",
+   "name": "Dinamit",
+   "tab": "destruction",
+   "type": "drop",
+   "params": {
+    "explosion": "small",
+    "add": {
+     "radius": 3.0,
+     "delay": 30.0
+    }
+   },
+   "unlockedBy": null,
+   "description": "Fitil yanar"
+  },
+  {
+   "id": "pw.napalm",
+   "name": "Napalm",
+   "tab": "destruction",
+   "type": "drop",
+   "params": {
+    "add": {
+     "fire": 255.0,
+     "radius": 8.0
+    }
+   },
+   "unlockedBy": null,
+   "description": ""
+  },
+  {
+   "id": "pw.cluster",
+   "name": "Parça Bombası",
+   "tab": "destruction",
+   "type": "drop",
+   "params": {
+    "explosion": "small",
+    "add": {
+     "count": 8.0,
+     "spread": 10.0
+    }
+   },
+   "unlockedBy": null,
+   "description": ""
+  },
+  {
+   "id": "pw.atomic",
+   "name": "Atom Bombası",
+   "tab": "destruction",
+   "type": "drop",
+   "params": {
+    "explosion": "huge",
+    "add": {
+     "radius": 40.0,
+     "irradiate": 1.0
+    },
+    "tile": "wasteland"
+   },
+   "unlockedBy": "ach.destroyer",
+   "description": ""
+  },
+  {
+   "id": "pw.antimatter",
+   "name": "Karşı Madde",
+   "tab": "destruction",
+   "type": "drop",
+   "params": {
+    "explosion": "void",
+    "add": {
+     "radius": 60.0,
+     "deleteTiles": 1.0
+    }
+   },
+   "unlockedBy": "ach.world_eater",
+   "description": "Her şeyi siler"
+  },
+  {
+   "id": "pw.heat_ray",
+   "name": "Isı Işını",
+   "tab": "destruction",
+   "type": "brush",
+   "params": {
+    "add": {
+     "ray": 1.0,
+     "fire": 1.0,
+     "meltTile": 1.0
+    },
+    "dmg": "40/tick"
+   },
+   "unlockedBy": null,
+   "description": ""
+  },
+  {
+   "id": "pw.black_hole",
+   "name": "Kara Delik",
+   "tab": "destruction",
+   "type": "spawn",
+   "params": {
+    "pull": "radius:25",
+    "add": {
+     "durationTicks": 400.0
+    }
+   },
+   "unlockedBy": "ach.world_eater",
+   "description": ""
+  },
+  {
+   "id": "pw.fireball",
+   "name": "Ateş Topu",
+   "tab": "destruction",
+   "type": "drop",
+   "params": {
+    "explosion": "small",
+    "add": {
+     "fire": 150.0
+    }
+   },
+   "unlockedBy": null,
+   "description": ""
+  },
+  {
+   "id": "pw.goo",
+   "name": "Yutan Balçık",
+   "tab": "destruction",
+   "type": "drop",
+   "params": {
+    "spawn": "tile.goo"
+   },
+   "unlockedBy": "ach.mad_scientist",
+   "description": "Kanunla sınırlandırılabilir"
+  },
+  {
+   "id": "pw.ice_bomb",
+   "name": "Buz Bombası",
+   "tab": "destruction",
+   "type": "drop",
+   "params": {
+    "freeze": "radius:10"
+   },
+   "unlockedBy": null,
+   "description": ""
+  },
+  {
+   "id": "pw.storm",
+   "name": "Şimşek Fırtınası",
+   "tab": "destruction",
+   "type": "target",
+   "params": {
+    "lightning": "count:20",
+    "add": {
+     "radius": 20.0
+    }
+   },
+   "unlockedBy": null,
+   "description": ""
+  },
+  {
+   "id": "pw.acid",
+   "name": "Asit Damlası",
+   "tab": "destruction",
+   "type": "drop",
+   "params": {
+    "add": {
+     "meltTile": 1.0,
+     "dmg": 30.0
+    }
+   },
+   "unlockedBy": null,
+   "description": ""
+  },
+  {
+   "id": "pw.finger",
+   "name": "Dürtme Parmağı",
+   "tab": "destruction",
+   "type": "target",
+   "params": {
+    "add": {
+     "poke": 1.0
+    },
+    "knockback": "high"
+   },
+   "unlockedBy": null,
+   "description": "Birimi fırlatır"
+  },
+  {
+   "id": "pw.stomp",
+   "name": "Ezme",
+   "tab": "destruction",
+   "type": "drop",
+   "params": {
+    "add": {
+     "dmg": 9999.0,
+     "radius": 2.0,
+     "crushBuildings": 1.0
+    }
+   },
+   "unlockedBy": null,
+   "description": ""
+  },
+  {
+   "id": "pw.shockwave",
+   "name": "Şok Dalgası",
+   "tab": "destruction",
+   "type": "drop",
+   "params": {
+    "knockback": "radius:15"
+   },
+   "unlockedBy": null,
+   "description": ""
+  },
+  {
+   "id": "pw.life_game",
+   "name": "Hayat Oyunu",
+   "tab": "other",
+   "type": "brush",
+   "params": {
+    "automaton": "conway"
+   },
+   "unlockedBy": null,
+   "description": "Hücreler tile boyar, birimleri ezer"
+  },
+  {
+   "id": "pw.ant",
+   "name": "Tur Karıncası",
+   "tab": "other",
+   "type": "spawn",
+   "params": {
+    "automaton": "langton"
+   },
+   "unlockedBy": null,
+   "description": ""
+  },
+  {
+   "id": "pw.fireworks",
+   "name": "Havai Fişek",
+   "tab": "other",
+   "type": "drop",
+   "params": {
+    "vfx": "fireworks",
+    "add": {
+     "happiness": 2.0
+    }
+   },
+   "unlockedBy": null,
+   "description": ""
+  },
+  {
+   "id": "pw.confetti",
+   "name": "Konfeti",
+   "tab": "other",
+   "type": "drop",
+   "params": {
+    "vfx": "confetti"
+   },
+   "unlockedBy": null,
+   "description": ""
+  },
+  {
+   "id": "pw.inspect",
+   "name": "İncele",
+   "tab": "other",
+   "type": "target",
+   "params": {
+    "open": "inspect"
+   },
+   "unlockedBy": null,
+   "description": ""
+  },
+  {
+   "id": "pw.follow",
+   "name": "Takip Et",
+   "tab": "other",
+   "type": "target",
+   "params": {
+    "camera": "follow"
+   },
+   "unlockedBy": null,
+   "description": ""
+  },
+  {
+   "id": "pw.possess",
+   "name": "Ruh Girişi",
+   "tab": "other",
+   "type": "target",
+   "params": {
+    "add": {
+     "possess": 1.0
+    }
+   },
+   "unlockedBy": "ach.first_civ",
+   "description": "Birimi doğrudan kontrol et"
+  },
+  {
+   "id": "pw.eye",
+   "name": "Keşif Gözü",
+   "tab": "other",
+   "type": "toggle",
+   "params": {
+    "highlight": "undiscovered_traits"
+   },
+   "unlockedBy": null,
+   "description": ""
+  },
+  {
+   "id": "pw.stats",
+   "name": "Dünya İstatistikleri",
+   "tab": "other",
+   "type": "window",
+   "params": {
+    "window": "stats"
+   },
+   "unlockedBy": null,
+   "description": ""
+  },
+  {
+   "id": "pw.graphs",
+   "name": "Grafikler",
+   "tab": "other",
+   "type": "window",
+   "params": {
+    "window": "graphs"
+   },
+   "unlockedBy": null,
+   "description": ""
+  },
+  {
+   "id": "pw.history",
+   "name": "Dünya Tarihi",
+   "tab": "other",
+   "type": "window",
+   "params": {
+    "window": "history"
+   },
+   "unlockedBy": null,
+   "description": ""
+  },
+  {
+   "id": "pw.laws",
+   "name": "Dünya Kanunları",
+   "tab": "other",
+   "type": "window",
+   "params": {
+    "window": "laws"
+   },
+   "unlockedBy": null,
+   "description": ""
+  },
+  {
+   "id": "pw.era_clock",
+   "name": "Çağ Saati",
+   "tab": "other",
+   "type": "window",
+   "params": {
+    "window": "eras"
+   },
+   "unlockedBy": null,
+   "description": ""
+  },
+  {
+   "id": "pw.ed_unit",
+   "name": "Birim Editörü",
+   "tab": "other",
+   "type": "window",
+   "params": {
+    "window": "editor_unit"
+   },
+   "unlockedBy": null,
+   "description": ""
+  },
+  {
+   "id": "pw.ed_subspecies",
+   "name": "Alt Tür Editörü",
+   "tab": "other",
+   "type": "window",
+   "params": {
+    "window": "editor_subspecies"
+   },
+   "unlockedBy": null,
+   "description": ""
+  },
+  {
+   "id": "pw.ed_genes",
+   "name": "Gen Editörü",
+   "tab": "other",
+   "type": "window",
+   "params": {
+    "window": "editor_genes"
+   },
+   "unlockedBy": "ach.gene_splicer",
+   "description": ""
+  },
+  {
+   "id": "pw.ed_clan",
+   "name": "Klan Editörü",
+   "tab": "other",
+   "type": "window",
+   "params": {
+    "window": "editor_clan"
+   },
+   "unlockedBy": null,
+   "description": ""
+  },
+  {
+   "id": "pw.ed_culture",
+   "name": "Kültür Editörü",
+   "tab": "other",
+   "type": "window",
+   "params": {
+    "window": "editor_culture"
+   },
+   "unlockedBy": null,
+   "description": ""
+  },
+  {
+   "id": "pw.ed_religion",
+   "name": "Din Editörü",
+   "tab": "other",
+   "type": "window",
+   "params": {
+    "window": "editor_religion"
+   },
+   "unlockedBy": null,
+   "description": ""
+  },
+  {
+   "id": "pw.ed_language",
+   "name": "Dil Editörü",
+   "tab": "other",
+   "type": "window",
+   "params": {
+    "window": "editor_language"
+   },
+   "unlockedBy": null,
+   "description": ""
+  },
+  {
+   "id": "pw.ed_kingdom",
+   "name": "Krallık Editörü",
+   "tab": "other",
+   "type": "window",
+   "params": {
+    "window": "editor_kingdom"
+   },
+   "unlockedBy": null,
+   "description": ""
+  },
+  {
+   "id": "pw.ed_item",
+   "name": "Eşya Editörü",
+   "tab": "other",
+   "type": "window",
+   "params": {
+    "window": "editor_item"
+   },
+   "unlockedBy": null,
+   "description": ""
+  },
+  {
+   "id": "pw.meta_control",
+   "name": "Meta Kontrol",
+   "tab": "other",
+   "type": "target",
+   "params": {
+    "control": "meta"
+   },
+   "unlockedBy": "ach.puppet_master",
+   "description": "Bir krallığı/dini yönet"
+  },
+  {
+   "id": "pw.save",
+   "name": "Kaydet",
+   "tab": "other",
+   "type": "window",
+   "params": {
+    "window": "save"
+   },
+   "unlockedBy": null,
+   "description": ""
+  },
+  {
+   "id": "pw.load",
+   "name": "Yükle",
+   "tab": "other",
+   "type": "window",
+   "params": {
+    "window": "load"
+   },
+   "unlockedBy": null,
+   "description": ""
+  },
+  {
+   "id": "pw.achievements",
+   "name": "Başarımlar",
+   "tab": "other",
+   "type": "window",
+   "params": {
+    "window": "achievements"
+   },
+   "unlockedBy": null,
+   "description": ""
+  },
+  {
+   "id": "pw.settings",
+   "name": "Ayarlar",
+   "tab": "other",
+   "type": "window",
+   "params": {
+    "window": "settings"
+   },
+   "unlockedBy": null,
+   "description": ""
+  },
+  {
+   "id": "pw.tutorial",
+   "name": "Öğretici",
+   "tab": "other",
+   "type": "window",
+   "params": {
+    "window": "tutorial"
+   },
+   "unlockedBy": null,
+   "description": ""
+  },
+  {
+   "id": "pw.new_world",
+   "name": "Yeni Dünya",
+   "tab": "other",
+   "type": "window",
+   "params": {
+    "window": "worldgen"
+   },
+   "unlockedBy": null,
+   "description": ""
+  }
+ ]
+}

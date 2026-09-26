@@ -1,0 +1,49 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "title": "materials",
+ "type": "object",
+ "required": [
+  "category",
+  "items"
+ ],
+ "properties": {
+  "category": {
+   "const": "materials"
+  },
+  "count": {
+   "type": "integer"
+  },
+  "items": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "required": [
+     "id",
+     "multiplier",
+     "name",
+     "special",
+     "tier"
+    ],
+    "properties": {
+     "id": {
+      "type": "string",
+      "pattern": "^mat\\.[a-z0-9_]+$"
+     },
+     "name": {
+      "type": "string"
+     },
+     "multiplier": {
+      "type": "number"
+     },
+     "tier": {
+      "type": "integer"
+     },
+     "special": {
+      "type": "string"
+     }
+    },
+    "additionalProperties": true
+   }
+  }
+ }
+}

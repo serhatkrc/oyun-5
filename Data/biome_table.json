@@ -1,0 +1,74 @@
+{
+ "category": "biome_table",
+ "count": 1,
+ "items": [
+  {
+   "id": "bt.default",
+   "grid": [
+    [
+     "bio.tundra",
+     "bio.tundra",
+     "bio.tundra",
+     "bio.snowpine",
+     "bio.snowpine",
+     "bio.snowpine"
+    ],
+    [
+     "bio.rocklands",
+     "bio.grassland",
+     "bio.birch",
+     "bio.birch",
+     "bio.snowpine",
+     "bio.swamp"
+    ],
+    [
+     "bio.rocklands",
+     "bio.grassland",
+     "bio.grassland",
+     "bio.forest",
+     "bio.forest",
+     "bio.swamp"
+    ],
+    [
+     "bio.savanna",
+     "bio.grassland",
+     "bio.flower",
+     "bio.forest",
+     "bio.maple",
+     "bio.swamp"
+    ],
+    [
+     "bio.desert",
+     "bio.savanna",
+     "bio.savanna",
+     "bio.forest",
+     "bio.jungle",
+     "bio.jungle"
+    ],
+    [
+     "bio.desert",
+     "bio.desert",
+     "bio.savanna",
+     "bio.jungle",
+     "bio.jungle",
+     "bio.jungle"
+    ]
+   ],
+   "patches": [
+    "bio.clover",
+    "bio.mushroom",
+    "bio.crystal",
+    "bio.enchanted",
+    "bio.candy",
+    "bio.citrus",
+    "bio.garlic",
+    "bio.celestial"
+   ],
+   "patchSize": [
+    150,
+    800
+   ],
+   "patchesPerChunk": 0.4
+  }
+ ]
+}

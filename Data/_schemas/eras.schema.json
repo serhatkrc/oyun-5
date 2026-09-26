@@ -1,0 +1,81 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "title": "eras",
+ "type": "object",
+ "required": [
+  "category",
+  "items"
+ ],
+ "properties": {
+  "category": {
+   "const": "eras"
+  },
+  "count": {
+   "type": "integer"
+  },
+  "items": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "required": [
+     "biomeGrowthBonus",
+     "cloudIntervalMonths",
+     "effects",
+     "fertilityPct",
+     "id",
+     "loyaltyBonus",
+     "maxYears",
+     "minYears",
+     "name",
+     "opinionBonus",
+     "rate",
+     "tempShift",
+     "tint"
+    ],
+    "properties": {
+     "id": {
+      "type": "string",
+      "pattern": "^era\\.[a-z0-9_]+$"
+     },
+     "name": {
+      "type": "string"
+     },
+     "minYears": {
+      "type": "integer"
+     },
+     "maxYears": {
+      "type": "integer"
+     },
+     "rate": {
+      "type": "integer"
+     },
+     "loyaltyBonus": {
+      "type": "integer"
+     },
+     "opinionBonus": {
+      "type": "integer"
+     },
+     "fertilityPct": {
+      "type": "integer"
+     },
+     "tempShift": {
+      "type": "integer"
+     },
+     "cloudIntervalMonths": {
+      "type": "integer"
+     },
+     "biomeGrowthBonus": {
+      "type": "integer"
+     },
+     "effects": {
+      "type": "string"
+     },
+     "tint": {
+      "type": "string"
+     }
+    },
+    "additionalProperties": true
+   }
+  }
+ }
+}

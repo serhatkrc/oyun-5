@@ -1,0 +1,61 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "title": "disasters",
+ "type": "object",
+ "required": [
+  "category",
+  "items"
+ ],
+ "properties": {
+  "category": {
+   "const": "disasters"
+  },
+  "count": {
+   "type": "integer"
+  },
+  "items": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "required": [
+     "chancePerYear",
+     "cooldownYears",
+     "description",
+     "eraMultipliers",
+     "id",
+     "minPopulation",
+     "minWorldAge",
+     "name"
+    ],
+    "properties": {
+     "id": {
+      "type": "string",
+      "pattern": "^dis\\.[a-z0-9_]+$"
+     },
+     "name": {
+      "type": "string"
+     },
+     "minWorldAge": {
+      "type": "integer"
+     },
+     "minPopulation": {
+      "type": "integer"
+     },
+     "cooldownYears": {
+      "type": "integer"
+     },
+     "chancePerYear": {
+      "type": "number"
+     },
+     "eraMultipliers": {
+      "type": "object"
+     },
+     "description": {
+      "type": "string"
+     }
+    },
+    "additionalProperties": true
+   }
+  }
+ }
+}

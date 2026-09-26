@@ -1,0 +1,235 @@
+{
+ "category": "worldgen_templates",
+ "count": 8,
+ "items": [
+  {
+   "id": "wgt.continents",
+   "name": "Kıtalar",
+   "mask": {
+    "type": "multiBlob",
+    "count": [
+     2,
+     4
+    ],
+    "radius": [
+     0.25,
+     0.4
+    ],
+    "falloffPower": 2.2
+   },
+   "noise": {
+    "octaves": 6,
+    "frequencyMul": 1.0,
+    "lacunarity": 2.0,
+    "gain": 0.5
+   },
+   "warp": {
+    "amplitude": 0.08,
+    "frequencyMul": 2.0
+   },
+   "edgeOcean": 0.06,
+   "landRatioDefault": null
+  },
+  {
+   "id": "wgt.pangea",
+   "name": "Tek Kıta",
+   "mask": {
+    "type": "radial",
+    "count": [
+     1,
+     1
+    ],
+    "radius": [
+     0.42,
+     0.48
+    ],
+    "falloffPower": 2.0
+   },
+   "noise": {
+    "octaves": 6,
+    "frequencyMul": 1.0,
+    "lacunarity": 2.0,
+    "gain": 0.5
+   },
+   "warp": {
+    "amplitude": 0.08,
+    "frequencyMul": 2.0
+   },
+   "edgeOcean": 0.06,
+   "landRatioDefault": null
+  },
+  {
+   "id": "wgt.archipelago",
+   "name": "Takımadalar",
+   "mask": {
+    "type": "none",
+    "count": [
+     0,
+     0
+    ],
+    "radius": [
+     0,
+     0
+    ],
+    "falloffPower": 1.0
+   },
+   "noise": {
+    "octaves": 6,
+    "frequencyMul": 2.6,
+    "lacunarity": 2.0,
+    "gain": 0.5
+   },
+   "warp": {
+    "amplitude": 0.05,
+    "frequencyMul": 2.0
+   },
+   "edgeOcean": 0.06,
+   "landRatioDefault": 0.3
+  },
+  {
+   "id": "wgt.ring",
+   "name": "Halka",
+   "mask": {
+    "type": "annulus",
+    "count": [
+     1,
+     1
+    ],
+    "radius": [
+     0.3,
+     0.34
+    ],
+    "falloffPower": 1.0,
+    "width": 0.13
+   },
+   "noise": {
+    "octaves": 6,
+    "frequencyMul": 1.0,
+    "lacunarity": 2.0,
+    "gain": 0.5
+   },
+   "warp": {
+    "amplitude": 0.08,
+    "frequencyMul": 2.0
+   },
+   "edgeOcean": 0.06,
+   "landRatioDefault": null
+  },
+  {
+   "id": "wgt.lakes",
+   "name": "Göller",
+   "mask": {
+    "type": "inverse",
+    "count": [
+     1,
+     1
+    ],
+    "radius": [
+     0.5,
+     0.5
+    ],
+    "falloffPower": 1.0
+   },
+   "noise": {
+    "octaves": 6,
+    "frequencyMul": 1.0,
+    "lacunarity": 2.0,
+    "gain": 0.5
+   },
+   "warp": {
+    "amplitude": 0.08,
+    "frequencyMul": 2.0
+   },
+   "edgeOcean": 0.04,
+   "landRatioDefault": 0.7
+  },
+  {
+   "id": "wgt.flat_green",
+   "name": "Düz Yeşillik",
+   "mask": {
+    "type": "full",
+    "count": [
+     0,
+     0
+    ],
+    "radius": [
+     0,
+     0
+    ],
+    "falloffPower": 1.0
+   },
+   "noise": {
+    "octaves": 6,
+    "frequencyMul": 1.0,
+    "lacunarity": 2.0,
+    "gain": 0.5
+   },
+   "warp": {
+    "amplitude": 0.08,
+    "frequencyMul": 2.0
+   },
+   "edgeOcean": 0.03,
+   "landRatioDefault": null,
+   "flatTile": "tile.soil_low",
+   "flatBiome": "bio.grassland"
+  },
+  {
+   "id": "wgt.empty_ocean",
+   "name": "Boş Okyanus",
+   "mask": {
+    "type": "empty",
+    "count": [
+     0,
+     0
+    ],
+    "radius": [
+     0,
+     0
+    ],
+    "falloffPower": 1.0
+   },
+   "noise": {
+    "octaves": 6,
+    "frequencyMul": 1.0,
+    "lacunarity": 2.0,
+    "gain": 0.5
+   },
+   "warp": {
+    "amplitude": 0.08,
+    "frequencyMul": 2.0
+   },
+   "edgeOcean": 0.06,
+   "landRatioDefault": null,
+   "flatTile": "tile.deep_ocean",
+   "flatBiome": ""
+  },
+  {
+   "id": "wgt.custom_image",
+   "name": "Görüntüden",
+   "mask": {
+    "type": "image",
+    "count": [
+     0,
+     0
+    ],
+    "radius": [
+     0,
+     0
+    ],
+    "falloffPower": 1.0
+   },
+   "noise": {
+    "octaves": 6,
+    "frequencyMul": 1.0,
+    "lacunarity": 2.0,
+    "gain": 0.5
+   },
+   "warp": {
+    "amplitude": 0.08,
+    "frequencyMul": 2.0
+   },
+   "edgeOcean": 0.06,
+   "landRatioDefault": null
+  }
+ ]
+}

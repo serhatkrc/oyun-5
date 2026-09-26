@@ -1,0 +1,815 @@
+{
+ "category": "culture_traits",
+ "count": 78,
+ "items": [
+  {
+   "id": "cul.succ_primogeniture",
+   "name": "Büyük Evlat",
+   "group": "succession",
+   "effects": {
+    "leader": "eldest_child"
+   }
+  },
+  {
+   "id": "cul.succ_election",
+   "name": "Seçimle",
+   "group": "succession",
+   "effects": {
+    "leader": "highest_diplo"
+   }
+  },
+  {
+   "id": "cul.succ_strongest",
+   "name": "En Güçlü",
+   "group": "succession",
+   "effects": {
+    "leader": "highest_warfare",
+    "neurons": [
+     "duel_for_crown"
+    ]
+   }
+  },
+  {
+   "id": "cul.succ_wisest",
+   "name": "En Bilge",
+   "group": "succession",
+   "effects": {
+    "leader": "highest_intel"
+   }
+  },
+  {
+   "id": "cul.succ_elders",
+   "name": "Yaşlılar Meclisi",
+   "group": "succession",
+   "effects": {
+    "leader": "oldest"
+   }
+  },
+  {
+   "id": "cul.succ_lot",
+   "name": "Kura",
+   "group": "succession",
+   "effects": {
+    "leader": "random"
+   }
+  },
+  {
+   "id": "cul.succ_matrilineal",
+   "name": "Ana Soydan",
+   "group": "succession",
+   "effects": {
+    "leader": "eldest_daughter"
+   }
+  },
+  {
+   "id": "cul.succ_youngest",
+   "name": "Küçük Evlat",
+   "group": "succession",
+   "effects": {
+    "leader": "youngest_child"
+   }
+  },
+  {
+   "id": "cul.war_drums",
+   "name": "Savaş Davulları",
+   "group": "war",
+   "effects": {
+    "pct": {
+     "warChance": 30.0
+    },
+    "add": {
+     "morale": 10.0
+    }
+   }
+  },
+  {
+   "id": "cul.iron_fist",
+   "name": "Demir Yumruk",
+   "group": "war",
+   "effects": {
+    "pct": {
+     "rebellionResist": 40.0
+    },
+    "add": {
+     "happiness": -1.0
+    }
+   }
+  },
+  {
+   "id": "cul.honor_duels",
+   "name": "Düello Onuru",
+   "group": "war",
+   "effects": {
+    "neurons": [
+     "duel"
+    ]
+   }
+  },
+  {
+   "id": "cul.siege_masters",
+   "name": "Kuşatma Ustaları",
+   "group": "war",
+   "effects": {
+    "pct": {
+     "wallDmg": 100.0
+    }
+   }
+  },
+  {
+   "id": "cul.shield_brothers",
+   "name": "Kalkan Kardeşleri",
+   "group": "war",
+   "effects": {
+    "add": {
+     "armorInGroup": 5.0
+    }
+   }
+  },
+  {
+   "id": "cul.horse_lords",
+   "name": "Atlı Beyler",
+   "group": "war",
+   "effects": {
+    "add": {
+     "mountedUnits": 1.0
+    },
+    "pct": {
+     "speed": 20.0
+    }
+   }
+  },
+  {
+   "id": "cul.archers_pride",
+   "name": "Okçu Gururu",
+   "group": "war",
+   "effects": {
+    "add": {
+     "bowPreference": 1.0,
+     "range": 1.0
+    }
+   }
+  },
+  {
+   "id": "cul.no_retreat",
+   "name": "Geri Çekilmez",
+   "group": "war",
+   "effects": {
+    "pct": {
+     "fleeThreshold": -100.0
+    }
+   }
+  },
+  {
+   "id": "cul.spare_the_weak",
+   "name": "Zayıfa Dokunmaz",
+   "group": "war",
+   "effects": {
+    "add": {
+     "noCivilianKill": 1.0,
+     "opinion": 10.0
+    }
+   }
+  },
+  {
+   "id": "cul.raid_culture",
+   "name": "Akıncılar",
+   "group": "war",
+   "effects": {
+    "neurons": [
+     "raid"
+    ],
+    "pct": {
+     "lootBonus": 50.0
+    }
+   }
+  },
+  {
+   "id": "cul.expansionists",
+   "name": "Yayılmacılar",
+   "group": "society",
+   "effects": {
+    "pct": {
+     "newCityChance": 50.0
+    }
+   }
+  },
+  {
+   "id": "cul.isolationists",
+   "name": "İçe Kapanık",
+   "group": "society",
+   "effects": {
+    "pct": {
+     "newCityChance": -50.0
+    },
+    "add": {
+     "opinion": -10.0
+    }
+   }
+  },
+  {
+   "id": "cul.nomads",
+   "name": "Göçebeler",
+   "group": "society",
+   "effects": {
+    "flags": [
+     "mobile_city"
+    ]
+   }
+  },
+  {
+   "id": "cul.sea_folk",
+   "name": "Deniz Halkı",
+   "group": "society",
+   "effects": {
+    "pct": {
+     "colonizeChance": 60.0,
+     "boatSpeed": 20.0
+    }
+   }
+  },
+  {
+   "id": "cul.open_hearth",
+   "name": "Açık Ocak",
+   "group": "society",
+   "effects": {
+    "tolerance": "other_species:+100%"
+   }
+  },
+  {
+   "id": "cul.pure_blood",
+   "name": "Soy Arıklığı",
+   "group": "society",
+   "effects": {
+    "tolerance": "other_species:-100%"
+   }
+  },
+  {
+   "id": "cul.melting_pot",
+   "name": "Harman",
+   "group": "society",
+   "effects": {
+    "add": {
+     "mixedSpeciesHappiness": 2.0
+    }
+   }
+  },
+  {
+   "id": "cul.hospitality",
+   "name": "Misafirperver",
+   "group": "society",
+   "effects": {
+    "pct": {
+     "migrantChance": 50.0
+    }
+   }
+  },
+  {
+   "id": "cul.frontier_spirit",
+   "name": "Öncü Ruh",
+   "group": "society",
+   "effects": {
+    "pct": {
+     "borderGrowth": 30.0
+    }
+   }
+  },
+  {
+   "id": "cul.city_lovers",
+   "name": "Kent Sevdalısı",
+   "group": "society",
+   "effects": {
+    "pct": {
+     "maxCitySize": 30.0
+    }
+   }
+  },
+  {
+   "id": "cul.villagers",
+   "name": "Köy Hayatı",
+   "group": "society",
+   "effects": {
+    "pct": {
+     "maxCitySize": -30.0
+    },
+    "add": {
+     "happiness": 1.0
+    }
+   }
+  },
+  {
+   "id": "cul.great_walls",
+   "name": "Sur Kültürü",
+   "group": "society",
+   "effects": {
+    "add": {
+     "buildWalls": 1.0
+    }
+   }
+  },
+  {
+   "id": "cul.farmers",
+   "name": "Toprak Ehli",
+   "group": "economy",
+   "effects": {
+    "pct": {
+     "farmYield": 30.0
+    }
+   }
+  },
+  {
+   "id": "cul.harvest_feast",
+   "name": "Hasat Şöleni",
+   "group": "economy",
+   "effects": {
+    "add": {
+     "yearlyFestival": 1.0,
+     "happiness": 2.0
+    }
+   }
+  },
+  {
+   "id": "cul.hunters",
+   "name": "Avcı Gelenekleri",
+   "group": "economy",
+   "effects": {
+    "pct": {
+     "huntYield": 40.0
+    }
+   }
+  },
+  {
+   "id": "cul.spice_road",
+   "name": "Baharat Yolu",
+   "group": "economy",
+   "effects": {
+    "pct": {
+     "tradeProfit": 40.0
+    }
+   }
+  },
+  {
+   "id": "cul.stone_carvers",
+   "name": "Taş Oymacıları",
+   "group": "economy",
+   "effects": {
+    "add": {
+     "stoneBuildings": 1.0
+    },
+    "pct": {
+     "buildingHp": 30.0
+    }
+   }
+  },
+  {
+   "id": "cul.artisans",
+   "name": "Zanaatkârlar",
+   "group": "economy",
+   "effects": {
+    "add": {
+     "craftQuality": 1.0
+    }
+   }
+  },
+  {
+   "id": "cul.merchants",
+   "name": "Loncalar",
+   "group": "economy",
+   "effects": {
+    "pct": {
+     "gold": 30.0
+    }
+   }
+  },
+  {
+   "id": "cul.miners_guild",
+   "name": "Maden Loncası",
+   "group": "economy",
+   "effects": {
+    "pct": {
+     "mineYield": 40.0
+    }
+   }
+  },
+  {
+   "id": "cul.fishers",
+   "name": "Balıkçı Köyleri",
+   "group": "economy",
+   "effects": {
+    "pct": {
+     "fishYield": 40.0
+    }
+   }
+  },
+  {
+   "id": "cul.herders",
+   "name": "Çobanlar",
+   "group": "economy",
+   "effects": {
+    "pct": {
+     "herdYield": 40.0
+    }
+   }
+  },
+  {
+   "id": "cul.scholars",
+   "name": "Âlimler",
+   "group": "knowledge",
+   "effects": {
+    "pct": {
+     "bookWrite": 50.0
+    }
+   }
+  },
+  {
+   "id": "cul.reading_lovers",
+   "name": "Okur Halk",
+   "group": "knowledge",
+   "effects": {
+    "pct": {
+     "readChance": 100.0
+    }
+   }
+  },
+  {
+   "id": "cul.oral_tradition",
+   "name": "Sözlü Gelenek",
+   "group": "knowledge",
+   "effects": {
+    "pct": {
+     "xpShare": 20.0,
+     "bookWrite": -50.0
+    }
+   }
+  },
+  {
+   "id": "cul.ancestral_knowledge",
+   "name": "Atalardan Bilgi",
+   "group": "knowledge",
+   "effects": {
+    "add": {
+     "newbornGetsHalfBestParentAttr": 1.0
+    }
+   }
+  },
+  {
+   "id": "cul.library_keepers",
+   "name": "Kitap Bekçileri",
+   "group": "knowledge",
+   "effects": {
+    "pct": {
+     "bookDecay": -80.0
+    }
+   }
+  },
+  {
+   "id": "cul.astronomers",
+   "name": "Yıldızbilimciler",
+   "group": "knowledge",
+   "effects": {
+    "add": {
+     "meteorWarning": 1.0
+    }
+   }
+  },
+  {
+   "id": "cul.inventors",
+   "name": "Mucitler",
+   "group": "knowledge",
+   "effects": {
+    "pct": {
+     "buildingUpgradeSpeed": 30.0
+    }
+   }
+  },
+  {
+   "id": "cul.book_burners",
+   "name": "Kitap Yakıcılar",
+   "group": "knowledge",
+   "effects": {
+    "add": {
+     "burnForeignBooks": 1.0
+    }
+   }
+  },
+  {
+   "id": "cul.mystics",
+   "name": "Gizemciler",
+   "group": "knowledge",
+   "effects": {
+    "pct": {
+     "spellPower": 15.0
+    }
+   }
+  },
+  {
+   "id": "cul.healers_guild",
+   "name": "Şifacılar Ocağı",
+   "group": "knowledge",
+   "effects": {
+    "pct": {
+     "diseaseCure": 40.0
+    }
+   }
+  },
+  {
+   "id": "cul.elders_voice",
+   "name": "Yaşlılara Hürmet",
+   "group": "family",
+   "effects": {
+    "add": {
+     "elderHappiness": 3.0,
+     "elderIntel": 1.0
+    }
+   }
+  },
+  {
+   "id": "cul.youth_cult",
+   "name": "Gençlik Kültü",
+   "group": "family",
+   "effects": {
+    "pct": {
+     "youngXp": 30.0
+    }
+   }
+  },
+  {
+   "id": "cul.ancestor_halls",
+   "name": "Ata Ocakları",
+   "group": "family",
+   "effects": {
+    "pct": {
+     "deadMourning": -50.0,
+     "faith": 10.0
+    }
+   }
+  },
+  {
+   "id": "cul.large_families",
+   "name": "Kalabalık Aileler",
+   "group": "family",
+   "effects": {
+    "pct": {
+     "fertility": 30.0
+    }
+   }
+  },
+  {
+   "id": "cul.small_families",
+   "name": "Çekirdek Aile",
+   "group": "family",
+   "effects": {
+    "pct": {
+     "fertility": -20.0,
+     "childStats": 10.0
+    }
+   }
+  },
+  {
+   "id": "cul.arranged_marriage",
+   "name": "Görücü Usulü",
+   "group": "family",
+   "effects": {
+    "pct": {
+     "clanStrength": 20.0
+    }
+   }
+  },
+  {
+   "id": "cul.free_love",
+   "name": "Serbest Gönül",
+   "group": "family",
+   "effects": {
+    "pct": {
+     "mateChance": 30.0
+    }
+   }
+  },
+  {
+   "id": "cul.orphan_care",
+   "name": "Yetim Koruma",
+   "group": "family",
+   "effects": {
+    "pct": {
+     "childSurvival": 30.0
+    }
+   }
+  },
+  {
+   "id": "cul.twin_blessing",
+   "name": "İkiz Uğuru",
+   "group": "family",
+   "effects": {
+    "add": {
+     "twinHappiness": 5.0
+    }
+   }
+  },
+  {
+   "id": "cul.burial_rites",
+   "name": "Defin Ritüelleri",
+   "group": "family",
+   "effects": {
+    "add": {
+     "buildGraveyard": 1.0,
+     "happiness": 1.0
+    }
+   }
+  },
+  {
+   "id": "cul.forest_keepers",
+   "name": "Orman Bekçileri",
+   "group": "nature",
+   "effects": {
+    "pct": {
+     "treeCutting": -60.0
+    },
+    "add": {
+     "elfOpinion": 10.0
+    }
+   }
+  },
+  {
+   "id": "cul.swamp_dwellers",
+   "name": "Bataklık Halkı",
+   "group": "nature",
+   "effects": {
+    "add": {
+     "swampHappiness": 2.0
+    }
+   }
+  },
+  {
+   "id": "cul.animal_friends",
+   "name": "Hayvan Dostları",
+   "group": "nature",
+   "effects": {
+    "pct": {
+     "huntYield": -50.0,
+     "tameChance": 50.0
+    }
+   }
+  },
+  {
+   "id": "cul.tree_cutters",
+   "name": "Baltacılar",
+   "group": "nature",
+   "effects": {
+    "pct": {
+     "woodYield": 40.0
+    }
+   }
+  },
+  {
+   "id": "cul.beast_tamers",
+   "name": "Canavar Terbiyecileri",
+   "group": "nature",
+   "effects": {
+    "add": {
+     "tameMonsters": 1.0
+    }
+   }
+  },
+  {
+   "id": "cul.fire_keepers",
+   "name": "Ateş Bekçileri",
+   "group": "nature",
+   "effects": {
+    "pct": {
+     "fireSpreadInCity": -60.0
+    }
+   }
+  },
+  {
+   "id": "cul.mountain_folk",
+   "name": "Dağ Halkı",
+   "group": "nature",
+   "effects": {
+    "add": {
+     "mountainHappiness": 2.0
+    }
+   }
+  },
+  {
+   "id": "cul.true_roots",
+   "name": "Köklere Sadakat",
+   "group": "special",
+   "effects": {
+    "pct": {
+     "convertResist": 100.0
+    },
+    "add": {
+     "survivesKingdomFall": 1.0
+    }
+   }
+  },
+  {
+   "id": "cul.festivals",
+   "name": "Şenlikler",
+   "group": "special",
+   "effects": {
+    "pct": {
+     "monthlyFestivalChance": 10.0
+    }
+   }
+  },
+  {
+   "id": "cul.stoic",
+   "name": "Metanet",
+   "group": "special",
+   "effects": {
+    "pct": {
+     "happinessSwing": -50.0
+    }
+   }
+  },
+  {
+   "id": "cul.superstitious",
+   "name": "Batıl İnançlı",
+   "group": "special",
+   "effects": {
+    "eraEffects": "x1.5"
+   }
+  },
+  {
+   "id": "cul.pacifist_creed",
+   "name": "Barış Yemini",
+   "group": "special",
+   "effects": {
+    "pct": {
+     "warChance": -80.0
+    }
+   }
+  },
+  {
+   "id": "cul.blood_feud",
+   "name": "Kan Davası",
+   "group": "special",
+   "effects": {
+    "pct": {
+     "revengeWar": 100.0
+    }
+   }
+  },
+  {
+   "id": "cul.gift_economy",
+   "name": "Hediye Ekonomisi",
+   "group": "special",
+   "effects": {
+    "add": {
+     "opinion": 15.0
+    },
+    "pct": {
+     "gold": -20.0
+    }
+   }
+  },
+  {
+   "id": "cul.bureaucracy",
+   "name": "Bürokrasi",
+   "group": "special",
+   "effects": {
+    "add": {
+     "loyalty": 15.0
+    },
+    "pct": {
+     "buildSpeed": -10.0
+    }
+   }
+  },
+  {
+   "id": "cul.tattoo_marks",
+   "name": "Dövme Gelenekleri",
+   "group": "special",
+   "effects": {
+    "add": {
+     "fear": 10.0
+    },
+    "cosmetic": "tattoo"
+   }
+  },
+  {
+   "id": "cul.tower_architecture",
+   "name": "Kule Mimarisi",
+   "group": "special",
+   "effects": {
+    "add": {
+     "towerRange": 2.0
+    },
+    "cosmetic": "spires"
+   }
+  },
+  {
+   "id": "cul.corpse_burners",
+   "name": "Ölü Yakıcılar",
+   "group": "special",
+   "effects": {
+    "add": {
+     "burnCorpses": 1.0
+    },
+    "pct": {
+     "zombieRise": -90.0
+    }
+   }
+  }
+ ]
+}

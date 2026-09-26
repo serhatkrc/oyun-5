@@ -1,0 +1,260 @@
+{
+ "category": "clan_traits",
+ "count": 28,
+ "items": [
+  {
+   "id": "clan.iron_blood",
+   "name": "Demir Kan",
+   "effects": {
+    "pct": {
+     "hp": 10.0
+    }
+   }
+  },
+  {
+   "id": "clan.wise_line",
+   "name": "Bilgeler Soyu",
+   "effects": {
+    "add": {
+     "intel": 1.0
+    }
+   }
+  },
+  {
+   "id": "clan.cursed_line",
+   "name": "Lanetli Soy",
+   "effects": {
+    "add": {
+     "luck": -10.0
+    },
+    "traitChance": "cursed"
+   }
+  },
+  {
+   "id": "clan.royal_blood",
+   "name": "Kraliyet Kanı",
+   "effects": {
+    "pct": {
+     "leaderChance": 50.0
+    }
+   }
+  },
+  {
+   "id": "clan.long_lived_line",
+   "name": "Uzun Ömürlüler",
+   "effects": {
+    "pct": {
+     "lifespan": 20.0
+    }
+   }
+  },
+  {
+   "id": "clan.fertile_line",
+   "name": "Bereketli Ocak",
+   "effects": {
+    "pct": {
+     "fertility": 25.0
+    }
+   }
+  },
+  {
+   "id": "clan.hunter_line",
+   "name": "Avcılar",
+   "effects": {
+    "pct": {
+     "huntYield": 30.0
+    }
+   }
+  },
+  {
+   "id": "clan.sea_line",
+   "name": "Denizciler",
+   "effects": {
+    "pct": {
+     "boatSpeed": 20.0
+    }
+   }
+  },
+  {
+   "id": "clan.smith_line",
+   "name": "Demirciler",
+   "effects": {
+    "add": {
+     "craftQuality": 1.0
+    }
+   }
+  },
+  {
+   "id": "clan.mage_line",
+   "name": "Büyücüler",
+   "effects": {
+    "add": {
+     "mana": 30.0
+    },
+    "pct": {
+     "spellChance": 20.0
+    }
+   }
+  },
+  {
+   "id": "clan.healer_line",
+   "name": "Şifacılar",
+   "effects": {
+    "traitChance": "healer"
+   }
+  },
+  {
+   "id": "clan.traitor_line",
+   "name": "Hainler Soyu",
+   "effects": {
+    "add": {
+     "loyalty": -20.0
+    }
+   }
+  },
+  {
+   "id": "clan.loyal_line",
+   "name": "Sadıklar",
+   "effects": {
+    "add": {
+     "loyalty": 20.0
+    }
+   }
+  },
+  {
+   "id": "clan.schemer_line",
+   "name": "Entrikacılar",
+   "effects": {
+    "pct": {
+     "plotChance": 50.0
+    }
+   }
+  },
+  {
+   "id": "clan.peacemaker_line",
+   "name": "Arabulucular",
+   "effects": {
+    "add": {
+     "diplo": 2.0
+    }
+   }
+  },
+  {
+   "id": "clan.zealot_line",
+   "name": "Bağnazlar",
+   "effects": {
+    "pct": {
+     "faith": 50.0
+    }
+   }
+  },
+  {
+   "id": "clan.beauty_line",
+   "name": "Güzeller",
+   "effects": {
+    "traitChance": "attractive"
+   }
+  },
+  {
+   "id": "clan.giant_line",
+   "name": "İriler",
+   "effects": {
+    "traitChance": "giant"
+   }
+  },
+  {
+   "id": "clan.swift_line",
+   "name": "Çevikler",
+   "effects": {
+    "pct": {
+     "speed": 10.0
+    }
+   }
+  },
+  {
+   "id": "clan.lucky_line",
+   "name": "Talihliler",
+   "effects": {
+    "add": {
+     "luck": 10.0
+    }
+   }
+  },
+  {
+   "id": "clan.unlucky_line",
+   "name": "Kara Bahtlılar",
+   "effects": {
+    "add": {
+     "luck": -10.0
+    }
+   }
+  },
+  {
+   "id": "clan.feud_line",
+   "name": "Kan Davalılar",
+   "effects": {
+    "pct": {
+     "revengeChance": 100.0
+    }
+   }
+  },
+  {
+   "id": "clan.founder_line",
+   "name": "Kurucu Soy",
+   "effects": {
+    "pct": {
+     "newCityLeaderChance": 50.0
+    }
+   }
+  },
+  {
+   "id": "clan.nomad_line",
+   "name": "Göçerler",
+   "effects": {
+    "pct": {
+     "migrateChance": 50.0
+    }
+   }
+  },
+  {
+   "id": "clan.scholar_line",
+   "name": "Kalemşorlar",
+   "effects": {
+    "pct": {
+     "bookWrite": 40.0
+    }
+   }
+  },
+  {
+   "id": "clan.beast_line",
+   "name": "Canavar Kanı",
+   "effects": {
+    "pct": {
+     "dmg": 10.0
+    },
+    "add": {
+     "diplo": -1.0
+    }
+   }
+  },
+  {
+   "id": "clan.shadow_line",
+   "name": "Gölgeler",
+   "effects": {
+    "add": {
+     "stealth": 1.0
+    },
+    "pct": {
+     "plotSpeed": 30.0
+    }
+   }
+  },
+  {
+   "id": "clan.blessed_line",
+   "name": "Kutlular",
+   "effects": {
+    "traitChance": "blessed"
+   }
+  }
+ ]
+}

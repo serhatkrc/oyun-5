@@ -1,0 +1,594 @@
+{
+ "category": "buildings",
+ "count": 41,
+ "items": [
+  {
+   "id": "bld.bonfire",
+   "name": "Kamp Ateşi",
+   "category": "center",
+   "size": "2x2",
+   "hp": 100,
+   "cost": {},
+   "requires": "",
+   "function": "Şehrin ilk çekirdeği; ısınma, toplanma",
+   "maxPerCity": 1,
+   "jobSlots": 0
+  },
+  {
+   "id": "bld.hall_1",
+   "name": "Köy Meydanı",
+   "category": "center",
+   "size": "3x3",
+   "hp": 400,
+   "cost": {
+    "res.wood": 20
+   },
+   "requires": "pop:8",
+   "function": "Şehir merkezi; bayrak, vergi toplanır",
+   "maxPerCity": 1,
+   "jobSlots": 0
+  },
+  {
+   "id": "bld.hall_2",
+   "name": "Kasaba Konağı",
+   "category": "center",
+   "size": "4x4",
+   "hp": 900,
+   "cost": {
+    "res.wood": 30,
+    "res.stone": 30
+   },
+   "requires": "pop:30|hall_1",
+   "function": "Sınır yarıçapı +, lider konutu",
+   "maxPerCity": 1,
+   "jobSlots": 0
+  },
+  {
+   "id": "bld.hall_3",
+   "name": "Şehir Sarayı",
+   "category": "center",
+   "size": "5x5",
+   "hp": 2000,
+   "cost": {
+    "res.stone": 60,
+    "res.gold": 30
+   },
+   "requires": "pop:80|hall_2",
+   "function": "Başkent olabilir; ordu kurar",
+   "maxPerCity": 1,
+   "jobSlots": 0
+  },
+  {
+   "id": "bld.tent",
+   "name": "Çadır",
+   "category": "house",
+   "size": "2x2",
+   "hp": 60,
+   "cost": {
+    "res.wood": 2,
+    "res.leather": 2
+   },
+   "requires": "",
+   "function": "2 kişilik barınak",
+   "maxPerCity": 99,
+   "jobSlots": 0
+  },
+  {
+   "id": "bld.hut",
+   "name": "Kulübe",
+   "category": "house",
+   "size": "2x2",
+   "hp": 120,
+   "cost": {
+    "res.wood": 6
+   },
+   "requires": "hall_1",
+   "function": "4 kişi",
+   "maxPerCity": 99,
+   "jobSlots": 0
+  },
+  {
+   "id": "bld.house",
+   "name": "Ev",
+   "category": "house",
+   "size": "3x2",
+   "hp": 250,
+   "cost": {
+    "res.wood": 8,
+    "res.stone": 6
+   },
+   "requires": "hall_2",
+   "function": "6 kişi; mutluluk +1",
+   "maxPerCity": 99,
+   "jobSlots": 0
+  },
+  {
+   "id": "bld.manor",
+   "name": "Konak",
+   "category": "house",
+   "size": "3x3",
+   "hp": 450,
+   "cost": {
+    "res.stone": 14,
+    "res.gold": 4
+   },
+   "requires": "hall_3",
+   "function": "10 kişi; mutluluk +2",
+   "maxPerCity": 99,
+   "jobSlots": 0
+  },
+  {
+   "id": "bld.storage",
+   "name": "Ambar",
+   "category": "economy",
+   "size": "3x2",
+   "hp": 200,
+   "cost": {
+    "res.wood": 10
+   },
+   "requires": "hall_1",
+   "function": "Kaynak deposu; toplayıcılar buraya taşır",
+   "maxPerCity": 4,
+   "jobSlots": 0
+  },
+  {
+   "id": "bld.granary",
+   "name": "Tahıl Ambarı",
+   "category": "economy",
+   "size": "2x3",
+   "hp": 200,
+   "cost": {
+    "res.wood": 8,
+    "res.stone": 4
+   },
+   "requires": "farm",
+   "function": "Yiyecek bozulması -%50",
+   "maxPerCity": 3,
+   "jobSlots": 0
+  },
+  {
+   "id": "bld.windmill",
+   "name": "Değirmen",
+   "category": "economy",
+   "size": "2x2",
+   "hp": 180,
+   "cost": {
+    "res.wood": 12,
+    "res.stone": 4
+   },
+   "requires": "granary",
+   "function": "Buğday → un",
+   "maxPerCity": 2,
+   "jobSlots": 1
+  },
+  {
+   "id": "bld.bakery",
+   "name": "Fırın",
+   "category": "economy",
+   "size": "2x2",
+   "hp": 160,
+   "cost": {
+    "res.stone": 8
+   },
+   "requires": "windmill",
+   "function": "Un → ekmek",
+   "maxPerCity": 3,
+   "jobSlots": 1
+  },
+  {
+   "id": "bld.well",
+   "name": "Kuyu",
+   "category": "economy",
+   "size": "1x1",
+   "hp": 150,
+   "cost": {
+    "res.stone": 6
+   },
+   "requires": "hall_1",
+   "function": "Yangın söndürme hızı; kuraklıkta su",
+   "maxPerCity": 4,
+   "jobSlots": 0
+  },
+  {
+   "id": "bld.mine",
+   "name": "Maden Ocağı",
+   "category": "economy",
+   "size": "3x3",
+   "hp": 300,
+   "cost": {
+    "res.wood": 10
+   },
+   "requires": "hills/mountain yakın",
+   "function": "Taş ve cevher çıkarır",
+   "maxPerCity": 3,
+   "jobSlots": 4
+  },
+  {
+   "id": "bld.lumber_camp",
+   "name": "Kereste Kampı",
+   "category": "economy",
+   "size": "2x2",
+   "hp": 150,
+   "cost": {
+    "res.wood": 4
+   },
+   "requires": "orman yakın",
+   "function": "Odun verimi +%30",
+   "maxPerCity": 2,
+   "jobSlots": 3
+  },
+  {
+   "id": "bld.smithy",
+   "name": "Demirhane",
+   "category": "economy",
+   "size": "2x2",
+   "hp": 250,
+   "cost": {
+    "res.stone": 10,
+    "res.iron": 4
+   },
+   "requires": "hall_2",
+   "function": "Silah/zırh üretir",
+   "maxPerCity": 2,
+   "jobSlots": 2
+  },
+  {
+   "id": "bld.farm_shed",
+   "name": "Tarla Barakası",
+   "category": "economy",
+   "size": "2x2",
+   "hp": 120,
+   "cost": {
+    "res.wood": 6
+   },
+   "requires": "hall_1",
+   "function": "Etrafına tarla açar",
+   "maxPerCity": 6,
+   "jobSlots": 4
+  },
+  {
+   "id": "bld.pasture",
+   "name": "Ağıl",
+   "category": "economy",
+   "size": "4x3",
+   "hp": 120,
+   "cost": {
+    "res.wood": 10
+   },
+   "requires": "evcil hayvan",
+   "function": "Hayvan besler: süt, yün, et",
+   "maxPerCity": 3,
+   "jobSlots": 1
+  },
+  {
+   "id": "bld.beehive",
+   "name": "Arı Kovanı",
+   "category": "economy",
+   "size": "1x1",
+   "hp": 40,
+   "cost": {
+    "res.wood": 2
+   },
+   "requires": "çiçek yakın",
+   "function": "Bal üretir",
+   "maxPerCity": 8,
+   "jobSlots": 0
+  },
+  {
+   "id": "bld.market",
+   "name": "Pazar Yeri",
+   "category": "economy",
+   "size": "4x3",
+   "hp": 300,
+   "cost": {
+    "res.wood": 12,
+    "res.stone": 8
+   },
+   "requires": "pop:40",
+   "function": "Ticaret kervanı, altın",
+   "maxPerCity": 1,
+   "jobSlots": 3
+  },
+  {
+   "id": "bld.inn",
+   "name": "Han",
+   "category": "social",
+   "size": "3x3",
+   "hp": 300,
+   "cost": {
+    "res.wood": 14,
+    "res.stone": 6
+   },
+   "requires": "pop:30",
+   "function": "Göçmen çeker, mutluluk +2",
+   "maxPerCity": 1,
+   "jobSlots": 1
+  },
+  {
+   "id": "bld.stable",
+   "name": "Ahır",
+   "category": "military",
+   "size": "3x2",
+   "hp": 200,
+   "cost": {
+    "res.wood": 10
+   },
+   "requires": "pop:40|hall_2",
+   "function": "Binek hayvanları; süvari",
+   "maxPerCity": 1,
+   "jobSlots": 1
+  },
+  {
+   "id": "bld.barracks",
+   "name": "Kışla",
+   "category": "military",
+   "size": "4x3",
+   "hp": 500,
+   "cost": {
+    "res.stone": 20,
+    "res.wood": 10
+   },
+   "requires": "hall_2",
+   "function": "Asker eğitir, ordu kapasitesi",
+   "maxPerCity": 2,
+   "jobSlots": 0
+  },
+  {
+   "id": "bld.watchtower",
+   "name": "Gözetleme Kulesi",
+   "category": "military",
+   "size": "1x1",
+   "hp": 400,
+   "cost": {
+    "res.stone": 10
+   },
+   "requires": "hall_2",
+   "function": "Menzilli otomatik savunma",
+   "maxPerCity": 8,
+   "jobSlots": 1
+  },
+  {
+   "id": "bld.wall",
+   "name": "Sur",
+   "category": "military",
+   "size": "1x1",
+   "hp": 300,
+   "cost": {
+    "res.stone": 2
+   },
+   "requires": "hall_2",
+   "function": "Geçilmez; kuşatmada yıkılır",
+   "maxPerCity": 999,
+   "jobSlots": 0
+  },
+  {
+   "id": "bld.gate",
+   "name": "Kapı",
+   "category": "military",
+   "size": "2x1",
+   "hp": 500,
+   "cost": {
+    "res.stone": 6,
+    "res.wood": 4
+   },
+   "requires": "wall",
+   "function": "Dostlara açık",
+   "maxPerCity": 8,
+   "jobSlots": 0
+  },
+  {
+   "id": "bld.docks",
+   "name": "İskele",
+   "category": "naval",
+   "size": "3x2",
+   "hp": 250,
+   "cost": {
+    "res.wood": 12
+   },
+   "requires": "kıyı",
+   "function": "Balıkçı ve nakliye gemileri",
+   "maxPerCity": 2,
+   "jobSlots": 0
+  },
+  {
+   "id": "bld.fishing_hut",
+   "name": "Balıkçı Barakası",
+   "category": "naval",
+   "size": "2x2",
+   "hp": 120,
+   "cost": {
+    "res.wood": 6
+   },
+   "requires": "kıyı",
+   "function": "Balık verimi",
+   "maxPerCity": 4,
+   "jobSlots": 2
+  },
+  {
+   "id": "bld.shipyard",
+   "name": "Tersane",
+   "category": "naval",
+   "size": "4x3",
+   "hp": 400,
+   "cost": {
+    "res.wood": 30
+   },
+   "requires": "docks|pop:50",
+   "function": "Savaş ve sömürge gemileri",
+   "maxPerCity": 1,
+   "jobSlots": 2
+  },
+  {
+   "id": "bld.library",
+   "name": "Kütüphane",
+   "category": "culture",
+   "size": "3x3",
+   "hp": 350,
+   "cost": {
+    "res.wood": 10,
+    "res.stone": 14
+   },
+   "requires": "dil|pop:30",
+   "function": "Kitap saklar; okuma",
+   "maxPerCity": 1,
+   "jobSlots": 1
+  },
+  {
+   "id": "bld.school",
+   "name": "Mektep",
+   "category": "culture",
+   "size": "3x2",
+   "hp": 250,
+   "cost": {
+    "res.wood": 12
+   },
+   "requires": "library",
+   "function": "Çocuklara XP",
+   "maxPerCity": 1,
+   "jobSlots": 1
+  },
+  {
+   "id": "bld.temple",
+   "name": "Tapınak",
+   "category": "culture",
+   "size": "3x3",
+   "hp": 500,
+   "cost": {
+    "res.stone": 20
+   },
+   "requires": "din",
+   "function": "Din yayılımı, rahip, büyü",
+   "maxPerCity": 1,
+   "jobSlots": 2
+  },
+  {
+   "id": "bld.grand_temple",
+   "name": "Büyük Tapınak",
+   "category": "culture",
+   "size": "5x5",
+   "hp": 1500,
+   "cost": {
+    "res.stone": 60,
+    "res.gold": 20
+   },
+   "requires": "temple|başkent",
+   "function": "Din merkezi; kutsal büyüler",
+   "maxPerCity": 1,
+   "jobSlots": 4
+  },
+  {
+   "id": "bld.healers_house",
+   "name": "Şifahane",
+   "category": "culture",
+   "size": "3x2",
+   "hp": 300,
+   "cost": {
+    "res.wood": 10,
+    "res.stone": 8
+   },
+   "requires": "herbs",
+   "function": "Hastalık iyileşmesi x2",
+   "maxPerCity": 1,
+   "jobSlots": 2
+  },
+  {
+   "id": "bld.graveyard",
+   "name": "Mezarlık",
+   "category": "culture",
+   "size": "3x3",
+   "hp": 100,
+   "cost": {
+    "res.stone": 4
+   },
+   "requires": "pop:20",
+   "function": "Ölüler gömülür; yas süresi kısalır",
+   "maxPerCity": 1,
+   "jobSlots": 0
+  },
+  {
+   "id": "bld.statue_god",
+   "name": "Yaratıcı Heykeli",
+   "category": "monument",
+   "size": "2x2",
+   "hp": 800,
+   "cost": {
+    "res.stone": 30,
+    "res.gold": 10
+   },
+   "requires": "hall_3",
+   "function": "Oyuncuya adanmış; mutluluk +3 (yarıçap)",
+   "maxPerCity": 1,
+   "jobSlots": 0
+  },
+  {
+   "id": "bld.monument",
+   "name": "Zafer Anıtı",
+   "category": "monument",
+   "size": "2x2",
+   "hp": 800,
+   "cost": {
+    "res.stone": 30
+   },
+   "requires": "savaş zaferi",
+   "function": "Sadakat +10",
+   "maxPerCity": 2,
+   "jobSlots": 0
+  },
+  {
+   "id": "bld.pyre",
+   "name": "Ölü Yakma Ocağı",
+   "category": "culture",
+   "size": "2x2",
+   "hp": 150,
+   "cost": {
+    "res.wood": 10,
+    "res.stone": 4
+   },
+   "requires": "pop:30",
+   "function": "Cesetleri yakar: şehirde zombi kalkışı olmaz",
+   "maxPerCity": 1,
+   "jobSlots": 1
+  },
+  {
+   "id": "bld.nest",
+   "name": "Yuva",
+   "category": "house",
+   "size": "2x2",
+   "hp": 80,
+   "cost": {
+    "res.wood": 2
+   },
+   "requires": "hayvan kökenli uygarlık",
+   "function": "Evrimleşmiş hayvanların ilk evi",
+   "maxPerCity": 99,
+   "jobSlots": 0
+  },
+  {
+   "id": "bld.hive",
+   "name": "Kovan",
+   "category": "house",
+   "size": "3x3",
+   "hp": 200,
+   "cost": {
+    "res.wood": 4,
+    "res.honey": 2
+   },
+   "requires": "kovan zihni",
+   "function": "Arı/karınca uygarlığı evi",
+   "maxPerCity": 99,
+   "jobSlots": 0
+  },
+  {
+   "id": "bld.ruins",
+   "name": "Harabe",
+   "category": "ruin",
+   "size": "*",
+   "hp": 50,
+   "cost": {},
+   "requires": "",
+   "function": "Yıkılan binadan kalır; zamanla kaybolur",
+   "maxPerCity": 0,
+   "jobSlots": 0
+  }
+ ]
+}

@@ -1,0 +1,77 @@
+{
+ "category": "book_types",
+ "count": 10,
+ "items": [
+  {
+   "id": "book.history",
+   "name": "Tarih",
+   "readerBonus": [
+    "intel:+1"
+   ]
+  },
+  {
+   "id": "book.poetry",
+   "name": "Şiir",
+   "readerBonus": [
+    "happiness:+2"
+   ]
+  },
+  {
+   "id": "book.science",
+   "name": "İlim",
+   "readerBonus": [
+    "intel:+2"
+   ]
+  },
+  {
+   "id": "book.warfare",
+   "name": "Savaş Sanatı",
+   "readerBonus": [
+    "warfare:+1"
+   ]
+  },
+  {
+   "id": "book.scripture",
+   "name": "Kutsal Metin",
+   "readerBonus": [
+    "faith:+20%"
+   ]
+  },
+  {
+   "id": "book.law",
+   "name": "Kanunname",
+   "readerBonus": [
+    "steward:+1"
+   ]
+  },
+  {
+   "id": "book.medicine",
+   "name": "Tıp",
+   "readerBonus": [
+    "diseaseResist:+10%"
+   ]
+  },
+  {
+   "id": "book.craft",
+   "name": "Zanaat",
+   "readerBonus": [
+    "craftQuality:+0.5"
+   ]
+  },
+  {
+   "id": "book.travel",
+   "name": "Seyahatname",
+   "readerBonus": [
+    "speed:+3%"
+   ]
+  },
+  {
+   "id": "book.forbidden",
+   "name": "Yasak Bilgi",
+   "readerBonus": [
+    "mana:+20",
+    "happiness:-2"
+   ]
+  }
+ ]
+}

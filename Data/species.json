@@ -1,0 +1,1973 @@
+{
+ "category": "species",
+ "count": 92,
+ "items": [
+  {
+   "id": "sp.human",
+   "name": "İnsan",
+   "category": "civ",
+   "sapientAtStart": true,
+   "canEvolve": true,
+   "diet": "omni",
+   "habitat": "land",
+   "stats": {
+    "hp": 100,
+    "damage": 12,
+    "armor": 0,
+    "speed": 1.0,
+    "lifespan": 70,
+    "size": 2
+   },
+   "reproduction": "live",
+   "abilities": {},
+   "note": "Dengeli; her biyoma uyum sağlar, hızlı çoğalır"
+  },
+  {
+   "id": "sp.elf",
+   "name": "Elf",
+   "category": "civ",
+   "sapientAtStart": true,
+   "canEvolve": true,
+   "diet": "herb",
+   "habitat": "land",
+   "stats": {
+    "hp": 90,
+    "damage": 11,
+    "armor": 0,
+    "speed": 1.15,
+    "lifespan": 300,
+    "size": 2
+   },
+   "reproduction": "live",
+   "abilities": {
+    "spells": [
+     "heal"
+    ]
+   },
+   "note": "Uzun ömürlü, iyi okçu, yavaş çoğalır"
+  },
+  {
+   "id": "sp.dwarf",
+   "name": "Cüce",
+   "category": "civ",
+   "sapientAtStart": true,
+   "canEvolve": true,
+   "diet": "omni",
+   "habitat": "land",
+   "stats": {
+    "hp": 130,
+    "damage": 13,
+    "armor": 5,
+    "speed": 0.85,
+    "lifespan": 200,
+    "size": 2
+   },
+   "reproduction": "live",
+   "abilities": {},
+   "note": "Madenci ve demirci; dağlara yerleşir"
+  },
+  {
+   "id": "sp.orc",
+   "name": "Ork",
+   "category": "civ",
+   "sapientAtStart": true,
+   "canEvolve": true,
+   "diet": "carn",
+   "habitat": "land",
+   "stats": {
+    "hp": 140,
+    "damage": 16,
+    "armor": 2,
+    "speed": 1.0,
+    "lifespan": 60,
+    "size": 3
+   },
+   "reproduction": "live",
+   "abilities": {},
+   "note": "Savaşçı; çok hızlı çoğalır, saldırgan"
+  },
+  {
+   "id": "sp.wolf",
+   "name": "Kurt",
+   "category": "evo",
+   "sapientAtStart": false,
+   "canEvolve": true,
+   "diet": "carn",
+   "habitat": "land",
+   "stats": {
+    "hp": 60,
+    "damage": 10,
+    "armor": 0,
+    "speed": 1.3,
+    "lifespan": 20,
+    "size": 2
+   },
+   "reproduction": "live",
+   "abilities": {},
+   "note": "Sürü halinde avlanır"
+  },
+  {
+   "id": "sp.bear",
+   "name": "Ayı",
+   "category": "evo",
+   "sapientAtStart": false,
+   "canEvolve": true,
+   "diet": "omni",
+   "habitat": "land",
+   "stats": {
+    "hp": 180,
+    "damage": 20,
+    "armor": 3,
+    "speed": 0.9,
+    "lifespan": 30,
+    "size": 4
+   },
+   "reproduction": "live",
+   "abilities": {},
+   "note": "Bal ve balık sever"
+  },
+  {
+   "id": "sp.cat",
+   "name": "Kedi",
+   "category": "evo",
+   "sapientAtStart": false,
+   "canEvolve": true,
+   "diet": "carn",
+   "habitat": "land",
+   "stats": {
+    "hp": 30,
+    "damage": 6,
+    "armor": 0,
+    "speed": 1.4,
+    "lifespan": 18,
+    "size": 1
+   },
+   "reproduction": "live",
+   "abilities": {},
+   "note": "Fare avcısı"
+  },
+  {
+   "id": "sp.dog",
+   "name": "Köpek",
+   "category": "evo",
+   "sapientAtStart": false,
+   "canEvolve": true,
+   "diet": "carn",
+   "habitat": "land",
+   "stats": {
+    "hp": 45,
+    "damage": 8,
+    "armor": 0,
+    "speed": 1.3,
+    "lifespan": 15,
+    "size": 1
+   },
+   "reproduction": "live",
+   "abilities": {},
+   "note": "Medenilere evcilleşir"
+  },
+  {
+   "id": "sp.rabbit",
+   "name": "Tavşan",
+   "category": "evo",
+   "sapientAtStart": false,
+   "canEvolve": true,
+   "diet": "herb",
+   "habitat": "land",
+   "stats": {
+    "hp": 15,
+    "damage": 1,
+    "armor": 0,
+    "speed": 1.6,
+    "lifespan": 8,
+    "size": 1
+   },
+   "reproduction": "live",
+   "abilities": {},
+   "note": "Çok hızlı çoğalır"
+  },
+  {
+   "id": "sp.sheep",
+   "name": "Koyun",
+   "category": "evo",
+   "sapientAtStart": false,
+   "canEvolve": true,
+   "diet": "herb",
+   "habitat": "land",
+   "stats": {
+    "hp": 40,
+    "damage": 2,
+    "armor": 0,
+    "speed": 0.9,
+    "lifespan": 12,
+    "size": 2
+   },
+   "reproduction": "live",
+   "abilities": {},
+   "note": "Yün verir"
+  },
+  {
+   "id": "sp.cow",
+   "name": "İnek",
+   "category": "evo",
+   "sapientAtStart": false,
+   "canEvolve": true,
+   "diet": "herb",
+   "habitat": "land",
+   "stats": {
+    "hp": 90,
+    "damage": 4,
+    "armor": 1,
+    "speed": 0.8,
+    "lifespan": 20,
+    "size": 3
+   },
+   "reproduction": "live",
+   "abilities": {},
+   "note": "Süt ve et"
+  },
+  {
+   "id": "sp.chicken",
+   "name": "Tavuk",
+   "category": "evo",
+   "sapientAtStart": false,
+   "canEvolve": true,
+   "diet": "omni",
+   "habitat": "land",
+   "stats": {
+    "hp": 12,
+    "damage": 1,
+    "armor": 0,
+    "speed": 1.0,
+    "lifespan": 8,
+    "size": 1
+   },
+   "reproduction": "egg",
+   "abilities": {},
+   "note": "Yumurta"
+  },
+  {
+   "id": "sp.frog",
+   "name": "Kurbağa",
+   "category": "evo",
+   "sapientAtStart": false,
+   "canEvolve": true,
+   "diet": "carn",
+   "habitat": "amph",
+   "stats": {
+    "hp": 20,
+    "damage": 3,
+    "armor": 0,
+    "speed": 1.2,
+    "lifespan": 10,
+    "size": 1
+   },
+   "reproduction": "egg",
+   "abilities": {},
+   "note": "Böcek yer; bataklıkta çoğalır"
+  },
+  {
+   "id": "sp.rat",
+   "name": "Sıçan",
+   "category": "evo",
+   "sapientAtStart": false,
+   "canEvolve": true,
+   "diet": "omni",
+   "habitat": "land",
+   "stats": {
+    "hp": 12,
+    "damage": 2,
+    "armor": 0,
+    "speed": 1.4,
+    "lifespan": 4,
+    "size": 1
+   },
+   "reproduction": "live",
+   "abilities": {},
+   "note": "Veba taşır"
+  },
+  {
+   "id": "sp.monkey",
+   "name": "Maymun",
+   "category": "evo",
+   "sapientAtStart": false,
+   "canEvolve": true,
+   "diet": "herb",
+   "habitat": "land",
+   "stats": {
+    "hp": 40,
+    "damage": 5,
+    "armor": 0,
+    "speed": 1.4,
+    "lifespan": 25,
+    "size": 2
+   },
+   "reproduction": "live",
+   "abilities": {
+    "flags": [
+     "climb"
+    ]
+   },
+   "note": "Zeki; evrime yatkın"
+  },
+  {
+   "id": "sp.penguin",
+   "name": "Penguen",
+   "category": "evo",
+   "sapientAtStart": false,
+   "canEvolve": true,
+   "diet": "carn",
+   "habitat": "amph",
+   "stats": {
+    "hp": 30,
+    "damage": 3,
+    "armor": 0,
+    "speed": 0.9,
+    "lifespan": 20,
+    "size": 1
+   },
+   "reproduction": "egg",
+   "abilities": {},
+   "note": "Soğukta yaşar, iyi yüzer"
+  },
+  {
+   "id": "sp.fox",
+   "name": "Tilki",
+   "category": "evo",
+   "sapientAtStart": false,
+   "canEvolve": true,
+   "diet": "carn",
+   "habitat": "land",
+   "stats": {
+    "hp": 30,
+    "damage": 6,
+    "armor": 0,
+    "speed": 1.5,
+    "lifespan": 12,
+    "size": 1
+   },
+   "reproduction": "live",
+   "abilities": {},
+   "note": "Kurnaz avcı"
+  },
+  {
+   "id": "sp.crab",
+   "name": "Yengeç",
+   "category": "evo",
+   "sapientAtStart": false,
+   "canEvolve": true,
+   "diet": "omni",
+   "habitat": "amph",
+   "stats": {
+    "hp": 35,
+    "damage": 5,
+    "armor": 6,
+    "speed": 0.8,
+    "lifespan": 15,
+    "size": 1
+   },
+   "reproduction": "egg",
+   "abilities": {},
+   "note": "Kabuklu"
+  },
+  {
+   "id": "sp.scorpion",
+   "name": "Akrep",
+   "category": "evo",
+   "sapientAtStart": false,
+   "canEvolve": true,
+   "diet": "carn",
+   "habitat": "land",
+   "stats": {
+    "hp": 30,
+    "damage": 8,
+    "armor": 4,
+    "speed": 1.0,
+    "lifespan": 10,
+    "size": 1
+   },
+   "reproduction": "egg",
+   "abilities": {
+    "grants": [
+     "venom"
+    ]
+   },
+   "note": "Zehirli iğne"
+  },
+  {
+   "id": "sp.lizard",
+   "name": "Kertenkele",
+   "category": "evo",
+   "sapientAtStart": false,
+   "canEvolve": true,
+   "diet": "carn",
+   "habitat": "land",
+   "stats": {
+    "hp": 25,
+    "damage": 4,
+    "armor": 2,
+    "speed": 1.3,
+    "lifespan": 12,
+    "size": 1
+   },
+   "reproduction": "egg",
+   "abilities": {},
+   "note": "Sıcağa dayanıklı"
+  },
+  {
+   "id": "sp.crocodile",
+   "name": "Timsah",
+   "category": "evo",
+   "sapientAtStart": false,
+   "canEvolve": true,
+   "diet": "carn",
+   "habitat": "amph",
+   "stats": {
+    "hp": 160,
+    "damage": 22,
+    "armor": 6,
+    "speed": 0.8,
+    "lifespan": 60,
+    "size": 4
+   },
+   "reproduction": "egg",
+   "abilities": {},
+   "note": "Pusu avcısı"
+  },
+  {
+   "id": "sp.bee",
+   "name": "Arı",
+   "category": "evo",
+   "sapientAtStart": false,
+   "canEvolve": true,
+   "diet": "herb",
+   "habitat": "air",
+   "stats": {
+    "hp": 5,
+    "damage": 2,
+    "armor": 0,
+    "speed": 1.5,
+    "lifespan": 2,
+    "size": 1
+   },
+   "reproduction": "egg",
+   "abilities": {
+    "grants": [
+     "venom"
+    ]
+   },
+   "note": "Kovan kurar; bal üretir"
+  },
+  {
+   "id": "sp.ant",
+   "name": "Karınca",
+   "category": "evo",
+   "sapientAtStart": false,
+   "canEvolve": true,
+   "diet": "omni",
+   "habitat": "land",
+   "stats": {
+    "hp": 6,
+    "damage": 2,
+    "armor": 1,
+    "speed": 1.2,
+    "lifespan": 3,
+    "size": 1
+   },
+   "reproduction": "egg",
+   "abilities": {},
+   "note": "Koloni halinde çalışır"
+  },
+  {
+   "id": "sp.beetle",
+   "name": "Böcek",
+   "category": "evo",
+   "sapientAtStart": false,
+   "canEvolve": true,
+   "diet": "herb",
+   "habitat": "land",
+   "stats": {
+    "hp": 20,
+    "damage": 3,
+    "armor": 5,
+    "speed": 0.8,
+    "lifespan": 5,
+    "size": 1
+   },
+   "reproduction": "egg",
+   "abilities": {},
+   "note": "Sert kabuk"
+  },
+  {
+   "id": "sp.snake",
+   "name": "Yılan",
+   "category": "evo",
+   "sapientAtStart": false,
+   "canEvolve": true,
+   "diet": "carn",
+   "habitat": "land",
+   "stats": {
+    "hp": 25,
+    "damage": 7,
+    "armor": 0,
+    "speed": 1.1,
+    "lifespan": 15,
+    "size": 1
+   },
+   "reproduction": "egg",
+   "abilities": {
+    "grants": [
+     "venom"
+    ]
+   },
+   "note": ""
+  },
+  {
+   "id": "sp.turtle",
+   "name": "Kaplumbağa",
+   "category": "evo",
+   "sapientAtStart": false,
+   "canEvolve": true,
+   "diet": "herb",
+   "habitat": "amph",
+   "stats": {
+    "hp": 80,
+    "damage": 3,
+    "armor": 12,
+    "speed": 0.4,
+    "lifespan": 120,
+    "size": 2
+   },
+   "reproduction": "egg",
+   "abilities": {},
+   "note": "Çok uzun ömür"
+  },
+  {
+   "id": "sp.deer",
+   "name": "Geyik",
+   "category": "evo",
+   "sapientAtStart": false,
+   "canEvolve": true,
+   "diet": "herb",
+   "habitat": "land",
+   "stats": {
+    "hp": 50,
+    "damage": 5,
+    "armor": 0,
+    "speed": 1.5,
+    "lifespan": 15,
+    "size": 2
+   },
+   "reproduction": "live",
+   "abilities": {},
+   "note": ""
+  },
+  {
+   "id": "sp.boar",
+   "name": "Yaban Domuzu",
+   "category": "evo",
+   "sapientAtStart": false,
+   "canEvolve": true,
+   "diet": "omni",
+   "habitat": "land",
+   "stats": {
+    "hp": 70,
+    "damage": 9,
+    "armor": 2,
+    "speed": 1.2,
+    "lifespan": 15,
+    "size": 2
+   },
+   "reproduction": "live",
+   "abilities": {},
+   "note": ""
+  },
+  {
+   "id": "sp.goat",
+   "name": "Keçi",
+   "category": "evo",
+   "sapientAtStart": false,
+   "canEvolve": true,
+   "diet": "herb",
+   "habitat": "land",
+   "stats": {
+    "hp": 40,
+    "damage": 5,
+    "armor": 0,
+    "speed": 1.2,
+    "lifespan": 15,
+    "size": 2
+   },
+   "reproduction": "live",
+   "abilities": {
+    "grants": [
+     "climber"
+    ]
+   },
+   "note": "Dağlara tırmanır"
+  },
+  {
+   "id": "sp.owl",
+   "name": "Baykuş",
+   "category": "evo",
+   "sapientAtStart": false,
+   "canEvolve": true,
+   "diet": "carn",
+   "habitat": "air",
+   "stats": {
+    "hp": 20,
+    "damage": 4,
+    "armor": 0,
+    "speed": 1.3,
+    "lifespan": 20,
+    "size": 1
+   },
+   "reproduction": "egg",
+   "abilities": {
+    "grants": [
+     "night_owl"
+    ]
+   },
+   "note": ""
+  },
+  {
+   "id": "sp.crow",
+   "name": "Karga",
+   "category": "evo",
+   "sapientAtStart": false,
+   "canEvolve": true,
+   "diet": "omni",
+   "habitat": "air",
+   "stats": {
+    "hp": 12,
+    "damage": 2,
+    "armor": 0,
+    "speed": 1.4,
+    "lifespan": 15,
+    "size": 1
+   },
+   "reproduction": "egg",
+   "abilities": {},
+   "note": "Zeki; ölüleri izler"
+  },
+  {
+   "id": "sp.eagle",
+   "name": "Kartal",
+   "category": "evo",
+   "sapientAtStart": false,
+   "canEvolve": true,
+   "diet": "carn",
+   "habitat": "air",
+   "stats": {
+    "hp": 30,
+    "damage": 8,
+    "armor": 0,
+    "speed": 1.8,
+    "lifespan": 25,
+    "size": 2
+   },
+   "reproduction": "egg",
+   "abilities": {},
+   "note": ""
+  },
+  {
+   "id": "sp.parrot",
+   "name": "Papağan",
+   "category": "evo",
+   "sapientAtStart": false,
+   "canEvolve": true,
+   "diet": "herb",
+   "habitat": "air",
+   "stats": {
+    "hp": 12,
+    "damage": 2,
+    "armor": 0,
+    "speed": 1.5,
+    "lifespan": 40,
+    "size": 1
+   },
+   "reproduction": "egg",
+   "abilities": {},
+   "note": "Taklitçi; dil öğrenmeye yatkın"
+  },
+  {
+   "id": "sp.seal",
+   "name": "Fok",
+   "category": "evo",
+   "sapientAtStart": false,
+   "canEvolve": true,
+   "diet": "carn",
+   "habitat": "amph",
+   "stats": {
+    "hp": 70,
+    "damage": 6,
+    "armor": 2,
+    "speed": 0.7,
+    "lifespan": 25,
+    "size": 2
+   },
+   "reproduction": "live",
+   "abilities": {},
+   "note": ""
+  },
+  {
+   "id": "sp.hyena",
+   "name": "Sırtlan",
+   "category": "evo",
+   "sapientAtStart": false,
+   "canEvolve": true,
+   "diet": "carn",
+   "habitat": "land",
+   "stats": {
+    "hp": 55,
+    "damage": 9,
+    "armor": 0,
+    "speed": 1.4,
+    "lifespan": 15,
+    "size": 2
+   },
+   "reproduction": "live",
+   "abilities": {},
+   "note": ""
+  },
+  {
+   "id": "sp.lion",
+   "name": "Aslan",
+   "category": "evo",
+   "sapientAtStart": false,
+   "canEvolve": true,
+   "diet": "carn",
+   "habitat": "land",
+   "stats": {
+    "hp": 120,
+    "damage": 18,
+    "armor": 1,
+    "speed": 1.4,
+    "lifespan": 15,
+    "size": 3
+   },
+   "reproduction": "live",
+   "abilities": {},
+   "note": ""
+  },
+  {
+   "id": "sp.rhino",
+   "name": "Gergedan",
+   "category": "evo",
+   "sapientAtStart": false,
+   "canEvolve": true,
+   "diet": "herb",
+   "habitat": "land",
+   "stats": {
+    "hp": 220,
+    "damage": 20,
+    "armor": 10,
+    "speed": 0.9,
+    "lifespan": 40,
+    "size": 4
+   },
+   "reproduction": "live",
+   "abilities": {},
+   "note": "Hücum eder"
+  },
+  {
+   "id": "sp.buffalo",
+   "name": "Manda",
+   "category": "evo",
+   "sapientAtStart": false,
+   "canEvolve": true,
+   "diet": "herb",
+   "habitat": "land",
+   "stats": {
+    "hp": 150,
+    "damage": 12,
+    "armor": 4,
+    "speed": 0.9,
+    "lifespan": 20,
+    "size": 3
+   },
+   "reproduction": "live",
+   "abilities": {},
+   "note": ""
+  },
+  {
+   "id": "sp.camel",
+   "name": "Deve",
+   "category": "evo",
+   "sapientAtStart": false,
+   "canEvolve": true,
+   "diet": "herb",
+   "habitat": "land",
+   "stats": {
+    "hp": 100,
+    "damage": 5,
+    "armor": 1,
+    "speed": 1.0,
+    "lifespan": 40,
+    "size": 3
+   },
+   "reproduction": "live",
+   "abilities": {
+    "grants": [
+     "heatproof"
+    ]
+   },
+   "note": ""
+  },
+  {
+   "id": "sp.reindeer",
+   "name": "Ren Geyiği",
+   "category": "evo",
+   "sapientAtStart": false,
+   "canEvolve": true,
+   "diet": "herb",
+   "habitat": "land",
+   "stats": {
+    "hp": 70,
+    "damage": 6,
+    "armor": 1,
+    "speed": 1.3,
+    "lifespan": 15,
+    "size": 2
+   },
+   "reproduction": "live",
+   "abilities": {
+    "grants": [
+     "coldproof"
+    ]
+   },
+   "note": ""
+  },
+  {
+   "id": "sp.polar_bear",
+   "name": "Kutup Ayısı",
+   "category": "evo",
+   "sapientAtStart": false,
+   "canEvolve": true,
+   "diet": "carn",
+   "habitat": "amph",
+   "stats": {
+    "hp": 200,
+    "damage": 22,
+    "armor": 4,
+    "speed": 0.9,
+    "lifespan": 25,
+    "size": 4
+   },
+   "reproduction": "live",
+   "abilities": {
+    "grants": [
+     "coldproof"
+    ]
+   },
+   "note": ""
+  },
+  {
+   "id": "sp.snail",
+   "name": "Salyangoz",
+   "category": "evo",
+   "sapientAtStart": false,
+   "canEvolve": true,
+   "diet": "herb",
+   "habitat": "land",
+   "stats": {
+    "hp": 15,
+    "damage": 1,
+    "armor": 6,
+    "speed": 0.2,
+    "lifespan": 5,
+    "size": 1
+   },
+   "reproduction": "egg",
+   "abilities": {},
+   "note": ""
+  },
+  {
+   "id": "sp.salamander",
+   "name": "Semender",
+   "category": "evo",
+   "sapientAtStart": false,
+   "canEvolve": true,
+   "diet": "carn",
+   "habitat": "land",
+   "stats": {
+    "hp": 40,
+    "damage": 6,
+    "armor": 2,
+    "speed": 1.0,
+    "lifespan": 20,
+    "size": 1
+   },
+   "reproduction": "egg",
+   "abilities": {
+    "grants": [
+     "heatproof"
+    ]
+   },
+   "note": "Ateşte yaşar"
+  },
+  {
+   "id": "sp.horse_wild",
+   "name": "Yaban Atı",
+   "category": "evo",
+   "sapientAtStart": false,
+   "canEvolve": true,
+   "diet": "herb",
+   "habitat": "land",
+   "stats": {
+    "hp": 90,
+    "damage": 6,
+    "armor": 0,
+    "speed": 1.9,
+    "lifespan": 25,
+    "size": 3
+   },
+   "reproduction": "live",
+   "abilities": {},
+   "note": "Evcilleşince binek"
+  },
+  {
+   "id": "sp.fish",
+   "name": "Balık",
+   "category": "animal",
+   "sapientAtStart": false,
+   "canEvolve": false,
+   "diet": "herb",
+   "habitat": "water",
+   "stats": {
+    "hp": 8,
+    "damage": 0,
+    "armor": 0,
+    "speed": 1.2,
+    "lifespan": 4,
+    "size": 1
+   },
+   "reproduction": "egg",
+   "abilities": {},
+   "note": "Besin kaynağı"
+  },
+  {
+   "id": "sp.butterfly",
+   "name": "Kelebek",
+   "category": "animal",
+   "sapientAtStart": false,
+   "canEvolve": false,
+   "diet": "herb",
+   "habitat": "air",
+   "stats": {
+    "hp": 3,
+    "damage": 0,
+    "armor": 0,
+    "speed": 1.0,
+    "lifespan": 1,
+    "size": 1
+   },
+   "reproduction": "meta",
+   "abilities": {},
+   "note": "Tırtıldan dönüşür"
+  },
+  {
+   "id": "sp.caterpillar",
+   "name": "Tırtıl",
+   "category": "animal",
+   "sapientAtStart": false,
+   "canEvolve": false,
+   "diet": "herb",
+   "habitat": "land",
+   "stats": {
+    "hp": 5,
+    "damage": 0,
+    "armor": 0,
+    "speed": 0.3,
+    "lifespan": 1,
+    "size": 1
+   },
+   "reproduction": "egg",
+   "abilities": {},
+   "note": "Metamorfoz ile kelebeğe"
+  },
+  {
+   "id": "sp.piranha",
+   "name": "Pirana",
+   "category": "animal",
+   "sapientAtStart": false,
+   "canEvolve": false,
+   "diet": "carn",
+   "habitat": "water",
+   "stats": {
+    "hp": 10,
+    "damage": 6,
+    "armor": 0,
+    "speed": 1.6,
+    "lifespan": 5,
+    "size": 1
+   },
+   "reproduction": "egg",
+   "abilities": {},
+   "note": "Suya düşeni parçalar"
+  },
+  {
+   "id": "sp.mosquito_swarm",
+   "name": "Sivrisinek Sürüsü",
+   "category": "animal",
+   "sapientAtStart": false,
+   "canEvolve": false,
+   "diet": "carn",
+   "habitat": "air",
+   "stats": {
+    "hp": 8,
+    "damage": 1,
+    "armor": 0,
+    "speed": 1.4,
+    "lifespan": 1,
+    "size": 1
+   },
+   "reproduction": "egg",
+   "abilities": {
+    "grants": [
+     "plague_bearer"
+    ]
+   },
+   "note": "Hastalık yayar"
+  },
+  {
+   "id": "sp.dragon",
+   "name": "Ejderha",
+   "category": "monster",
+   "sapientAtStart": false,
+   "canEvolve": false,
+   "diet": "carn",
+   "habitat": "air",
+   "stats": {
+    "hp": 3000,
+    "damage": 120,
+    "armor": 40,
+    "speed": 1.2,
+    "lifespan": 1000,
+    "size": 5
+   },
+   "reproduction": "egg",
+   "abilities": {
+    "grants": [
+     "fire_breath",
+     "flight"
+    ]
+   },
+   "note": "Şehirleri yakar, altın biriktirir"
+  },
+  {
+   "id": "sp.sandworm",
+   "name": "Kum Kurdu",
+   "category": "monster",
+   "sapientAtStart": false,
+   "canEvolve": false,
+   "diet": "carn",
+   "habitat": "under",
+   "stats": {
+    "hp": 1500,
+    "damage": 60,
+    "armor": 20,
+    "speed": 1.0,
+    "lifespan": 300,
+    "size": 5
+   },
+   "reproduction": "split",
+   "abilities": {},
+   "note": "Yerin altından çıkıp yutar"
+  },
+  {
+   "id": "sp.kraken",
+   "name": "Derin Canavarı",
+   "category": "monster",
+   "sapientAtStart": false,
+   "canEvolve": false,
+   "diet": "carn",
+   "habitat": "water",
+   "stats": {
+    "hp": 2000,
+    "damage": 70,
+    "armor": 20,
+    "speed": 0.8,
+    "lifespan": 500,
+    "size": 5
+   },
+   "reproduction": "egg",
+   "abilities": {},
+   "note": "Gemileri batırır"
+  },
+  {
+   "id": "sp.ember_imp",
+   "name": "Kor İblisi",
+   "category": "monster",
+   "sapientAtStart": false,
+   "canEvolve": false,
+   "diet": "carn",
+   "habitat": "land",
+   "stats": {
+    "hp": 90,
+    "damage": 14,
+    "armor": 2,
+    "speed": 1.2,
+    "lifespan": 100,
+    "size": 2
+   },
+   "reproduction": "summon",
+   "abilities": {
+    "grants": [
+     "fire_breath",
+     "heatproof"
+    ]
+   },
+   "note": "Yarıklardan çıkar"
+  },
+  {
+   "id": "sp.rot_crawler",
+   "name": "Çürük Sürüngen",
+   "category": "monster",
+   "sapientAtStart": false,
+   "canEvolve": false,
+   "diet": "carn",
+   "habitat": "land",
+   "stats": {
+    "hp": 60,
+    "damage": 10,
+    "armor": 2,
+    "speed": 1.0,
+    "lifespan": 40,
+    "size": 2
+   },
+   "reproduction": "split",
+   "abilities": {
+    "grants": [
+     "plague_bearer"
+    ]
+   },
+   "note": ""
+  },
+  {
+   "id": "sp.candy_golem",
+   "name": "Şeker Golemi",
+   "category": "monster",
+   "sapientAtStart": false,
+   "canEvolve": false,
+   "diet": "herb",
+   "habitat": "land",
+   "stats": {
+    "hp": 250,
+    "damage": 15,
+    "armor": 15,
+    "speed": 0.6,
+    "lifespan": 200,
+    "size": 3
+   },
+   "reproduction": "split",
+   "abilities": {},
+   "note": ""
+  },
+  {
+   "id": "sp.gummy_bear",
+   "name": "Jöle Ayı",
+   "category": "monster",
+   "sapientAtStart": false,
+   "canEvolve": false,
+   "diet": "herb",
+   "habitat": "land",
+   "stats": {
+    "hp": 60,
+    "damage": 5,
+    "armor": 5,
+    "speed": 1.0,
+    "lifespan": 20,
+    "size": 2
+   },
+   "reproduction": "split",
+   "abilities": {},
+   "note": ""
+  },
+  {
+   "id": "sp.shroomling",
+   "name": "Mantarcık",
+   "category": "monster",
+   "sapientAtStart": false,
+   "canEvolve": false,
+   "diet": "herb",
+   "habitat": "land",
+   "stats": {
+    "hp": 40,
+    "damage": 5,
+    "armor": 0,
+    "speed": 0.9,
+    "lifespan": 15,
+    "size": 1
+   },
+   "reproduction": "spore",
+   "abilities": {},
+   "note": "Spor hastalığıyla dönüşenler"
+  },
+  {
+   "id": "sp.crystal_beetle",
+   "name": "Kristal Böcek",
+   "category": "monster",
+   "sapientAtStart": false,
+   "canEvolve": false,
+   "diet": "herb",
+   "habitat": "land",
+   "stats": {
+    "hp": 60,
+    "damage": 6,
+    "armor": 15,
+    "speed": 0.8,
+    "lifespan": 30,
+    "size": 1
+   },
+   "reproduction": "egg",
+   "abilities": {},
+   "note": ""
+  },
+  {
+   "id": "sp.ash_crawler",
+   "name": "Kül Sürüngeni",
+   "category": "monster",
+   "sapientAtStart": false,
+   "canEvolve": false,
+   "diet": "carn",
+   "habitat": "land",
+   "stats": {
+    "hp": 70,
+    "damage": 11,
+    "armor": 4,
+    "speed": 1.0,
+    "lifespan": 30,
+    "size": 2
+   },
+   "reproduction": "egg",
+   "abilities": {},
+   "note": ""
+  },
+  {
+   "id": "sp.bone_crawler",
+   "name": "Kemik Örümceği",
+   "category": "monster",
+   "sapientAtStart": false,
+   "canEvolve": false,
+   "diet": "carn",
+   "habitat": "land",
+   "stats": {
+    "hp": 80,
+    "damage": 12,
+    "armor": 5,
+    "speed": 1.2,
+    "lifespan": 50,
+    "size": 2
+   },
+   "reproduction": "egg",
+   "abilities": {},
+   "note": ""
+  },
+  {
+   "id": "sp.clock_crab",
+   "name": "Saat Yengeci",
+   "category": "monster",
+   "sapientAtStart": false,
+   "canEvolve": false,
+   "diet": "herb",
+   "habitat": "amph",
+   "stats": {
+    "hp": 50,
+    "damage": 6,
+    "armor": 10,
+    "speed": 0.8,
+    "lifespan": 999,
+    "size": 1
+   },
+   "reproduction": "egg",
+   "abilities": {},
+   "note": "Yaşlanmaz"
+  },
+  {
+   "id": "sp.void_moth",
+   "name": "Boşluk Güvesi",
+   "category": "monster",
+   "sapientAtStart": false,
+   "canEvolve": false,
+   "diet": "herb",
+   "habitat": "air",
+   "stats": {
+    "hp": 20,
+    "damage": 3,
+    "armor": 0,
+    "speed": 1.3,
+    "lifespan": 10,
+    "size": 1
+   },
+   "reproduction": "egg",
+   "abilities": {},
+   "note": "Manayı emer"
+  },
+  {
+   "id": "sp.flesh_mound",
+   "name": "Et Yığını",
+   "category": "monster",
+   "sapientAtStart": false,
+   "canEvolve": false,
+   "diet": "carn",
+   "habitat": "land",
+   "stats": {
+    "hp": 200,
+    "damage": 15,
+    "armor": 0,
+    "speed": 0.5,
+    "lifespan": 50,
+    "size": 3
+   },
+   "reproduction": "tumor",
+   "abilities": {
+    "grants": [
+     "regeneration"
+    ]
+   },
+   "note": "Tümör hastalığından doğar"
+  },
+  {
+   "id": "sp.devourer",
+   "name": "Yutucu Kütle",
+   "category": "monster",
+   "sapientAtStart": false,
+   "canEvolve": false,
+   "diet": "omni",
+   "habitat": "land",
+   "stats": {
+    "hp": 150,
+    "damage": 12,
+    "armor": 5,
+    "speed": 0.7,
+    "lifespan": 999,
+    "size": 3
+   },
+   "reproduction": "assimilate",
+   "abilities": {},
+   "note": "Değdiği birimi kendine dönüştürür"
+  },
+  {
+   "id": "sp.slime",
+   "name": "Balçık",
+   "category": "monster",
+   "sapientAtStart": false,
+   "canEvolve": false,
+   "diet": "omni",
+   "habitat": "land",
+   "stats": {
+    "hp": 40,
+    "damage": 5,
+    "armor": 0,
+    "speed": 0.6,
+    "lifespan": 30,
+    "size": 1
+   },
+   "reproduction": "split",
+   "abilities": {},
+   "note": "İkiye bölünerek çoğalır"
+  },
+  {
+   "id": "sp.walking_tree",
+   "name": "Yürüyen Ağaç",
+   "category": "magic",
+   "sapientAtStart": false,
+   "canEvolve": false,
+   "diet": "herb",
+   "habitat": "land",
+   "stats": {
+    "hp": 400,
+    "damage": 25,
+    "armor": 15,
+    "speed": 0.4,
+    "lifespan": 800,
+    "size": 4
+   },
+   "reproduction": "seed",
+   "abilities": {},
+   "note": "Ormanları korur"
+  },
+  {
+   "id": "sp.fairy",
+   "name": "Peri",
+   "category": "magic",
+   "sapientAtStart": false,
+   "canEvolve": false,
+   "diet": "herb",
+   "habitat": "air",
+   "stats": {
+    "hp": 20,
+    "damage": 3,
+    "armor": 0,
+    "speed": 1.6,
+    "lifespan": 500,
+    "size": 1
+   },
+   "reproduction": "egg",
+   "abilities": {
+    "spells": [
+     "heal",
+     "bless"
+    ]
+   },
+   "note": "Çiçekleri büyütür"
+  },
+  {
+   "id": "sp.sky_whale_calf",
+   "name": "Gök Balinası Yavrusu",
+   "category": "magic",
+   "sapientAtStart": false,
+   "canEvolve": false,
+   "diet": "herb",
+   "habitat": "air",
+   "stats": {
+    "hp": 600,
+    "damage": 5,
+    "armor": 5,
+    "speed": 0.5,
+    "lifespan": 300,
+    "size": 5
+   },
+   "reproduction": "live",
+   "abilities": {},
+   "note": "Gökte süzülür"
+  },
+  {
+   "id": "sp.skeleton",
+   "name": "İskelet",
+   "category": "undead",
+   "sapientAtStart": false,
+   "canEvolve": false,
+   "diet": "none",
+   "habitat": "land",
+   "stats": {
+    "hp": 60,
+    "damage": 10,
+    "armor": 2,
+    "speed": 1.0,
+    "lifespan": 0,
+    "size": 2
+   },
+   "reproduction": "summon",
+   "abilities": {
+    "immunes": [
+     "plague"
+    ]
+   },
+   "note": "Ölü diriltmeyle doğar"
+  },
+  {
+   "id": "sp.zombie",
+   "name": "Zombi",
+   "category": "undead",
+   "sapientAtStart": false,
+   "canEvolve": false,
+   "diet": "brains",
+   "habitat": "land",
+   "stats": {
+    "hp": 80,
+    "damage": 10,
+    "armor": 0,
+    "speed": 0.6,
+    "lifespan": 0,
+    "size": 2
+   },
+   "reproduction": "infect",
+   "abilities": {},
+   "note": "Isırdığını dönüştürür"
+  },
+  {
+   "id": "sp.zombie_runner",
+   "name": "Koşucu Zombi",
+   "category": "undead",
+   "sapientAtStart": false,
+   "canEvolve": false,
+   "diet": "brains",
+   "habitat": "land",
+   "stats": {
+    "hp": 55,
+    "damage": 9,
+    "armor": 0,
+    "speed": 1.5,
+    "lifespan": 0,
+    "size": 2
+   },
+   "reproduction": "infect",
+   "abilities": {},
+   "note": "Taze dönüşmüş; hızlı ama çabuk çürür (ömür 3 yıl)"
+  },
+  {
+   "id": "sp.zombie_brute",
+   "name": "İri Zombi",
+   "category": "undead",
+   "sapientAtStart": false,
+   "canEvolve": false,
+   "diet": "brains",
+   "habitat": "land",
+   "stats": {
+    "hp": 320,
+    "damage": 26,
+    "armor": 6,
+    "speed": 0.5,
+    "lifespan": 0,
+    "size": 4
+   },
+   "reproduction": "infect",
+   "abilities": {},
+   "note": "İri birimlerden (ork, ayı, dev) dönüşür; kapıları kırar"
+  },
+  {
+   "id": "sp.zombie_bloater",
+   "name": "Şişkin Zombi",
+   "category": "undead",
+   "sapientAtStart": false,
+   "canEvolve": false,
+   "diet": "brains",
+   "habitat": "land",
+   "stats": {
+    "hp": 120,
+    "damage": 4,
+    "armor": 0,
+    "speed": 0.4,
+    "lifespan": 0,
+    "size": 3
+   },
+   "reproduction": "infect",
+   "abilities": {},
+   "note": "Ölünce patlar; çevresine çürük bulutu yayar"
+  },
+  {
+   "id": "sp.zombie_crawler",
+   "name": "Sürünen Zombi",
+   "category": "undead",
+   "sapientAtStart": false,
+   "canEvolve": false,
+   "diet": "brains",
+   "habitat": "land",
+   "stats": {
+    "hp": 30,
+    "damage": 6,
+    "armor": 0,
+    "speed": 0.3,
+    "lifespan": 0,
+    "size": 1
+   },
+   "reproduction": "infect",
+   "abilities": {},
+   "note": "Bacaksız; pusuda bekler, yüzebilir"
+  },
+  {
+   "id": "sp.zombie_beast",
+   "name": "Zombi Hayvan",
+   "category": "undead",
+   "sapientAtStart": false,
+   "canEvolve": false,
+   "diet": "brains",
+   "habitat": "land",
+   "stats": {
+    "hp": 0,
+    "damage": 0,
+    "armor": 0,
+    "speed": 0,
+    "lifespan": 0,
+    "size": 0
+   },
+   "reproduction": "infect",
+   "abilities": {},
+   "note": "Enfekte hayvan: kendi türünün istatistikleri x0.8, hız x0.7, çürük paleti"
+  },
+  {
+   "id": "sp.zombie_dragon",
+   "name": "Çürük Ejderha",
+   "category": "undead",
+   "sapientAtStart": false,
+   "canEvolve": false,
+   "diet": "brains",
+   "habitat": "air",
+   "stats": {
+    "hp": 2500,
+    "damage": 90,
+    "armor": 30,
+    "speed": 1.0,
+    "lifespan": 0,
+    "size": 5
+   },
+   "reproduction": "infect",
+   "abilities": {
+    "grants": [
+     "flight"
+    ]
+   },
+   "note": "Ölen ejderha dönüşürse; ateş yerine çürük nefes"
+  },
+  {
+   "id": "sp.zombie_lord",
+   "name": "Zombi Efendisi",
+   "category": "undead",
+   "sapientAtStart": false,
+   "canEvolve": false,
+   "diet": "brains",
+   "habitat": "land",
+   "stats": {
+    "hp": 600,
+    "damage": 30,
+    "armor": 8,
+    "speed": 0.9,
+    "lifespan": 0,
+    "size": 3
+   },
+   "reproduction": "none",
+   "abilities": {
+    "spells": [
+     "raise_dead",
+     "rot_breath"
+    ]
+   },
+   "note": "Büyük sürülerde 500 zombi başına bir tane doğar; sürüyü yönetir"
+  },
+  {
+   "id": "sp.ghost",
+   "name": "Hayalet",
+   "category": "undead",
+   "sapientAtStart": false,
+   "canEvolve": false,
+   "diet": "none",
+   "habitat": "air",
+   "stats": {
+    "hp": 50,
+    "damage": 8,
+    "armor": 0,
+    "speed": 1.2,
+    "lifespan": 0,
+    "size": 2
+   },
+   "reproduction": "summon",
+   "abilities": {
+    "flags": [
+     "phase"
+    ]
+   },
+   "note": "Duvarlardan geçer"
+  },
+  {
+   "id": "sp.necromancer",
+   "name": "Ölü Çağırıcı",
+   "category": "undead",
+   "sapientAtStart": false,
+   "canEvolve": false,
+   "diet": "omni",
+   "habitat": "land",
+   "stats": {
+    "hp": 150,
+    "damage": 10,
+    "armor": 2,
+    "speed": 1.0,
+    "lifespan": 300,
+    "size": 2
+   },
+   "reproduction": "none",
+   "abilities": {
+    "spells": [
+     "raise_dead"
+    ]
+   },
+   "note": "Mezarlıklarda güçlenir"
+  },
+  {
+   "id": "sp.bloodsucker",
+   "name": "Kan Emici",
+   "category": "undead",
+   "sapientAtStart": false,
+   "canEvolve": false,
+   "diet": "blood",
+   "habitat": "land",
+   "stats": {
+    "hp": 140,
+    "damage": 16,
+    "armor": 2,
+    "speed": 1.3,
+    "lifespan": 0,
+    "size": 2
+   },
+   "reproduction": "infect",
+   "abilities": {
+    "grants": [
+     "vampiric"
+    ]
+   },
+   "note": "Sarımsaktan kaçar"
+  },
+  {
+   "id": "sp.fire_elemental",
+   "name": "Ateş Elementali",
+   "category": "elemental",
+   "sapientAtStart": false,
+   "canEvolve": false,
+   "diet": "none",
+   "habitat": "land",
+   "stats": {
+    "hp": 120,
+    "damage": 18,
+    "armor": 0,
+    "speed": 1.2,
+    "lifespan": 0,
+    "size": 2
+   },
+   "reproduction": "none",
+   "abilities": {
+    "grants": [
+     "heatproof"
+    ]
+   },
+   "note": "Soğuk çağlarda erir"
+  },
+  {
+   "id": "sp.water_elemental",
+   "name": "Su Elementali",
+   "category": "elemental",
+   "sapientAtStart": false,
+   "canEvolve": false,
+   "diet": "none",
+   "habitat": "amph",
+   "stats": {
+    "hp": 140,
+    "damage": 12,
+    "armor": 0,
+    "speed": 1.0,
+    "lifespan": 0,
+    "size": 2
+   },
+   "reproduction": "none",
+   "abilities": {},
+   "note": "Yangın söndürür"
+  },
+  {
+   "id": "sp.earth_golem",
+   "name": "Toprak Golemi",
+   "category": "elemental",
+   "sapientAtStart": false,
+   "canEvolve": false,
+   "diet": "none",
+   "habitat": "land",
+   "stats": {
+    "hp": 400,
+    "damage": 30,
+    "armor": 25,
+    "speed": 0.5,
+    "lifespan": 0,
+    "size": 4
+   },
+   "reproduction": "none",
+   "abilities": {},
+   "note": "Yavaş ama durdurulamaz"
+  },
+  {
+   "id": "sp.snowman",
+   "name": "Kardan Adam",
+   "category": "elemental",
+   "sapientAtStart": false,
+   "canEvolve": false,
+   "diet": "none",
+   "habitat": "land",
+   "stats": {
+    "hp": 40,
+    "damage": 4,
+    "armor": 0,
+    "speed": 0.8,
+    "lifespan": 0,
+    "size": 2
+   },
+   "reproduction": "none",
+   "abilities": {},
+   "note": "Sıcakta erir"
+  },
+  {
+   "id": "sp.storm_spirit",
+   "name": "Fırtına Ruhu",
+   "category": "elemental",
+   "sapientAtStart": false,
+   "canEvolve": false,
+   "diet": "none",
+   "habitat": "air",
+   "stats": {
+    "hp": 90,
+    "damage": 20,
+    "armor": 0,
+    "speed": 1.6,
+    "lifespan": 0,
+    "size": 2
+   },
+   "reproduction": "none",
+   "abilities": {
+    "spells": [
+     "lightning"
+    ]
+   },
+   "note": ""
+  },
+  {
+   "id": "sp.dark_mage",
+   "name": "Kara Büyücü",
+   "category": "magic",
+   "sapientAtStart": false,
+   "canEvolve": false,
+   "diet": "omni",
+   "habitat": "land",
+   "stats": {
+    "hp": 120,
+    "damage": 8,
+    "armor": 0,
+    "speed": 1.0,
+    "lifespan": 200,
+    "size": 2
+   },
+   "reproduction": "none",
+   "abilities": {
+    "spells": [
+     "fireball",
+     "curse"
+    ]
+   },
+   "note": "Köyleri yakar"
+  },
+  {
+   "id": "sp.white_mage",
+   "name": "Ak Büyücü",
+   "category": "magic",
+   "sapientAtStart": false,
+   "canEvolve": false,
+   "diet": "omni",
+   "habitat": "land",
+   "stats": {
+    "hp": 120,
+    "damage": 8,
+    "armor": 0,
+    "speed": 1.0,
+    "lifespan": 200,
+    "size": 2
+   },
+   "reproduction": "none",
+   "abilities": {
+    "spells": [
+     "heal",
+     "shield"
+    ]
+   },
+   "note": "Yaralıları iyileştirir"
+  },
+  {
+   "id": "sp.druid",
+   "name": "Druid",
+   "category": "magic",
+   "sapientAtStart": false,
+   "canEvolve": false,
+   "diet": "herb",
+   "habitat": "land",
+   "stats": {
+    "hp": 110,
+    "damage": 8,
+    "armor": 0,
+    "speed": 1.0,
+    "lifespan": 250,
+    "size": 2
+   },
+   "reproduction": "none",
+   "abilities": {
+    "spells": [
+     "grow",
+     "entangle"
+    ]
+   },
+   "note": ""
+  },
+  {
+   "id": "sp.sky_visitor",
+   "name": "Gök Ziyaretçisi",
+   "category": "special",
+   "sapientAtStart": false,
+   "canEvolve": false,
+   "diet": "none",
+   "habitat": "air",
+   "stats": {
+    "hp": 200,
+    "damage": 20,
+    "armor": 10,
+    "speed": 1.8,
+    "lifespan": 999,
+    "size": 2
+   },
+   "reproduction": "none",
+   "abilities": {
+    "spells": [
+     "abduct"
+    ]
+   },
+   "note": "Gemilerle iner"
+  },
+  {
+   "id": "sp.colossus",
+   "name": "Mekanik Dev",
+   "category": "special",
+   "sapientAtStart": false,
+   "canEvolve": false,
+   "diet": "none",
+   "habitat": "land",
+   "stats": {
+    "hp": 5000,
+    "damage": 150,
+    "armor": 60,
+    "speed": 0.8,
+    "lifespan": 0,
+    "size": 5
+   },
+   "reproduction": "none",
+   "abilities": {},
+   "note": "Oyuncunun yönetebildiği dev savaş makinesi"
+  },
+  {
+   "id": "sp.bandit",
+   "name": "Haydut",
+   "category": "special",
+   "sapientAtStart": false,
+   "canEvolve": false,
+   "diet": "omni",
+   "habitat": "land",
+   "stats": {
+    "hp": 100,
+    "damage": 14,
+    "armor": 2,
+    "speed": 1.1,
+    "lifespan": 60,
+    "size": 2
+   },
+   "reproduction": "live",
+   "abilities": {},
+   "note": "Kanunsuz insanlar; köy yağmalar"
+  },
+  {
+   "id": "sp.cultist",
+   "name": "Tarikatçı",
+   "category": "special",
+   "sapientAtStart": false,
+   "canEvolve": false,
+   "diet": "omni",
+   "habitat": "land",
+   "stats": {
+    "hp": 90,
+    "damage": 9,
+    "armor": 0,
+    "speed": 1.0,
+    "lifespan": 60,
+    "size": 2
+   },
+   "reproduction": "live",
+   "abilities": {
+    "spells": [
+     "summon_imp"
+    ]
+   },
+   "note": "Karanlık ritüeller"
+  }
+ ]
+}

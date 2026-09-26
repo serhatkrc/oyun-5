@@ -1,0 +1,73 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "title": "tiles",
+ "type": "object",
+ "required": [
+  "category",
+  "items"
+ ],
+ "properties": {
+  "category": {
+   "const": "tiles"
+  },
+  "count": {
+   "type": "integer"
+  },
+  "items": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "required": [
+     "buildable",
+     "burnable",
+     "canHaveBiome",
+     "colors",
+     "id",
+     "level",
+     "moveCost",
+     "name",
+     "note",
+     "walkable",
+     "water"
+    ],
+    "properties": {
+     "id": {
+      "type": "string",
+      "pattern": "^tile\\.[a-z0-9_]+$"
+     },
+     "name": {
+      "type": "string"
+     },
+     "level": {
+      "type": "integer"
+     },
+     "walkable": {
+      "type": "boolean"
+     },
+     "water": {
+      "type": "boolean"
+     },
+     "buildable": {
+      "type": "boolean"
+     },
+     "burnable": {
+      "type": "boolean"
+     },
+     "moveCost": {
+      "type": "number"
+     },
+     "canHaveBiome": {
+      "type": "boolean"
+     },
+     "colors": {
+      "type": "array"
+     },
+     "note": {
+      "type": "string"
+     }
+    },
+    "additionalProperties": true
+   }
+  }
+ }
+}

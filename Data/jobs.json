@@ -1,0 +1,139 @@
+{
+ "category": "jobs",
+ "count": 19,
+ "items": [
+  {
+   "id": "job.builder",
+   "name": "İnşaatçı",
+   "task": "Bina yapar/onarır",
+   "quotaRule": "1 per 8 pop",
+   "requiresBuilding": null
+  },
+  {
+   "id": "job.gatherer",
+   "name": "Toplayıcı",
+   "task": "Meyve, ot, mantar toplar",
+   "quotaRule": "yiyecek < 2 yıl",
+   "requiresBuilding": null
+  },
+  {
+   "id": "job.farmer",
+   "name": "Çiftçi",
+   "task": "Tarla eker/biçer",
+   "quotaRule": "tarla sayısına göre",
+   "requiresBuilding": "bld.farm_shed"
+  },
+  {
+   "id": "job.lumberjack",
+   "name": "Oduncu",
+   "task": "Ağaç keser",
+   "quotaRule": "odun < hedef",
+   "requiresBuilding": null
+  },
+  {
+   "id": "job.miner",
+   "name": "Madenci",
+   "task": "Taş/cevher çıkarır",
+   "quotaRule": "maden varsa",
+   "requiresBuilding": "bld.mine"
+  },
+  {
+   "id": "job.fisher",
+   "name": "Balıkçı",
+   "task": "Kıyıdan/tekneden balık",
+   "quotaRule": "kıyı şehri",
+   "requiresBuilding": "bld.fishing_hut"
+  },
+  {
+   "id": "job.hunter",
+   "name": "Avcı",
+   "task": "Hayvan avlar",
+   "quotaRule": "et ihtiyacı",
+   "requiresBuilding": null
+  },
+  {
+   "id": "job.herder",
+   "name": "Çoban",
+   "task": "Hayvan besler",
+   "quotaRule": "ağıl varsa",
+   "requiresBuilding": "bld.pasture"
+  },
+  {
+   "id": "job.smith",
+   "name": "Demirci",
+   "task": "Ekipman üretir",
+   "quotaRule": "demirhane",
+   "requiresBuilding": "bld.smithy"
+  },
+  {
+   "id": "job.baker",
+   "name": "Fırıncı",
+   "task": "Ekmek yapar",
+   "quotaRule": "fırın",
+   "requiresBuilding": "bld.bakery"
+  },
+  {
+   "id": "job.trader",
+   "name": "Tüccar",
+   "task": "Şehirler arası ticaret",
+   "quotaRule": "pazar",
+   "requiresBuilding": "bld.market"
+  },
+  {
+   "id": "job.warrior",
+   "name": "Asker",
+   "task": "Savaşır, devriye",
+   "quotaRule": "ordu kotası",
+   "requiresBuilding": "bld.barracks"
+  },
+  {
+   "id": "job.guard",
+   "name": "Muhafız",
+   "task": "Kule/kapıda nöbet",
+   "quotaRule": "kule",
+   "requiresBuilding": "bld.watchtower"
+  },
+  {
+   "id": "job.priest",
+   "name": "Rahip",
+   "task": "Dua, din yayar, iyileştirir",
+   "quotaRule": "tapınak",
+   "requiresBuilding": "bld.temple"
+  },
+  {
+   "id": "job.scholar",
+   "name": "Âlim",
+   "task": "Kitap yazar, okur",
+   "quotaRule": "kütüphane",
+   "requiresBuilding": "bld.library"
+  },
+  {
+   "id": "job.healer",
+   "name": "Şifacı",
+   "task": "Hastaları iyileştirir",
+   "quotaRule": "şifahane",
+   "requiresBuilding": "bld.healers_house"
+  },
+  {
+   "id": "job.sailor",
+   "name": "Gemici",
+   "task": "Gemi kullanır",
+   "quotaRule": "tersane/iskele",
+   "requiresBuilding": "bld.docks"
+  },
+  {
+   "id": "job.leader",
+   "name": "Şehir Lideri",
+   "task": "Şehri yönetir",
+   "quotaRule": "1",
+   "requiresBuilding": null
+  },
+  {
+   "id": "job.king",
+   "name": "Kral",
+   "task": "Krallığı yönetir",
+   "quotaRule": "1",
+   "requiresBuilding": null
+  }
+ ]
+}

@@ -1,0 +1,97 @@
+{
+ "category": "metamorphoses",
+ "count": 13,
+ "items": [
+  {
+   "id": "meta.caterpillar_to_butterfly",
+   "from": "sp.caterpillar",
+   "to": "sp.butterfly",
+   "trigger": "age:1",
+   "note": "Kozada 3 ay"
+  },
+  {
+   "id": "meta.tadpole_frog",
+   "from": "sp.frog",
+   "to": "sp.frog",
+   "trigger": "age:0.5",
+   "note": "Yavru formu suda"
+  },
+  {
+   "id": "meta.corpse_to_zombie",
+   "from": "*",
+   "to": "sp.zombie",
+   "trigger": "dis_rotbite",
+   "note": "Ölüm anında"
+  },
+  {
+   "id": "meta.animal_to_zombie_beast",
+   "from": "*animal",
+   "to": "sp.zombie_beast",
+   "trigger": "dis_rotbite",
+   "note": "Hayvanlar"
+  },
+  {
+   "id": "meta.big_to_brute",
+   "from": "*size>=4",
+   "to": "sp.zombie_brute",
+   "trigger": "dis_rotbite",
+   "note": "İri birimler"
+  },
+  {
+   "id": "meta.fresh_to_runner",
+   "from": "*",
+   "to": "sp.zombie_runner",
+   "trigger": "dis_rotbite:%25",
+   "note": "Taze ölülerin %25'i"
+  },
+  {
+   "id": "meta.dragon_to_rot",
+   "from": "sp.dragon",
+   "to": "sp.zombie_dragon",
+   "trigger": "dis_rotbite",
+   "note": "Ejderha"
+  },
+  {
+   "id": "meta.runner_decay",
+   "from": "sp.zombie_runner",
+   "to": "sp.zombie_crawler",
+   "trigger": "age:3",
+   "note": "Koşucu çürüyünce"
+  },
+  {
+   "id": "meta.growth_to_mound",
+   "from": "*",
+   "to": "sp.flesh_mound",
+   "trigger": "dis_fleshgrowth",
+   "note": "Hastalık sonu"
+  },
+  {
+   "id": "meta.spores_to_shroom",
+   "from": "*",
+   "to": "sp.shroomling",
+   "trigger": "dis_spores",
+   "note": "Hastalık sonu"
+  },
+  {
+   "id": "meta.mage_to_necro",
+   "from": "sp.dark_mage",
+   "to": "sp.necromancer",
+   "trigger": "age:150",
+   "note": "Yaşlı kara büyücü"
+  },
+  {
+   "id": "meta.tree_awaken",
+   "from": "feat.tree_oak",
+   "to": "sp.walking_tree",
+   "trigger": "era.glimmer",
+   "note": "Işıltı çağında 500 yaşındaki meşe uyanabilir"
+  },
+  {
+   "id": "meta.slime_merge",
+   "from": "sp.slime",
+   "to": "sp.slime",
+   "trigger": "merge:4",
+   "note": "4 balçık birleşip büyür"
+  }
+ ]
+}

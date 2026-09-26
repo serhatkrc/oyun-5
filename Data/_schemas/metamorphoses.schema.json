@@ -1,0 +1,49 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "title": "metamorphoses",
+ "type": "object",
+ "required": [
+  "category",
+  "items"
+ ],
+ "properties": {
+  "category": {
+   "const": "metamorphoses"
+  },
+  "count": {
+   "type": "integer"
+  },
+  "items": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "required": [
+     "from",
+     "id",
+     "note",
+     "to",
+     "trigger"
+    ],
+    "properties": {
+     "id": {
+      "type": "string",
+      "pattern": "^meta\\.[a-z0-9_]+$"
+     },
+     "from": {
+      "type": "string"
+     },
+     "to": {
+      "type": "string"
+     },
+     "trigger": {
+      "type": "string"
+     },
+     "note": {
+      "type": "string"
+     }
+    },
+    "additionalProperties": true
+   }
+  }
+ }
+}

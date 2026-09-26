@@ -1,0 +1,49 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "title": "status_effects",
+ "type": "object",
+ "required": [
+  "category",
+  "items"
+ ],
+ "properties": {
+  "category": {
+   "const": "status_effects"
+  },
+  "count": {
+   "type": "integer"
+  },
+  "items": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "required": [
+     "durationMonths",
+     "effect",
+     "id",
+     "name",
+     "note"
+    ],
+    "properties": {
+     "id": {
+      "type": "string",
+      "pattern": "^st\\.[a-z0-9_]+$"
+     },
+     "name": {
+      "type": "string"
+     },
+     "durationMonths": {
+      "type": "integer"
+     },
+     "effect": {
+      "type": "string"
+     },
+     "note": {
+      "type": "string"
+     }
+    },
+    "additionalProperties": true
+   }
+  }
+ }
+}

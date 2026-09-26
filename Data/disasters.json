@@ -1,0 +1,239 @@
+{
+ "category": "disasters",
+ "count": 17,
+ "items": [
+  {
+   "id": "dis.meteor",
+   "name": "Göktaşı Düşüşü",
+   "minWorldAge": 5,
+   "minPopulation": 0,
+   "cooldownYears": 10,
+   "chancePerYear": 0.04,
+   "eraMultipliers": {},
+   "description": "Rastgele noktaya göktaşı; çukur + gökdemir damarı",
+   "placement": "randomLand",
+   "power": "pw.meteor"
+  },
+  {
+   "id": "dis.earthquake",
+   "name": "Deprem",
+   "minWorldAge": 10,
+   "minPopulation": 0,
+   "cooldownYears": 15,
+   "chancePerYear": 0.03,
+   "eraMultipliers": {},
+   "description": "Çatlak hattı: tile seviyeleri kayar, binalar hasar alır",
+   "placement": "randomLand",
+   "power": "pw.earthquake"
+  },
+  {
+   "id": "dis.tornado",
+   "name": "Hortum",
+   "minWorldAge": 5,
+   "minPopulation": 0,
+   "cooldownYears": 8,
+   "chancePerYear": 0.05,
+   "eraMultipliers": {
+    "era.rain": 2.0
+   },
+   "description": "Birimleri ve nesneleri savurur, 60–200 tick sürer",
+   "placement": "randomLand",
+   "power": "pw.tornado"
+  },
+  {
+   "id": "dis.volcano",
+   "name": "Yanardağ Uyanışı",
+   "minWorldAge": 20,
+   "minPopulation": 0,
+   "cooldownYears": 25,
+   "chancePerYear": 0.02,
+   "eraMultipliers": {
+    "era.scorch": 2.0
+   },
+   "description": "Dağda patlama, lav akışı, kül bulutu",
+   "placement": "highestMountain",
+   "power": "pw.volcano"
+  },
+  {
+   "id": "dis.tsunami",
+   "name": "Dev Dalga",
+   "minWorldAge": 30,
+   "minPopulation": 50,
+   "cooldownYears": 30,
+   "chancePerYear": 0.015,
+   "eraMultipliers": {},
+   "description": "Kıyıya su dalgası: sığ su istilası, bina yıkımı",
+   "placement": "coastCity",
+   "power": "pw.tsunami"
+  },
+  {
+   "id": "dis.famine",
+   "name": "Kıtlık",
+   "minWorldAge": 15,
+   "minPopulation": 200,
+   "cooldownYears": 20,
+   "chancePerYear": 0.03,
+   "eraMultipliers": {
+    "era.ice": 3.0,
+    "era.ash": 3.0
+   },
+   "description": "Bölgede tarım verimi -%80, 3–6 yıl",
+   "placement": "biggestCity",
+   "power": ""
+  },
+  {
+   "id": "dis.plague",
+   "name": "Salgın",
+   "minWorldAge": 20,
+   "minPopulation": 300,
+   "cooldownYears": 25,
+   "chancePerYear": 0.03,
+   "eraMultipliers": {
+    "era.pale": 4.0
+   },
+   "description": "Kalabalık bir şehirde veba başlar",
+   "placement": "biggestCity",
+   "power": "pw.plague"
+  },
+  {
+   "id": "dis.demon_raid",
+   "name": "Kor İblisi Akını",
+   "minWorldAge": 40,
+   "minPopulation": 300,
+   "cooldownYears": 40,
+   "chancePerYear": 0.015,
+   "eraMultipliers": {
+    "era.shadow": 2.0,
+    "era.blood": 2.0
+   },
+   "description": "Kor Diyarı yoksa bile yarık açılır, iblisler çıkar",
+   "placement": "biomeOrLand:bio.infernal",
+   "power": ""
+  },
+  {
+   "id": "dis.dark_mages",
+   "name": "Kara Büyücü Ayaklanması",
+   "minWorldAge": 30,
+   "minPopulation": 200,
+   "cooldownYears": 30,
+   "chancePerYear": 0.02,
+   "eraMultipliers": {
+    "era.shadow": 2.0
+   },
+   "description": "3–6 kara büyücü belirir",
+   "placement": "randomLand",
+   "power": "pw.spawn_dark_mage"
+  },
+  {
+   "id": "dis.dragon",
+   "name": "Ejderha Uyanışı",
+   "minWorldAge": 50,
+   "minPopulation": 0,
+   "cooldownYears": 60,
+   "chancePerYear": 0.01,
+   "eraMultipliers": {},
+   "description": "Dağ zirvesinden ejderha doğar",
+   "placement": "randomSummit",
+   "power": "pw.spawn_dragon"
+  },
+  {
+   "id": "dis.sky_visitors",
+   "name": "Gökten Gelenler",
+   "minWorldAge": 60,
+   "minPopulation": 500,
+   "cooldownYears": 60,
+   "chancePerYear": 0.008,
+   "eraMultipliers": {
+    "era.glimmer": 2.0
+   },
+   "description": "Gökten gemiler iner, birimleri kaçırır",
+   "placement": "randomLand",
+   "power": "pw.spawn_sky_visitor"
+  },
+  {
+   "id": "dis.ice_storm",
+   "name": "Buz Fırtınası",
+   "minWorldAge": 10,
+   "minPopulation": 0,
+   "cooldownYears": 15,
+   "chancePerYear": 0.02,
+   "eraMultipliers": {
+    "era.ice": 3.0
+   },
+   "description": "Geniş alanda donma",
+   "placement": "randomLand",
+   "power": "pw.ice_bomb"
+  },
+  {
+   "id": "dis.heat_wave",
+   "name": "Sıcak Dalgası",
+   "minWorldAge": 10,
+   "minPopulation": 0,
+   "cooldownYears": 15,
+   "chancePerYear": 0.02,
+   "eraMultipliers": {
+    "era.scorch": 3.0
+   },
+   "description": "Su buharlaşır, yangın şansı x5",
+   "placement": "randomLand",
+   "power": "pw.heat"
+  },
+  {
+   "id": "dis.locusts",
+   "name": "Çekirge Sürüsü",
+   "minWorldAge": 15,
+   "minPopulation": 100,
+   "cooldownYears": 20,
+   "chancePerYear": 0.02,
+   "eraMultipliers": {
+    "era.harvest": 2.0
+   },
+   "description": "Tarlaları yer",
+   "placement": "randomLand",
+   "power": ""
+  },
+  {
+   "id": "dis.flood",
+   "name": "Sel",
+   "minWorldAge": 10,
+   "minPopulation": 0,
+   "cooldownYears": 12,
+   "chancePerYear": 0.03,
+   "eraMultipliers": {
+    "era.rain": 4.0
+   },
+   "description": "Alçak toprakları su basar",
+   "placement": "randomLand",
+   "power": "pw.flood"
+  },
+  {
+   "id": "dis.zombie_outbreak",
+   "name": "Ölü Salgını",
+   "minWorldAge": 40,
+   "minPopulation": 300,
+   "cooldownYears": 50,
+   "chancePerYear": 0.012,
+   "eraMultipliers": {
+    "era.shadow": 3.0,
+    "era.pale": 2.0
+   },
+   "description": "Mezarlık/kemik düzlüğünden ölüler kalkar",
+   "placement": "biggestCity",
+   "power": "pw.spawn_zombie"
+  },
+  {
+   "id": "dis.bandits",
+   "name": "Haydut Çetesi",
+   "minWorldAge": 20,
+   "minPopulation": 200,
+   "cooldownYears": 15,
+   "chancePerYear": 0.03,
+   "eraMultipliers": {
+    "era.blood": 2.0
+   },
+   "description": "Kanunsuzlardan oluşan bağımsız grup doğar",
+   "placement": "biggestCity",
+   "power": "pw.spawn_bandit"
+  }
+ ]
+}

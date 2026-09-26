@@ -1,0 +1,73 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "title": "species",
+ "type": "object",
+ "required": [
+  "category",
+  "items"
+ ],
+ "properties": {
+  "category": {
+   "const": "species"
+  },
+  "count": {
+   "type": "integer"
+  },
+  "items": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "required": [
+     "abilities",
+     "canEvolve",
+     "category",
+     "diet",
+     "habitat",
+     "id",
+     "name",
+     "note",
+     "reproduction",
+     "sapientAtStart",
+     "stats"
+    ],
+    "properties": {
+     "id": {
+      "type": "string",
+      "pattern": "^sp\\.[a-z0-9_]+$"
+     },
+     "name": {
+      "type": "string"
+     },
+     "category": {
+      "type": "string"
+     },
+     "sapientAtStart": {
+      "type": "boolean"
+     },
+     "canEvolve": {
+      "type": "boolean"
+     },
+     "diet": {
+      "type": "string"
+     },
+     "habitat": {
+      "type": "string"
+     },
+     "stats": {
+      "type": "object"
+     },
+     "reproduction": {
+      "type": "string"
+     },
+     "abilities": {
+      "type": "object"
+     },
+     "note": {
+      "type": "string"
+     }
+    },
+    "additionalProperties": true
+   }
+  }
+ }
+}

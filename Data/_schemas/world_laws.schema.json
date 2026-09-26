@@ -1,0 +1,51 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "title": "world_laws",
+ "type": "object",
+ "required": [
+  "category",
+  "items"
+ ],
+ "properties": {
+  "category": {
+   "const": "world_laws"
+  },
+  "count": {
+   "type": "integer"
+  },
+  "items": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "required": [
+     "default",
+     "group",
+     "id",
+     "name"
+    ],
+    "properties": {
+     "id": {
+      "type": "string",
+      "pattern": "^law\\.[a-z0-9_]+$"
+     },
+     "name": {
+      "type": "string"
+     },
+     "group": {
+      "type": "string"
+     },
+     "default": {
+      "type": "boolean"
+     },
+     "slider": {
+      "type": "array"
+     },
+     "unlockCondition": {
+      "type": "string"
+     }
+    },
+    "additionalProperties": true
+   }
+  }
+ }
+}

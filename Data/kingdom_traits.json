@@ -1,0 +1,84 @@
+{
+ "category": "kingdom_traits",
+ "count": 8,
+ "items": [
+  {
+   "id": "kt.seafaring",
+   "name": "Denizci Krallık",
+   "effects": {
+    "pct": {
+     "colonizeChance": 50.0
+    }
+   }
+  },
+  {
+   "id": "kt.militarist",
+   "name": "Militarist",
+   "effects": {
+    "pct": {
+     "armySize": 30.0
+    }
+   }
+  },
+  {
+   "id": "kt.mercantile",
+   "name": "Tüccar Krallık",
+   "effects": {
+    "pct": {
+     "gold": 30.0
+    }
+   }
+  },
+  {
+   "id": "kt.theocracy",
+   "name": "Teokrasi",
+   "effects": {
+    "pct": {
+     "faith": 30.0
+    },
+    "add": {
+     "templeBonus": 1.0
+    }
+   }
+  },
+  {
+   "id": "kt.isolationist",
+   "name": "Yalnızcı",
+   "effects": {
+    "add": {
+     "opinion": -15.0
+    },
+    "pct": {
+     "rebellionResist": 20.0
+    }
+   }
+  },
+  {
+   "id": "kt.conquerors",
+   "name": "Fetihçi",
+   "effects": {
+    "pct": {
+     "warChance": 40.0
+    }
+   }
+  },
+  {
+   "id": "kt.scholarly",
+   "name": "Bilgin Krallık",
+   "effects": {
+    "pct": {
+     "bookWrite": 30.0
+    }
+   }
+  },
+  {
+   "id": "kt.fortress",
+   "name": "Kale Krallığı",
+   "effects": {
+    "pct": {
+     "wallHp": 50.0
+    }
+   }
+  }
+ ]
+}

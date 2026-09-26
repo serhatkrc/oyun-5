@@ -1,0 +1,581 @@
+{
+ "category": "features",
+ "count": 44,
+ "items": [
+  {
+   "id": "feat.tree_oak",
+   "name": "Meşe",
+   "kind": "tree",
+   "yields": {
+    "res.wood": 3
+   },
+   "burnable": true,
+   "note": "",
+   "veinWeight": 0,
+   "aquatic": false,
+   "burnsInto": "feat.tree_dead"
+  },
+  {
+   "id": "feat.tree_birch",
+   "name": "Huş",
+   "kind": "tree",
+   "yields": {
+    "res.wood": 2
+   },
+   "burnable": true,
+   "note": "",
+   "veinWeight": 0,
+   "aquatic": false,
+   "burnsInto": "feat.tree_dead"
+  },
+  {
+   "id": "feat.tree_maple",
+   "name": "Akçaağaç",
+   "kind": "tree",
+   "yields": {
+    "res.wood": 3
+   },
+   "burnable": true,
+   "note": "Sonbahar renkli",
+   "veinWeight": 0,
+   "aquatic": false,
+   "burnsInto": "feat.tree_dead"
+  },
+  {
+   "id": "feat.tree_pine",
+   "name": "Çam",
+   "kind": "tree",
+   "yields": {
+    "res.wood": 3
+   },
+   "burnable": true,
+   "note": "",
+   "veinWeight": 0,
+   "aquatic": false,
+   "burnsInto": "feat.tree_dead"
+  },
+  {
+   "id": "feat.tree_snowpine",
+   "name": "Karlı Çam",
+   "kind": "tree",
+   "yields": {
+    "res.wood": 2
+   },
+   "burnable": true,
+   "note": "Kar tutar",
+   "veinWeight": 0,
+   "aquatic": false,
+   "burnsInto": "feat.tree_dead"
+  },
+  {
+   "id": "feat.tree_palm",
+   "name": "Palmiye",
+   "kind": "tree",
+   "yields": {
+    "res.wood": 2,
+    "res.fruit": 1
+   },
+   "burnable": true,
+   "note": "Kıyı",
+   "veinWeight": 0,
+   "aquatic": false,
+   "burnsInto": "feat.tree_dead"
+  },
+  {
+   "id": "feat.tree_jungle",
+   "name": "Dev Cengel Ağacı",
+   "kind": "tree",
+   "yields": {
+    "res.wood": 4,
+    "res.fruit": 1
+   },
+   "burnable": true,
+   "note": "",
+   "veinWeight": 0,
+   "aquatic": false,
+   "burnsInto": "feat.tree_dead"
+  },
+  {
+   "id": "feat.tree_cypress",
+   "name": "Bataklık Servisi",
+   "kind": "tree",
+   "yields": {
+    "res.wood": 2
+   },
+   "burnable": true,
+   "note": "Suda büyüyebilir",
+   "veinWeight": 0,
+   "aquatic": false,
+   "burnsInto": "feat.tree_dead"
+  },
+  {
+   "id": "feat.tree_acacia",
+   "name": "Akasya",
+   "kind": "tree",
+   "yields": {
+    "res.wood": 2
+   },
+   "burnable": true,
+   "note": "Savan",
+   "veinWeight": 0,
+   "aquatic": false,
+   "burnsInto": "feat.tree_dead"
+  },
+  {
+   "id": "feat.cactus",
+   "name": "Kaktüs",
+   "kind": "plant",
+   "yields": {
+    "res.fruit": 1
+   },
+   "burnable": false,
+   "note": "Dokunana hasar",
+   "veinWeight": 0,
+   "aquatic": false,
+   "burnsInto": ""
+  },
+  {
+   "id": "feat.tree_dead",
+   "name": "Kuru Ağaç",
+   "kind": "tree",
+   "yields": {
+    "res.wood": 1
+   },
+   "burnable": true,
+   "note": "Çorak biyomlar",
+   "veinWeight": 0,
+   "aquatic": false,
+   "burnsInto": ""
+  },
+  {
+   "id": "feat.tree_giant_mushroom",
+   "name": "Dev Mantar",
+   "kind": "tree",
+   "yields": {
+    "res.mushroom": 3
+   },
+   "burnable": false,
+   "note": "",
+   "veinWeight": 0,
+   "aquatic": false,
+   "burnsInto": ""
+  },
+  {
+   "id": "feat.crystal_spire",
+   "name": "Kristal Sütun",
+   "kind": "tree",
+   "yields": {
+    "res.crystal": 2
+   },
+   "burnable": false,
+   "note": "Kesilmez, madencilikle alınır",
+   "veinWeight": 0,
+   "aquatic": false,
+   "burnsInto": ""
+  },
+  {
+   "id": "feat.tree_fairy",
+   "name": "Peri Ağacı",
+   "kind": "tree",
+   "yields": {
+    "res.wood": 2,
+    "res.essence": 1
+   },
+   "burnable": true,
+   "note": "Işıldar",
+   "veinWeight": 0,
+   "aquatic": false,
+   "burnsInto": "feat.tree_dead"
+  },
+  {
+   "id": "feat.tree_rot",
+   "name": "Çürük Gövde",
+   "kind": "tree",
+   "yields": {
+    "res.wood": 1
+   },
+   "burnable": true,
+   "note": "Çevresine çürüme yayar",
+   "veinWeight": 0,
+   "aquatic": false,
+   "burnsInto": "feat.tree_dead"
+  },
+  {
+   "id": "feat.tree_ember",
+   "name": "Kor Ağacı",
+   "kind": "tree",
+   "yields": {
+    "res.wood": 2
+   },
+   "burnable": false,
+   "note": "Hiç sönmeyen kıvılcımlar",
+   "veinWeight": 0,
+   "aquatic": false,
+   "burnsInto": ""
+  },
+  {
+   "id": "feat.tree_candy",
+   "name": "Şeker Ağacı",
+   "kind": "tree",
+   "yields": {
+    "res.candy": 2
+   },
+   "burnable": false,
+   "note": "",
+   "veinWeight": 0,
+   "aquatic": false,
+   "burnsInto": ""
+  },
+  {
+   "id": "feat.tree_citrus",
+   "name": "Turunç Ağacı",
+   "kind": "tree",
+   "yields": {
+    "res.wood": 1,
+    "res.fruit": 3
+   },
+   "burnable": true,
+   "note": "",
+   "veinWeight": 0,
+   "aquatic": false,
+   "burnsInto": "feat.tree_dead"
+  },
+  {
+   "id": "feat.tree_cloud",
+   "name": "Bulut Ağacı",
+   "kind": "tree",
+   "yields": {
+    "res.wood": 1,
+    "res.essence": 1
+   },
+   "burnable": false,
+   "note": "Havada süzülür",
+   "veinWeight": 0,
+   "aquatic": false,
+   "burnsInto": ""
+  },
+  {
+   "id": "feat.tree_ash",
+   "name": "Kül Ağacı",
+   "kind": "tree",
+   "yields": {
+    "res.wood": 1
+   },
+   "burnable": false,
+   "note": "",
+   "veinWeight": 0,
+   "aquatic": false,
+   "burnsInto": ""
+  },
+  {
+   "id": "feat.tree_hourglass",
+   "name": "Kum Saati Ağacı",
+   "kind": "tree",
+   "yields": {
+    "res.wood": 1,
+    "res.essence": 1
+   },
+   "burnable": true,
+   "note": "Zaman Kıvrımı biyomu",
+   "veinWeight": 0,
+   "aquatic": false,
+   "burnsInto": "feat.tree_dead"
+  },
+  {
+   "id": "feat.void_pillar",
+   "name": "Boşluk Sütunu",
+   "kind": "tree",
+   "yields": {
+    "res.essence": 2
+   },
+   "burnable": false,
+   "note": "",
+   "veinWeight": 0,
+   "aquatic": false,
+   "burnsInto": ""
+  },
+  {
+   "id": "feat.coral",
+   "name": "Mercan",
+   "kind": "plant",
+   "yields": {
+    "res.fish": 1
+   },
+   "burnable": false,
+   "note": "Sığ suda; balık çeker",
+   "veinWeight": 0,
+   "aquatic": true,
+   "burnsInto": ""
+  },
+  {
+   "id": "feat.tree_bone",
+   "name": "Kemik Ağacı",
+   "kind": "tree",
+   "yields": {
+    "res.bone": 3
+   },
+   "burnable": false,
+   "note": "",
+   "veinWeight": 0,
+   "aquatic": false,
+   "burnsInto": ""
+  },
+  {
+   "id": "feat.tree_honeycomb",
+   "name": "Petek Ağacı",
+   "kind": "tree",
+   "yields": {
+    "res.honey": 2,
+    "res.wood": 1
+   },
+   "burnable": true,
+   "note": "Arı üretir",
+   "veinWeight": 0,
+   "aquatic": false,
+   "burnsInto": "feat.tree_dead"
+  },
+  {
+   "id": "feat.tree_volcanic",
+   "name": "Bazalt Dikeni",
+   "kind": "tree",
+   "yields": {
+    "res.stone": 2
+   },
+   "burnable": false,
+   "note": "",
+   "veinWeight": 0,
+   "aquatic": false,
+   "burnsInto": ""
+  },
+  {
+   "id": "feat.grass_tuft",
+   "name": "Ot Öbeği",
+   "kind": "plant",
+   "yields": {},
+   "burnable": true,
+   "note": "Otçullar yer",
+   "veinWeight": 0,
+   "aquatic": false,
+   "burnsInto": ""
+  },
+  {
+   "id": "feat.flower",
+   "name": "Çiçek",
+   "kind": "plant",
+   "yields": {
+    "res.herbs": 1
+   },
+   "burnable": true,
+   "note": "Arıları çeker",
+   "veinWeight": 0,
+   "aquatic": false,
+   "burnsInto": ""
+  },
+  {
+   "id": "feat.berry_bush",
+   "name": "Meyve Çalısı",
+   "kind": "plant",
+   "yields": {
+    "res.berries": 2
+   },
+   "burnable": true,
+   "note": "",
+   "veinWeight": 0,
+   "aquatic": false,
+   "burnsInto": ""
+  },
+  {
+   "id": "feat.reed",
+   "name": "Saz",
+   "kind": "plant",
+   "yields": {},
+   "burnable": true,
+   "note": "Bataklık/kıyı",
+   "veinWeight": 0,
+   "aquatic": true,
+   "burnsInto": ""
+  },
+  {
+   "id": "feat.wheat_crop",
+   "name": "Buğday Başağı",
+   "kind": "crop",
+   "yields": {
+    "res.wheat": 3
+   },
+   "burnable": true,
+   "note": "Sadece tarla tile'ında",
+   "veinWeight": 0,
+   "aquatic": false,
+   "burnsInto": ""
+  },
+  {
+   "id": "feat.herb_patch",
+   "name": "Şifalı Ot Öbeği",
+   "kind": "plant",
+   "yields": {
+    "res.herbs": 2
+   },
+   "burnable": true,
+   "note": "",
+   "veinWeight": 0,
+   "aquatic": false,
+   "burnsInto": ""
+  },
+  {
+   "id": "feat.small_mushroom",
+   "name": "Küçük Mantar",
+   "kind": "plant",
+   "yields": {
+    "res.mushroom": 1
+   },
+   "burnable": false,
+   "note": "",
+   "veinWeight": 0,
+   "aquatic": false,
+   "burnsInto": ""
+  },
+  {
+   "id": "feat.garlic_plant",
+   "name": "Sarımsak",
+   "kind": "plant",
+   "yields": {
+    "res.herbs": 1
+   },
+   "burnable": true,
+   "note": "Kan emicileri iter",
+   "veinWeight": 0,
+   "aquatic": false,
+   "burnsInto": ""
+  },
+  {
+   "id": "feat.ore_copper",
+   "name": "Bakır Damarı",
+   "kind": "ore",
+   "yields": {
+    "res.copper": 6
+   },
+   "burnable": false,
+   "note": "",
+   "veinWeight": 0.3,
+   "aquatic": false,
+   "burnsInto": ""
+  },
+  {
+   "id": "feat.ore_iron",
+   "name": "Demir Damarı",
+   "kind": "ore",
+   "yields": {
+    "res.iron": 6
+   },
+   "burnable": false,
+   "note": "",
+   "veinWeight": 0.26,
+   "aquatic": false,
+   "burnsInto": ""
+  },
+  {
+   "id": "feat.ore_silver",
+   "name": "Gümüş Damarı",
+   "kind": "ore",
+   "yields": {
+    "res.silver": 4
+   },
+   "burnable": false,
+   "note": "",
+   "veinWeight": 0.09,
+   "aquatic": false,
+   "burnsInto": ""
+  },
+  {
+   "id": "feat.ore_gold",
+   "name": "Altın Damarı",
+   "kind": "ore",
+   "yields": {
+    "res.gold": 4
+   },
+   "burnable": false,
+   "note": "",
+   "veinWeight": 0.07,
+   "aquatic": false,
+   "burnsInto": ""
+  },
+  {
+   "id": "feat.ore_skyiron",
+   "name": "Gökdemir Damarı",
+   "kind": "ore",
+   "yields": {
+    "res.skyiron": 3
+   },
+   "burnable": false,
+   "note": "Meteor sonrası da oluşur",
+   "veinWeight": 0,
+   "aquatic": false,
+   "burnsInto": ""
+  },
+  {
+   "id": "feat.ore_starore",
+   "name": "Yıldız Cevheri Damarı",
+   "kind": "ore",
+   "yields": {
+    "res.starore": 2
+   },
+   "burnable": false,
+   "note": "",
+   "veinWeight": 0,
+   "aquatic": false,
+   "burnsInto": ""
+  },
+  {
+   "id": "feat.ore_obsidian",
+   "name": "Obsidyen Kütlesi",
+   "kind": "ore",
+   "yields": {
+    "res.obsidian": 4
+   },
+   "burnable": false,
+   "note": "Lav soğuyunca",
+   "veinWeight": 0,
+   "aquatic": false,
+   "burnsInto": ""
+  },
+  {
+   "id": "feat.rock",
+   "name": "Kaya",
+   "kind": "ore",
+   "yields": {
+    "res.stone": 4
+   },
+   "burnable": false,
+   "note": "",
+   "veinWeight": 0.28,
+   "aquatic": false,
+   "burnsInto": ""
+  },
+  {
+   "id": "feat.salt_flat",
+   "name": "Tuz Yatağı",
+   "kind": "ore",
+   "yields": {
+    "res.salt": 4
+   },
+   "burnable": false,
+   "note": "Çöl",
+   "veinWeight": 0,
+   "aquatic": false,
+   "burnsInto": ""
+  },
+  {
+   "id": "feat.bones_pile",
+   "name": "Kemik Yığını",
+   "kind": "ore",
+   "yields": {
+    "res.bone": 3
+   },
+   "burnable": false,
+   "note": "Savaş alanları",
+   "veinWeight": 0,
+   "aquatic": false,
+   "burnsInto": ""
+  }
+ ]
+}

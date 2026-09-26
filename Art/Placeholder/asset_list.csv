@@ -1,0 +1,1196 @@
+kategori,id,ad,boyut_px,tip/stil,animasyon/durum,ilk_gereken_faz
+unit,sp.human,İnsan,4x7,biped,idle2 walk4 attack3 swim2 sleep1 death3,3
+unit,sp.elf,Elf,4x7,biped,idle2 walk4 attack3 swim2 sleep1 death3,3
+unit,sp.dwarf,Cüce,4x7,biped,idle2 walk4 attack3 swim2 sleep1 death3,3
+unit,sp.orc,Ork,5x8,biped,idle2 walk4 attack3 swim2 sleep1 death3,3
+unit,sp.wolf,Kurt,6x4,quad,idle2 walk4 attack3 swim2 sleep1 death3,3
+unit,sp.bear,Ayı,10x7,quad,idle2 walk4 attack3 swim2 sleep1 death3,3
+unit,sp.cat,Kedi,4x3,quad,idle2 walk4 attack3 swim2 sleep1 death3,3
+unit,sp.dog,Köpek,4x3,quad,idle2 walk4 attack3 swim2 sleep1 death3,3
+unit,sp.rabbit,Tavşan,4x3,quad,idle2 walk4 attack3 swim2 sleep1 death3,3
+unit,sp.sheep,Koyun,6x4,quad,idle2 walk4 attack3 swim2 sleep1 death3,3
+unit,sp.cow,İnek,8x5,quad,idle2 walk4 attack3 swim2 sleep1 death3,3
+unit,sp.chicken,Tavuk,4x3,quad,idle2 walk4 attack3 swim2 sleep1 death3,3
+unit,sp.frog,Kurbağa,4x3,quad,idle2 walk4 attack3 swim2 sleep1 death3,3
+unit,sp.rat,Sıçan,4x3,quad,idle2 walk4 attack3 swim2 sleep1 death3,3
+unit,sp.monkey,Maymun,4x7,biped,idle2 walk4 attack3 swim2 sleep1 death3,3
+unit,sp.penguin,Penguen,3x5,biped,idle2 walk4 attack3 swim2 sleep1 death3,3
+unit,sp.fox,Tilki,4x3,quad,idle2 walk4 attack3 swim2 sleep1 death3,3
+unit,sp.crab,Yengeç,3x2,bug,idle2 walk4 attack3 swim2 sleep1 death3,3
+unit,sp.scorpion,Akrep,3x2,bug,idle2 walk4 attack3 swim2 sleep1 death3,3
+unit,sp.lizard,Kertenkele,4x3,quad,idle2 walk4 attack3 swim2 sleep1 death3,3
+unit,sp.crocodile,Timsah,10x7,quad,idle2 walk4 attack3 swim2 sleep1 death3,3
+unit,sp.bee,Arı,3x2,bug,idle2 walk4 attack3 swim2 sleep1 death3,3
+unit,sp.ant,Karınca,3x2,bug,idle2 walk4 attack3 swim2 sleep1 death3,3
+unit,sp.beetle,Böcek,3x2,bug,idle2 walk4 attack3 swim2 sleep1 death3,3
+unit,sp.snake,Yılan,5x2,serpent,idle2 walk4 attack3 swim2 sleep1 death3,3
+unit,sp.turtle,Kaplumbağa,6x4,quad,idle2 walk4 attack3 swim2 sleep1 death3,3
+unit,sp.deer,Geyik,6x4,quad,idle2 walk4 attack3 swim2 sleep1 death3,3
+unit,sp.boar,Yaban Domuzu,6x4,quad,idle2 walk4 attack3 swim2 sleep1 death3,3
+unit,sp.goat,Keçi,6x4,quad,idle2 walk4 attack3 swim2 sleep1 death3,3
+unit,sp.owl,Baykuş,4x3,bird,idle2 walk4 attack3 swim2 sleep1 death3,3
+unit,sp.crow,Karga,4x3,bird,idle2 walk4 attack3 swim2 sleep1 death3,3
+unit,sp.eagle,Kartal,6x4,bird,idle2 walk4 attack3 swim2 sleep1 death3,3
+unit,sp.parrot,Papağan,4x3,bird,idle2 walk4 attack3 swim2 sleep1 death3,3
+unit,sp.seal,Fok,6x4,quad,idle2 walk4 attack3 swim2 sleep1 death3,3
+unit,sp.hyena,Sırtlan,6x4,quad,idle2 walk4 attack3 swim2 sleep1 death3,3
+unit,sp.lion,Aslan,8x5,quad,idle2 walk4 attack3 swim2 sleep1 death3,3
+unit,sp.rhino,Gergedan,10x7,quad,idle2 walk4 attack3 swim2 sleep1 death3,3
+unit,sp.buffalo,Manda,8x5,quad,idle2 walk4 attack3 swim2 sleep1 death3,3
+unit,sp.camel,Deve,8x5,quad,idle2 walk4 attack3 swim2 sleep1 death3,3
+unit,sp.reindeer,Ren Geyiği,6x4,quad,idle2 walk4 attack3 swim2 sleep1 death3,3
+unit,sp.polar_bear,Kutup Ayısı,10x7,quad,idle2 walk4 attack3 swim2 sleep1 death3,3
+unit,sp.snail,Salyangoz,3x2,bug,idle2 walk4 attack3 swim2 sleep1 death3,3
+unit,sp.salamander,Semender,4x3,quad,idle2 walk4 attack3 swim2 sleep1 death3,3
+unit,sp.horse_wild,Yaban Atı,8x5,quad,idle2 walk4 attack3 swim2 sleep1 death3,3
+unit,sp.fish,Balık,3x2,fish,idle2 walk4 attack3 swim2 sleep1 death3,3
+unit,sp.butterfly,Kelebek,3x2,bug,idle2 walk4 attack3 swim2 sleep1 death3,3
+unit,sp.caterpillar,Tırtıl,3x2,bug,idle2 walk4 attack3 swim2 sleep1 death3,3
+unit,sp.piranha,Pirana,3x2,fish,idle2 walk4 attack3 swim2 sleep1 death3,3
+unit,sp.mosquito_swarm,Sivrisinek Sürüsü,3x2,bug,idle2 walk4 attack3 swim2 sleep1 death3,3
+unit,sp.dragon,Ejderha,18x10,bird,idle2 walk4 attack3 swim2 sleep1 death3,3
+unit,sp.sandworm,Kum Kurdu,20x6,serpent,idle2 walk4 attack3 swim2 sleep1 death3,3
+unit,sp.kraken,Derin Canavarı,16x9,fish,idle2 walk4 attack3 swim2 sleep1 death3,3
+unit,sp.ember_imp,Kor İblisi,6x4,quad,idle2 walk4 attack3 swim2 sleep1 death3,3
+unit,sp.rot_crawler,Çürük Sürüngen,6x4,quad,idle2 walk4 attack3 swim2 sleep1 death3,3
+unit,sp.candy_golem,Şeker Golemi,6x5,blob,idle2 walk4 attack3 swim2 sleep1 death3,3
+unit,sp.gummy_bear,Jöle Ayı,4x4,blob,idle2 walk4 attack3 swim2 sleep1 death3,3
+unit,sp.shroomling,Mantarcık,3x3,blob,idle2 walk4 attack3 swim2 sleep1 death3,3
+unit,sp.crystal_beetle,Kristal Böcek,3x2,bug,idle2 walk4 attack3 swim2 sleep1 death3,3
+unit,sp.ash_crawler,Kül Sürüngeni,6x4,quad,idle2 walk4 attack3 swim2 sleep1 death3,3
+unit,sp.bone_crawler,Kemik Örümceği,4x3,bug,idle2 walk4 attack3 swim2 sleep1 death3,3
+unit,sp.clock_crab,Saat Yengeci,3x2,bug,idle2 walk4 attack3 swim2 sleep1 death3,3
+unit,sp.void_moth,Boşluk Güvesi,3x2,bug,idle2 walk4 attack3 swim2 sleep1 death3,3
+unit,sp.flesh_mound,Et Yığını,6x5,blob,idle2 walk4 attack3 swim2 sleep1 death3,3
+unit,sp.devourer,Yutucu Kütle,6x5,blob,idle2 walk4 attack3 swim2 sleep1 death3,3
+unit,sp.slime,Balçık,3x3,blob,idle2 walk4 attack3 swim2 sleep1 death3,3
+unit,sp.walking_tree,Yürüyen Ağaç,7x10,biped,idle2 walk4 attack3 swim2 sleep1 death3,3
+unit,sp.fairy,Peri,3x5,biped,idle2 walk4 attack3 swim2 sleep1 death3,3
+unit,sp.sky_whale_calf,Gök Balinası Yavrusu,12x14,biped,idle2 walk4 attack3 swim2 sleep1 death3,3
+unit,sp.skeleton,İskelet,4x7,biped,idle2 walk4 attack3 swim2 sleep1 death3,3
+unit,sp.zombie,Zombi,4x7,biped,idle2 walk4 attack3 swim2 sleep1 death3,3
+unit,sp.zombie_runner,Koşucu Zombi,4x7,biped,idle2 walk4 attack3 swim2 sleep1 death3,3
+unit,sp.zombie_brute,İri Zombi,7x10,biped,idle2 walk4 attack3 swim2 sleep1 death3,3
+unit,sp.zombie_bloater,Şişkin Zombi,5x8,biped,idle2 walk4 attack3 swim2 sleep1 death3,3
+unit,sp.zombie_crawler,Sürünen Zombi,3x5,biped,idle2 walk4 attack3 swim2 sleep1 death3,3
+unit,sp.zombie_beast,Zombi Hayvan,4x7,biped,idle2 walk4 attack3 swim2 sleep1 death3,3
+unit,sp.zombie_dragon,Çürük Ejderha,20x14,dragon,idle2 walk4 attack3 swim2 sleep1 death3,3
+unit,sp.zombie_lord,Zombi Efendisi,5x8,biped,idle2 walk4 attack3 swim2 sleep1 death3,3
+unit,sp.ghost,Hayalet,4x7,biped,idle2 walk4 attack3 swim2 sleep1 death3,3
+unit,sp.necromancer,Ölü Çağırıcı,4x7,biped,idle2 walk4 attack3 swim2 sleep1 death3,3
+unit,sp.bloodsucker,Kan Emici,4x7,biped,idle2 walk4 attack3 swim2 sleep1 death3,3
+unit,sp.fire_elemental,Ateş Elementali,4x7,biped,idle2 walk4 attack3 swim2 sleep1 death3,3
+unit,sp.water_elemental,Su Elementali,4x7,biped,idle2 walk4 attack3 swim2 sleep1 death3,3
+unit,sp.earth_golem,Toprak Golemi,7x10,biped,idle2 walk4 attack3 swim2 sleep1 death3,3
+unit,sp.snowman,Kardan Adam,4x7,biped,idle2 walk4 attack3 swim2 sleep1 death3,3
+unit,sp.storm_spirit,Fırtına Ruhu,4x7,biped,idle2 walk4 attack3 swim2 sleep1 death3,3
+unit,sp.dark_mage,Kara Büyücü,4x7,biped,idle2 walk4 attack3 swim2 sleep1 death3,3
+unit,sp.white_mage,Ak Büyücü,4x7,biped,idle2 walk4 attack3 swim2 sleep1 death3,3
+unit,sp.druid,Druid,4x7,biped,idle2 walk4 attack3 swim2 sleep1 death3,3
+unit,sp.sky_visitor,Gök Ziyaretçisi,4x7,biped,idle2 walk4 attack3 swim2 sleep1 death3,3
+unit,sp.colossus,Mekanik Dev,12x14,biped,idle2 walk4 attack3 swim2 sleep1 death3,3
+unit,sp.bandit,Haydut,4x7,biped,idle2 walk4 attack3 swim2 sleep1 death3,3
+unit,sp.cultist,Tarikatçı,4x7,biped,idle2 walk4 attack3 swim2 sleep1 death3,3
+building,bld.bonfire,Kamp Ateşi,6x9,human,construction complete ruin,4
+building,bld.hall_1,Köy Meydanı,9x13,human,construction complete ruin,4
+building,bld.hall_2,Kasaba Konağı,12x18,human,construction complete ruin,4
+building,bld.hall_3,Şehir Sarayı,15x22,human,construction complete ruin,4
+building,bld.tent,Çadır,6x9,human,construction complete ruin,4
+building,bld.hut,Kulübe,6x9,human,construction complete ruin,4
+building,bld.house,Ev,9x9,human,construction complete ruin,4
+building,bld.manor,Konak,9x13,human,construction complete ruin,4
+building,bld.storage,Ambar,9x9,human,construction complete ruin,4
+building,bld.granary,Tahıl Ambarı,6x13,human,construction complete ruin,4
+building,bld.windmill,Değirmen,6x9,human,construction complete ruin,4
+building,bld.bakery,Fırın,6x9,human,construction complete ruin,4
+building,bld.well,Kuyu,3x5,human,construction complete ruin,4
+building,bld.mine,Maden Ocağı,9x13,human,construction complete ruin,4
+building,bld.lumber_camp,Kereste Kampı,6x9,human,construction complete ruin,4
+building,bld.smithy,Demirhane,6x9,human,construction complete ruin,4
+building,bld.farm_shed,Tarla Barakası,6x9,human,construction complete ruin,4
+building,bld.pasture,Ağıl,12x13,human,construction complete ruin,4
+building,bld.beehive,Arı Kovanı,3x5,human,construction complete ruin,4
+building,bld.market,Pazar Yeri,12x13,human,construction complete ruin,4
+building,bld.inn,Han,9x13,human,construction complete ruin,4
+building,bld.stable,Ahır,9x9,human,construction complete ruin,4
+building,bld.barracks,Kışla,12x13,human,construction complete ruin,4
+building,bld.watchtower,Gözetleme Kulesi,3x5,human,construction complete ruin,4
+building,bld.wall,Sur,3x5,human,construction complete ruin,4
+building,bld.gate,Kapı,6x5,human,construction complete ruin,4
+building,bld.docks,İskele,9x9,human,construction complete ruin,4
+building,bld.fishing_hut,Balıkçı Barakası,6x9,human,construction complete ruin,4
+building,bld.shipyard,Tersane,12x13,human,construction complete ruin,4
+building,bld.library,Kütüphane,9x13,human,construction complete ruin,4
+building,bld.school,Mektep,9x9,human,construction complete ruin,4
+building,bld.temple,Tapınak,9x13,human,construction complete ruin,4
+building,bld.grand_temple,Büyük Tapınak,15x22,human,construction complete ruin,4
+building,bld.healers_house,Şifahane,9x9,human,construction complete ruin,4
+building,bld.graveyard,Mezarlık,9x13,human,construction complete ruin,4
+building,bld.statue_god,Yaratıcı Heykeli,6x9,human,construction complete ruin,4
+building,bld.monument,Zafer Anıtı,6x9,human,construction complete ruin,4
+building,bld.pyre,Ölü Yakma Ocağı,6x9,human,construction complete ruin,4
+building,bld.nest,Yuva,6x9,human,construction complete ruin,4
+building,bld.hive,Kovan,9x13,human,construction complete ruin,4
+building,bld.bonfire,Kamp Ateşi,6x9,elf,construction complete ruin,4
+building,bld.hall_1,Köy Meydanı,9x13,elf,construction complete ruin,4
+building,bld.hall_2,Kasaba Konağı,12x18,elf,construction complete ruin,4
+building,bld.hall_3,Şehir Sarayı,15x22,elf,construction complete ruin,4
+building,bld.tent,Çadır,6x9,elf,construction complete ruin,4
+building,bld.hut,Kulübe,6x9,elf,construction complete ruin,4
+building,bld.house,Ev,9x9,elf,construction complete ruin,4
+building,bld.manor,Konak,9x13,elf,construction complete ruin,4
+building,bld.storage,Ambar,9x9,elf,construction complete ruin,4
+building,bld.granary,Tahıl Ambarı,6x13,elf,construction complete ruin,4
+building,bld.windmill,Değirmen,6x9,elf,construction complete ruin,4
+building,bld.bakery,Fırın,6x9,elf,construction complete ruin,4
+building,bld.well,Kuyu,3x5,elf,construction complete ruin,4
+building,bld.mine,Maden Ocağı,9x13,elf,construction complete ruin,4
+building,bld.lumber_camp,Kereste Kampı,6x9,elf,construction complete ruin,4
+building,bld.smithy,Demirhane,6x9,elf,construction complete ruin,4
+building,bld.farm_shed,Tarla Barakası,6x9,elf,construction complete ruin,4
+building,bld.pasture,Ağıl,12x13,elf,construction complete ruin,4
+building,bld.beehive,Arı Kovanı,3x5,elf,construction complete ruin,4
+building,bld.market,Pazar Yeri,12x13,elf,construction complete ruin,4
+building,bld.inn,Han,9x13,elf,construction complete ruin,4
+building,bld.stable,Ahır,9x9,elf,construction complete ruin,4
+building,bld.barracks,Kışla,12x13,elf,construction complete ruin,4
+building,bld.watchtower,Gözetleme Kulesi,3x5,elf,construction complete ruin,4
+building,bld.wall,Sur,3x5,elf,construction complete ruin,4
+building,bld.gate,Kapı,6x5,elf,construction complete ruin,4
+building,bld.docks,İskele,9x9,elf,construction complete ruin,4
+building,bld.fishing_hut,Balıkçı Barakası,6x9,elf,construction complete ruin,4
+building,bld.shipyard,Tersane,12x13,elf,construction complete ruin,4
+building,bld.library,Kütüphane,9x13,elf,construction complete ruin,4
+building,bld.school,Mektep,9x9,elf,construction complete ruin,4
+building,bld.temple,Tapınak,9x13,elf,construction complete ruin,4
+building,bld.grand_temple,Büyük Tapınak,15x22,elf,construction complete ruin,4
+building,bld.healers_house,Şifahane,9x9,elf,construction complete ruin,4
+building,bld.graveyard,Mezarlık,9x13,elf,construction complete ruin,4
+building,bld.statue_god,Yaratıcı Heykeli,6x9,elf,construction complete ruin,4
+building,bld.monument,Zafer Anıtı,6x9,elf,construction complete ruin,4
+building,bld.pyre,Ölü Yakma Ocağı,6x9,elf,construction complete ruin,4
+building,bld.nest,Yuva,6x9,elf,construction complete ruin,4
+building,bld.hive,Kovan,9x13,elf,construction complete ruin,4
+building,bld.bonfire,Kamp Ateşi,6x9,dwarf,construction complete ruin,4
+building,bld.hall_1,Köy Meydanı,9x13,dwarf,construction complete ruin,4
+building,bld.hall_2,Kasaba Konağı,12x18,dwarf,construction complete ruin,4
+building,bld.hall_3,Şehir Sarayı,15x22,dwarf,construction complete ruin,4
+building,bld.tent,Çadır,6x9,dwarf,construction complete ruin,4
+building,bld.hut,Kulübe,6x9,dwarf,construction complete ruin,4
+building,bld.house,Ev,9x9,dwarf,construction complete ruin,4
+building,bld.manor,Konak,9x13,dwarf,construction complete ruin,4
+building,bld.storage,Ambar,9x9,dwarf,construction complete ruin,4
+building,bld.granary,Tahıl Ambarı,6x13,dwarf,construction complete ruin,4
+building,bld.windmill,Değirmen,6x9,dwarf,construction complete ruin,4
+building,bld.bakery,Fırın,6x9,dwarf,construction complete ruin,4
+building,bld.well,Kuyu,3x5,dwarf,construction complete ruin,4
+building,bld.mine,Maden Ocağı,9x13,dwarf,construction complete ruin,4
+building,bld.lumber_camp,Kereste Kampı,6x9,dwarf,construction complete ruin,4
+building,bld.smithy,Demirhane,6x9,dwarf,construction complete ruin,4
+building,bld.farm_shed,Tarla Barakası,6x9,dwarf,construction complete ruin,4
+building,bld.pasture,Ağıl,12x13,dwarf,construction complete ruin,4
+building,bld.beehive,Arı Kovanı,3x5,dwarf,construction complete ruin,4
+building,bld.market,Pazar Yeri,12x13,dwarf,construction complete ruin,4
+building,bld.inn,Han,9x13,dwarf,construction complete ruin,4
+building,bld.stable,Ahır,9x9,dwarf,construction complete ruin,4
+building,bld.barracks,Kışla,12x13,dwarf,construction complete ruin,4
+building,bld.watchtower,Gözetleme Kulesi,3x5,dwarf,construction complete ruin,4
+building,bld.wall,Sur,3x5,dwarf,construction complete ruin,4
+building,bld.gate,Kapı,6x5,dwarf,construction complete ruin,4
+building,bld.docks,İskele,9x9,dwarf,construction complete ruin,4
+building,bld.fishing_hut,Balıkçı Barakası,6x9,dwarf,construction complete ruin,4
+building,bld.shipyard,Tersane,12x13,dwarf,construction complete ruin,4
+building,bld.library,Kütüphane,9x13,dwarf,construction complete ruin,4
+building,bld.school,Mektep,9x9,dwarf,construction complete ruin,4
+building,bld.temple,Tapınak,9x13,dwarf,construction complete ruin,4
+building,bld.grand_temple,Büyük Tapınak,15x22,dwarf,construction complete ruin,4
+building,bld.healers_house,Şifahane,9x9,dwarf,construction complete ruin,4
+building,bld.graveyard,Mezarlık,9x13,dwarf,construction complete ruin,4
+building,bld.statue_god,Yaratıcı Heykeli,6x9,dwarf,construction complete ruin,4
+building,bld.monument,Zafer Anıtı,6x9,dwarf,construction complete ruin,4
+building,bld.pyre,Ölü Yakma Ocağı,6x9,dwarf,construction complete ruin,4
+building,bld.nest,Yuva,6x9,dwarf,construction complete ruin,4
+building,bld.hive,Kovan,9x13,dwarf,construction complete ruin,4
+building,bld.bonfire,Kamp Ateşi,6x9,orc,construction complete ruin,4
+building,bld.hall_1,Köy Meydanı,9x13,orc,construction complete ruin,4
+building,bld.hall_2,Kasaba Konağı,12x18,orc,construction complete ruin,4
+building,bld.hall_3,Şehir Sarayı,15x22,orc,construction complete ruin,4
+building,bld.tent,Çadır,6x9,orc,construction complete ruin,4
+building,bld.hut,Kulübe,6x9,orc,construction complete ruin,4
+building,bld.house,Ev,9x9,orc,construction complete ruin,4
+building,bld.manor,Konak,9x13,orc,construction complete ruin,4
+building,bld.storage,Ambar,9x9,orc,construction complete ruin,4
+building,bld.granary,Tahıl Ambarı,6x13,orc,construction complete ruin,4
+building,bld.windmill,Değirmen,6x9,orc,construction complete ruin,4
+building,bld.bakery,Fırın,6x9,orc,construction complete ruin,4
+building,bld.well,Kuyu,3x5,orc,construction complete ruin,4
+building,bld.mine,Maden Ocağı,9x13,orc,construction complete ruin,4
+building,bld.lumber_camp,Kereste Kampı,6x9,orc,construction complete ruin,4
+building,bld.smithy,Demirhane,6x9,orc,construction complete ruin,4
+building,bld.farm_shed,Tarla Barakası,6x9,orc,construction complete ruin,4
+building,bld.pasture,Ağıl,12x13,orc,construction complete ruin,4
+building,bld.beehive,Arı Kovanı,3x5,orc,construction complete ruin,4
+building,bld.market,Pazar Yeri,12x13,orc,construction complete ruin,4
+building,bld.inn,Han,9x13,orc,construction complete ruin,4
+building,bld.stable,Ahır,9x9,orc,construction complete ruin,4
+building,bld.barracks,Kışla,12x13,orc,construction complete ruin,4
+building,bld.watchtower,Gözetleme Kulesi,3x5,orc,construction complete ruin,4
+building,bld.wall,Sur,3x5,orc,construction complete ruin,4
+building,bld.gate,Kapı,6x5,orc,construction complete ruin,4
+building,bld.docks,İskele,9x9,orc,construction complete ruin,4
+building,bld.fishing_hut,Balıkçı Barakası,6x9,orc,construction complete ruin,4
+building,bld.shipyard,Tersane,12x13,orc,construction complete ruin,4
+building,bld.library,Kütüphane,9x13,orc,construction complete ruin,4
+building,bld.school,Mektep,9x9,orc,construction complete ruin,4
+building,bld.temple,Tapınak,9x13,orc,construction complete ruin,4
+building,bld.grand_temple,Büyük Tapınak,15x22,orc,construction complete ruin,4
+building,bld.healers_house,Şifahane,9x9,orc,construction complete ruin,4
+building,bld.graveyard,Mezarlık,9x13,orc,construction complete ruin,4
+building,bld.statue_god,Yaratıcı Heykeli,6x9,orc,construction complete ruin,4
+building,bld.monument,Zafer Anıtı,6x9,orc,construction complete ruin,4
+building,bld.pyre,Ölü Yakma Ocağı,6x9,orc,construction complete ruin,4
+building,bld.nest,Yuva,6x9,orc,construction complete ruin,4
+building,bld.hive,Kovan,9x13,orc,construction complete ruin,4
+building,bld.bonfire,Kamp Ateşi,6x9,beast,construction complete ruin,4
+building,bld.hall_1,Köy Meydanı,9x13,beast,construction complete ruin,4
+building,bld.hall_2,Kasaba Konağı,12x18,beast,construction complete ruin,4
+building,bld.hall_3,Şehir Sarayı,15x22,beast,construction complete ruin,4
+building,bld.tent,Çadır,6x9,beast,construction complete ruin,4
+building,bld.hut,Kulübe,6x9,beast,construction complete ruin,4
+building,bld.house,Ev,9x9,beast,construction complete ruin,4
+building,bld.manor,Konak,9x13,beast,construction complete ruin,4
+building,bld.storage,Ambar,9x9,beast,construction complete ruin,4
+building,bld.granary,Tahıl Ambarı,6x13,beast,construction complete ruin,4
+building,bld.windmill,Değirmen,6x9,beast,construction complete ruin,4
+building,bld.bakery,Fırın,6x9,beast,construction complete ruin,4
+building,bld.well,Kuyu,3x5,beast,construction complete ruin,4
+building,bld.mine,Maden Ocağı,9x13,beast,construction complete ruin,4
+building,bld.lumber_camp,Kereste Kampı,6x9,beast,construction complete ruin,4
+building,bld.smithy,Demirhane,6x9,beast,construction complete ruin,4
+building,bld.farm_shed,Tarla Barakası,6x9,beast,construction complete ruin,4
+building,bld.pasture,Ağıl,12x13,beast,construction complete ruin,4
+building,bld.beehive,Arı Kovanı,3x5,beast,construction complete ruin,4
+building,bld.market,Pazar Yeri,12x13,beast,construction complete ruin,4
+building,bld.inn,Han,9x13,beast,construction complete ruin,4
+building,bld.stable,Ahır,9x9,beast,construction complete ruin,4
+building,bld.barracks,Kışla,12x13,beast,construction complete ruin,4
+building,bld.watchtower,Gözetleme Kulesi,3x5,beast,construction complete ruin,4
+building,bld.wall,Sur,3x5,beast,construction complete ruin,4
+building,bld.gate,Kapı,6x5,beast,construction complete ruin,4
+building,bld.docks,İskele,9x9,beast,construction complete ruin,4
+building,bld.fishing_hut,Balıkçı Barakası,6x9,beast,construction complete ruin,4
+building,bld.shipyard,Tersane,12x13,beast,construction complete ruin,4
+building,bld.library,Kütüphane,9x13,beast,construction complete ruin,4
+building,bld.school,Mektep,9x9,beast,construction complete ruin,4
+building,bld.temple,Tapınak,9x13,beast,construction complete ruin,4
+building,bld.grand_temple,Büyük Tapınak,15x22,beast,construction complete ruin,4
+building,bld.healers_house,Şifahane,9x9,beast,construction complete ruin,4
+building,bld.graveyard,Mezarlık,9x13,beast,construction complete ruin,4
+building,bld.statue_god,Yaratıcı Heykeli,6x9,beast,construction complete ruin,4
+building,bld.monument,Zafer Anıtı,6x9,beast,construction complete ruin,4
+building,bld.pyre,Ölü Yakma Ocağı,6x9,beast,construction complete ruin,4
+building,bld.nest,Yuva,6x9,beast,construction complete ruin,4
+building,bld.hive,Kovan,9x13,beast,construction complete ruin,4
+building,bld.bonfire,Kamp Ateşi,6x9,insect,construction complete ruin,4
+building,bld.hall_1,Köy Meydanı,9x13,insect,construction complete ruin,4
+building,bld.hall_2,Kasaba Konağı,12x18,insect,construction complete ruin,4
+building,bld.hall_3,Şehir Sarayı,15x22,insect,construction complete ruin,4
+building,bld.tent,Çadır,6x9,insect,construction complete ruin,4
+building,bld.hut,Kulübe,6x9,insect,construction complete ruin,4
+building,bld.house,Ev,9x9,insect,construction complete ruin,4
+building,bld.manor,Konak,9x13,insect,construction complete ruin,4
+building,bld.storage,Ambar,9x9,insect,construction complete ruin,4
+building,bld.granary,Tahıl Ambarı,6x13,insect,construction complete ruin,4
+building,bld.windmill,Değirmen,6x9,insect,construction complete ruin,4
+building,bld.bakery,Fırın,6x9,insect,construction complete ruin,4
+building,bld.well,Kuyu,3x5,insect,construction complete ruin,4
+building,bld.mine,Maden Ocağı,9x13,insect,construction complete ruin,4
+building,bld.lumber_camp,Kereste Kampı,6x9,insect,construction complete ruin,4
+building,bld.smithy,Demirhane,6x9,insect,construction complete ruin,4
+building,bld.farm_shed,Tarla Barakası,6x9,insect,construction complete ruin,4
+building,bld.pasture,Ağıl,12x13,insect,construction complete ruin,4
+building,bld.beehive,Arı Kovanı,3x5,insect,construction complete ruin,4
+building,bld.market,Pazar Yeri,12x13,insect,construction complete ruin,4
+building,bld.inn,Han,9x13,insect,construction complete ruin,4
+building,bld.stable,Ahır,9x9,insect,construction complete ruin,4
+building,bld.barracks,Kışla,12x13,insect,construction complete ruin,4
+building,bld.watchtower,Gözetleme Kulesi,3x5,insect,construction complete ruin,4
+building,bld.wall,Sur,3x5,insect,construction complete ruin,4
+building,bld.gate,Kapı,6x5,insect,construction complete ruin,4
+building,bld.docks,İskele,9x9,insect,construction complete ruin,4
+building,bld.fishing_hut,Balıkçı Barakası,6x9,insect,construction complete ruin,4
+building,bld.shipyard,Tersane,12x13,insect,construction complete ruin,4
+building,bld.library,Kütüphane,9x13,insect,construction complete ruin,4
+building,bld.school,Mektep,9x9,insect,construction complete ruin,4
+building,bld.temple,Tapınak,9x13,insect,construction complete ruin,4
+building,bld.grand_temple,Büyük Tapınak,15x22,insect,construction complete ruin,4
+building,bld.healers_house,Şifahane,9x9,insect,construction complete ruin,4
+building,bld.graveyard,Mezarlık,9x13,insect,construction complete ruin,4
+building,bld.statue_god,Yaratıcı Heykeli,6x9,insect,construction complete ruin,4
+building,bld.monument,Zafer Anıtı,6x9,insect,construction complete ruin,4
+building,bld.pyre,Ölü Yakma Ocağı,6x9,insect,construction complete ruin,4
+building,bld.nest,Yuva,6x9,insect,construction complete ruin,4
+building,bld.hive,Kovan,9x13,insect,construction complete ruin,4
+feature,feat.tree_oak,Meşe,5x7,tree,evre 0-3 (ölçek),2
+feature,feat.tree_birch,Huş,5x7,tree,evre 0-3 (ölçek),2
+feature,feat.tree_maple,Akçaağaç,5x7,tree,evre 0-3 (ölçek),2
+feature,feat.tree_pine,Çam,5x7,tree,evre 0-3 (ölçek),2
+feature,feat.tree_snowpine,Karlı Çam,5x7,tree,evre 0-3 (ölçek),2
+feature,feat.tree_palm,Palmiye,5x7,tree,evre 0-3 (ölçek),2
+feature,feat.tree_jungle,Dev Cengel Ağacı,5x7,tree,evre 0-3 (ölçek),2
+feature,feat.tree_cypress,Bataklık Servisi,5x7,tree,evre 0-3 (ölçek),2
+feature,feat.tree_acacia,Akasya,5x7,tree,evre 0-3 (ölçek),2
+feature,feat.cactus,Kaktüs,3x3,plant,evre 0-3 (ölçek),2
+feature,feat.tree_dead,Kuru Ağaç,5x7,tree,evre 0-3 (ölçek),2
+feature,feat.tree_giant_mushroom,Dev Mantar,5x7,tree,evre 0-3 (ölçek),2
+feature,feat.crystal_spire,Kristal Sütun,5x7,tree,evre 0-3 (ölçek),2
+feature,feat.tree_fairy,Peri Ağacı,5x7,tree,evre 0-3 (ölçek),2
+feature,feat.tree_rot,Çürük Gövde,5x7,tree,evre 0-3 (ölçek),2
+feature,feat.tree_ember,Kor Ağacı,5x7,tree,evre 0-3 (ölçek),2
+feature,feat.tree_candy,Şeker Ağacı,5x7,tree,evre 0-3 (ölçek),2
+feature,feat.tree_citrus,Turunç Ağacı,5x7,tree,evre 0-3 (ölçek),2
+feature,feat.tree_cloud,Bulut Ağacı,5x7,tree,evre 0-3 (ölçek),2
+feature,feat.tree_ash,Kül Ağacı,5x7,tree,evre 0-3 (ölçek),2
+feature,feat.tree_hourglass,Kum Saati Ağacı,5x7,tree,evre 0-3 (ölçek),2
+feature,feat.void_pillar,Boşluk Sütunu,5x7,tree,evre 0-3 (ölçek),2
+feature,feat.coral,Mercan,3x3,plant,evre 0-3 (ölçek),2
+feature,feat.tree_bone,Kemik Ağacı,5x7,tree,evre 0-3 (ölçek),2
+feature,feat.tree_honeycomb,Petek Ağacı,5x7,tree,evre 0-3 (ölçek),2
+feature,feat.tree_volcanic,Bazalt Dikeni,5x7,tree,evre 0-3 (ölçek),2
+feature,feat.grass_tuft,Ot Öbeği,3x3,plant,evre 0-3 (ölçek),2
+feature,feat.flower,Çiçek,3x3,plant,evre 0-3 (ölçek),2
+feature,feat.berry_bush,Meyve Çalısı,3x3,plant,evre 0-3 (ölçek),2
+feature,feat.reed,Saz,3x3,plant,evre 0-3 (ölçek),2
+feature,feat.wheat_crop,Buğday Başağı,3x3,crop,evre 0-3 (ölçek),2
+feature,feat.herb_patch,Şifalı Ot Öbeği,3x3,plant,evre 0-3 (ölçek),2
+feature,feat.small_mushroom,Küçük Mantar,3x3,plant,evre 0-3 (ölçek),2
+feature,feat.garlic_plant,Sarımsak,3x3,plant,evre 0-3 (ölçek),2
+feature,feat.ore_copper,Bakır Damarı,3x3,ore,evre 0-3 (ölçek),2
+feature,feat.ore_iron,Demir Damarı,3x3,ore,evre 0-3 (ölçek),2
+feature,feat.ore_silver,Gümüş Damarı,3x3,ore,evre 0-3 (ölçek),2
+feature,feat.ore_gold,Altın Damarı,3x3,ore,evre 0-3 (ölçek),2
+feature,feat.ore_skyiron,Gökdemir Damarı,3x3,ore,evre 0-3 (ölçek),2
+feature,feat.ore_starore,Yıldız Cevheri Damarı,3x3,ore,evre 0-3 (ölçek),2
+feature,feat.ore_obsidian,Obsidyen Kütlesi,3x3,ore,evre 0-3 (ölçek),2
+feature,feat.rock,Kaya,3x3,ore,evre 0-3 (ölçek),2
+feature,feat.salt_flat,Tuz Yatağı,3x3,ore,evre 0-3 (ölçek),2
+feature,feat.bones_pile,Kemik Yığını,3x3,ore,evre 0-3 (ölçek),2
+icon_power,pw.soil,Toprak,16x16,world,-,1
+icon_power,pw.sand,Kum,16x16,world,-,1
+icon_power,pw.hills,Tepe,16x16,world,-,1
+icon_power,pw.mountain,Dağ,16x16,world,-,1
+icon_power,pw.shallow,Sığ Su,16x16,world,-,1
+icon_power,pw.water,Su,16x16,world,-,1
+icon_power,pw.deep_water,Derin Su,16x16,world,-,1
+icon_power,pw.raise,Yükselt,16x16,world,-,1
+icon_power,pw.lower,Alçalt,16x16,world,-,1
+icon_power,pw.sponge,Sünger,16x16,world,-,1
+icon_power,pw.road,Yol,16x16,world,-,1
+icon_power,pw.field,Tarla,16x16,world,-,1
+icon_power,pw.eraser,Silgi,16x16,world,-,1
+icon_power,pw.tree,Ağaç Ek,16x16,world,-,1
+icon_power,pw.bush,Çalı Ek,16x16,world,-,1
+icon_power,pw.flowers,Çiçek Ek,16x16,world,-,1
+icon_power,pw.mushrooms,Mantar Ek,16x16,world,-,1
+icon_power,pw.wheat,Buğday Ek,16x16,world,-,1
+icon_power,pw.rock,Kaya,16x16,world,-,1
+icon_power,pw.ore_copper,Bakır Damarı,16x16,world,-,1
+icon_power,pw.ore_iron,Demir Damarı,16x16,world,-,1
+icon_power,pw.ore_silver,Gümüş Damarı,16x16,world,-,1
+icon_power,pw.ore_gold,Altın Damarı,16x16,world,-,1
+icon_power,pw.ore_skyiron,Gökdemir Damarı,16x16,world,-,1
+icon_power,pw.ore_starore,Yıldız Cevheri,16x16,world,-,1
+icon_power,pw.seed_grassland,Çayır Tohumu,16x16,world,-,1
+icon_power,pw.seed_birch,Huşluk Tohumu,16x16,world,-,1
+icon_power,pw.seed_maple,Akçaağaç Koruluğu Tohumu,16x16,world,-,1
+icon_power,pw.seed_forest,Karışık Orman Tohumu,16x16,world,-,1
+icon_power,pw.seed_jungle,Cengel Tohumu,16x16,world,-,1
+icon_power,pw.seed_swamp,Bataklık Tohumu,16x16,world,-,1
+icon_power,pw.seed_savanna,Savan Tohumu,16x16,world,-,1
+icon_power,pw.seed_desert,Çöl Tohumu,16x16,world,-,1
+icon_power,pw.seed_rocklands,Kayalık Tohumu,16x16,world,-,1
+icon_power,pw.seed_tundra,Tundra Tohumu,16x16,world,-,1
+icon_power,pw.seed_snowpine,Karlı Çamlık Tohumu,16x16,world,-,1
+icon_power,pw.seed_flower,Çiçek Vadisi Tohumu,16x16,world,-,1
+icon_power,pw.seed_clover,Yonca Tarlası Tohumu,16x16,world,-,1
+icon_power,pw.seed_mushroom,Mantar Diyarı Tohumu,16x16,world,-,1
+icon_power,pw.seed_crystal,Kristal Vadisi Tohumu,16x16,world,-,1
+icon_power,pw.seed_enchanted,Peri Ormanı Tohumu,16x16,world,-,1
+icon_power,pw.seed_corrupted,Kara Çürüme Tohumu,16x16,world,-,1
+icon_power,pw.seed_infernal,Kor Diyarı Tohumu,16x16,world,-,1
+icon_power,pw.seed_candy,Şekerleme Ülkesi Tohumu,16x16,world,-,1
+icon_power,pw.seed_citrus,Turunç Bahçesi Tohumu,16x16,world,-,1
+icon_power,pw.seed_garlic,Sarımsaklık Tohumu,16x16,world,-,1
+icon_power,pw.seed_celestial,Gök Bahçesi Tohumu,16x16,world,-,1
+icon_power,pw.seed_ash,Kül Çölü Tohumu,16x16,world,-,1
+icon_power,pw.seed_timewarp,Zaman Kıvrımı Tohumu,16x16,world,-,1
+icon_power,pw.seed_void,Sessiz Boşluk Tohumu,16x16,world,-,1
+icon_power,pw.seed_coral,Mercan Resifi Tohumu,16x16,world,-,1
+icon_power,pw.seed_volcanic,Volkanik Ova Tohumu,16x16,world,-,1
+icon_power,pw.seed_bone,Kemik Düzlüğü Tohumu,16x16,world,-,1
+icon_power,pw.seed_honey,Bal Korusu Tohumu,16x16,world,-,1
+icon_power,pw.spawn_human,İnsan,16x16,civ,-,1
+icon_power,pw.spawn_elf,Elf,16x16,civ,-,1
+icon_power,pw.spawn_dwarf,Cüce,16x16,civ,-,1
+icon_power,pw.spawn_orc,Ork,16x16,civ,-,1
+icon_power,pw.friendship,Dostluk,16x16,civ,-,1
+icon_power,pw.spite,Kin,16x16,civ,-,1
+icon_power,pw.inspire,İlham,16x16,civ,-,1
+icon_power,pw.rebellion_spark,İsyan Kıvılcımı,16x16,civ,-,1
+icon_power,pw.crown,Taç,16x16,civ,-,1
+icon_power,pw.relocate,Sancak Değiştir,16x16,civ,-,1
+icon_power,pw.magnet,Kutsal Mıknatıs,16x16,civ,-,1
+icon_power,pw.zone_add,Sınır Ekle,16x16,civ,-,1
+icon_power,pw.zone_remove,Sınır Kaldır,16x16,civ,-,1
+icon_power,pw.bless_city,Şehri Kutsa,16x16,civ,-,1
+icon_power,pw.curse_city,Şehri Lanetle,16x16,civ,-,1
+icon_power,pw.capital,Başkent Yap,16x16,civ,-,1
+icon_power,pw.found_village,Köy Kur,16x16,civ,-,1
+icon_power,pw.migrants,Göçmen Dalgası,16x16,civ,-,1
+icon_power,pw.festival,Şenlik Başlat,16x16,civ,-,1
+icon_power,pw.spawn_wolf,Kurt,16x16,creatures,-,1
+icon_power,pw.spawn_bear,Ayı,16x16,creatures,-,1
+icon_power,pw.spawn_cat,Kedi,16x16,creatures,-,1
+icon_power,pw.spawn_dog,Köpek,16x16,creatures,-,1
+icon_power,pw.spawn_rabbit,Tavşan,16x16,creatures,-,1
+icon_power,pw.spawn_sheep,Koyun,16x16,creatures,-,1
+icon_power,pw.spawn_cow,İnek,16x16,creatures,-,1
+icon_power,pw.spawn_chicken,Tavuk,16x16,creatures,-,1
+icon_power,pw.spawn_frog,Kurbağa,16x16,creatures,-,1
+icon_power,pw.spawn_rat,Sıçan,16x16,creatures,-,1
+icon_power,pw.spawn_monkey,Maymun,16x16,creatures,-,1
+icon_power,pw.spawn_penguin,Penguen,16x16,creatures,-,1
+icon_power,pw.spawn_fox,Tilki,16x16,creatures,-,1
+icon_power,pw.spawn_crab,Yengeç,16x16,creatures,-,1
+icon_power,pw.spawn_scorpion,Akrep,16x16,creatures,-,1
+icon_power,pw.spawn_lizard,Kertenkele,16x16,creatures,-,1
+icon_power,pw.spawn_crocodile,Timsah,16x16,creatures,-,1
+icon_power,pw.spawn_bee,Arı,16x16,creatures,-,1
+icon_power,pw.spawn_ant,Karınca,16x16,creatures,-,1
+icon_power,pw.spawn_beetle,Böcek,16x16,creatures,-,1
+icon_power,pw.spawn_snake,Yılan,16x16,creatures,-,1
+icon_power,pw.spawn_turtle,Kaplumbağa,16x16,creatures,-,1
+icon_power,pw.spawn_deer,Geyik,16x16,creatures,-,1
+icon_power,pw.spawn_boar,Yaban Domuzu,16x16,creatures,-,1
+icon_power,pw.spawn_goat,Keçi,16x16,creatures,-,1
+icon_power,pw.spawn_owl,Baykuş,16x16,creatures,-,1
+icon_power,pw.spawn_crow,Karga,16x16,creatures,-,1
+icon_power,pw.spawn_eagle,Kartal,16x16,creatures,-,1
+icon_power,pw.spawn_parrot,Papağan,16x16,creatures,-,1
+icon_power,pw.spawn_seal,Fok,16x16,creatures,-,1
+icon_power,pw.spawn_hyena,Sırtlan,16x16,creatures,-,1
+icon_power,pw.spawn_lion,Aslan,16x16,creatures,-,1
+icon_power,pw.spawn_rhino,Gergedan,16x16,creatures,-,1
+icon_power,pw.spawn_buffalo,Manda,16x16,creatures,-,1
+icon_power,pw.spawn_camel,Deve,16x16,creatures,-,1
+icon_power,pw.spawn_reindeer,Ren Geyiği,16x16,creatures,-,1
+icon_power,pw.spawn_polar_bear,Kutup Ayısı,16x16,creatures,-,1
+icon_power,pw.spawn_snail,Salyangoz,16x16,creatures,-,1
+icon_power,pw.spawn_salamander,Semender,16x16,creatures,-,1
+icon_power,pw.spawn_horse_wild,Yaban Atı,16x16,creatures,-,1
+icon_power,pw.spawn_fish,Balık,16x16,creatures,-,1
+icon_power,pw.spawn_butterfly,Kelebek,16x16,creatures,-,1
+icon_power,pw.spawn_piranha,Pirana,16x16,creatures,-,1
+icon_power,pw.spawn_mosquito_swarm,Sivrisinek Sürüsü,16x16,creatures,-,1
+icon_power,pw.spawn_dragon,Ejderha,16x16,creatures,-,1
+icon_power,pw.spawn_sandworm,Kum Kurdu,16x16,creatures,-,1
+icon_power,pw.spawn_kraken,Derin Canavarı,16x16,creatures,-,1
+icon_power,pw.spawn_ember_imp,Kor İblisi,16x16,creatures,-,1
+icon_power,pw.spawn_rot_crawler,Çürük Sürüngen,16x16,creatures,-,1
+icon_power,pw.spawn_candy_golem,Şeker Golemi,16x16,creatures,-,1
+icon_power,pw.spawn_gummy_bear,Jöle Ayı,16x16,creatures,-,1
+icon_power,pw.spawn_shroomling,Mantarcık,16x16,creatures,-,1
+icon_power,pw.spawn_crystal_beetle,Kristal Böcek,16x16,creatures,-,1
+icon_power,pw.spawn_ash_crawler,Kül Sürüngeni,16x16,creatures,-,1
+icon_power,pw.spawn_bone_crawler,Kemik Örümceği,16x16,creatures,-,1
+icon_power,pw.spawn_clock_crab,Saat Yengeci,16x16,creatures,-,1
+icon_power,pw.spawn_void_moth,Boşluk Güvesi,16x16,creatures,-,1
+icon_power,pw.spawn_flesh_mound,Et Yığını,16x16,creatures,-,1
+icon_power,pw.spawn_devourer,Yutucu Kütle,16x16,creatures,-,1
+icon_power,pw.spawn_slime,Balçık,16x16,creatures,-,1
+icon_power,pw.spawn_walking_tree,Yürüyen Ağaç,16x16,creatures,-,1
+icon_power,pw.spawn_fairy,Peri,16x16,creatures,-,1
+icon_power,pw.spawn_sky_whale_calf,Gök Balinası Yavrusu,16x16,creatures,-,1
+icon_power,pw.spawn_skeleton,İskelet,16x16,creatures,-,1
+icon_power,pw.spawn_zombie,Zombi,16x16,creatures,-,1
+icon_power,pw.spawn_zombie_runner,Koşucu Zombi,16x16,creatures,-,1
+icon_power,pw.spawn_zombie_brute,İri Zombi,16x16,creatures,-,1
+icon_power,pw.spawn_zombie_bloater,Şişkin Zombi,16x16,creatures,-,1
+icon_power,pw.spawn_zombie_crawler,Sürünen Zombi,16x16,creatures,-,1
+icon_power,pw.spawn_zombie_beast,Zombi Hayvan,16x16,creatures,-,1
+icon_power,pw.spawn_zombie_dragon,Çürük Ejderha,16x16,creatures,-,1
+icon_power,pw.spawn_zombie_lord,Zombi Efendisi,16x16,creatures,-,1
+icon_power,pw.spawn_ghost,Hayalet,16x16,creatures,-,1
+icon_power,pw.spawn_necromancer,Ölü Çağırıcı,16x16,creatures,-,1
+icon_power,pw.spawn_bloodsucker,Kan Emici,16x16,creatures,-,1
+icon_power,pw.spawn_fire_elemental,Ateş Elementali,16x16,creatures,-,1
+icon_power,pw.spawn_water_elemental,Su Elementali,16x16,creatures,-,1
+icon_power,pw.spawn_earth_golem,Toprak Golemi,16x16,creatures,-,1
+icon_power,pw.spawn_snowman,Kardan Adam,16x16,creatures,-,1
+icon_power,pw.spawn_storm_spirit,Fırtına Ruhu,16x16,creatures,-,1
+icon_power,pw.spawn_dark_mage,Kara Büyücü,16x16,creatures,-,1
+icon_power,pw.spawn_white_mage,Ak Büyücü,16x16,creatures,-,1
+icon_power,pw.spawn_druid,Druid,16x16,creatures,-,1
+icon_power,pw.spawn_sky_visitor,Gök Ziyaretçisi,16x16,creatures,-,1
+icon_power,pw.spawn_colossus,Mekanik Dev,16x16,creatures,-,1
+icon_power,pw.spawn_bandit,Haydut,16x16,creatures,-,1
+icon_power,pw.spawn_cultist,Tarikatçı,16x16,creatures,-,1
+icon_power,pw.cloud_rain,Yağmur Bulutu,16x16,nature,-,1
+icon_power,pw.cloud_snow,Kar Bulutu,16x16,nature,-,1
+icon_power,pw.cloud_acid,Asit Bulutu,16x16,nature,-,1
+icon_power,pw.cloud_lava,Lav Bulutu,16x16,nature,-,1
+icon_power,pw.cloud_life,Yaşam Bulutu,16x16,nature,-,1
+icon_power,pw.cloud_storm,Fırtına Bulutu,16x16,nature,-,1
+icon_power,pw.cloud_ash,Kül Bulutu,16x16,nature,-,1
+icon_power,pw.cloud_blessing,Kutsal Bulut,16x16,nature,-,1
+icon_power,pw.cloud_plague,Veba Sisi,16x16,nature,-,1
+icon_power,pw.cloud_rot,Çürük Bulutu,16x16,nature,-,1
+icon_power,pw.cloud_candy,Şeker Yağmuru,16x16,nature,-,1
+icon_power,pw.fire,Ateş,16x16,nature,-,1
+icon_power,pw.extinguish,Söndür,16x16,nature,-,1
+icon_power,pw.snow,Kar,16x16,nature,-,1
+icon_power,pw.ice,Buz,16x16,nature,-,1
+icon_power,pw.lava,Lav,16x16,nature,-,1
+icon_power,pw.cool_lava,Lav Soğut,16x16,nature,-,1
+icon_power,pw.tornado,Hortum,16x16,nature,-,1
+icon_power,pw.earthquake,Deprem,16x16,nature,-,1
+icon_power,pw.tsunami,Dev Dalga,16x16,nature,-,1
+icon_power,pw.volcano,Yanardağ,16x16,nature,-,1
+icon_power,pw.geyser,Gayzer,16x16,nature,-,1
+icon_power,pw.meteor,Göktaşı,16x16,nature,-,1
+icon_power,pw.lightning,Yıldırım,16x16,nature,-,1
+icon_power,pw.flood,Sel,16x16,nature,-,1
+icon_power,pw.plague,Veba,16x16,nature,-,1
+icon_power,pw.rotbite,Çürük Isırık,16x16,nature,-,1
+icon_power,pw.fleshgrowth,Et Büyümesi,16x16,nature,-,1
+icon_power,pw.spores,Spor,16x16,nature,-,1
+icon_power,pw.madness,Cinnet,16x16,nature,-,1
+icon_power,pw.zombie_serum,Arınma Serumu,16x16,nature,-,1
+icon_power,pw.raise_dead,Ölüleri Kaldır,16x16,nature,-,1
+icon_power,pw.divine_light,Kutsal Işık,16x16,nature,-,1
+icon_power,pw.monolith,Monolit,16x16,nature,-,1
+icon_power,pw.golden_brain,Altın Beyin,16x16,nature,-,1
+icon_power,pw.fertile_rain,Bereket,16x16,nature,-,1
+icon_power,pw.drought,Kuraklık,16x16,nature,-,1
+icon_power,pw.heat,Isı Dalgası,16x16,nature,-,1
+icon_power,pw.cold,Ayaz,16x16,nature,-,1
+icon_power,pw.blessing,Kutsama,16x16,nature,-,1
+icon_power,pw.curse,Lanet,16x16,nature,-,1
+icon_power,pw.bomb,Bomba,16x16,destruction,-,1
+icon_power,pw.dynamite,Dinamit,16x16,destruction,-,1
+icon_power,pw.napalm,Napalm,16x16,destruction,-,1
+icon_power,pw.cluster,Parça Bombası,16x16,destruction,-,1
+icon_power,pw.atomic,Atom Bombası,16x16,destruction,-,1
+icon_power,pw.antimatter,Karşı Madde,16x16,destruction,-,1
+icon_power,pw.heat_ray,Isı Işını,16x16,destruction,-,1
+icon_power,pw.black_hole,Kara Delik,16x16,destruction,-,1
+icon_power,pw.fireball,Ateş Topu,16x16,destruction,-,1
+icon_power,pw.goo,Yutan Balçık,16x16,destruction,-,1
+icon_power,pw.ice_bomb,Buz Bombası,16x16,destruction,-,1
+icon_power,pw.storm,Şimşek Fırtınası,16x16,destruction,-,1
+icon_power,pw.acid,Asit Damlası,16x16,destruction,-,1
+icon_power,pw.finger,Dürtme Parmağı,16x16,destruction,-,1
+icon_power,pw.stomp,Ezme,16x16,destruction,-,1
+icon_power,pw.shockwave,Şok Dalgası,16x16,destruction,-,1
+icon_power,pw.life_game,Hayat Oyunu,16x16,other,-,1
+icon_power,pw.ant,Tur Karıncası,16x16,other,-,1
+icon_power,pw.fireworks,Havai Fişek,16x16,other,-,1
+icon_power,pw.confetti,Konfeti,16x16,other,-,1
+icon_power,pw.inspect,İncele,16x16,other,-,1
+icon_power,pw.follow,Takip Et,16x16,other,-,1
+icon_power,pw.possess,Ruh Girişi,16x16,other,-,1
+icon_power,pw.eye,Keşif Gözü,16x16,other,-,1
+icon_power,pw.stats,Dünya İstatistikleri,16x16,other,-,1
+icon_power,pw.graphs,Grafikler,16x16,other,-,1
+icon_power,pw.history,Dünya Tarihi,16x16,other,-,1
+icon_power,pw.laws,Dünya Kanunları,16x16,other,-,1
+icon_power,pw.era_clock,Çağ Saati,16x16,other,-,1
+icon_power,pw.ed_unit,Birim Editörü,16x16,other,-,1
+icon_power,pw.ed_subspecies,Alt Tür Editörü,16x16,other,-,1
+icon_power,pw.ed_genes,Gen Editörü,16x16,other,-,1
+icon_power,pw.ed_clan,Klan Editörü,16x16,other,-,1
+icon_power,pw.ed_culture,Kültür Editörü,16x16,other,-,1
+icon_power,pw.ed_religion,Din Editörü,16x16,other,-,1
+icon_power,pw.ed_language,Dil Editörü,16x16,other,-,1
+icon_power,pw.ed_kingdom,Krallık Editörü,16x16,other,-,1
+icon_power,pw.ed_item,Eşya Editörü,16x16,other,-,1
+icon_power,pw.meta_control,Meta Kontrol,16x16,other,-,1
+icon_power,pw.save,Kaydet,16x16,other,-,1
+icon_power,pw.load,Yükle,16x16,other,-,1
+icon_power,pw.achievements,Başarımlar,16x16,other,-,1
+icon_power,pw.settings,Ayarlar,16x16,other,-,1
+icon_power,pw.tutorial,Öğretici,16x16,other,-,1
+icon_power,pw.new_world,Yeni Dünya,16x16,other,-,1
+icon_trait,tr.strong,Güçlü,12x12,unit_traits,-,9
+icon_trait,tr.weak,Cılız,12x12,unit_traits,-,9
+icon_trait,tr.swift,Çevik,12x12,unit_traits,-,9
+icon_trait,tr.sluggish,Hantal,12x12,unit_traits,-,9
+icon_trait,tr.giant,Dev Cüsse,12x12,unit_traits,-,9
+icon_trait,tr.tiny,Ufak Tefek,12x12,unit_traits,-,9
+icon_trait,tr.tough,Dayanıklı,12x12,unit_traits,-,9
+icon_trait,tr.fragile,Kırılgan,12x12,unit_traits,-,9
+icon_trait,tr.thick_skin,Kalın Deri,12x12,unit_traits,-,9
+icon_trait,tr.agile,Sıçrayışlı,12x12,unit_traits,-,9
+icon_trait,tr.long_life,Uzun Ömürlü,12x12,unit_traits,-,9
+icon_trait,tr.short_life,Kısa Ömürlü,12x12,unit_traits,-,9
+icon_trait,tr.fertile,Doğurgan,12x12,unit_traits,-,9
+icon_trait,tr.infertile,Kısır,12x12,unit_traits,-,9
+icon_trait,tr.attractive,Alımlı,12x12,unit_traits,-,9
+icon_trait,tr.ugly,Çirkin,12x12,unit_traits,-,9
+icon_trait,tr.genius,Dâhi,12x12,unit_traits,-,9
+icon_trait,tr.dim,Kalın Kafalı,12x12,unit_traits,-,9
+icon_trait,tr.wise,Bilge,12x12,unit_traits,-,9
+icon_trait,tr.curious,Meraklı,12x12,unit_traits,-,9
+icon_trait,tr.forgetful,Unutkan,12x12,unit_traits,-,9
+icon_trait,tr.strategist,Stratejist,12x12,unit_traits,-,9
+icon_trait,tr.orator,Hatip,12x12,unit_traits,-,9
+icon_trait,tr.steward,Kâhya,12x12,unit_traits,-,9
+icon_trait,tr.bookworm,Kitap Kurdu,12x12,unit_traits,-,9
+icon_trait,tr.illiterate,Okuma Bilmez,12x12,unit_traits,-,9
+icon_trait,tr.fast_learner,Çabuk Kavrayan,12x12,unit_traits,-,9
+icon_trait,tr.stubborn,İnatçı,12x12,unit_traits,-,9
+icon_trait,tr.ambitious,Hırslı,12x12,unit_traits,-,9
+icon_trait,tr.content,Kanaatkâr,12x12,unit_traits,-,9
+icon_trait,tr.peaceful,Barışsever,12x12,unit_traits,-,9
+icon_trait,tr.bloodthirsty,Kana Susamış,12x12,unit_traits,-,9
+icon_trait,tr.greedy,Açgözlü,12x12,unit_traits,-,9
+icon_trait,tr.generous,Cömert,12x12,unit_traits,-,9
+icon_trait,tr.honest,Dürüst,12x12,unit_traits,-,9
+icon_trait,tr.deceitful,Hilekâr,12x12,unit_traits,-,9
+icon_trait,tr.brave,Yürekli,12x12,unit_traits,-,9
+icon_trait,tr.coward,Korkak,12x12,unit_traits,-,9
+icon_trait,tr.loyal,Sadık,12x12,unit_traits,-,9
+icon_trait,tr.treacherous,Hain,12x12,unit_traits,-,9
+icon_trait,tr.cruel,Zalim,12x12,unit_traits,-,9
+icon_trait,tr.merciful,Merhametli,12x12,unit_traits,-,9
+icon_trait,tr.zealous,Bağnaz,12x12,unit_traits,-,9
+icon_trait,tr.skeptic,Şüpheci,12x12,unit_traits,-,9
+icon_trait,tr.cheerful,Neşeli,12x12,unit_traits,-,9
+icon_trait,tr.gloomy,Karamsar,12x12,unit_traits,-,9
+icon_trait,tr.romantic,Âşık Ruhlu,12x12,unit_traits,-,9
+icon_trait,tr.loner,Yalnız Kurt,12x12,unit_traits,-,9
+icon_trait,tr.wanderer,Gezgin,12x12,unit_traits,-,9
+icon_trait,tr.homebody,Ev Kuşu,12x12,unit_traits,-,9
+icon_trait,tr.eagle_eye,Şahin Gözü,12x12,unit_traits,-,9
+icon_trait,tr.blademaster,Kılıç Ustası,12x12,unit_traits,-,9
+icon_trait,tr.shield_wall,Kalkan Duvarı,12x12,unit_traits,-,9
+icon_trait,tr.master_builder,Usta Eller,12x12,unit_traits,-,9
+icon_trait,tr.green_thumb,Yeşil Parmak,12x12,unit_traits,-,9
+icon_trait,tr.miner,Maden Burnu,12x12,unit_traits,-,9
+icon_trait,tr.angler,Olta Ustası,12x12,unit_traits,-,9
+icon_trait,tr.hunter,İzci,12x12,unit_traits,-,9
+icon_trait,tr.sailor,Denizci,12x12,unit_traits,-,9
+icon_trait,tr.smith,Demir Döven,12x12,unit_traits,-,9
+icon_trait,tr.healer,Şifacı,12x12,unit_traits,-,9
+icon_trait,tr.trader,Tüccar Ruhu,12x12,unit_traits,-,9
+icon_trait,tr.runner,Maratoncu,12x12,unit_traits,-,9
+icon_trait,tr.swimmer,Balık Gibi,12x12,unit_traits,-,9
+icon_trait,tr.climber,Dağ Keçisi,12x12,unit_traits,-,9
+icon_trait,tr.iron_stomach,Demir Mide,12x12,unit_traits,-,9
+icon_trait,tr.glutton,Obur,12x12,unit_traits,-,9
+icon_trait,tr.night_owl,Gece Kuşu,12x12,unit_traits,-,9
+icon_trait,tr.fire_breath,Ateş Soluğu,12x12,unit_traits,-,9
+icon_trait,tr.frost_touch,Buz Dokunuşu,12x12,unit_traits,-,9
+icon_trait,tr.venom,Zehirli Isırık,12x12,unit_traits,-,9
+icon_trait,tr.regeneration,Yenilenme,12x12,unit_traits,-,9
+icon_trait,tr.immortal,Ölümsüz,12x12,unit_traits,-,9
+icon_trait,tr.flight,Kanatlı,12x12,unit_traits,-,9
+icon_trait,tr.teleporter,Işınlanan,12x12,unit_traits,-,9
+icon_trait,tr.stormcaller,Şimşek Çağıran,12x12,unit_traits,-,9
+icon_trait,tr.necro,Ölü Fısıltısı,12x12,unit_traits,-,9
+icon_trait,tr.mage_blood,Büyü Kanı,12x12,unit_traits,-,9
+icon_trait,tr.holy,Kutsal Işık,12x12,unit_traits,-,9
+icon_trait,tr.shadowstep,Gölge Adımı,12x12,unit_traits,-,9
+icon_trait,tr.earthshaker,Yer Sarsan,12x12,unit_traits,-,9
+icon_trait,tr.vampiric,Kan Emici,12x12,unit_traits,-,9
+icon_trait,tr.thorns,Diken Kabuk,12x12,unit_traits,-,9
+icon_trait,tr.volatile,Patlak,12x12,unit_traits,-,9
+icon_trait,tr.berserker,Cinnet Öfkesi,12x12,unit_traits,-,9
+icon_trait,tr.courage_aura,Cesaret Aurası,12x12,unit_traits,-,9
+icon_trait,tr.blessed,Kutsanmış,12x12,unit_traits,-,9
+icon_trait,tr.cursed,Lanetli,12x12,unit_traits,-,9
+icon_trait,tr.blind,Kör,12x12,unit_traits,-,9
+icon_trait,tr.lame,Topal,12x12,unit_traits,-,9
+icon_trait,tr.one_eye,Tek Göz,12x12,unit_traits,-,9
+icon_trait,tr.deaf,Sağır,12x12,unit_traits,-,9
+icon_trait,tr.sickly,Hastalıklı,12x12,unit_traits,-,9
+icon_trait,tr.mad,Deli,12x12,unit_traits,-,9
+icon_trait,tr.scarred,Yara İzli,12x12,unit_traits,-,9
+icon_trait,tr.sleepless,Uykusuz,12x12,unit_traits,-,9
+icon_trait,tr.weak_immunity,Zayıf Bağışıklık,12x12,unit_traits,-,9
+icon_trait,tr.immune,Bağışık,12x12,unit_traits,-,9
+icon_trait,tr.heatproof,Ateşe Dayanıklı,12x12,unit_traits,-,9
+icon_trait,tr.coldproof,Soğuğa Dayanıklı,12x12,unit_traits,-,9
+icon_trait,tr.poisonproof,Zehre Dayanıklı,12x12,unit_traits,-,9
+icon_trait,tr.waterborn,Su Doğumlu,12x12,unit_traits,-,9
+icon_trait,tr.chosen_one,Seçilmiş,12x12,unit_traits,-,9
+icon_trait,tr.hero,Destan Kahramanı,12x12,unit_traits,-,9
+icon_trait,tr.divine_touch,İlahi Dokunuş,12x12,unit_traits,-,9
+icon_trait,tr.plague_bearer,Salgın Taşıyıcı,12x12,unit_traits,-,9
+icon_trait,tr.undead_curse,Ölümsüz Laneti,12x12,unit_traits,-,9
+icon_trait,tr.golden_heart,Altın Yürek,12x12,unit_traits,-,9
+icon_trait,tr.kingslayer,Kral Katili,12x12,unit_traits,-,9
+icon_trait,tr.survivor,Hayatta Kalan,12x12,unit_traits,-,9
+icon_trait,tr.veteran,Kıdemli,12x12,unit_traits,-,9
+icon_trait,tr.lucky,Şanslı,12x12,unit_traits,-,9
+icon_trait,tr.unlucky,Talihsiz,12x12,unit_traits,-,9
+icon_trait,tr.moonborn,Ay Çocuğu,12x12,unit_traits,-,9
+icon_trait,tr.stormborn,Fırtına Doğumlu,12x12,unit_traits,-,9
+icon_trait,tr.zombie_hunter,Ölü Avcısı,12x12,unit_traits,-,9
+icon_trait,tr.rot_resistant,Çürüğe Dirençli,12x12,unit_traits,-,9
+icon_trait,tr.hollow,Oyuk,12x12,unit_traits,-,9
+icon_trait,sst.herbivore,Otçul,12x12,subspecies_traits,-,9
+icon_trait,sst.carnivore,Etçil,12x12,subspecies_traits,-,9
+icon_trait,sst.omnivore,Hepçil,12x12,subspecies_traits,-,9
+icon_trait,sst.insectivore,Böcekçil,12x12,subspecies_traits,-,9
+icon_trait,sst.piscivore,Balıkçıl,12x12,subspecies_traits,-,9
+icon_trait,sst.scavenger,Leşçil,12x12,subspecies_traits,-,9
+icon_trait,sst.nectar,Nektarcı,12x12,subspecies_traits,-,9
+icon_trait,sst.lithophage,Taş Yiyen,12x12,subspecies_traits,-,9
+icon_trait,sst.photosynthesis,Fotosentez,12x12,subspecies_traits,-,9
+icon_trait,sst.brain_eater,Beyin Yiyen,12x12,subspecies_traits,-,9
+icon_trait,sst.fungivore,Mantarcıl,12x12,subspecies_traits,-,9
+icon_trait,sst.bloodfeeder,Kan İçen,12x12,subspecies_traits,-,9
+icon_trait,sst.cannibal,Yamyam,12x12,subspecies_traits,-,9
+icon_trait,sst.fasting,Az Yiyen,12x12,subspecies_traits,-,9
+icon_trait,sst.live_birth,Canlı Doğum,12x12,subspecies_traits,-,9
+icon_trait,sst.egg_laying,Yumurtlama,12x12,subspecies_traits,-,9
+icon_trait,sst.budding,Tomurcuklanma,12x12,subspecies_traits,-,9
+icon_trait,sst.fission,İkiye Bölünme,12x12,subspecies_traits,-,9
+icon_trait,sst.spore_birth,Sporla Üreme,12x12,subspecies_traits,-,9
+icon_trait,sst.parthenogenesis,Eşeysiz Üreme,12x12,subspecies_traits,-,9
+icon_trait,sst.twins,İkiz Eğilimi,12x12,subspecies_traits,-,9
+icon_trait,sst.litter,Kalabalık Batın,12x12,subspecies_traits,-,9
+icon_trait,sst.single_offspring,Tek Yavru,12x12,subspecies_traits,-,9
+icon_trait,sst.fast_gestation,Kısa Gebelik,12x12,subspecies_traits,-,9
+icon_trait,sst.long_gestation,Uzun Gebelik,12x12,subspecies_traits,-,9
+icon_trait,sst.seasonal_breeding,Mevsimsel Üreme,12x12,subspecies_traits,-,9
+icon_trait,sst.monogamous,Tek Eşli,12x12,subspecies_traits,-,9
+icon_trait,sst.polygamous,Çok Eşli,12x12,subspecies_traits,-,9
+icon_trait,sst.fast_maturity,Erken Olgunlaşma,12x12,subspecies_traits,-,9
+icon_trait,sst.slow_maturity,Geç Olgunlaşma,12x12,subspecies_traits,-,9
+icon_trait,sst.long_lived_kind,Uzun Ömürlü Soy,12x12,subspecies_traits,-,9
+icon_trait,sst.short_lived_kind,Kısa Ömürlü Soy,12x12,subspecies_traits,-,9
+icon_trait,sst.ageless,Yaşlanmayan,12x12,subspecies_traits,-,9
+icon_trait,sst.metamorphic,Başkalaşımcı,12x12,subspecies_traits,-,9
+icon_trait,sst.elder_wisdom,Yaşlı Bilgeliği,12x12,subspecies_traits,-,9
+icon_trait,sst.youth_vigor,Genç Dinçliği,12x12,subspecies_traits,-,9
+icon_trait,sst.hibernation,Kış Uykusu,12x12,subspecies_traits,-,9
+icon_trait,sst.rebirth,Küllerden Doğuş,12x12,subspecies_traits,-,9
+icon_trait,sst.primitive_brain,İlkel Beyin,12x12,subspecies_traits,-,9
+icon_trait,sst.advanced_memory,Gelişmiş Hafıza,12x12,subspecies_traits,-,9
+icon_trait,sst.speech_center,Konuşma Merkezi,12x12,subspecies_traits,-,9
+icon_trait,sst.abstract_thought,Soyut Düşünce,12x12,subspecies_traits,-,9
+icon_trait,sst.tool_use,Alet Kullanımı,12x12,subspecies_traits,-,9
+icon_trait,sst.planning,Planlama,12x12,subspecies_traits,-,9
+icon_trait,sst.pattern_seek,Örüntü Arayıcı,12x12,subspecies_traits,-,9
+icon_trait,sst.empathy,Empati,12x12,subspecies_traits,-,9
+icon_trait,sst.hive_mind,Kovan Zihni,12x12,subspecies_traits,-,9
+icon_trait,sst.instinct_driven,İçgüdüsel,12x12,subspecies_traits,-,9
+icon_trait,sst.curious_minds,Meraklı Zihinler,12x12,subspecies_traits,-,9
+icon_trait,sst.dream_walkers,Rüya Gezginleri,12x12,subspecies_traits,-,9
+icon_trait,sst.sapience,Bilinç,12x12,subspecies_traits,-,9
+icon_trait,sst.mimicry,Taklitçilik,12x12,subspecies_traits,-,9
+icon_trait,sst.pack_hunter,Sürü Avcısı,12x12,subspecies_traits,-,9
+icon_trait,sst.solitary,Yalnız,12x12,subspecies_traits,-,9
+icon_trait,sst.herd,Sürü Güdüsü,12x12,subspecies_traits,-,9
+icon_trait,sst.colony,Koloni,12x12,subspecies_traits,-,9
+icon_trait,sst.territorial,Bölgeci,12x12,subspecies_traits,-,9
+icon_trait,sst.nomadic,Göçebe,12x12,subspecies_traits,-,9
+icon_trait,sst.xenophile,Yabancı Sever,12x12,subspecies_traits,-,9
+icon_trait,sst.xenophobe,Yabancı Düşmanı,12x12,subspecies_traits,-,9
+icon_trait,sst.matriarchal,Ana Soylu,12x12,subspecies_traits,-,9
+icon_trait,sst.patriarchal,Baba Soylu,12x12,subspecies_traits,-,9
+icon_trait,sst.egalitarian,Eşitlikçi,12x12,subspecies_traits,-,9
+icon_trait,sst.hierarchical,Hiyerarşik,12x12,subspecies_traits,-,9
+icon_trait,sst.communal_care,Ortak Bakım,12x12,subspecies_traits,-,9
+icon_trait,sst.peace_seeking,Barışçıl Soy,12x12,subspecies_traits,-,9
+icon_trait,sst.cold_adapted,Soğuğa Uyumlu,12x12,subspecies_traits,-,9
+icon_trait,sst.heat_adapted,Sıcağa Uyumlu,12x12,subspecies_traits,-,9
+icon_trait,sst.arid_adapted,Kuraklığa Uyumlu,12x12,subspecies_traits,-,9
+icon_trait,sst.wet_adapted,Neme Uyumlu,12x12,subspecies_traits,-,9
+icon_trait,sst.altitude,Yüksek Rakım,12x12,subspecies_traits,-,9
+icon_trait,sst.cave_dweller,Mağara Sakini,12x12,subspecies_traits,-,9
+icon_trait,sst.nocturnal,Gececi,12x12,subspecies_traits,-,9
+icon_trait,sst.diurnal,Gündüzcü,12x12,subspecies_traits,-,9
+icon_trait,sst.sun_sensitive,Güneş Hassası,12x12,subspecies_traits,-,9
+icon_trait,sst.storm_hardy,Fırtınaya Dayanıklı,12x12,subspecies_traits,-,9
+icon_trait,sst.toxic_tolerant,Zehre Toleranslı,12x12,subspecies_traits,-,9
+icon_trait,sst.radiation_tolerant,Radyasyona Dayanıklı,12x12,subspecies_traits,-,9
+icon_trait,sst.swimmer_kind,Yüzücü,12x12,subspecies_traits,-,9
+icon_trait,sst.aquatic,Suda Yaşar,12x12,subspecies_traits,-,9
+icon_trait,sst.amphibious,Amfibi,12x12,subspecies_traits,-,9
+icon_trait,sst.flying,Uçucu,12x12,subspecies_traits,-,9
+icon_trait,sst.gliding,Süzülen,12x12,subspecies_traits,-,9
+icon_trait,sst.burrowing,Kazıcı,12x12,subspecies_traits,-,9
+icon_trait,sst.climbing,Tırmanıcı,12x12,subspecies_traits,-,9
+icon_trait,sst.fast_runner,Koşucu,12x12,subspecies_traits,-,9
+icon_trait,sst.slow_mover,Ağır,12x12,subspecies_traits,-,9
+icon_trait,sst.jumper,Sıçrayıcı,12x12,subspecies_traits,-,9
+icon_trait,sst.migratory,Göçmen,12x12,subspecies_traits,-,9
+icon_trait,sst.hover,Havada Süzülen,12x12,subspecies_traits,-,9
+icon_trait,sst.keen_sight,Keskin Görüş,12x12,subspecies_traits,-,9
+icon_trait,sst.keen_smell,Keskin Koku,12x12,subspecies_traits,-,9
+icon_trait,sst.echolocation,Yankı Algısı,12x12,subspecies_traits,-,9
+icon_trait,sst.thermal_vision,Isıl Görüş,12x12,subspecies_traits,-,9
+icon_trait,sst.tremorsense,Titreşim Algısı,12x12,subspecies_traits,-,9
+icon_trait,sst.poor_sight,Zayıf Görüş,12x12,subspecies_traits,-,9
+icon_trait,sst.sixth_sense,Altıncı His,12x12,subspecies_traits,-,9
+icon_trait,sst.magic_sense,Büyü Algısı,12x12,subspecies_traits,-,9
+icon_trait,sst.fur,Kürk,12x12,subspecies_traits,-,9
+icon_trait,sst.thick_fur,Kalın Kürk,12x12,subspecies_traits,-,9
+icon_trait,sst.scales,Pullu,12x12,subspecies_traits,-,9
+icon_trait,sst.shell,Kabuklu,12x12,subspecies_traits,-,9
+icon_trait,sst.exoskeleton,Dış İskelet,12x12,subspecies_traits,-,9
+icon_trait,sst.feathers,Tüylü,12x12,subspecies_traits,-,9
+icon_trait,sst.bare_skin,Çıplak Deri,12x12,subspecies_traits,-,9
+icon_trait,sst.slime_coat,Balçık Kaplı,12x12,subspecies_traits,-,9
+icon_trait,sst.bark_skin,Kabuk Deri,12x12,subspecies_traits,-,9
+icon_trait,sst.stone_skin,Taş Deri,12x12,subspecies_traits,-,9
+icon_trait,sst.spines,Dikenli,12x12,subspecies_traits,-,9
+icon_trait,sst.camouflage,Kamuflaj,12x12,subspecies_traits,-,9
+icon_trait,sst.toxic_skin,Zehirli Deri,12x12,subspecies_traits,-,9
+icon_trait,sst.regenerating_tissue,Yenilenen Doku,12x12,subspecies_traits,-,9
+icon_trait,sst.thick_bones,Kalın Kemik,12x12,subspecies_traits,-,9
+icon_trait,sst.hollow_bones,Kof Kemik,12x12,subspecies_traits,-,9
+icon_trait,sst.claws,Pençe,12x12,subspecies_traits,-,9
+icon_trait,sst.fangs,Sivri Diş,12x12,subspecies_traits,-,9
+icon_trait,sst.horns,Boynuz,12x12,subspecies_traits,-,9
+icon_trait,sst.tusks,Fildişi Diş,12x12,subspecies_traits,-,9
+icon_trait,sst.stinger,İğne,12x12,subspecies_traits,-,9
+icon_trait,sst.venom_glands,Zehir Bezi,12x12,subspecies_traits,-,9
+icon_trait,sst.acid_spit,Asit Tükürüğü,12x12,subspecies_traits,-,9
+icon_trait,sst.fire_glands,Ateş Bezi,12x12,subspecies_traits,-,9
+icon_trait,sst.frost_breath,Buz Nefesi,12x12,subspecies_traits,-,9
+icon_trait,sst.tail_whip,Kuyruk Kamçısı,12x12,subspecies_traits,-,9
+icon_trait,sst.crushing_jaw,Ezici Çene,12x12,subspecies_traits,-,9
+icon_trait,sst.charge,Hücum,12x12,subspecies_traits,-,9
+icon_trait,sst.ambusher,Pusucu,12x12,subspecies_traits,-,9
+icon_trait,sst.electric_organ,Elektrik Organı,12x12,subspecies_traits,-,9
+icon_trait,sst.fast_metabolism,Hızlı Metabolizma,12x12,subspecies_traits,-,9
+icon_trait,sst.slow_metabolism,Yavaş Metabolizma,12x12,subspecies_traits,-,9
+icon_trait,sst.fat_reserves,Yağ Deposu,12x12,subspecies_traits,-,9
+icon_trait,sst.cold_blooded,Soğukkanlı,12x12,subspecies_traits,-,9
+icon_trait,sst.warm_blooded,Sıcakkanlı,12x12,subspecies_traits,-,9
+icon_trait,sst.efficient_digestion,Verimli Sindirim,12x12,subspecies_traits,-,9
+icon_trait,sst.weak_stomach,Zayıf Mide,12x12,subspecies_traits,-,9
+icon_trait,sst.water_storage,Su Deposu,12x12,subspecies_traits,-,9
+icon_trait,sst.high_stamina,Yüksek Dayanım,12x12,subspecies_traits,-,9
+icon_trait,sst.low_stamina,Düşük Dayanım,12x12,subspecies_traits,-,9
+icon_trait,sst.plague_resist,Veba Direnci,12x12,subspecies_traits,-,9
+icon_trait,sst.disease_prone,Hastalığa Yatkın,12x12,subspecies_traits,-,9
+icon_trait,sst.infection_immune,Çürüğe Bağışık,12x12,subspecies_traits,-,9
+icon_trait,sst.spore_immune,Spora Bağışık,12x12,subspecies_traits,-,9
+icon_trait,sst.madness_resist,Cinnet Direnci,12x12,subspecies_traits,-,9
+icon_trait,sst.fast_healing,Hızlı İyileşme,12x12,subspecies_traits,-,9
+icon_trait,sst.antivenom,Panzehirli Kan,12x12,subspecies_traits,-,9
+icon_trait,sst.curse_ward,Lanet Kalkanı,12x12,subspecies_traits,-,9
+icon_trait,sst.size_tiny,Minik Boy,12x12,subspecies_traits,-,9
+icon_trait,sst.size_small,Küçük Boy,12x12,subspecies_traits,-,9
+icon_trait,sst.size_medium,Orta Boy,12x12,subspecies_traits,-,9
+icon_trait,sst.size_large,İri Boy,12x12,subspecies_traits,-,9
+icon_trait,sst.size_huge,Devasa Boy,12x12,subspecies_traits,-,9
+icon_trait,sst.dimorphism,Eşey Farkı,12x12,subspecies_traits,-,9
+icon_trait,sst.artistic,Sanatçı Ruh,12x12,subspecies_traits,-,9
+icon_trait,sst.musical,Müzikal,12x12,subspecies_traits,-,9
+icon_trait,sst.builders,İnşaatçı Soy,12x12,subspecies_traits,-,9
+icon_trait,sst.miners_kind,Madenci Soy,12x12,subspecies_traits,-,9
+icon_trait,sst.sailors_kind,Denizci Soy,12x12,subspecies_traits,-,9
+icon_trait,sst.farmers_kind,Çiftçi Soy,12x12,subspecies_traits,-,9
+icon_trait,sst.warrior_kind,Savaşçı Soy,12x12,subspecies_traits,-,9
+icon_trait,sst.mystic_kind,Mistik Soy,12x12,subspecies_traits,-,9
+icon_trait,sst.traders_kind,Tüccar Soy,12x12,subspecies_traits,-,9
+icon_trait,sst.scholars_kind,Âlim Soy,12x12,subspecies_traits,-,9
+icon_trait,sst.magic_affinity,Büyü Yatkınlığı,12x12,subspecies_traits,-,9
+icon_trait,sst.anti_magic,Büyü Sağırı,12x12,subspecies_traits,-,9
+icon_trait,sst.radiant,Işıyan,12x12,subspecies_traits,-,9
+icon_trait,sst.shadow_born,Gölge Doğumlu,12x12,subspecies_traits,-,9
+icon_trait,sst.elemental_fire,Ateş Özü,12x12,subspecies_traits,-,9
+icon_trait,sst.elemental_water,Su Özü,12x12,subspecies_traits,-,9
+icon_trait,sst.elemental_earth,Toprak Özü,12x12,subspecies_traits,-,9
+icon_trait,sst.elemental_air,Hava Özü,12x12,subspecies_traits,-,9
+icon_trait,sst.undying,Ölmeyen,12x12,subspecies_traits,-,9
+icon_trait,sst.soul_bond,Ruh Bağı,12x12,subspecies_traits,-,9
+icon_trait,sst.time_touched,Zaman Dokunmuş,12x12,subspecies_traits,-,9
+icon_trait,sst.void_touched,Boşluk Dokunmuş,12x12,subspecies_traits,-,9
+icon_trait,sst.crystal_body,Kristal Beden,12x12,subspecies_traits,-,9
+icon_trait,sst.plant_body,Bitkisel Beden,12x12,subspecies_traits,-,9
+icon_trait,sst.gold_digest,Altın Sindiren,12x12,subspecies_traits,-,9
+icon_trait,sst.divine_chosen,Tanrı Seçkini,12x12,subspecies_traits,-,9
+icon_trait,sst.mutable,Değişken Genom,12x12,subspecies_traits,-,9
+icon_trait,sst.stable_genome,Sabit Genom,12x12,subspecies_traits,-,9
+icon_trait,sst.pure,Saf Kan,12x12,subspecies_traits,-,9
+icon_trait,sst.hybrid_vigor,Melez Gücü,12x12,subspecies_traits,-,9
+icon_trait,sst.builds_nests,Yuva Kurar,12x12,subspecies_traits,-,9
+icon_trait,sst.food_hoarder,Yiyecek Biriktirir,12x12,subspecies_traits,-,9
+icon_trait,sst.gift_giver,Hediye Verir,12x12,subspecies_traits,-,9
+icon_trait,sst.grave_keepers,Ölülerini Gömer,12x12,subspecies_traits,-,9
+icon_trait,sst.stargazers,Yıldız Gözlemcisi,12x12,subspecies_traits,-,9
+icon_trait,sst.dancers,Dansçılar,12x12,subspecies_traits,-,9
+icon_trait,sst.fire_makers,Ateş Yakar,12x12,subspecies_traits,-,9
+icon_trait,sst.domesticators,Evcilleştirici,12x12,subspecies_traits,-,9
+icon_trait,sst.story_tellers,Hikâye Anlatıcı,12x12,subspecies_traits,-,9
+icon_trait,sst.raiders,Yağmacı,12x12,subspecies_traits,-,9
+icon_trait,sst.shiny_collectors,Parlak Toplayıcı,12x12,subspecies_traits,-,9
+icon_trait,sst.sun_greeters,Güneşe Selam,12x12,subspecies_traits,-,9
+icon_trait,sst.divine_breeding,İlahi Islah,12x12,subspecies_traits,-,9
+icon_trait,sst.uplifted,Yükseltilmiş,12x12,subspecies_traits,-,9
+icon_trait,sst.unmoving,Kıpırtısız,12x12,subspecies_traits,-,9
+icon_trait,sst.antimatter_core,Karşı Madde Özü,12x12,subspecies_traits,-,9
+icon_trait,sst.monolith_touched,Monolit Dokunuşu,12x12,subspecies_traits,-,9
+icon_trait,sst.first_of_kind,İlk Soy,12x12,subspecies_traits,-,9
+icon_trait,cul.succ_primogeniture,Büyük Evlat,12x12,culture_traits,-,9
+icon_trait,cul.succ_election,Seçimle,12x12,culture_traits,-,9
+icon_trait,cul.succ_strongest,En Güçlü,12x12,culture_traits,-,9
+icon_trait,cul.succ_wisest,En Bilge,12x12,culture_traits,-,9
+icon_trait,cul.succ_elders,Yaşlılar Meclisi,12x12,culture_traits,-,9
+icon_trait,cul.succ_lot,Kura,12x12,culture_traits,-,9
+icon_trait,cul.succ_matrilineal,Ana Soydan,12x12,culture_traits,-,9
+icon_trait,cul.succ_youngest,Küçük Evlat,12x12,culture_traits,-,9
+icon_trait,cul.war_drums,Savaş Davulları,12x12,culture_traits,-,9
+icon_trait,cul.iron_fist,Demir Yumruk,12x12,culture_traits,-,9
+icon_trait,cul.honor_duels,Düello Onuru,12x12,culture_traits,-,9
+icon_trait,cul.siege_masters,Kuşatma Ustaları,12x12,culture_traits,-,9
+icon_trait,cul.shield_brothers,Kalkan Kardeşleri,12x12,culture_traits,-,9
+icon_trait,cul.horse_lords,Atlı Beyler,12x12,culture_traits,-,9
+icon_trait,cul.archers_pride,Okçu Gururu,12x12,culture_traits,-,9
+icon_trait,cul.no_retreat,Geri Çekilmez,12x12,culture_traits,-,9
+icon_trait,cul.spare_the_weak,Zayıfa Dokunmaz,12x12,culture_traits,-,9
+icon_trait,cul.raid_culture,Akıncılar,12x12,culture_traits,-,9
+icon_trait,cul.expansionists,Yayılmacılar,12x12,culture_traits,-,9
+icon_trait,cul.isolationists,İçe Kapanık,12x12,culture_traits,-,9
+icon_trait,cul.nomads,Göçebeler,12x12,culture_traits,-,9
+icon_trait,cul.sea_folk,Deniz Halkı,12x12,culture_traits,-,9
+icon_trait,cul.open_hearth,Açık Ocak,12x12,culture_traits,-,9
+icon_trait,cul.pure_blood,Soy Arıklığı,12x12,culture_traits,-,9
+icon_trait,cul.melting_pot,Harman,12x12,culture_traits,-,9
+icon_trait,cul.hospitality,Misafirperver,12x12,culture_traits,-,9
+icon_trait,cul.frontier_spirit,Öncü Ruh,12x12,culture_traits,-,9
+icon_trait,cul.city_lovers,Kent Sevdalısı,12x12,culture_traits,-,9
+icon_trait,cul.villagers,Köy Hayatı,12x12,culture_traits,-,9
+icon_trait,cul.great_walls,Sur Kültürü,12x12,culture_traits,-,9
+icon_trait,cul.farmers,Toprak Ehli,12x12,culture_traits,-,9
+icon_trait,cul.harvest_feast,Hasat Şöleni,12x12,culture_traits,-,9
+icon_trait,cul.hunters,Avcı Gelenekleri,12x12,culture_traits,-,9
+icon_trait,cul.spice_road,Baharat Yolu,12x12,culture_traits,-,9
+icon_trait,cul.stone_carvers,Taş Oymacıları,12x12,culture_traits,-,9
+icon_trait,cul.artisans,Zanaatkârlar,12x12,culture_traits,-,9
+icon_trait,cul.merchants,Loncalar,12x12,culture_traits,-,9
+icon_trait,cul.miners_guild,Maden Loncası,12x12,culture_traits,-,9
+icon_trait,cul.fishers,Balıkçı Köyleri,12x12,culture_traits,-,9
+icon_trait,cul.herders,Çobanlar,12x12,culture_traits,-,9
+icon_trait,cul.scholars,Âlimler,12x12,culture_traits,-,9
+icon_trait,cul.reading_lovers,Okur Halk,12x12,culture_traits,-,9
+icon_trait,cul.oral_tradition,Sözlü Gelenek,12x12,culture_traits,-,9
+icon_trait,cul.ancestral_knowledge,Atalardan Bilgi,12x12,culture_traits,-,9
+icon_trait,cul.library_keepers,Kitap Bekçileri,12x12,culture_traits,-,9
+icon_trait,cul.astronomers,Yıldızbilimciler,12x12,culture_traits,-,9
+icon_trait,cul.inventors,Mucitler,12x12,culture_traits,-,9
+icon_trait,cul.book_burners,Kitap Yakıcılar,12x12,culture_traits,-,9
+icon_trait,cul.mystics,Gizemciler,12x12,culture_traits,-,9
+icon_trait,cul.healers_guild,Şifacılar Ocağı,12x12,culture_traits,-,9
+icon_trait,cul.elders_voice,Yaşlılara Hürmet,12x12,culture_traits,-,9
+icon_trait,cul.youth_cult,Gençlik Kültü,12x12,culture_traits,-,9
+icon_trait,cul.ancestor_halls,Ata Ocakları,12x12,culture_traits,-,9
+icon_trait,cul.large_families,Kalabalık Aileler,12x12,culture_traits,-,9
+icon_trait,cul.small_families,Çekirdek Aile,12x12,culture_traits,-,9
+icon_trait,cul.arranged_marriage,Görücü Usulü,12x12,culture_traits,-,9
+icon_trait,cul.free_love,Serbest Gönül,12x12,culture_traits,-,9
+icon_trait,cul.orphan_care,Yetim Koruma,12x12,culture_traits,-,9
+icon_trait,cul.twin_blessing,İkiz Uğuru,12x12,culture_traits,-,9
+icon_trait,cul.burial_rites,Defin Ritüelleri,12x12,culture_traits,-,9
+icon_trait,cul.forest_keepers,Orman Bekçileri,12x12,culture_traits,-,9
+icon_trait,cul.swamp_dwellers,Bataklık Halkı,12x12,culture_traits,-,9
+icon_trait,cul.animal_friends,Hayvan Dostları,12x12,culture_traits,-,9
+icon_trait,cul.tree_cutters,Baltacılar,12x12,culture_traits,-,9
+icon_trait,cul.beast_tamers,Canavar Terbiyecileri,12x12,culture_traits,-,9
+icon_trait,cul.fire_keepers,Ateş Bekçileri,12x12,culture_traits,-,9
+icon_trait,cul.mountain_folk,Dağ Halkı,12x12,culture_traits,-,9
+icon_trait,cul.true_roots,Köklere Sadakat,12x12,culture_traits,-,9
+icon_trait,cul.festivals,Şenlikler,12x12,culture_traits,-,9
+icon_trait,cul.stoic,Metanet,12x12,culture_traits,-,9
+icon_trait,cul.superstitious,Batıl İnançlı,12x12,culture_traits,-,9
+icon_trait,cul.pacifist_creed,Barış Yemini,12x12,culture_traits,-,9
+icon_trait,cul.blood_feud,Kan Davası,12x12,culture_traits,-,9
+icon_trait,cul.gift_economy,Hediye Ekonomisi,12x12,culture_traits,-,9
+icon_trait,cul.bureaucracy,Bürokrasi,12x12,culture_traits,-,9
+icon_trait,cul.tattoo_marks,Dövme Gelenekleri,12x12,culture_traits,-,9
+icon_trait,cul.tower_architecture,Kule Mimarisi,12x12,culture_traits,-,9
+icon_trait,cul.corpse_burners,Ölü Yakıcılar,12x12,culture_traits,-,9
+icon_trait,rel.green_mother,Yeşil Ana,12x12,religion_traits,-,9
+icon_trait,rel.serpent_coil,Yılan Halkası,12x12,religion_traits,-,9
+icon_trait,rel.drowned_god,Batık Tanrı,12x12,religion_traits,-,9
+icon_trait,rel.sun_eye,Güneş Gözü,12x12,religion_traits,-,9
+icon_trait,rel.deep_hammer,Derin Çekiç,12x12,religion_traits,-,9
+icon_trait,rel.frost_mother,Ayaz Ana,12x12,religion_traits,-,9
+icon_trait,rel.spore_choir,Spor Korosu,12x12,religion_traits,-,9
+icon_trait,rel.prism,Prizma,12x12,religion_traits,-,9
+icon_trait,rel.moon_veil,Ay Peçesi,12x12,religion_traits,-,9
+icon_trait,rel.hollow_king,Oyuk Kral,12x12,religion_traits,-,9
+icon_trait,rel.eternal_flame,Sönmez Ateş,12x12,religion_traits,-,9
+icon_trait,rel.star_choir,Yıldız Korosu,12x12,religion_traits,-,9
+icon_trait,rel.endless_wheel,Sonsuz Çark,12x12,religion_traits,-,9
+icon_trait,rel.null,Hiçlik,12x12,religion_traits,-,9
+icon_trait,rel.hive_mind,Kovan,12x12,religion_traits,-,9
+icon_trait,rel.missionaries,Misyonerler,12x12,religion_traits,-,9
+icon_trait,rel.holy_war,Kutsal Savaş,12x12,religion_traits,-,9
+icon_trait,rel.pilgrimage,Hac,12x12,religion_traits,-,9
+icon_trait,rel.monasticism,Manastır,12x12,religion_traits,-,9
+icon_trait,rel.offerings,Adak,12x12,religion_traits,-,9
+icon_trait,rel.fasting,Oruç,12x12,religion_traits,-,9
+icon_trait,rel.temple_builders,Tapınakçılar,12x12,religion_traits,-,9
+icon_trait,rel.healing_hands,Şifa Elleri,12x12,religion_traits,-,9
+icon_trait,rel.prophecy,Kehanet,12x12,religion_traits,-,9
+icon_trait,rel.devotion,Fedakârlık,12x12,religion_traits,-,9
+icon_trait,rel.paradise,Cennet İnancı,12x12,religion_traits,-,9
+icon_trait,rel.reincarnation,Ruh Göçü,12x12,religion_traits,-,9
+icon_trait,rel.ancestor_worship,Ata Kültü,12x12,religion_traits,-,9
+icon_trait,rel.idol_makers,Put Ustaları,12x12,religion_traits,-,9
+icon_trait,rel.iconoclasm,Put Kırıcılar,12x12,religion_traits,-,9
+icon_trait,rel.tolerance,Hoşgörü,12x12,religion_traits,-,9
+icon_trait,rel.inquisition,Engizisyon,12x12,religion_traits,-,9
+icon_trait,rel.divine_kings,Tanrı Krallar,12x12,religion_traits,-,9
+icon_trait,rel.rain_dancers,Yağmur Dansçıları,12x12,religion_traits,-,9
+icon_trait,rel.relic_keepers,Emanet Bekçileri,12x12,religion_traits,-,9
+icon_trait,rel.charity,Sadaka,12x12,religion_traits,-,9
+icon_trait,rel.celibate_priests,Evlenmeyen Rahipler,12x12,religion_traits,-,9
+icon_trait,rel.holy_animals,Kutsal Hayvanlar,12x12,religion_traits,-,9
+icon_trait,rel.smiting,Göksel Ceza,12x12,religion_traits,-,9
+icon_trait,rel.rot_purge,Arınma Ayini,12x12,religion_traits,-,9
+icon_trait,lang.plain_speech,Sade Konuşma,12x12,language_traits,-,9
+icon_trait,lang.soft_vowels,Yumuşak Ünlüler,12x12,language_traits,-,9
+icon_trait,lang.poetic,Şiirsel,12x12,language_traits,-,9
+icon_trait,lang.drumming,Davul Ritmi,12x12,language_traits,-,9
+icon_trait,lang.guttural,Gırtlaksı,12x12,language_traits,-,9
+icon_trait,lang.sand_whisper,Kum Fısıltısı,12x12,language_traits,-,9
+icon_trait,lang.hard_consonants,Sert Ünsüzler,12x12,language_traits,-,9
+icon_trait,lang.chime,Çan Sesi,12x12,language_traits,-,9
+icon_trait,lang.hissing,Tıslamalı,12x12,language_traits,-,9
+icon_trait,lang.backwards,Tersine,12x12,language_traits,-,9
+icon_trait,lang.silent_signs,İşaret Dili,12x12,language_traits,-,9
+icon_trait,lang.bubbling,Fokurtulu,12x12,language_traits,-,9
+icon_trait,lang.buzzing,Vızıltılı,12x12,language_traits,-,9
+icon_trait,lang.complex_grammar,Karmaşık Dilbilgisi,12x12,language_traits,-,9
+icon_trait,lang.simple_grammar,Sade Dilbilgisi,12x12,language_traits,-,9
+icon_trait,lang.eternal_text,Kalıcı Yazı,12x12,language_traits,-,9
+icon_trait,lang.confusing_semantics,Muğlak Anlam,12x12,language_traits,-,9
+icon_trait,lang.many_dialects,Çok Lehçeli,12x12,language_traits,-,9
+icon_trait,lang.written_script,Yazı Sistemi,12x12,language_traits,-,9
+icon_trait,lang.runic,Runik Yazı,12x12,language_traits,-,9
+icon_trait,lang.pictographic,Resim Yazısı,12x12,language_traits,-,9
+icon_trait,lang.loanwords,Alıntı Sözcükler,12x12,language_traits,-,9
+icon_trait,lang.sacred_tongue,Kutsal Dil,12x12,language_traits,-,9
+icon_trait,lang.trade_tongue,Ticaret Dili,12x12,language_traits,-,9
+icon_trait,lang.whistled,Islık Dili,12x12,language_traits,-,9
+icon_trait,clan.iron_blood,Demir Kan,12x12,clan_traits,-,9
+icon_trait,clan.wise_line,Bilgeler Soyu,12x12,clan_traits,-,9
+icon_trait,clan.cursed_line,Lanetli Soy,12x12,clan_traits,-,9
+icon_trait,clan.royal_blood,Kraliyet Kanı,12x12,clan_traits,-,9
+icon_trait,clan.long_lived_line,Uzun Ömürlüler,12x12,clan_traits,-,9
+icon_trait,clan.fertile_line,Bereketli Ocak,12x12,clan_traits,-,9
+icon_trait,clan.hunter_line,Avcılar,12x12,clan_traits,-,9
+icon_trait,clan.sea_line,Denizciler,12x12,clan_traits,-,9
+icon_trait,clan.smith_line,Demirciler,12x12,clan_traits,-,9
+icon_trait,clan.mage_line,Büyücüler,12x12,clan_traits,-,9
+icon_trait,clan.healer_line,Şifacılar,12x12,clan_traits,-,9
+icon_trait,clan.traitor_line,Hainler Soyu,12x12,clan_traits,-,9
+icon_trait,clan.loyal_line,Sadıklar,12x12,clan_traits,-,9
+icon_trait,clan.schemer_line,Entrikacılar,12x12,clan_traits,-,9
+icon_trait,clan.peacemaker_line,Arabulucular,12x12,clan_traits,-,9
+icon_trait,clan.zealot_line,Bağnazlar,12x12,clan_traits,-,9
+icon_trait,clan.beauty_line,Güzeller,12x12,clan_traits,-,9
+icon_trait,clan.giant_line,İriler,12x12,clan_traits,-,9
+icon_trait,clan.swift_line,Çevikler,12x12,clan_traits,-,9
+icon_trait,clan.lucky_line,Talihliler,12x12,clan_traits,-,9
+icon_trait,clan.unlucky_line,Kara Bahtlılar,12x12,clan_traits,-,9
+icon_trait,clan.feud_line,Kan Davalılar,12x12,clan_traits,-,9
+icon_trait,clan.founder_line,Kurucu Soy,12x12,clan_traits,-,9
+icon_trait,clan.nomad_line,Göçerler,12x12,clan_traits,-,9
+icon_trait,clan.scholar_line,Kalemşorlar,12x12,clan_traits,-,9
+icon_trait,clan.beast_line,Canavar Kanı,12x12,clan_traits,-,9
+icon_trait,clan.shadow_line,Gölgeler,12x12,clan_traits,-,9
+icon_trait,clan.blessed_line,Kutlular,12x12,clan_traits,-,9
+icon_trait,kt.seafaring,Denizci Krallık,12x12,kingdom_traits,-,9
+icon_trait,kt.militarist,Militarist,12x12,kingdom_traits,-,9
+icon_trait,kt.mercantile,Tüccar Krallık,12x12,kingdom_traits,-,9
+icon_trait,kt.theocracy,Teokrasi,12x12,kingdom_traits,-,9
+icon_trait,kt.isolationist,Yalnızcı,12x12,kingdom_traits,-,9
+icon_trait,kt.conquerors,Fetihçi,12x12,kingdom_traits,-,9
+icon_trait,kt.scholarly,Bilgin Krallık,12x12,kingdom_traits,-,9
+icon_trait,kt.fortress,Kale Krallığı,12x12,kingdom_traits,-,9
+icon_trait,gene.vitality,Canlılık,12x12,genes,-,9
+icon_trait,gene.might,Kuvvet,12x12,genes,-,9
+icon_trait,gene.haste,Çabukluk,12x12,genes,-,9
+icon_trait,gene.guard,Muhafız,12x12,genes,-,9
+icon_trait,gene.focus,Odak,12x12,genes,-,9
+icon_trait,gene.reach,Erim,12x12,genes,-,9
+icon_trait,gene.persistence,Süreklilik,12x12,genes,-,9
+icon_trait,gene.brood,Döl,12x12,genes,-,9
+icon_trait,gene.mind,Zihin,12x12,genes,-,9
+icon_trait,gene.charm,Cazibe,12x12,genes,-,9
+icon_trait,gene.battle,Cenk,12x12,genes,-,9
+icon_trait,gene.order,Düzen,12x12,genes,-,9
+icon_trait,gene.mana,Mana,12x12,genes,-,9
+icon_trait,gene.mending,Onarım,12x12,genes,-,9
+icon_trait,gene.stamina,Soluk,12x12,genes,-,9
+icon_trait,gene.appetite,Tokluk,12x12,genes,-,9
+icon_trait,gene.rest,Dinçlik,12x12,genes,-,9
+icon_trait,gene.hardiness,Sertlik,12x12,genes,-,9
+icon_trait,gene.warmth,Sıcaklık,12x12,genes,-,9
+icon_trait,gene.chill,Serinlik,12x12,genes,-,9
+icon_trait,gene.growth,Büyüme,12x12,genes,-,9
+icon_trait,gene.dwarfism,Küçülme,12x12,genes,-,9
+icon_trait,gene.calm,Sükûnet,12x12,genes,-,9
+icon_trait,gene.rage,Hiddet,12x12,genes,-,9
+icon_trait,gene.luck,Talih,12x12,genes,-,9
+icon_trait,gene.night,Gece,12x12,genes,-,9
+icon_trait,gene.day,Gün,12x12,genes,-,9
+icon_trait,gene.fin,Yüzgeç,12x12,genes,-,9
+icon_trait,gene.grip,Kavrama,12x12,genes,-,9
+icon_trait,gene.keen,Keskinlik,12x12,genes,-,9
+icon_trait,gene.bones,Kemik,12x12,genes,-,9
+icon_trait,gene.hide,Post,12x12,genes,-,9
+icon_trait,gene.blood,Kan,12x12,genes,-,9
+icon_trait,gene.nerve,Sinir,12x12,genes,-,9
+icon_trait,gene.heart,Yürek,12x12,genes,-,9
+icon_trait,gene.lungs,Ciğer,12x12,genes,-,9
+icon_trait,gene.liver,Karaciğer,12x12,genes,-,9
+icon_trait,gene.mutagen,Mutajen,12x12,genes,-,9
+icon_trait,gene.stabilizer,Dengeleyici,12x12,genes,-,9
+icon_trait,gene.empty,Boş Dizi,12x12,genes,-,9
+icon_trait,gene.junk,Hurda Dizi,12x12,genes,-,9
+icon_trait,gene.dominant,Baskın,12x12,genes,-,9
+icon_trait,gene.recessive,Çekinik,12x12,genes,-,9
+icon_trait,gene.ancient,Kadim,12x12,genes,-,9
+icon_trait,gene.chimera,Kimera,12x12,genes,-,9
+icon_status,st.burning,Yanıyor,7x7,-,-,3
+icon_status,st.frozen,Donmuş,7x7,-,-,3
+icon_status,st.poisoned,Zehirlenmiş,7x7,-,-,3
+icon_status,st.slowed,Yavaşlamış,7x7,-,-,3
+icon_status,st.stunned,Sersem,7x7,-,-,3
+icon_status,st.shielded,Kalkanlı,7x7,-,-,3
+icon_status,st.sleeping,Uyuyor,7x7,-,-,3
+icon_status,st.pregnant,Hamile,7x7,-,-,3
+icon_status,st.in_egg,Yumurtada,7x7,-,-,3
+icon_status,st.cocoon,Kozada,7x7,-,-,3
+icon_status,st.blessed,Kutsanmış,7x7,-,-,3
+icon_status,st.cursed,Lanetli,7x7,-,-,3
+icon_status,st.inspired,İlham Almış,7x7,-,-,3
+icon_status,st.enraged,Öfkeli,7x7,-,-,3
+icon_status,st.afraid,Korkmuş,7x7,-,-,3
+icon_status,st.drunk,Sarhoş,7x7,-,-,3
+icon_status,st.starving,Açlıktan Ölüyor,7x7,-,-,3
+icon_status,st.exhausted,Bitkin,7x7,-,-,3
+icon_status,st.wet,Islak,7x7,-,-,3
+icon_status,st.irradiated,Işınlanmış,7x7,-,-,3
+icon_status,st.possessed,Kontrol Ediliyor,7x7,-,-,3
+icon_status,st.invisible,Görünmez,7x7,-,-,3
+icon_status,st.charmed,Büyülenmiş,7x7,-,-,3
+icon_status,st.rooted,Sarmaşıkla Bağlı,7x7,-,-,3
+icon_status,st.haste,Hızlanmış,7x7,-,-,3
+icon_status,st.weakened,Zayıflamış,7x7,-,-,3
+icon_status,st.mourning,Yasta,7x7,-,-,3
+icon_status,st.in_love,Âşık,7x7,-,-,3
+icon_status,st.celebrating,Kutlama,7x7,-,-,3
+icon_status,st.turning,Dönüşüyor,7x7,-,-,3
+icon_status,st.homesick,Sıla Hasreti,7x7,-,-,3

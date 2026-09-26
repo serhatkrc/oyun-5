@@ -1,0 +1,21 @@
+{
+    "name": "PG.Sim",
+    "rootNamespace": "PG.Sim",
+    "references": [
+        "PG.Core",
+        "PG.Content",
+        "PG.World",
+        "Unity.Burst",
+        "Unity.Collections",
+        "Unity.Mathematics"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -1,0 +1,49 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "title": "subspecies_traits",
+ "type": "object",
+ "required": [
+  "category",
+  "items"
+ ],
+ "properties": {
+  "category": {
+   "const": "subspecies_traits"
+  },
+  "count": {
+   "type": "integer"
+  },
+  "items": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "required": [
+     "canAppearRandomly",
+     "effects",
+     "group",
+     "id",
+     "name"
+    ],
+    "properties": {
+     "id": {
+      "type": "string",
+      "pattern": "^sst\\.[a-z0-9_]+$"
+     },
+     "name": {
+      "type": "string"
+     },
+     "group": {
+      "type": "string"
+     },
+     "effects": {
+      "type": "object"
+     },
+     "canAppearRandomly": {
+      "type": "boolean"
+     }
+    },
+    "additionalProperties": true
+   }
+  }
+ }
+}

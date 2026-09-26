@@ -1,0 +1,223 @@
+{
+ "category": "status_effects",
+ "count": 31,
+ "items": [
+  {
+   "id": "st.burning",
+   "name": "Yanıyor",
+   "durationMonths": 10,
+   "effect": "hp:-3/tick",
+   "note": "Suya girince/yağmurda biter; yanabilir tile'ı tutuşturur"
+  },
+  {
+   "id": "st.frozen",
+   "name": "Donmuş",
+   "durationMonths": 8,
+   "effect": "flag:stunned",
+   "note": "Hareket ve saldırı yok; ateş hasarı çözer"
+  },
+  {
+   "id": "st.poisoned",
+   "name": "Zehirlenmiş",
+   "durationMonths": 15,
+   "effect": "hp:-1/tick",
+   "note": "Şifacı ve kutsal ışık temizler"
+  },
+  {
+   "id": "st.slowed",
+   "name": "Yavaşlamış",
+   "durationMonths": 6,
+   "effect": "speed:-50%",
+   "note": ""
+  },
+  {
+   "id": "st.stunned",
+   "name": "Sersem",
+   "durationMonths": 3,
+   "effect": "flag:stunned",
+   "note": ""
+  },
+  {
+   "id": "st.shielded",
+   "name": "Kalkanlı",
+   "durationMonths": 20,
+   "effect": "dmgTaken:-60%",
+   "note": "Büyü kalkanı"
+  },
+  {
+   "id": "st.sleeping",
+   "name": "Uyuyor",
+   "durationMonths": 0,
+   "effect": "flag:asleep",
+   "note": "Enerji dolar; saldırıya açık"
+  },
+  {
+   "id": "st.pregnant",
+   "name": "Hamile",
+   "durationMonths": 12,
+   "effect": "speed:-20%",
+   "note": "Süre sonunda doğum"
+  },
+  {
+   "id": "st.in_egg",
+   "name": "Yumurtada",
+   "durationMonths": 10,
+   "effect": "flag:immobile",
+   "note": "Yumurta kırılınca yavru"
+  },
+  {
+   "id": "st.cocoon",
+   "name": "Kozada",
+   "durationMonths": 15,
+   "effect": "flag:immobile",
+   "note": "Metamorfoz"
+  },
+  {
+   "id": "st.blessed",
+   "name": "Kutsanmış",
+   "durationMonths": 30,
+   "effect": "luck:+20|regen:+1",
+   "note": ""
+  },
+  {
+   "id": "st.cursed",
+   "name": "Lanetli",
+   "durationMonths": 30,
+   "effect": "luck:-20|happiness:-3",
+   "note": ""
+  },
+  {
+   "id": "st.inspired",
+   "name": "İlham Almış",
+   "durationMonths": 20,
+   "effect": "allStats:+20%|plotChance:+100%",
+   "note": "Lider güçlenir"
+  },
+  {
+   "id": "st.enraged",
+   "name": "Öfkeli",
+   "durationMonths": 8,
+   "effect": "dmg:+30%|armor:-5",
+   "note": ""
+  },
+  {
+   "id": "st.afraid",
+   "name": "Korkmuş",
+   "durationMonths": 6,
+   "effect": "flag:flee",
+   "note": ""
+  },
+  {
+   "id": "st.drunk",
+   "name": "Sarhoş",
+   "durationMonths": 6,
+   "effect": "speed:-20%|happiness:+3",
+   "note": ""
+  },
+  {
+   "id": "st.starving",
+   "name": "Açlıktan Ölüyor",
+   "durationMonths": 0,
+   "effect": "hp:-1/tick|happiness:-5",
+   "note": "Doygunluk 0 iken"
+  },
+  {
+   "id": "st.exhausted",
+   "name": "Bitkin",
+   "durationMonths": 0,
+   "effect": "speed:-30%",
+   "note": "Stamina 0"
+  },
+  {
+   "id": "st.wet",
+   "name": "Islak",
+   "durationMonths": 5,
+   "effect": "fireResist:+50%|coldDmg:+30%",
+   "note": ""
+  },
+  {
+   "id": "st.irradiated",
+   "name": "Işınlanmış",
+   "durationMonths": 40,
+   "effect": "hp:-1/20tick|mutation:+1",
+   "note": "Atom sonrası"
+  },
+  {
+   "id": "st.possessed",
+   "name": "Kontrol Ediliyor",
+   "durationMonths": 0,
+   "effect": "flag:player_controlled",
+   "note": "Oyuncu bu birimde"
+  },
+  {
+   "id": "st.invisible",
+   "name": "Görünmez",
+   "durationMonths": 10,
+   "effect": "flag:untargetable",
+   "note": ""
+  },
+  {
+   "id": "st.charmed",
+   "name": "Büyülenmiş",
+   "durationMonths": 10,
+   "effect": "flag:ally_of_caster",
+   "note": ""
+  },
+  {
+   "id": "st.rooted",
+   "name": "Sarmaşıkla Bağlı",
+   "durationMonths": 5,
+   "effect": "flag:immobile",
+   "note": ""
+  },
+  {
+   "id": "st.haste",
+   "name": "Hızlanmış",
+   "durationMonths": 10,
+   "effect": "speed:+50%|atkspd:+30%",
+   "note": ""
+  },
+  {
+   "id": "st.weakened",
+   "name": "Zayıflamış",
+   "durationMonths": 10,
+   "effect": "dmg:-30%",
+   "note": ""
+  },
+  {
+   "id": "st.mourning",
+   "name": "Yasta",
+   "durationMonths": 30,
+   "effect": "happiness:-4",
+   "note": "Yakını öldü"
+  },
+  {
+   "id": "st.in_love",
+   "name": "Âşık",
+   "durationMonths": 40,
+   "effect": "happiness:+4",
+   "note": ""
+  },
+  {
+   "id": "st.celebrating",
+   "name": "Kutlama",
+   "durationMonths": 10,
+   "effect": "happiness:+5",
+   "note": "Savaş zaferi, festival"
+  },
+  {
+   "id": "st.turning",
+   "name": "Dönüşüyor",
+   "durationMonths": 2,
+   "effect": "hp:-1/20tick|speed:-20%",
+   "note": "Süre sonunda zombi; iyileştirilebilir"
+  },
+  {
+   "id": "st.homesick",
+   "name": "Sıla Hasreti",
+   "durationMonths": 20,
+   "effect": "happiness:-2",
+   "note": "Uzak şehre göç"
+  }
+ ]
+}

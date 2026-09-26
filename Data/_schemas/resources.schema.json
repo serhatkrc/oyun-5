@@ -1,0 +1,53 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "title": "resources",
+ "type": "object",
+ "required": [
+  "category",
+  "items"
+ ],
+ "properties": {
+  "category": {
+   "const": "resources"
+  },
+  "count": {
+   "type": "integer"
+  },
+  "items": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "required": [
+     "id",
+     "kind",
+     "name",
+     "nutrition",
+     "source",
+     "value"
+    ],
+    "properties": {
+     "id": {
+      "type": "string",
+      "pattern": "^res\\.[a-z0-9_]+$"
+     },
+     "name": {
+      "type": "string"
+     },
+     "kind": {
+      "type": "string"
+     },
+     "nutrition": {
+      "type": "integer"
+     },
+     "value": {
+      "type": "integer"
+     },
+     "source": {
+      "type": "string"
+     }
+    },
+    "additionalProperties": true
+   }
+  }
+ }
+}

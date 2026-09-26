@@ -1,0 +1,1354 @@
+{
+ "category": "biomes",
+ "count": 29,
+ "items": [
+  {
+   "id": "bio.grassland",
+   "name": "Çayır",
+   "special": false,
+   "growStrength": 5,
+   "temp": 0.5,
+   "moisture": 0.4,
+   "trees": [
+    "feat.tree_oak"
+   ],
+   "plants": [
+    "feat.grass_tuft",
+    "feat.flower",
+    "feat.berry_bush"
+   ],
+   "animals": [
+    "sp.sheep",
+    "sp.rabbit",
+    "sp.cow",
+    "sp.horse_wild"
+   ],
+   "lifeCloudCivs": [
+    "sp.human"
+   ],
+   "effect": "",
+   "unitTraitPool": [
+    "tr.cheerful",
+    "tr.fertile"
+   ],
+   "culturePool": [
+    "cul.farmers",
+    "cul.open_hearth"
+   ],
+   "languagePool": [
+    "lang.plain_speech"
+   ],
+   "religionPool": [],
+   "groundColors": [
+    "#6FA13F",
+    "#6B9D3B",
+    "#73A543",
+    "#679937"
+   ],
+   "description": "Dengeli, verimli ovalar.",
+   "effectCode": "",
+   "tempOffset": 0,
+   "snowCover": false,
+   "waterOnly": false,
+   "fireproof": false
+  },
+  {
+   "id": "bio.birch",
+   "name": "Huşluk",
+   "special": false,
+   "growStrength": 5,
+   "temp": 0.35,
+   "moisture": 0.5,
+   "trees": [
+    "feat.tree_birch"
+   ],
+   "plants": [
+    "feat.grass_tuft",
+    "feat.small_mushroom"
+   ],
+   "animals": [
+    "sp.deer",
+    "sp.fox",
+    "sp.rabbit"
+   ],
+   "lifeCloudCivs": [
+    "sp.human",
+    "sp.elf"
+   ],
+   "effect": "",
+   "unitTraitPool": [
+    "tr.curious",
+    "tr.night_owl"
+   ],
+   "culturePool": [
+    "cul.forest_keepers"
+   ],
+   "languagePool": [
+    "lang.soft_vowels"
+   ],
+   "religionPool": [],
+   "groundColors": [
+    "#7FAE52",
+    "#7BAA4E",
+    "#83B256",
+    "#77A64A"
+   ],
+   "description": "Beyaz gövdeli serin ormanlar.",
+   "effectCode": "",
+   "tempOffset": 0,
+   "snowCover": false,
+   "waterOnly": false,
+   "fireproof": false
+  },
+  {
+   "id": "bio.maple",
+   "name": "Akçaağaç Koruluğu",
+   "special": false,
+   "growStrength": 5,
+   "temp": 0.55,
+   "moisture": 0.6,
+   "trees": [
+    "feat.tree_maple"
+   ],
+   "plants": [
+    "feat.grass_tuft",
+    "feat.berry_bush"
+   ],
+   "animals": [
+    "sp.deer",
+    "sp.boar",
+    "sp.fox"
+   ],
+   "lifeCloudCivs": [
+    "sp.human",
+    "sp.elf"
+   ],
+   "effect": "",
+   "unitTraitPool": [
+    "tr.wise",
+    "tr.homebody"
+   ],
+   "culturePool": [
+    "cul.harvest_feast"
+   ],
+   "languagePool": [
+    "lang.poetic"
+   ],
+   "religionPool": [],
+   "groundColors": [
+    "#B8752E",
+    "#B4712A",
+    "#BC7932",
+    "#B06D26"
+   ],
+   "description": "Kızıl yapraklı, bereketli korular.",
+   "effectCode": "",
+   "tempOffset": 0,
+   "snowCover": false,
+   "waterOnly": false,
+   "fireproof": false
+  },
+  {
+   "id": "bio.forest",
+   "name": "Karışık Orman",
+   "special": false,
+   "growStrength": 5,
+   "temp": 0.5,
+   "moisture": 0.65,
+   "trees": [
+    "feat.tree_oak",
+    "feat.tree_pine"
+   ],
+   "plants": [
+    "feat.grass_tuft",
+    "feat.berry_bush",
+    "feat.herb_patch"
+   ],
+   "animals": [
+    "sp.wolf",
+    "sp.bear",
+    "sp.deer",
+    "sp.boar"
+   ],
+   "lifeCloudCivs": [
+    "sp.elf"
+   ],
+   "effect": "",
+   "unitTraitPool": [
+    "tr.hunter",
+    "tr.agile"
+   ],
+   "culturePool": [
+    "cul.forest_keepers",
+    "cul.hunters"
+   ],
+   "languagePool": [
+    "lang.soft_vowels"
+   ],
+   "religionPool": [
+    "rel.green_mother"
+   ],
+   "groundColors": [
+    "#3F7A34",
+    "#3B7630",
+    "#437E38",
+    "#37722C"
+   ],
+   "description": "Sık ormanlar; av bol.",
+   "effectCode": "",
+   "tempOffset": 0,
+   "snowCover": false,
+   "waterOnly": false,
+   "fireproof": false
+  },
+  {
+   "id": "bio.jungle",
+   "name": "Cengel",
+   "special": false,
+   "growStrength": 6,
+   "temp": 0.85,
+   "moisture": 0.9,
+   "trees": [
+    "feat.tree_jungle",
+    "feat.tree_palm"
+   ],
+   "plants": [
+    "feat.reed",
+    "feat.flower",
+    "feat.herb_patch"
+   ],
+   "animals": [
+    "sp.monkey",
+    "sp.snake",
+    "sp.frog",
+    "sp.parrot"
+   ],
+   "lifeCloudCivs": [],
+   "effect": "",
+   "unitTraitPool": [
+    "tr.venom",
+    "tr.climber"
+   ],
+   "culturePool": [
+    "cul.hunters",
+    "cul.spice_road"
+   ],
+   "languagePool": [
+    "lang.drumming"
+   ],
+   "religionPool": [
+    "rel.serpent_coil"
+   ],
+   "groundColors": [
+    "#2E7D2E",
+    "#2A792A",
+    "#328132",
+    "#267526"
+   ],
+   "description": "Sıcak, nemli, tehlikeli.",
+   "effectCode": "",
+   "tempOffset": 0,
+   "snowCover": false,
+   "waterOnly": false,
+   "fireproof": false
+  },
+  {
+   "id": "bio.swamp",
+   "name": "Bataklık",
+   "special": false,
+   "growStrength": 6,
+   "temp": 0.6,
+   "moisture": 0.95,
+   "trees": [
+    "feat.tree_cypress",
+    "feat.tree_dead"
+   ],
+   "plants": [
+    "feat.reed",
+    "feat.small_mushroom"
+   ],
+   "animals": [
+    "sp.frog",
+    "sp.crocodile",
+    "sp.snake",
+    "sp.mosquito_swarm"
+   ],
+   "lifeCloudCivs": [],
+   "effect": "",
+   "unitTraitPool": [
+    "tr.sickly",
+    "tr.poisonproof"
+   ],
+   "culturePool": [
+    "cul.swamp_dwellers"
+   ],
+   "languagePool": [
+    "lang.guttural"
+   ],
+   "religionPool": [
+    "rel.drowned_god"
+   ],
+   "groundColors": [
+    "#4F5E33",
+    "#4B5A2F",
+    "#536237",
+    "#47562B"
+   ],
+   "description": "Hastalık yayılımı +%50.",
+   "effectCode": "DiseaseBoost",
+   "tempOffset": 0,
+   "snowCover": false,
+   "waterOnly": false,
+   "fireproof": false
+  },
+  {
+   "id": "bio.savanna",
+   "name": "Savan",
+   "special": false,
+   "growStrength": 6,
+   "temp": 0.8,
+   "moisture": 0.3,
+   "trees": [
+    "feat.tree_acacia"
+   ],
+   "plants": [
+    "feat.grass_tuft"
+   ],
+   "animals": [
+    "sp.buffalo",
+    "sp.hyena",
+    "sp.lion",
+    "sp.rhino"
+   ],
+   "lifeCloudCivs": [],
+   "effect": "",
+   "unitTraitPool": [
+    "tr.runner",
+    "tr.hunter"
+   ],
+   "culturePool": [
+    "cul.nomads"
+   ],
+   "languagePool": [
+    "lang.drumming"
+   ],
+   "religionPool": [
+    "rel.sun_eye"
+   ],
+   "groundColors": [
+    "#B5A445",
+    "#B1A041",
+    "#B9A849",
+    "#AD9C3D"
+   ],
+   "description": "Sıcak otlaklar.",
+   "effectCode": "",
+   "tempOffset": 0,
+   "snowCover": false,
+   "waterOnly": false,
+   "fireproof": false
+  },
+  {
+   "id": "bio.desert",
+   "name": "Çöl",
+   "special": false,
+   "growStrength": 6,
+   "temp": 0.95,
+   "moisture": 0.05,
+   "trees": [
+    "feat.cactus",
+    "feat.tree_palm"
+   ],
+   "plants": [
+    "feat.salt_flat"
+   ],
+   "animals": [
+    "sp.camel",
+    "sp.scorpion",
+    "sp.lizard"
+   ],
+   "lifeCloudCivs": [],
+   "effect": "Su tile'ı buharlaşma şansı; yiyecek -%50",
+   "unitTraitPool": [
+    "tr.heatproof",
+    "tr.iron_stomach"
+   ],
+   "culturePool": [
+    "cul.nomads",
+    "cul.spice_road"
+   ],
+   "languagePool": [
+    "lang.sand_whisper"
+   ],
+   "religionPool": [
+    "rel.sun_eye"
+   ],
+   "groundColors": [
+    "#E6CB7A",
+    "#E2C776",
+    "#EACF7E",
+    "#DEC372"
+   ],
+   "description": "Kum denizleri, vahalar.",
+   "effectCode": "Evaporate",
+   "tempOffset": 0,
+   "snowCover": false,
+   "waterOnly": false,
+   "fireproof": false
+  },
+  {
+   "id": "bio.rocklands",
+   "name": "Kayalık",
+   "special": false,
+   "growStrength": 5,
+   "temp": 0.45,
+   "moisture": 0.2,
+   "trees": [
+    "feat.tree_dead"
+   ],
+   "plants": [
+    "feat.rock"
+   ],
+   "animals": [
+    "sp.goat",
+    "sp.eagle",
+    "sp.lizard"
+   ],
+   "lifeCloudCivs": [
+    "sp.dwarf"
+   ],
+   "effect": "Maden damarı çıkma şansı x2",
+   "unitTraitPool": [
+    "tr.miner",
+    "tr.stubborn"
+   ],
+   "culturePool": [
+    "cul.stone_carvers"
+   ],
+   "languagePool": [
+    "lang.hard_consonants"
+   ],
+   "religionPool": [
+    "rel.deep_hammer"
+   ],
+   "groundColors": [
+    "#8E8878",
+    "#8A8474",
+    "#928C7C",
+    "#868070"
+   ],
+   "description": "Taşlı, madenli yaylalar.",
+   "effectCode": "OreBoost",
+   "tempOffset": 0,
+   "snowCover": false,
+   "waterOnly": false,
+   "fireproof": false
+  },
+  {
+   "id": "bio.tundra",
+   "name": "Tundra",
+   "special": false,
+   "growStrength": 5,
+   "temp": 0.1,
+   "moisture": 0.4,
+   "trees": [],
+   "plants": [
+    "feat.grass_tuft"
+   ],
+   "animals": [
+    "sp.penguin",
+    "sp.seal",
+    "sp.reindeer",
+    "sp.polar_bear"
+   ],
+   "lifeCloudCivs": [],
+   "effect": "Soğuk hasarı (korunaksızlara)",
+   "unitTraitPool": [
+    "tr.coldproof",
+    "tr.stubborn"
+   ],
+   "culturePool": [
+    "cul.elders_voice"
+   ],
+   "languagePool": [
+    "lang.hard_consonants"
+   ],
+   "religionPool": [
+    "rel.frost_mother"
+   ],
+   "groundColors": [
+    "#C9D6CF",
+    "#C5D2CB",
+    "#CDDAD3",
+    "#C1CEC7"
+   ],
+   "description": "Donmuş düzlükler.",
+   "effectCode": "Cold",
+   "tempOffset": -8,
+   "snowCover": true,
+   "waterOnly": false,
+   "fireproof": false
+  },
+  {
+   "id": "bio.snowpine",
+   "name": "Karlı Çamlık",
+   "special": false,
+   "growStrength": 5,
+   "temp": 0.15,
+   "moisture": 0.7,
+   "trees": [
+    "feat.tree_snowpine"
+   ],
+   "plants": [
+    "feat.small_mushroom"
+   ],
+   "animals": [
+    "sp.wolf",
+    "sp.polar_bear",
+    "sp.reindeer",
+    "sp.owl"
+   ],
+   "lifeCloudCivs": [
+    "sp.dwarf"
+   ],
+   "effect": "Kar örtüsü kalıcı",
+   "unitTraitPool": [
+    "tr.coldproof",
+    "tr.loner"
+   ],
+   "culturePool": [
+    "cul.hunters"
+   ],
+   "languagePool": [
+    "lang.hard_consonants"
+   ],
+   "religionPool": [
+    "rel.frost_mother"
+   ],
+   "groundColors": [
+    "#DDE8E8",
+    "#D9E4E4",
+    "#E1ECEC",
+    "#D5E0E0"
+   ],
+   "description": "Karla kaplı ormanlar.",
+   "effectCode": "Cold",
+   "tempOffset": -8,
+   "snowCover": true,
+   "waterOnly": false,
+   "fireproof": false
+  },
+  {
+   "id": "bio.flower",
+   "name": "Çiçek Vadisi",
+   "special": false,
+   "growStrength": 5,
+   "temp": 0.6,
+   "moisture": 0.55,
+   "trees": [
+    "feat.tree_oak"
+   ],
+   "plants": [
+    "feat.flower",
+    "feat.herb_patch"
+   ],
+   "animals": [
+    "sp.butterfly",
+    "sp.bee",
+    "sp.rabbit"
+   ],
+   "lifeCloudCivs": [
+    "sp.elf"
+   ],
+   "effect": "Mutluluk +2 (içinde yaşayanlara)",
+   "unitTraitPool": [
+    "tr.attractive",
+    "tr.cheerful"
+   ],
+   "culturePool": [
+    "cul.artisans"
+   ],
+   "languagePool": [
+    "lang.poetic"
+   ],
+   "religionPool": [
+    "rel.green_mother"
+   ],
+   "groundColors": [
+    "#8FBF5A",
+    "#8BBB56",
+    "#93C35E",
+    "#87B752"
+   ],
+   "description": "Rengârenk, huzurlu.",
+   "effectCode": "Happy",
+   "tempOffset": 0,
+   "snowCover": false,
+   "waterOnly": false,
+   "fireproof": false
+  },
+  {
+   "id": "bio.clover",
+   "name": "Yonca Tarlası",
+   "special": false,
+   "growStrength": 5,
+   "temp": 0.5,
+   "moisture": 0.5,
+   "trees": [],
+   "plants": [
+    "feat.grass_tuft",
+    "feat.flower"
+   ],
+   "animals": [
+    "sp.rabbit",
+    "sp.sheep",
+    "sp.cow"
+   ],
+   "lifeCloudCivs": [
+    "sp.human"
+   ],
+   "effect": "Şans +%5",
+   "unitTraitPool": [
+    "tr.lucky"
+   ],
+   "culturePool": [
+    "cul.harvest_feast"
+   ],
+   "languagePool": [
+    "lang.plain_speech"
+   ],
+   "religionPool": [],
+   "groundColors": [
+    "#5DB84A",
+    "#59B446",
+    "#61BC4E",
+    "#55B042"
+   ],
+   "description": "Uğurlu otlaklar.",
+   "effectCode": "Luck",
+   "tempOffset": 0,
+   "snowCover": false,
+   "waterOnly": false,
+   "fireproof": false
+  },
+  {
+   "id": "bio.mushroom",
+   "name": "Mantar Diyarı",
+   "special": false,
+   "growStrength": 6,
+   "temp": 0.5,
+   "moisture": 0.8,
+   "trees": [
+    "feat.tree_giant_mushroom"
+   ],
+   "plants": [
+    "feat.small_mushroom"
+   ],
+   "animals": [
+    "sp.shroomling",
+    "sp.snail",
+    "sp.beetle"
+   ],
+   "lifeCloudCivs": [],
+   "effect": "Spor hastalığı riski",
+   "unitTraitPool": [
+    "tr.night_owl",
+    "tr.poisonproof"
+   ],
+   "culturePool": [
+    "cul.swamp_dwellers"
+   ],
+   "languagePool": [
+    "lang.guttural"
+   ],
+   "religionPool": [
+    "rel.spore_choir"
+   ],
+   "groundColors": [
+    "#8D5E8A",
+    "#895A86",
+    "#91628E",
+    "#855682"
+   ],
+   "description": "Dev mantarlar ve sporlar.",
+   "effectCode": "Spores",
+   "tempOffset": 0,
+   "snowCover": false,
+   "waterOnly": false,
+   "fireproof": false
+  },
+  {
+   "id": "bio.crystal",
+   "name": "Kristal Vadisi",
+   "special": false,
+   "growStrength": 6,
+   "temp": 0.3,
+   "moisture": 0.4,
+   "trees": [
+    "feat.crystal_spire"
+   ],
+   "plants": [],
+   "animals": [
+    "sp.crystal_beetle",
+    "sp.snail"
+   ],
+   "lifeCloudCivs": [],
+   "effect": "Büyü birimlerine mana +%20",
+   "unitTraitPool": [
+    "tr.mage_blood",
+    "tr.fragile"
+   ],
+   "culturePool": [
+    "cul.artisans",
+    "cul.scholars"
+   ],
+   "languagePool": [
+    "lang.chime"
+   ],
+   "religionPool": [
+    "rel.prism"
+   ],
+   "groundColors": [
+    "#7FD1E0",
+    "#7BCDDC",
+    "#83D5E4",
+    "#77C9D8"
+   ],
+   "description": "Işık kıran kristal ormanları.",
+   "effectCode": "ManaBoost",
+   "tempOffset": 0,
+   "snowCover": false,
+   "waterOnly": false,
+   "fireproof": false
+  },
+  {
+   "id": "bio.enchanted",
+   "name": "Peri Ormanı",
+   "special": false,
+   "growStrength": 6,
+   "temp": 0.55,
+   "moisture": 0.7,
+   "trees": [
+    "feat.tree_fairy"
+   ],
+   "plants": [
+    "feat.flower",
+    "feat.herb_patch"
+   ],
+   "animals": [
+    "sp.fairy",
+    "sp.deer",
+    "sp.butterfly"
+   ],
+   "lifeCloudCivs": [
+    "sp.elf"
+   ],
+   "effect": "Yaralar 2x hızlı iyileşir",
+   "unitTraitPool": [
+    "tr.mage_blood",
+    "tr.wise"
+   ],
+   "culturePool": [
+    "cul.scholars"
+   ],
+   "languagePool": [
+    "lang.poetic"
+   ],
+   "religionPool": [
+    "rel.moon_veil"
+   ],
+   "groundColors": [
+    "#5FC98E",
+    "#5BC58A",
+    "#63CD92",
+    "#57C186"
+   ],
+   "description": "Işıldayan büyülü orman.",
+   "effectCode": "Healing",
+   "tempOffset": 0,
+   "snowCover": false,
+   "waterOnly": false,
+   "fireproof": false
+  },
+  {
+   "id": "bio.corrupted",
+   "name": "Kara Çürüme",
+   "special": false,
+   "growStrength": 6,
+   "temp": 0.45,
+   "moisture": 0.5,
+   "trees": [
+    "feat.tree_rot"
+   ],
+   "plants": [
+    "feat.small_mushroom"
+   ],
+   "animals": [
+    "sp.rot_crawler",
+    "sp.rat",
+    "sp.crow"
+   ],
+   "lifeCloudCivs": [],
+   "effect": "Mutluluk -3; delilik şansı",
+   "unitTraitPool": [
+    "tr.cursed",
+    "tr.cruel"
+   ],
+   "culturePool": [
+    "cul.iron_fist"
+   ],
+   "languagePool": [
+    "lang.guttural"
+   ],
+   "religionPool": [
+    "rel.hollow_king"
+   ],
+   "groundColors": [
+    "#4A3B55",
+    "#463751",
+    "#4E3F59",
+    "#42334D"
+   ],
+   "description": "Bozulmuş, lanetli topraklar.",
+   "effectCode": "Corruption",
+   "tempOffset": 0,
+   "snowCover": false,
+   "waterOnly": false,
+   "fireproof": false
+  },
+  {
+   "id": "bio.infernal",
+   "name": "Kor Diyarı",
+   "special": false,
+   "growStrength": 6,
+   "temp": 1,
+   "moisture": 0.1,
+   "trees": [
+    "feat.tree_ember"
+   ],
+   "plants": [],
+   "animals": [
+    "sp.ember_imp",
+    "sp.fire_elemental",
+    "sp.salamander"
+   ],
+   "lifeCloudCivs": [],
+   "effect": "Rastgele yangın çıkarır; tile yanmaz",
+   "unitTraitPool": [
+    "tr.heatproof",
+    "tr.bloodthirsty"
+   ],
+   "culturePool": [
+    "cul.war_drums"
+   ],
+   "languagePool": [
+    "lang.hissing"
+   ],
+   "religionPool": [
+    "rel.eternal_flame"
+   ],
+   "groundColors": [
+    "#8A2E1E",
+    "#862A1A",
+    "#8E3222",
+    "#822616"
+   ],
+   "description": "Kızgın, yanan diyar.",
+   "effectCode": "RandomFire",
+   "tempOffset": 15,
+   "snowCover": false,
+   "waterOnly": false,
+   "fireproof": true
+  },
+  {
+   "id": "bio.candy",
+   "name": "Şekerleme Ülkesi",
+   "special": false,
+   "growStrength": 6,
+   "temp": 0.6,
+   "moisture": 0.6,
+   "trees": [
+    "feat.tree_candy"
+   ],
+   "plants": [],
+   "animals": [
+    "sp.candy_golem",
+    "sp.gummy_bear",
+    "sp.rabbit"
+   ],
+   "lifeCloudCivs": [],
+   "effect": "Yiyecek bolluğu; diş ağrısı (mutluluk dalgalanır)",
+   "unitTraitPool": [
+    "tr.glutton",
+    "tr.cheerful"
+   ],
+   "culturePool": [
+    "cul.harvest_feast"
+   ],
+   "languagePool": [
+    "lang.chime"
+   ],
+   "religionPool": [],
+   "groundColors": [
+    "#F2A7C9",
+    "#EEA3C5",
+    "#F6ABCD",
+    "#EA9FC1"
+   ],
+   "description": "Tatlı, tuhaf bir diyar.",
+   "effectCode": "",
+   "tempOffset": 0,
+   "snowCover": false,
+   "waterOnly": false,
+   "fireproof": false
+  },
+  {
+   "id": "bio.citrus",
+   "name": "Turunç Bahçesi",
+   "special": false,
+   "growStrength": 6,
+   "temp": 0.7,
+   "moisture": 0.5,
+   "trees": [
+    "feat.tree_citrus"
+   ],
+   "plants": [
+    "feat.flower"
+   ],
+   "animals": [
+    "sp.parrot",
+    "sp.bee",
+    "sp.rabbit"
+   ],
+   "lifeCloudCivs": [],
+   "effect": "Veba iyileşme şansı +%10",
+   "unitTraitPool": [
+    "tr.healer",
+    "tr.cheerful"
+   ],
+   "culturePool": [
+    "cul.spice_road"
+   ],
+   "languagePool": [
+    "lang.poetic"
+   ],
+   "religionPool": [],
+   "groundColors": [
+    "#C9D34A",
+    "#C5CF46",
+    "#CDD74E",
+    "#C1CB42"
+   ],
+   "description": "Ekşi kokulu bahçeler.",
+   "effectCode": "",
+   "tempOffset": 0,
+   "snowCover": false,
+   "waterOnly": false,
+   "fireproof": false
+  },
+  {
+   "id": "bio.garlic",
+   "name": "Sarımsaklık",
+   "special": false,
+   "growStrength": 5,
+   "temp": 0.5,
+   "moisture": 0.5,
+   "trees": [
+    "feat.tree_oak"
+   ],
+   "plants": [
+    "feat.garlic_plant"
+   ],
+   "animals": [
+    "sp.rabbit",
+    "sp.goat"
+   ],
+   "lifeCloudCivs": [
+    "sp.human"
+   ],
+   "effect": "Kan emici birimler giremez",
+   "unitTraitPool": [
+    "tr.immune",
+    "tr.stubborn"
+   ],
+   "culturePool": [
+    "cul.elders_voice"
+   ],
+   "languagePool": [
+    "lang.plain_speech"
+   ],
+   "religionPool": [],
+   "groundColors": [
+    "#A8B08A",
+    "#A4AC86",
+    "#ACB48E",
+    "#A0A882"
+   ],
+   "description": "Keskin kokulu tarlalar.",
+   "effectCode": "Repel",
+   "tempOffset": 0,
+   "snowCover": false,
+   "waterOnly": false,
+   "fireproof": false
+  },
+  {
+   "id": "bio.celestial",
+   "name": "Gök Bahçesi",
+   "special": false,
+   "growStrength": 5,
+   "temp": 0.5,
+   "moisture": 0.5,
+   "trees": [
+    "feat.tree_cloud"
+   ],
+   "plants": [
+    "feat.flower"
+   ],
+   "animals": [
+    "sp.sky_whale_calf",
+    "sp.owl",
+    "sp.fairy"
+   ],
+   "lifeCloudCivs": [],
+   "effect": "Kutsama şansı; yıldırım çekmez",
+   "unitTraitPool": [
+    "tr.blessed",
+    "tr.holy"
+   ],
+   "culturePool": [
+    "cul.scholars"
+   ],
+   "languagePool": [
+    "lang.chime"
+   ],
+   "religionPool": [
+    "rel.star_choir"
+   ],
+   "groundColors": [
+    "#DDE6FF",
+    "#D9E2FB",
+    "#E1EAFF",
+    "#D5DEF7"
+   ],
+   "description": "Bulut ağaçlı kutsal bahçe.",
+   "effectCode": "Holy",
+   "tempOffset": 0,
+   "snowCover": false,
+   "waterOnly": false,
+   "fireproof": false
+  },
+  {
+   "id": "bio.ash",
+   "name": "Kül Çölü",
+   "special": false,
+   "growStrength": 6,
+   "temp": 0.6,
+   "moisture": 0.1,
+   "trees": [
+    "feat.tree_ash"
+   ],
+   "plants": [],
+   "animals": [
+    "sp.ash_crawler",
+    "sp.crow",
+    "sp.rat"
+   ],
+   "lifeCloudCivs": [],
+   "effect": "Bitki çıkmaz; hastalık direnci -%20",
+   "unitTraitPool": [
+    "tr.survivor",
+    "tr.gloomy"
+   ],
+   "culturePool": [
+    "cul.iron_fist"
+   ],
+   "languagePool": [
+    "lang.hissing"
+   ],
+   "religionPool": [
+    "rel.hollow_king"
+   ],
+   "groundColors": [
+    "#6F6A62",
+    "#6B665E",
+    "#736E66",
+    "#67625A"
+   ],
+   "description": "Yıkımın ardından kalan küller.",
+   "effectCode": "NoPlants",
+   "tempOffset": 0,
+   "snowCover": false,
+   "waterOnly": false,
+   "fireproof": false
+  },
+  {
+   "id": "bio.timewarp",
+   "name": "Zaman Kıvrımı",
+   "special": true,
+   "growStrength": 5,
+   "temp": 0.5,
+   "moisture": 0.5,
+   "trees": [
+    "feat.tree_hourglass"
+   ],
+   "plants": [],
+   "animals": [
+    "sp.clock_crab",
+    "sp.snail"
+   ],
+   "lifeCloudCivs": [],
+   "effect": "Adım atanın 1 yıl yaşlanma şansı %10",
+   "unitTraitPool": [
+    "tr.wise",
+    "tr.forgetful"
+   ],
+   "culturePool": [
+    "cul.elders_voice",
+    "cul.youth_cult"
+   ],
+   "languagePool": [
+    "lang.backwards"
+   ],
+   "religionPool": [
+    "rel.endless_wheel"
+   ],
+   "groundColors": [
+    "#9B7FB0",
+    "#977BAC",
+    "#9F83B4",
+    "#9377A8"
+   ],
+   "description": "Zamanın eridiği tuhaf topraklar.",
+   "effectCode": "Aging",
+   "tempOffset": 0,
+   "snowCover": false,
+   "waterOnly": false,
+   "fireproof": false
+  },
+  {
+   "id": "bio.void",
+   "name": "Sessiz Boşluk",
+   "special": true,
+   "growStrength": 5,
+   "temp": 0.5,
+   "moisture": 0.5,
+   "trees": [
+    "feat.void_pillar"
+   ],
+   "plants": [],
+   "animals": [
+    "sp.void_moth"
+   ],
+   "lifeCloudCivs": [],
+   "effect": "Mana yenilenmez; sesler kısılır",
+   "unitTraitPool": [
+    "tr.loner",
+    "tr.skeptic"
+   ],
+   "culturePool": [
+    "cul.scholars"
+   ],
+   "languagePool": [
+    "lang.silent_signs"
+   ],
+   "religionPool": [
+    "rel.null"
+   ],
+   "groundColors": [
+    "#2A2A3A",
+    "#262636",
+    "#2E2E3E",
+    "#222232"
+   ],
+   "description": "Hiçliğin sızdığı alan.",
+   "effectCode": "ManaVoid",
+   "tempOffset": 0,
+   "snowCover": false,
+   "waterOnly": false,
+   "fireproof": false
+  },
+  {
+   "id": "bio.coral",
+   "name": "Mercan Resifi",
+   "special": true,
+   "growStrength": 5,
+   "temp": 0.75,
+   "moisture": 1,
+   "trees": [
+    "feat.coral"
+   ],
+   "plants": [],
+   "animals": [
+    "sp.fish",
+    "sp.crab",
+    "sp.turtle",
+    "sp.seal"
+   ],
+   "lifeCloudCivs": [],
+   "effect": "Sadece sığ suda; balık x3",
+   "unitTraitPool": [
+    "tr.swimmer",
+    "tr.waterborn"
+   ],
+   "culturePool": [
+    "cul.sea_folk"
+   ],
+   "languagePool": [
+    "lang.bubbling"
+   ],
+   "religionPool": [
+    "rel.drowned_god"
+   ],
+   "groundColors": [
+    "#3FB3B0",
+    "#3BAFAC",
+    "#43B7B4",
+    "#37ABA8"
+   ],
+   "description": "Sığ denizlerde renkli resifler.",
+   "effectCode": "FishBoost",
+   "tempOffset": 0,
+   "snowCover": false,
+   "waterOnly": true,
+   "fireproof": false
+  },
+  {
+   "id": "bio.volcanic",
+   "name": "Volkanik Ova",
+   "special": true,
+   "growStrength": 6,
+   "temp": 0.9,
+   "moisture": 0.2,
+   "trees": [
+    "feat.tree_volcanic"
+   ],
+   "plants": [],
+   "animals": [
+    "sp.salamander",
+    "sp.fire_elemental",
+    "sp.lizard"
+   ],
+   "lifeCloudCivs": [
+    "sp.dwarf"
+   ],
+   "effect": "Obsidyen damarı; ara sıra lav baloncuğu",
+   "unitTraitPool": [
+    "tr.heatproof",
+    "tr.smith"
+   ],
+   "culturePool": [
+    "cul.stone_carvers"
+   ],
+   "languagePool": [
+    "lang.hard_consonants"
+   ],
+   "religionPool": [
+    "rel.eternal_flame"
+   ],
+   "groundColors": [
+    "#4B3A36",
+    "#473632",
+    "#4F3E3A",
+    "#43322E"
+   ],
+   "description": "Kül ve bazalt ovaları.",
+   "effectCode": "LavaBubble",
+   "tempOffset": 8,
+   "snowCover": false,
+   "waterOnly": false,
+   "fireproof": false
+  },
+  {
+   "id": "bio.bone",
+   "name": "Kemik Düzlüğü",
+   "special": true,
+   "growStrength": 6,
+   "temp": 0.4,
+   "moisture": 0.2,
+   "trees": [
+    "feat.tree_bone"
+   ],
+   "plants": [
+    "feat.bones_pile"
+   ],
+   "animals": [
+    "sp.skeleton",
+    "sp.bone_crawler",
+    "sp.crow"
+   ],
+   "lifeCloudCivs": [],
+   "effect": "Gece iskelet doğma şansı",
+   "unitTraitPool": [
+    "tr.necro",
+    "tr.gloomy"
+   ],
+   "culturePool": [
+    "cul.ancestor_halls"
+   ],
+   "languagePool": [
+    "lang.hissing"
+   ],
+   "religionPool": [
+    "rel.hollow_king"
+   ],
+   "groundColors": [
+    "#D8D0BC",
+    "#D4CCB8",
+    "#DCD4C0",
+    "#D0C8B4"
+   ],
+   "description": "Eski savaşların kemik tarlası.",
+   "effectCode": "NightSkeleton",
+   "tempOffset": 0,
+   "snowCover": false,
+   "waterOnly": false,
+   "fireproof": false
+  },
+  {
+   "id": "bio.honey",
+   "name": "Bal Korusu",
+   "special": true,
+   "growStrength": 5,
+   "temp": 0.65,
+   "moisture": 0.6,
+   "trees": [
+    "feat.tree_honeycomb"
+   ],
+   "plants": [
+    "feat.flower"
+   ],
+   "animals": [
+    "sp.bee",
+    "sp.bear",
+    "sp.butterfly"
+   ],
+   "lifeCloudCivs": [],
+   "effect": "Yiyecek +%30; arı sokması",
+   "unitTraitPool": [
+    "tr.glutton",
+    "tr.cheerful"
+   ],
+   "culturePool": [
+    "cul.harvest_feast"
+   ],
+   "languagePool": [
+    "lang.buzzing"
+   ],
+   "religionPool": [
+    "rel.hive_mind"
+   ],
+   "groundColors": [
+    "#E3B23C",
+    "#DFAE38",
+    "#E7B640",
+    "#DBAA34"
+   ],
+   "description": "Petek ağaçlı altın korular.",
+   "effectCode": "FoodBoost",
+   "tempOffset": 0,
+   "snowCover": false,
+   "waterOnly": false,
+   "fireproof": false
+  }
+ ]
+}

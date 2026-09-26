@@ -1,0 +1,19 @@
+{
+ "infection": {
+  "bitePerHit": 0.35, "biteOnKill": 0.9, "turningMonths": 2,
+  "onDeathWhileInfected": "rise_as_zombie_after_ticks:40",
+  "variantPick": "boy>=4 → brute | ejderha → zombie_dragon | hayvan → zombie_beast | aksi hâlde %25 runner, %65 zombie, %10 bloater",
+  "immune": ["undead", "elemental", "tr.immune", "sst.infection_immune", "st.blessed (bulaşma %80 azalır)"]
+ },
+ "conversionEffects": "Dönüşen birim tüm meta'larını (şehir, krallık, kültür, dil, din, klan, aile) kaybeder; ismi ve trait'leri korunur ama tr.hollow eklenir. İnceleme penceresinde 'Eskiden: <isim>, <krallık>' gösterilir.",
+ "needs": "Zombiler yemek yemez, uyumaz, çoğalmaz; yalnızca ısırarak yayılır. 'Beyin Yiyen' diyeti yalnızca davranış (canlılara yönelme) içindir.",
+ "ai": {
+  "neurons": ["hunt_living (en yakın canlı, görüş 10)", "follow_horde (5+ zombi → sürü)", "wander_to_noise (savaş, patlama, kalabalık)", "attack_buildings (içinde canlı varsa)", "lure_golden_brain (pw.golden_brain önceliği)"],
+  "hordeRule": "Sürü 50+ zombiye ulaşınca en yakın şehri hedefler; 500 başına 1 zombi_lord doğar ve sürüyü yönlendirir",
+  "senses": "Gece görüşü +3; sese (savaş, patlama) 25 tile'dan çekilir"
+ },
+ "weaknesses": {"fire": "x2 hasar", "holy": "x3 hasar (kutsal ışık, holy_smite)", "silver": "x1.5 hasar", "sunEra": "era.scorch sırasında -1 hp/60 tick", "water": "zombiler (sürünen hariç) yüzemez, derin suda boğulur"},
+ "cityDefense": "Surlu şehirlere kapı kırılana kadar giremezler; pyre binası veya cul.corpse_burners olan şehirde ölüler kalkmaz; rahip ve şifacılar 'turning' statüsünü iyileştirmeye çalışır",
+ "decay": "law.zombie_decay açıksa zombiler 10 yılda çürüyüp kemik yığını bırakır; koşucu zombiler 3 yılda sürünen zombiye döner",
+ "render": "Tür sprite'ı korunur; palet: ten yeşil-gri, gözler kırmızı, yürüme animasyonu %30 yavaş ve sallantılı; sürüde grup nameplate 'Sürü (n)'"
+}

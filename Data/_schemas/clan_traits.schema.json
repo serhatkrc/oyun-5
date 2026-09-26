@@ -1,0 +1,41 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "title": "clan_traits",
+ "type": "object",
+ "required": [
+  "category",
+  "items"
+ ],
+ "properties": {
+  "category": {
+   "const": "clan_traits"
+  },
+  "count": {
+   "type": "integer"
+  },
+  "items": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "required": [
+     "effects",
+     "id",
+     "name"
+    ],
+    "properties": {
+     "id": {
+      "type": "string",
+      "pattern": "^clan\\.[a-z0-9_]+$"
+     },
+     "name": {
+      "type": "string"
+     },
+     "effects": {
+      "type": "object"
+     }
+    },
+    "additionalProperties": true
+   }
+  }
+ }
+}

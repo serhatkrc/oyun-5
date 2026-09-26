@@ -1,0 +1,105 @@
+{
+ "category": "diseases",
+ "count": 8,
+ "items": [
+  {
+   "id": "dis_plague",
+   "name": "Kara Veba",
+   "spread": [
+    "contact",
+    "rat",
+    "cloud"
+   ],
+   "contagion": 0.25,
+   "lethality": 0.35,
+   "durationMonths": 6,
+   "transformsInto": null,
+   "note": "Kalabalık şehirlerde hızla yayılır"
+  },
+  {
+   "id": "dis_rotbite",
+   "name": "Çürük Isırık",
+   "spread": [
+    "bite",
+    "cloud"
+   ],
+   "contagion": 0.9,
+   "lethality": 0.0,
+   "durationMonths": 2,
+   "transformsInto": "sp.zombie",
+   "note": "Isırılan ölünce zombi olur; ölmeden de 2 yılda dönüşür"
+  },
+  {
+   "id": "dis_fleshgrowth",
+   "name": "Et Büyümesi",
+   "spread": [
+    "contact"
+   ],
+   "contagion": 0.05,
+   "lethality": 0.1,
+   "durationMonths": 24,
+   "transformsInto": "sp.flesh_mound",
+   "note": "Tedavi edilmezse et yığınına dönüşür"
+  },
+  {
+   "id": "dis_spores",
+   "name": "Mantar Sporu",
+   "spread": [
+    "air"
+   ],
+   "contagion": 0.15,
+   "lethality": 0.05,
+   "durationMonths": 12,
+   "transformsInto": "sp.shroomling",
+   "note": "Mantar biyomlarında; mantarcığa dönüşür"
+  },
+  {
+   "id": "dis_black_madness",
+   "name": "Kara Cinnet",
+   "spread": [
+    "magic"
+   ],
+   "contagion": 0.1,
+   "lethality": 0.0,
+   "durationMonths": 6,
+   "transformsInto": null,
+   "note": "Herkese saldırır; kutsal ışık iyileştirir"
+  },
+  {
+   "id": "dis_marsh_fever",
+   "name": "Bataklık Humması",
+   "spread": [
+    "mosquito"
+   ],
+   "contagion": 0.2,
+   "lethality": 0.1,
+   "durationMonths": 4,
+   "transformsInto": null,
+   "note": "Yavaşlık ve halsizlik"
+  },
+  {
+   "id": "dis_rabies",
+   "name": "Kuduz",
+   "spread": [
+    "bite"
+   ],
+   "contagion": 0.5,
+   "lethality": 0.4,
+   "durationMonths": 3,
+   "transformsInto": null,
+   "note": "Hayvanlardan geçer; saldırganlık"
+  },
+  {
+   "id": "dis_coughing_sickness",
+   "name": "Öksürük Sayrılığı",
+   "spread": [
+    "contact"
+   ],
+   "contagion": 0.3,
+   "lethality": 0.03,
+   "durationMonths": 3,
+   "transformsInto": null,
+   "note": "Hafif; kışın artar"
+  }
+ ]
+}

@@ -1,0 +1,45 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "title": "item_qualities",
+ "type": "object",
+ "required": [
+  "category",
+  "items"
+ ],
+ "properties": {
+  "category": {
+   "const": "item_qualities"
+  },
+  "count": {
+   "type": "integer"
+  },
+  "items": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "required": [
+     "baseChance",
+     "id",
+     "multiplier",
+     "name"
+    ],
+    "properties": {
+     "id": {
+      "type": "string",
+      "pattern": "^q\\.[a-z0-9_]+$"
+     },
+     "name": {
+      "type": "string"
+     },
+     "multiplier": {
+      "type": "number"
+     },
+     "baseChance": {
+      "type": "number"
+     }
+    },
+    "additionalProperties": true
+   }
+  }
+ }
+}

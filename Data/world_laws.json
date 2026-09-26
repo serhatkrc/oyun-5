@@ -1,0 +1,316 @@
+{
+ "category": "world_laws",
+ "count": 49,
+ "items": [
+  {
+   "id": "law.kingdom_rebellions",
+   "name": "Krallık İsyanları",
+   "group": "civ",
+   "default": true
+  },
+  {
+   "id": "law.wars",
+   "name": "Savaşlar",
+   "group": "civ",
+   "default": true
+  },
+  {
+   "id": "law.diplomacy",
+   "name": "Diplomasi",
+   "group": "civ",
+   "default": true
+  },
+  {
+   "id": "law.royal_marriages",
+   "name": "Kraliyet Evlilikleri",
+   "group": "civ",
+   "default": true
+  },
+  {
+   "id": "law.migration",
+   "name": "Göç",
+   "group": "civ",
+   "default": true
+  },
+  {
+   "id": "law.colonization",
+   "name": "Denizaşırı Sömürge",
+   "group": "civ",
+   "default": true
+  },
+  {
+   "id": "law.plots",
+   "name": "Entrikalar",
+   "group": "civ",
+   "default": true
+  },
+  {
+   "id": "law.new_religions",
+   "name": "Yeni Dinler",
+   "group": "civ",
+   "default": true
+  },
+  {
+   "id": "law.culture_splits",
+   "name": "Kültür Ayrılıkları",
+   "group": "civ",
+   "default": true
+  },
+  {
+   "id": "law.borders_grow",
+   "name": "Sınır Büyümesi",
+   "group": "civ",
+   "default": true
+  },
+  {
+   "id": "law.item_crafting",
+   "name": "Eşya Üretimi",
+   "group": "civ",
+   "default": true
+  },
+  {
+   "id": "law.book_writing",
+   "name": "Kitap Yazımı",
+   "group": "civ",
+   "default": true
+  },
+  {
+   "id": "law.mixed_species_cities",
+   "name": "Karma Tür Şehirleri",
+   "group": "civ",
+   "default": true
+  },
+  {
+   "id": "law.animal_spawn",
+   "name": "Hayvan Doğal Doğuşu",
+   "group": "life",
+   "default": true
+  },
+  {
+   "id": "law.monster_spawn",
+   "name": "Canavar Doğuşu",
+   "group": "life",
+   "default": true
+  },
+  {
+   "id": "law.aging",
+   "name": "Yaşlanma",
+   "group": "life",
+   "default": true
+  },
+  {
+   "id": "law.hunger",
+   "name": "Açlık",
+   "group": "life",
+   "default": true
+  },
+  {
+   "id": "law.reproduction",
+   "name": "Üreme",
+   "group": "life",
+   "default": true
+  },
+  {
+   "id": "law.disease",
+   "name": "Hastalık Yayılımı",
+   "group": "life",
+   "default": true
+  },
+  {
+   "id": "law.evolution",
+   "name": "Doğal Evrim",
+   "group": "life",
+   "default": true
+  },
+  {
+   "id": "law.metamorphosis",
+   "name": "Dönüşümler",
+   "group": "life",
+   "default": true
+  },
+  {
+   "id": "law.population_cap",
+   "name": "Nüfus Sınırı",
+   "group": "life",
+   "default": false,
+   "slider": [
+    100,
+    20000,
+    5000
+   ]
+  },
+  {
+   "id": "law.undead_rising",
+   "name": "Ölülerin Kalkışı",
+   "group": "life",
+   "default": true
+  },
+  {
+   "id": "law.zombie_apocalypse",
+   "name": "Kıyamet Salgını (her ölü zombi olarak kalkar)",
+   "group": "life",
+   "default": false
+  },
+  {
+   "id": "law.zombie_decay",
+   "name": "Zombi Çürümesi (zombiler 10 yılda dağılır)",
+   "group": "life",
+   "default": true
+  },
+  {
+   "id": "law.zombie_hordes",
+   "name": "Zombi Sürüleri (zombiler toplanıp şehirlere yürür)",
+   "group": "life",
+   "default": true
+  },
+  {
+   "id": "law.biome_spread",
+   "name": "Biyom Yayılımı",
+   "group": "nature",
+   "default": true
+  },
+  {
+   "id": "law.tree_growth",
+   "name": "Ağaç Büyümesi",
+   "group": "nature",
+   "default": true
+  },
+  {
+   "id": "law.fire_spread",
+   "name": "Yangın Yayılımı",
+   "group": "nature",
+   "default": true
+  },
+  {
+   "id": "law.clouds",
+   "name": "Bulutlar",
+   "group": "nature",
+   "default": true
+  },
+  {
+   "id": "law.auto_disasters",
+   "name": "Doğal Afetler",
+   "group": "nature",
+   "default": true,
+   "slider": [
+    0,
+    3,
+    1
+   ]
+  },
+  {
+   "id": "law.seasons",
+   "name": "Mevsimler",
+   "group": "nature",
+   "default": true
+  },
+  {
+   "id": "law.lava_cooling",
+   "name": "Lav Soğuması",
+   "group": "nature",
+   "default": true
+  },
+  {
+   "id": "law.goo_spread",
+   "name": "Balçık Yayılımı",
+   "group": "nature",
+   "default": false
+  },
+  {
+   "id": "law.eternal_summer",
+   "name": "Sonsuz Yaz",
+   "group": "nature",
+   "default": false
+  },
+  {
+   "id": "law.eternal_winter",
+   "name": "Sonsuz Kış",
+   "group": "nature",
+   "default": false
+  },
+  {
+   "id": "law.mutation",
+   "name": "Mutasyon",
+   "group": "genetics",
+   "default": true,
+   "slider": [
+    0,
+    5,
+    1
+   ]
+  },
+  {
+   "id": "law.mutant_box",
+   "name": "Mutant Kutusu (yeni alt türe 1–4 rastgele trait)",
+   "group": "genetics",
+   "default": false
+  },
+  {
+   "id": "law.gene_chaos",
+   "name": "Gen Kaosu (her doğumda gen karışır)",
+   "group": "genetics",
+   "default": false
+  },
+  {
+   "id": "law.life_cloud_civs",
+   "name": "Yaşam Bulutundan Uygarlık",
+   "group": "genetics",
+   "default": false
+  },
+  {
+   "id": "law.uplift_all",
+   "name": "Herkes Bilinçli",
+   "group": "genetics",
+   "default": false
+  },
+  {
+   "id": "law.pure_lines",
+   "name": "Saf Soylar (mutasyon yok)",
+   "group": "genetics",
+   "default": false
+  },
+  {
+   "id": "law.laughing_death",
+   "name": "Kahkahalı Ölüm (ölen birim patlar ve konfeti saçar)",
+   "group": "fun",
+   "default": false
+  },
+  {
+   "id": "law.tiny_world",
+   "name": "Minik Dünya (tüm birimler küçük)",
+   "group": "fun",
+   "default": false
+  },
+  {
+   "id": "law.giants",
+   "name": "Devler Diyarı",
+   "group": "fun",
+   "default": false
+  },
+  {
+   "id": "law.peaceful_world",
+   "name": "Barış Dünyası (saldırı yok)",
+   "group": "fun",
+   "default": false
+  },
+  {
+   "id": "law.chaos_world",
+   "name": "Kaos (herkes herkese düşman)",
+   "group": "fun",
+   "default": false
+  },
+  {
+   "id": "law.god_name",
+   "name": "Tanrının Adı (metin alanı)",
+   "group": "fun",
+   "default": false
+  },
+  {
+   "id": "law.forbidden_codex",
+   "name": "Yasak Kodeks — tüm içeriklerin kilidi açılır, bu dünyada başarım kapanır",
+   "group": "forbidden",
+   "default": false,
+   "unlockCondition": "Tek dünyada aynı anda 333+ 'Saf Kan' alt tür trait'li birim bulundur, sonra Çağ Saati'nde tüm çağları tek tur çevir"
+  }
+ ]
+}

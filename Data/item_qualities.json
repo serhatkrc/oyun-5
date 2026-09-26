@@ -1,0 +1,42 @@
+{
+ "category": "item_qualities",
+ "count": 6,
+ "items": [
+  {
+   "id": "q.crude",
+   "name": "Kaba",
+   "multiplier": 0.7,
+   "baseChance": 0.3
+  },
+  {
+   "id": "q.common",
+   "name": "Sıradan",
+   "multiplier": 1.0,
+   "baseChance": 0.45
+  },
+  {
+   "id": "q.fine",
+   "name": "İyi",
+   "multiplier": 1.2,
+   "baseChance": 0.15
+  },
+  {
+   "id": "q.masterwork",
+   "name": "Usta İşi",
+   "multiplier": 1.45,
+   "baseChance": 0.07
+  },
+  {
+   "id": "q.unique",
+   "name": "Eşsiz",
+   "multiplier": 1.8,
+   "baseChance": 0.025
+  },
+  {
+   "id": "q.legendary",
+   "name": "Efsanevi",
+   "multiplier": 2.5,
+   "baseChance": 0.005
+  }
+ ]
+}

@@ -1,0 +1,115 @@
+{
+ "rules": {
+  "unit": "1–2 kelime; kelime = pattern'den seçilen şablon (C=onset, V=vowel, sonra %40 coda)",
+  "city": "kelime + (%30) şehir eki: 'ia','heim','gar','ova'",
+  "kingdom": "'{kök} {unvan}' veya '{kök}ya'; unvan krallık büyüklüğüne göre",
+  "clan": "'{kök}oğulları' benzeri soy eki",
+  "culture": "'{kök}'lı",
+  "religion": "'{kök} Yolu' / '{kök} Tarikatı'",
+  "book": "şablon: '{kök}'in {Tür}'u'"
+ },
+ "sets": {
+  "lang.plain_speech": {
+   "onset": "b,d,g,k,l,m,n,r,s,t,v,y",
+   "vowel": "a,e,i,o,u",
+   "coda": "n,r,l,s,t,",
+   "pattern": "CV,CVC,CVCV,CVCVC"
+  },
+  "lang.soft_vowels": {
+   "onset": "l,n,m,s,th,f,v,y,r",
+   "vowel": "a,e,i,ae,ia,ie,o",
+   "coda": "l,n,s,th,",
+   "pattern": "CV,CVV,CVCV,VCVCV"
+  },
+  "lang.poetic": {
+   "onset": "l,m,n,r,s,v,f,sh",
+   "vowel": "a,e,i,o,ea,ou",
+   "coda": "n,l,r,",
+   "pattern": "CVCV,CVCVCV,VCVC"
+  },
+  "lang.drumming": {
+   "onset": "b,d,k,m,n,t,mb,nd",
+   "vowel": "a,u,o,i",
+   "coda": ",m,n",
+   "pattern": "CVCV,CVCVCV,CV"
+  },
+  "lang.guttural": {
+   "onset": "g,gr,k,kr,dr,br,z,zg,h",
+   "vowel": "a,o,u,aa",
+   "coda": "k,g,rk,z,sh,",
+   "pattern": "CVC,CVCC,CVCVC"
+  },
+  "lang.sand_whisper": {
+   "onset": "s,z,h,k,r,f,m,sh",
+   "vowel": "a,i,aa,ii,u",
+   "coda": "r,s,m,n,",
+   "pattern": "CVCV,CVCVC,CV"
+  },
+  "lang.hard_consonants": {
+   "onset": "b,d,g,k,t,dr,gr,th,br",
+   "vowel": "a,o,u,i",
+   "coda": "k,rn,nd,rk,m,",
+   "pattern": "CVC,CVCVC,CVCC"
+  },
+  "lang.chime": {
+   "onset": "l,t,n,s,r,y",
+   "vowel": "i,ee,ai,e,a",
+   "coda": "n,l,",
+   "pattern": "CV,CVCV,CVCVCV"
+  },
+  "lang.hissing": {
+   "onset": "s,ss,z,sh,x,t,k",
+   "vowel": "a,i,e,ia",
+   "coda": "s,ss,x,sh,",
+   "pattern": "CVC,CVCVC,CVCCV"
+  },
+  "lang.backwards": {
+   "onset": "n,r,t,l,m,k",
+   "vowel": "a,e,o,u",
+   "coda": "n,r,t,",
+   "pattern": "CVC,CVCVC",
+   "note": "Üretilen ismin tersi kullanılır"
+  },
+  "lang.silent_signs": {
+   "onset": "",
+   "vowel": "",
+   "coda": "",
+   "pattern": "SYMBOL",
+   "note": "İsimler sembol+sayı: '◇7', '△Üç'"
+  },
+  "lang.bubbling": {
+   "onset": "b,p,bl,gl,w,m,l",
+   "vowel": "u,o,oo,ou,a",
+   "coda": "b,p,l,",
+   "pattern": "CV,CVCV,CVCVCV"
+  },
+  "lang.buzzing": {
+   "onset": "z,zz,v,b,dz",
+   "vowel": "i,e,a,ee",
+   "coda": "z,zz,",
+   "pattern": "CVC,CVCVC"
+  }
+ },
+ "rulerTitles": [
+  {
+   "minCities": 1,
+   "title": "Reis"
+  },
+  {
+   "minCities": 3,
+   "title": "Bey"
+  },
+  {
+   "minCities": 6,
+   "title": "Kral"
+  },
+  {
+   "minCities": 12,
+   "title": "Hükümdar"
+  },
+  {
+   "minCities": 25,
+   "title": "İmparator"
+  }
+ ]
+}

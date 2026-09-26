@@ -1,0 +1,138 @@
+{
+ "category": "clouds",
+ "count": 11,
+ "items": [
+  {
+   "id": "cloud.rain",
+   "name": "Yağmur Bulutu",
+   "effect": "Yangın söndürür, bitki büyütür, lavı soğutur",
+   "effectCode": "rain",
+   "color": "#C8D2DC",
+   "naturalWeight": 0.85,
+   "coldOnly": false,
+   "dropTile": "",
+   "dropFeature": "",
+   "dropChance": 1.0
+  },
+  {
+   "id": "cloud.snow",
+   "name": "Kar Bulutu",
+   "effect": "Kar örtüsü, suyu dondurur",
+   "effectCode": "snow",
+   "color": "#F4F8FC",
+   "naturalWeight": 0,
+   "coldOnly": true,
+   "dropTile": "",
+   "dropFeature": "",
+   "dropChance": 1.0
+  },
+  {
+   "id": "cloud.acid",
+   "name": "Asit Bulutu",
+   "effect": "Tile'ı bir seviye eritir, birimlere hasar",
+   "effectCode": "acid",
+   "color": "#B6E05A",
+   "naturalWeight": 0,
+   "coldOnly": false,
+   "dropTile": "",
+   "dropFeature": "",
+   "dropChance": 0.15
+  },
+  {
+   "id": "cloud.lava",
+   "name": "Lav Bulutu",
+   "effect": "Kızgın lav damlatır",
+   "effectCode": "lava",
+   "color": "#E8603C",
+   "naturalWeight": 0,
+   "coldOnly": false,
+   "dropTile": "tile.lava_hot",
+   "dropFeature": "",
+   "dropChance": 0.05
+  },
+  {
+   "id": "cloud.life",
+   "name": "Yaşam Bulutu",
+   "effect": "Biyomun hayvanlarını/uygarlıklarını doğurur",
+   "effectCode": "life",
+   "color": "#9CE89C",
+   "naturalWeight": 0,
+   "coldOnly": false,
+   "dropTile": "",
+   "dropFeature": "",
+   "dropChance": 0.02
+  },
+  {
+   "id": "cloud.storm",
+   "name": "Fırtına Bulutu",
+   "effect": "Rastgele yıldırım düşürür",
+   "effectCode": "storm",
+   "color": "#6E7686",
+   "naturalWeight": 0.1,
+   "coldOnly": false,
+   "dropTile": "",
+   "dropFeature": "",
+   "dropChance": 0.01
+  },
+  {
+   "id": "cloud.ash",
+   "name": "Kül Bulutu",
+   "effect": "Güneşi keser: sıcaklık -5, bitki büyümesi durur",
+   "effectCode": "ash",
+   "color": "#8A8580",
+   "naturalWeight": 0.05,
+   "coldOnly": false,
+   "dropTile": "",
+   "dropFeature": "",
+   "dropChance": 1.0
+  },
+  {
+   "id": "cloud.blessing",
+   "name": "Kutsal Bulut",
+   "effect": "Altındakilere 'Kutsanmış' statüsü",
+   "effectCode": "blessing",
+   "color": "#FFF2B0",
+   "naturalWeight": 0,
+   "coldOnly": false,
+   "dropTile": "",
+   "dropFeature": "",
+   "dropChance": 1.0
+  },
+  {
+   "id": "cloud.plague",
+   "name": "Veba Sisi",
+   "effect": "Altındakilere veba bulaştırma şansı",
+   "effectCode": "plague",
+   "color": "#9FB07A",
+   "naturalWeight": 0,
+   "coldOnly": false,
+   "dropTile": "",
+   "dropFeature": "",
+   "dropChance": 1.0
+  },
+  {
+   "id": "cloud.rot",
+   "name": "Çürük Bulutu",
+   "effect": "Altındakilere çürük ısırık bulaştırır",
+   "effectCode": "rot",
+   "color": "#7A6A8A",
+   "naturalWeight": 0,
+   "coldOnly": false,
+   "dropTile": "",
+   "dropFeature": "",
+   "dropChance": 1.0
+  },
+  {
+   "id": "cloud.candy",
+   "name": "Şeker Yağmuru",
+   "effect": "Şekerleme düşürür, yiyecek verir",
+   "effectCode": "candy",
+   "color": "#F4B6D6",
+   "naturalWeight": 0,
+   "coldOnly": false,
+   "dropTile": "",
+   "dropFeature": "feat.tree_candy",
+   "dropChance": 0.03
+  }
+ ]
+}

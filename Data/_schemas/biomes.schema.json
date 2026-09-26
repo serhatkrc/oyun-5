@@ -1,0 +1,97 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "title": "biomes",
+ "type": "object",
+ "required": [
+  "category",
+  "items"
+ ],
+ "properties": {
+  "category": {
+   "const": "biomes"
+  },
+  "count": {
+   "type": "integer"
+  },
+  "items": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "required": [
+     "animals",
+     "culturePool",
+     "description",
+     "effect",
+     "groundColors",
+     "growStrength",
+     "id",
+     "languagePool",
+     "lifeCloudCivs",
+     "moisture",
+     "name",
+     "plants",
+     "religionPool",
+     "special",
+     "temp",
+     "trees",
+     "unitTraitPool"
+    ],
+    "properties": {
+     "id": {
+      "type": "string",
+      "pattern": "^bio\\.[a-z0-9_]+$"
+     },
+     "name": {
+      "type": "string"
+     },
+     "special": {
+      "type": "boolean"
+     },
+     "growStrength": {
+      "type": "integer"
+     },
+     "temp": {
+      "type": "number"
+     },
+     "moisture": {
+      "type": "number"
+     },
+     "trees": {
+      "type": "array"
+     },
+     "plants": {
+      "type": "array"
+     },
+     "animals": {
+      "type": "array"
+     },
+     "lifeCloudCivs": {
+      "type": "array"
+     },
+     "effect": {
+      "type": "string"
+     },
+     "unitTraitPool": {
+      "type": "array"
+     },
+     "culturePool": {
+      "type": "array"
+     },
+     "languagePool": {
+      "type": "array"
+     },
+     "religionPool": {
+      "type": "array"
+     },
+     "groundColors": {
+      "type": "array"
+     },
+     "description": {
+      "type": "string"
+     }
+    },
+    "additionalProperties": true
+   }
+  }
+ }
+}

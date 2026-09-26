@@ -1,0 +1,53 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "title": "features",
+ "type": "object",
+ "required": [
+  "category",
+  "items"
+ ],
+ "properties": {
+  "category": {
+   "const": "features"
+  },
+  "count": {
+   "type": "integer"
+  },
+  "items": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "required": [
+     "burnable",
+     "id",
+     "kind",
+     "name",
+     "note",
+     "yields"
+    ],
+    "properties": {
+     "id": {
+      "type": "string",
+      "pattern": "^feat\\.[a-z0-9_]+$"
+     },
+     "name": {
+      "type": "string"
+     },
+     "kind": {
+      "type": "string"
+     },
+     "yields": {
+      "type": "object"
+     },
+     "burnable": {
+      "type": "boolean"
+     },
+     "note": {
+      "type": "string"
+     }
+    },
+    "additionalProperties": true
+   }
+  }
+ }
+}

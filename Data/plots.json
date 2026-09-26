@@ -1,0 +1,196 @@
+{
+ "category": "plots",
+ "count": 16,
+ "items": [
+  {
+   "id": "plot.rebellion",
+   "name": "İsyan",
+   "initiator": "city_leader",
+   "conditions": [
+    "loyalty<30",
+    "ambitious_or_inspired"
+   ],
+   "minParticipants": 3,
+   "durationMonths": 24,
+   "outcome": "Şehir bağımsız krallık olur"
+  },
+  {
+   "id": "plot.new_religion",
+   "name": "Yeni Din Kurma",
+   "initiator": "any",
+   "conditions": [
+    "intel>=6",
+    "abstract_thought",
+    "zealous_or_inspired"
+   ],
+   "minParticipants": 2,
+   "durationMonths": 36,
+   "outcome": "Yeni din; kurucu peygamber olur"
+  },
+  {
+   "id": "plot.culture_split",
+   "name": "Kültür Ayrılığı",
+   "initiator": "leader",
+   "conditions": [
+    "intel>=6",
+    "2 civil>=2",
+    "ambitious_or_inspired"
+   ],
+   "minParticipants": 3,
+   "durationMonths": 36,
+   "outcome": "Kültür ikiye bölünür"
+  },
+  {
+   "id": "plot.language_split",
+   "name": "Lehçe Ayrılığı",
+   "initiator": "any",
+   "conditions": [
+    "dil 3+ şehre yayılmış",
+    "uzak şehir"
+   ],
+   "minParticipants": 2,
+   "durationMonths": 48,
+   "outcome": "Yeni dil doğar"
+  },
+  {
+   "id": "plot.alliance",
+   "name": "İttifak Kurma",
+   "initiator": "king",
+   "conditions": [
+    "diplo>=6",
+    "ortak düşman"
+   ],
+   "minParticipants": 1,
+   "durationMonths": 18,
+   "outcome": "İttifak meta nesnesi"
+  },
+  {
+   "id": "plot.war_declaration",
+   "name": "Savaş Kışkırtma",
+   "initiator": "king_or_general",
+   "conditions": [
+    "warfare>=5",
+    "opinion<-20"
+   ],
+   "minParticipants": 2,
+   "durationMonths": 12,
+   "outcome": "Savaş ilanı"
+  },
+  {
+   "id": "plot.assassination",
+   "name": "Suikast",
+   "initiator": "any",
+   "conditions": [
+    "deceitful_or_cruel",
+    "hedef lider"
+   ],
+   "minParticipants": 2,
+   "durationMonths": 12,
+   "outcome": "Hedef ölür; yakalanırsa infaz"
+  },
+  {
+   "id": "plot.usurpation",
+   "name": "Taht Gaspı",
+   "initiator": "noble",
+   "conditions": [
+    "ambitious",
+    "warfare>=6"
+   ],
+   "minParticipants": 4,
+   "durationMonths": 24,
+   "outcome": "Kral devrilir"
+  },
+  {
+   "id": "plot.conversion",
+   "name": "Din Değiştirme",
+   "initiator": "priest",
+   "conditions": [
+    "kendi şehri"
+   ],
+   "minParticipants": 1,
+   "durationMonths": 12,
+   "outcome": "Şehir halkı plotçunun dinine döner (sadece kendi şehri)"
+  },
+  {
+   "id": "plot.new_clan",
+   "name": "Klan Kurma",
+   "initiator": "any",
+   "conditions": [
+    "ambitious",
+    "çocuk>=3"
+   ],
+   "minParticipants": 1,
+   "durationMonths": 12,
+   "outcome": "Yeni klan"
+  },
+  {
+   "id": "plot.secession",
+   "name": "Bağımsızlık",
+   "initiator": "city_leader",
+   "conditions": [
+    "farklı kültür/din",
+    "loyalty<40"
+   ],
+   "minParticipants": 3,
+   "durationMonths": 24,
+   "outcome": "Birden fazla şehir yeni krallık"
+  },
+  {
+   "id": "plot.royal_marriage",
+   "name": "Kraliyet Evliliği",
+   "initiator": "king",
+   "conditions": [
+    "opinion>10"
+   ],
+   "minParticipants": 1,
+   "durationMonths": 6,
+   "outcome": "Fikir +30, ittifak şansı"
+  },
+  {
+   "id": "plot.reform",
+   "name": "Reform",
+   "initiator": "king",
+   "conditions": [
+    "intel>=7"
+   ],
+   "minParticipants": 2,
+   "durationMonths": 36,
+   "outcome": "Kültür trait'lerinden biri değişir"
+  },
+  {
+   "id": "plot.crusade",
+   "name": "Kutsal Sefer",
+   "initiator": "high_priest",
+   "conditions": [
+    "holy_war doktrini"
+   ],
+   "minParticipants": 3,
+   "durationMonths": 18,
+   "outcome": "Farklı dinli krallığa din savaşı"
+  },
+  {
+   "id": "plot.peace_treaty",
+   "name": "Barış Antlaşması",
+   "initiator": "king",
+   "conditions": [
+    "savaş>=5 yıl",
+    "diplo>=5"
+   ],
+   "minParticipants": 1,
+   "durationMonths": 6,
+   "outcome": "Savaş biter"
+  },
+  {
+   "id": "plot.dark_ritual",
+   "name": "Karanlık Ritüel",
+   "initiator": "any",
+   "conditions": [
+    "cultist_or_cursed",
+    "mage_blood"
+   ],
+   "minParticipants": 3,
+   "durationMonths": 12,
+   "outcome": "İblis çağırma veya ölü diriltme felaketi"
+  }
+ ]
+}

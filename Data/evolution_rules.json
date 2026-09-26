@@ -1,0 +1,58 @@
+{
+ "category": "evolution_rules",
+ "count": 6,
+ "items": [
+  {
+   "id": "evo.monolith_stage1",
+   "name": "Monolit — Uyanış",
+   "stage": 1,
+   "grants": [
+    "sst.curious_minds",
+    "sst.tool_use"
+   ],
+   "note": "Çevredeki hayvanlara 20 yılda bir"
+  },
+  {
+   "id": "evo.monolith_stage2",
+   "name": "Monolit — Söz",
+   "stage": 2,
+   "grants": [
+    "sst.speech_center",
+    "sst.advanced_memory"
+   ],
+   "note": "Aşama 1'i geçmiş alt türler"
+  },
+  {
+   "id": "evo.monolith_stage3",
+   "name": "Monolit — Bilinç",
+   "stage": 3,
+   "grants": [
+    "sst.sapience",
+    "sst.abstract_thought",
+    "sst.planning"
+   ],
+   "note": "Tür medeni olur; ilk köy kurulur"
+  },
+  {
+   "id": "evo.isolation_drift",
+   "name": "İzolasyon Kayması",
+   "stage": 0,
+   "grants": [],
+   "note": "100 yıl izole popülasyon: %30 ihtimalle yeni alt tür + 1–2 trait"
+  },
+  {
+   "id": "evo.biome_adapt",
+   "name": "Biyom Uyumu",
+   "stage": 0,
+   "grants": [],
+   "note": "Yeni biyomda doğan ilk nesil biyomun alt tür havuzundan trait alabilir"
+  },
+  {
+   "id": "evo.radiation_mutation",
+   "name": "Radyasyon Mutasyonu",
+   "stage": 0,
+   "grants": [],
+   "note": "Işınlanmış statüsü doğumda mutasyon oranını x5 yapar"
+  }
+ ]
+}

@@ -1,0 +1,28 @@
+{
+    "name": "PG.Boot",
+    "rootNamespace": "PG.Boot",
+    "references": [
+        "PG.Core",
+        "PG.Content",
+        "PG.World",
+        "PG.WorldGen",
+        "PG.Sim",
+        "PG.Powers",
+        "PG.Render",
+        "PG.Persistence",
+        "PG.UI",
+        "Unity.Burst",
+        "Unity.Collections",
+        "Unity.Mathematics",
+        "Unity.InputSystem"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

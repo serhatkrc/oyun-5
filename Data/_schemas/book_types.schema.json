@@ -1,0 +1,41 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "title": "book_types",
+ "type": "object",
+ "required": [
+  "category",
+  "items"
+ ],
+ "properties": {
+  "category": {
+   "const": "book_types"
+  },
+  "count": {
+   "type": "integer"
+  },
+  "items": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "required": [
+     "id",
+     "name",
+     "readerBonus"
+    ],
+    "properties": {
+     "id": {
+      "type": "string",
+      "pattern": "^book\\.[a-z0-9_]+$"
+     },
+     "name": {
+      "type": "string"
+     },
+     "readerBonus": {
+      "type": "array"
+     }
+    },
+    "additionalProperties": true
+   }
+  }
+ }
+}

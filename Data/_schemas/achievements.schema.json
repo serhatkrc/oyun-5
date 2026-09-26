@@ -1,0 +1,48 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "title": "achievements",
+ "type": "object",
+ "required": [
+  "category",
+  "items"
+ ],
+ "properties": {
+  "category": {
+   "const": "achievements"
+  },
+  "count": {
+   "type": "integer"
+  },
+  "items": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "required": [
+     "condition",
+     "id",
+     "name",
+     "unlocks"
+    ],
+    "properties": {
+     "id": {
+      "type": "string",
+      "pattern": "^ach\\.[a-z0-9_]+$"
+     },
+     "name": {
+      "type": "string"
+     },
+     "condition": {
+      "type": "string"
+     },
+     "unlocks": {
+      "type": [
+       "null",
+       "string"
+      ]
+     }
+    },
+    "additionalProperties": true
+   }
+  }
+ }
+}

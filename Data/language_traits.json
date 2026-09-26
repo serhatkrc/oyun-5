@@ -1,0 +1,215 @@
+{
+ "category": "language_traits",
+ "count": 25,
+ "items": [
+  {
+   "id": "lang.plain_speech",
+   "name": "Sade Konuşma",
+   "group": "phonology",
+   "effects": {}
+  },
+  {
+   "id": "lang.soft_vowels",
+   "name": "Yumuşak Ünlüler",
+   "group": "phonology",
+   "effects": {}
+  },
+  {
+   "id": "lang.poetic",
+   "name": "Şiirsel",
+   "group": "phonology",
+   "effects": {}
+  },
+  {
+   "id": "lang.drumming",
+   "name": "Davul Ritmi",
+   "group": "phonology",
+   "effects": {}
+  },
+  {
+   "id": "lang.guttural",
+   "name": "Gırtlaksı",
+   "group": "phonology",
+   "effects": {}
+  },
+  {
+   "id": "lang.sand_whisper",
+   "name": "Kum Fısıltısı",
+   "group": "phonology",
+   "effects": {}
+  },
+  {
+   "id": "lang.hard_consonants",
+   "name": "Sert Ünsüzler",
+   "group": "phonology",
+   "effects": {}
+  },
+  {
+   "id": "lang.chime",
+   "name": "Çan Sesi",
+   "group": "phonology",
+   "effects": {}
+  },
+  {
+   "id": "lang.hissing",
+   "name": "Tıslamalı",
+   "group": "phonology",
+   "effects": {}
+  },
+  {
+   "id": "lang.backwards",
+   "name": "Tersine",
+   "group": "phonology",
+   "effects": {}
+  },
+  {
+   "id": "lang.silent_signs",
+   "name": "İşaret Dili",
+   "group": "phonology",
+   "effects": {}
+  },
+  {
+   "id": "lang.bubbling",
+   "name": "Fokurtulu",
+   "group": "phonology",
+   "effects": {}
+  },
+  {
+   "id": "lang.buzzing",
+   "name": "Vızıltılı",
+   "group": "phonology",
+   "effects": {}
+  },
+  {
+   "id": "lang.complex_grammar",
+   "name": "Karmaşık Dilbilgisi",
+   "group": "grammar",
+   "effects": {
+    "pct": {
+     "bookPower": 30.0,
+     "learnTime": 50.0
+    }
+   }
+  },
+  {
+   "id": "lang.simple_grammar",
+   "name": "Sade Dilbilgisi",
+   "group": "grammar",
+   "effects": {
+    "pct": {
+     "spread": 30.0
+    }
+   }
+  },
+  {
+   "id": "lang.eternal_text",
+   "name": "Kalıcı Yazı",
+   "group": "grammar",
+   "effects": {
+    "pct": {
+     "bookDecay": -100.0
+    }
+   }
+  },
+  {
+   "id": "lang.confusing_semantics",
+   "name": "Muğlak Anlam",
+   "group": "grammar",
+   "effects": {
+    "pct": {
+     "bookPower": -20.0
+    },
+    "add": {
+     "diplo": -1.0
+    }
+   }
+  },
+  {
+   "id": "lang.many_dialects",
+   "name": "Çok Lehçeli",
+   "group": "grammar",
+   "effects": {
+    "pct": {
+     "splitChance": 100.0
+    }
+   }
+  },
+  {
+   "id": "lang.written_script",
+   "name": "Yazı Sistemi",
+   "group": "grammar",
+   "effects": {
+    "flags": [
+     "can_write"
+    ]
+   }
+  },
+  {
+   "id": "lang.runic",
+   "name": "Runik Yazı",
+   "group": "grammar",
+   "effects": {
+    "flags": [
+     "can_write"
+    ],
+    "pct": {
+     "enchantChance": 10.0
+    }
+   }
+  },
+  {
+   "id": "lang.pictographic",
+   "name": "Resim Yazısı",
+   "group": "grammar",
+   "effects": {
+    "flags": [
+     "can_write"
+    ],
+    "pct": {
+     "bookWrite": -30.0
+    }
+   }
+  },
+  {
+   "id": "lang.loanwords",
+   "name": "Alıntı Sözcükler",
+   "group": "grammar",
+   "effects": {
+    "add": {
+     "adoptWords": 1.0
+    }
+   }
+  },
+  {
+   "id": "lang.sacred_tongue",
+   "name": "Kutsal Dil",
+   "group": "grammar",
+   "effects": {
+    "pct": {
+     "faith": 20.0
+    }
+   }
+  },
+  {
+   "id": "lang.trade_tongue",
+   "name": "Ticaret Dili",
+   "group": "grammar",
+   "effects": {
+    "pct": {
+     "tradeProfit": 20.0,
+     "spread": 20.0
+    }
+   }
+  },
+  {
+   "id": "lang.whistled",
+   "name": "Islık Dili",
+   "group": "grammar",
+   "effects": {
+    "pct": {
+     "commRange": 100.0
+    }
+   }
+  }
+ ]
+}

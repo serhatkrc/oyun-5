@@ -1,0 +1,45 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "title": "culture_traits",
+ "type": "object",
+ "required": [
+  "category",
+  "items"
+ ],
+ "properties": {
+  "category": {
+   "const": "culture_traits"
+  },
+  "count": {
+   "type": "integer"
+  },
+  "items": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "required": [
+     "effects",
+     "group",
+     "id",
+     "name"
+    ],
+    "properties": {
+     "id": {
+      "type": "string",
+      "pattern": "^cul\\.[a-z0-9_]+$"
+     },
+     "name": {
+      "type": "string"
+     },
+     "group": {
+      "type": "string"
+     },
+     "effects": {
+      "type": "object"
+     }
+    },
+    "additionalProperties": true
+   }
+  }
+ }
+}

@@ -1,0 +1,52 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "title": "jobs",
+ "type": "object",
+ "required": [
+  "category",
+  "items"
+ ],
+ "properties": {
+  "category": {
+   "const": "jobs"
+  },
+  "count": {
+   "type": "integer"
+  },
+  "items": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "required": [
+     "id",
+     "name",
+     "quotaRule",
+     "requiresBuilding",
+     "task"
+    ],
+    "properties": {
+     "id": {
+      "type": "string",
+      "pattern": "^job\\.[a-z0-9_]+$"
+     },
+     "name": {
+      "type": "string"
+     },
+     "task": {
+      "type": "string"
+     },
+     "quotaRule": {
+      "type": "string"
+     },
+     "requiresBuilding": {
+      "type": [
+       "null",
+       "string"
+      ]
+     }
+    },
+    "additionalProperties": true
+   }
+  }
+ }
+}

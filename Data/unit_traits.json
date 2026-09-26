@@ -1,0 +1,1649 @@
+{
+ "category": "unit_traits",
+ "count": 118,
+ "items": [
+  {
+   "id": "tr.strong",
+   "name": "Güçlü",
+   "group": "body",
+   "rarity": "normal",
+   "effects": {
+    "pct": {
+     "dmg": 20.0
+    }
+   },
+   "opposite": "tr.weak",
+   "inheritChance": 0.4
+  },
+  {
+   "id": "tr.weak",
+   "name": "Cılız",
+   "group": "body",
+   "rarity": "normal",
+   "effects": {
+    "pct": {
+     "dmg": -20.0
+    }
+   },
+   "opposite": "tr.strong",
+   "inheritChance": 0.3
+  },
+  {
+   "id": "tr.swift",
+   "name": "Çevik",
+   "group": "body",
+   "rarity": "normal",
+   "effects": {
+    "pct": {
+     "speed": 20.0
+    }
+   },
+   "opposite": "tr.sluggish",
+   "inheritChance": 0.35
+  },
+  {
+   "id": "tr.sluggish",
+   "name": "Hantal",
+   "group": "body",
+   "rarity": "normal",
+   "effects": {
+    "pct": {
+     "speed": -20.0
+    }
+   },
+   "opposite": "tr.swift",
+   "inheritChance": 0.3
+  },
+  {
+   "id": "tr.giant",
+   "name": "Dev Cüsse",
+   "group": "body",
+   "rarity": "rare",
+   "effects": {
+    "pct": {
+     "hp": 50.0,
+     "speed": -10.0
+    },
+    "add": {
+     "size": 1.0
+    }
+   },
+   "opposite": "tr.tiny",
+   "inheritChance": 0.3
+  },
+  {
+   "id": "tr.tiny",
+   "name": "Ufak Tefek",
+   "group": "body",
+   "rarity": "normal",
+   "effects": {
+    "pct": {
+     "hp": -25.0
+    },
+    "add": {
+     "dodge": 10.0,
+     "size": -1.0
+    }
+   },
+   "opposite": "tr.giant",
+   "inheritChance": 0.3
+  },
+  {
+   "id": "tr.tough",
+   "name": "Dayanıklı",
+   "group": "body",
+   "rarity": "normal",
+   "effects": {
+    "pct": {
+     "hp": 25.0
+    }
+   },
+   "opposite": "tr.fragile",
+   "inheritChance": 0.35
+  },
+  {
+   "id": "tr.fragile",
+   "name": "Kırılgan",
+   "group": "body",
+   "rarity": "normal",
+   "effects": {
+    "pct": {
+     "hp": -25.0
+    }
+   },
+   "opposite": "tr.tough",
+   "inheritChance": 0.3
+  },
+  {
+   "id": "tr.thick_skin",
+   "name": "Kalın Deri",
+   "group": "body",
+   "rarity": "normal",
+   "effects": {
+    "add": {
+     "armor": 10.0
+    }
+   },
+   "opposite": null,
+   "inheritChance": 0.35
+  },
+  {
+   "id": "tr.agile",
+   "name": "Sıçrayışlı",
+   "group": "body",
+   "rarity": "normal",
+   "effects": {
+    "add": {
+     "dodge": 12.0
+    }
+   },
+   "opposite": null,
+   "inheritChance": 0.3
+  },
+  {
+   "id": "tr.long_life",
+   "name": "Uzun Ömürlü",
+   "group": "body",
+   "rarity": "rare",
+   "effects": {
+    "pct": {
+     "lifespan": 50.0
+    }
+   },
+   "opposite": "tr.short_life",
+   "inheritChance": 0.45
+  },
+  {
+   "id": "tr.short_life",
+   "name": "Kısa Ömürlü",
+   "group": "body",
+   "rarity": "normal",
+   "effects": {
+    "pct": {
+     "lifespan": -40.0
+    }
+   },
+   "opposite": "tr.long_life",
+   "inheritChance": 0.4
+  },
+  {
+   "id": "tr.fertile",
+   "name": "Doğurgan",
+   "group": "body",
+   "rarity": "normal",
+   "effects": {
+    "pct": {
+     "fertility": 40.0
+    }
+   },
+   "opposite": "tr.infertile",
+   "inheritChance": 0.4
+  },
+  {
+   "id": "tr.infertile",
+   "name": "Kısır",
+   "group": "body",
+   "rarity": "normal",
+   "effects": {
+    "pct": {
+     "fertility": -100.0
+    }
+   },
+   "opposite": "tr.fertile",
+   "inheritChance": 0.0
+  },
+  {
+   "id": "tr.attractive",
+   "name": "Alımlı",
+   "group": "body",
+   "rarity": "normal",
+   "effects": {
+    "pct": {
+     "mateChance": 30.0
+    },
+    "add": {
+     "diplo": 1.0
+    }
+   },
+   "opposite": "tr.ugly",
+   "inheritChance": 0.3
+  },
+  {
+   "id": "tr.ugly",
+   "name": "Çirkin",
+   "group": "body",
+   "rarity": "normal",
+   "effects": {
+    "pct": {
+     "mateChance": -30.0
+    }
+   },
+   "opposite": "tr.attractive",
+   "inheritChance": 0.3
+  },
+  {
+   "id": "tr.genius",
+   "name": "Dâhi",
+   "group": "mind",
+   "rarity": "rare",
+   "effects": {
+    "add": {
+     "intel": 5.0
+    },
+    "pct": {
+     "xp": 30.0
+    }
+   },
+   "opposite": "tr.dim",
+   "inheritChance": 0.25
+  },
+  {
+   "id": "tr.dim",
+   "name": "Kalın Kafalı",
+   "group": "mind",
+   "rarity": "normal",
+   "effects": {
+    "add": {
+     "intel": -3.0
+    },
+    "pct": {
+     "xp": -20.0
+    }
+   },
+   "opposite": "tr.genius",
+   "inheritChance": 0.25
+  },
+  {
+   "id": "tr.wise",
+   "name": "Bilge",
+   "group": "mind",
+   "rarity": "rare",
+   "effects": {
+    "add": {
+     "intel": 3.0,
+     "diplo": 2.0
+    }
+   },
+   "opposite": null,
+   "inheritChance": 0.25
+  },
+  {
+   "id": "tr.curious",
+   "name": "Meraklı",
+   "group": "mind",
+   "rarity": "normal",
+   "effects": {
+    "pct": {
+     "xp": 10.0
+    },
+    "neurons": [
+     "explore"
+    ]
+   },
+   "opposite": null,
+   "inheritChance": 0.2
+  },
+  {
+   "id": "tr.forgetful",
+   "name": "Unutkan",
+   "group": "mind",
+   "rarity": "normal",
+   "effects": {
+    "pct": {
+     "xp": -15.0
+    }
+   },
+   "opposite": null,
+   "inheritChance": 0.2
+  },
+  {
+   "id": "tr.strategist",
+   "name": "Stratejist",
+   "group": "mind",
+   "rarity": "rare",
+   "effects": {
+    "add": {
+     "warfare": 4.0
+    }
+   },
+   "opposite": null,
+   "inheritChance": 0.2
+  },
+  {
+   "id": "tr.orator",
+   "name": "Hatip",
+   "group": "mind",
+   "rarity": "rare",
+   "effects": {
+    "add": {
+     "diplo": 4.0
+    }
+   },
+   "opposite": null,
+   "inheritChance": 0.2
+  },
+  {
+   "id": "tr.steward",
+   "name": "Kâhya",
+   "group": "mind",
+   "rarity": "rare",
+   "effects": {
+    "add": {
+     "steward": 4.0
+    }
+   },
+   "opposite": null,
+   "inheritChance": 0.2
+  },
+  {
+   "id": "tr.bookworm",
+   "name": "Kitap Kurdu",
+   "group": "mind",
+   "rarity": "normal",
+   "effects": {
+    "pct": {
+     "readBonus": 100.0
+    },
+    "neurons": [
+     "read_book"
+    ]
+   },
+   "opposite": "tr.illiterate",
+   "inheritChance": 0.15
+  },
+  {
+   "id": "tr.illiterate",
+   "name": "Okuma Bilmez",
+   "group": "mind",
+   "rarity": "normal",
+   "effects": {
+    "pct": {
+     "readBonus": -100.0
+    }
+   },
+   "opposite": "tr.bookworm",
+   "inheritChance": 0.15
+  },
+  {
+   "id": "tr.fast_learner",
+   "name": "Çabuk Kavrayan",
+   "group": "mind",
+   "rarity": "normal",
+   "effects": {
+    "pct": {
+     "xp": 25.0
+    }
+   },
+   "opposite": null,
+   "inheritChance": 0.2
+  },
+  {
+   "id": "tr.stubborn",
+   "name": "İnatçı",
+   "group": "mind",
+   "rarity": "normal",
+   "effects": {
+    "pct": {
+     "convertResist": 50.0
+    }
+   },
+   "opposite": null,
+   "inheritChance": 0.25
+  },
+  {
+   "id": "tr.ambitious",
+   "name": "Hırslı",
+   "group": "char",
+   "rarity": "normal",
+   "effects": {
+    "pct": {
+     "plotChance": 50.0
+    },
+    "add": {
+     "warfare": 1.0
+    }
+   },
+   "opposite": "tr.content",
+   "inheritChance": 0.2
+  },
+  {
+   "id": "tr.content",
+   "name": "Kanaatkâr",
+   "group": "char",
+   "rarity": "normal",
+   "effects": {
+    "add": {
+     "happiness": 2.0
+    },
+    "pct": {
+     "plotChance": -50.0
+    }
+   },
+   "opposite": "tr.ambitious",
+   "inheritChance": 0.2
+  },
+  {
+   "id": "tr.peaceful",
+   "name": "Barışsever",
+   "group": "char",
+   "rarity": "normal",
+   "effects": {
+    "pct": {
+     "warChance": -50.0
+    },
+    "add": {
+     "opinion": 10.0
+    }
+   },
+   "opposite": "tr.bloodthirsty",
+   "inheritChance": 0.2
+  },
+  {
+   "id": "tr.bloodthirsty",
+   "name": "Kana Susamış",
+   "group": "char",
+   "rarity": "normal",
+   "effects": {
+    "pct": {
+     "dmg": 10.0,
+     "warChance": 50.0
+    }
+   },
+   "opposite": "tr.peaceful",
+   "inheritChance": 0.2
+  },
+  {
+   "id": "tr.greedy",
+   "name": "Açgözlü",
+   "group": "char",
+   "rarity": "normal",
+   "effects": {
+    "pct": {
+     "taxRate": 20.0
+    },
+    "add": {
+     "loyalty": -5.0
+    }
+   },
+   "opposite": "tr.generous",
+   "inheritChance": 0.2
+  },
+  {
+   "id": "tr.generous",
+   "name": "Cömert",
+   "group": "char",
+   "rarity": "normal",
+   "effects": {
+    "add": {
+     "loyalty": 10.0,
+     "opinion": 5.0
+    }
+   },
+   "opposite": "tr.greedy",
+   "inheritChance": 0.2
+  },
+  {
+   "id": "tr.honest",
+   "name": "Dürüst",
+   "group": "char",
+   "rarity": "normal",
+   "effects": {
+    "add": {
+     "opinion": 10.0
+    }
+   },
+   "opposite": "tr.deceitful",
+   "inheritChance": 0.15
+  },
+  {
+   "id": "tr.deceitful",
+   "name": "Hilekâr",
+   "group": "char",
+   "rarity": "normal",
+   "effects": {
+    "pct": {
+     "plotSpeed": 30.0
+    },
+    "add": {
+     "opinion": -10.0
+    }
+   },
+   "opposite": "tr.honest",
+   "inheritChance": 0.15
+  },
+  {
+   "id": "tr.brave",
+   "name": "Yürekli",
+   "group": "char",
+   "rarity": "normal",
+   "effects": {
+    "pct": {
+     "fleeThreshold": -50.0
+    }
+   },
+   "opposite": "tr.coward",
+   "inheritChance": 0.2
+  },
+  {
+   "id": "tr.coward",
+   "name": "Korkak",
+   "group": "char",
+   "rarity": "normal",
+   "effects": {
+    "pct": {
+     "fleeThreshold": 100.0
+    }
+   },
+   "opposite": "tr.brave",
+   "inheritChance": 0.2
+  },
+  {
+   "id": "tr.loyal",
+   "name": "Sadık",
+   "group": "char",
+   "rarity": "normal",
+   "effects": {
+    "add": {
+     "loyalty": 15.0
+    }
+   },
+   "opposite": "tr.treacherous",
+   "inheritChance": 0.2
+  },
+  {
+   "id": "tr.treacherous",
+   "name": "Hain",
+   "group": "char",
+   "rarity": "normal",
+   "effects": {
+    "add": {
+     "loyalty": -15.0
+    },
+    "pct": {
+     "plotChance": 30.0
+    }
+   },
+   "opposite": "tr.loyal",
+   "inheritChance": 0.2
+  },
+  {
+   "id": "tr.cruel",
+   "name": "Zalim",
+   "group": "char",
+   "rarity": "normal",
+   "effects": {
+    "add": {
+     "fear": 20.0,
+     "happinessOthers": -2.0
+    }
+   },
+   "opposite": "tr.merciful",
+   "inheritChance": 0.2
+  },
+  {
+   "id": "tr.merciful",
+   "name": "Merhametli",
+   "group": "char",
+   "rarity": "normal",
+   "effects": {
+    "pct": {
+     "spareEnemy": 50.0
+    }
+   },
+   "opposite": "tr.cruel",
+   "inheritChance": 0.2
+  },
+  {
+   "id": "tr.zealous",
+   "name": "Bağnaz",
+   "group": "char",
+   "rarity": "normal",
+   "effects": {
+    "pct": {
+     "faith": 50.0,
+     "tolerance": -50.0
+    }
+   },
+   "opposite": "tr.skeptic",
+   "inheritChance": 0.25
+  },
+  {
+   "id": "tr.skeptic",
+   "name": "Şüpheci",
+   "group": "char",
+   "rarity": "normal",
+   "effects": {
+    "pct": {
+     "faith": -50.0
+    }
+   },
+   "opposite": "tr.zealous",
+   "inheritChance": 0.25
+  },
+  {
+   "id": "tr.cheerful",
+   "name": "Neşeli",
+   "group": "char",
+   "rarity": "normal",
+   "effects": {
+    "add": {
+     "happiness": 3.0
+    }
+   },
+   "opposite": "tr.gloomy",
+   "inheritChance": 0.25
+  },
+  {
+   "id": "tr.gloomy",
+   "name": "Karamsar",
+   "group": "char",
+   "rarity": "normal",
+   "effects": {
+    "add": {
+     "happiness": -3.0
+    }
+   },
+   "opposite": "tr.cheerful",
+   "inheritChance": 0.25
+  },
+  {
+   "id": "tr.romantic",
+   "name": "Âşık Ruhlu",
+   "group": "char",
+   "rarity": "normal",
+   "effects": {
+    "pct": {
+     "mateChance": 50.0
+    }
+   },
+   "opposite": "tr.loner",
+   "inheritChance": 0.2
+  },
+  {
+   "id": "tr.loner",
+   "name": "Yalnız Kurt",
+   "group": "char",
+   "rarity": "normal",
+   "effects": {
+    "neurons": [
+     "wander"
+    ],
+    "pct": {
+     "mateChance": -40.0
+    }
+   },
+   "opposite": "tr.romantic",
+   "inheritChance": 0.2
+  },
+  {
+   "id": "tr.wanderer",
+   "name": "Gezgin",
+   "group": "char",
+   "rarity": "normal",
+   "effects": {
+    "neurons": [
+     "migrate"
+    ],
+    "pct": {
+     "speed": 5.0
+    }
+   },
+   "opposite": "tr.homebody",
+   "inheritChance": 0.15
+  },
+  {
+   "id": "tr.homebody",
+   "name": "Ev Kuşu",
+   "group": "char",
+   "rarity": "normal",
+   "effects": {
+    "add": {
+     "happiness": 2.0
+    },
+    "neurons": [
+     "stay_home"
+    ]
+   },
+   "opposite": "tr.wanderer",
+   "inheritChance": 0.15
+  },
+  {
+   "id": "tr.eagle_eye",
+   "name": "Şahin Gözü",
+   "group": "skill",
+   "rarity": "normal",
+   "effects": {
+    "add": {
+     "range": 2.0,
+     "crit": 10.0
+    }
+   },
+   "opposite": null,
+   "inheritChance": 0.25
+  },
+  {
+   "id": "tr.blademaster",
+   "name": "Kılıç Ustası",
+   "group": "skill",
+   "rarity": "rare",
+   "effects": {
+    "pct": {
+     "dmg": 15.0,
+     "atkspd": 15.0
+    }
+   },
+   "opposite": null,
+   "inheritChance": 0.2
+  },
+  {
+   "id": "tr.shield_wall",
+   "name": "Kalkan Duvarı",
+   "group": "skill",
+   "rarity": "normal",
+   "effects": {
+    "add": {
+     "armor": 8.0,
+     "block": 15.0
+    }
+   },
+   "opposite": null,
+   "inheritChance": 0.2
+  },
+  {
+   "id": "tr.master_builder",
+   "name": "Usta Eller",
+   "group": "skill",
+   "rarity": "normal",
+   "effects": {
+    "pct": {
+     "buildSpeed": 50.0
+    }
+   },
+   "opposite": null,
+   "inheritChance": 0.2
+  },
+  {
+   "id": "tr.green_thumb",
+   "name": "Yeşil Parmak",
+   "group": "skill",
+   "rarity": "normal",
+   "effects": {
+    "pct": {
+     "farmYield": 50.0
+    }
+   },
+   "opposite": null,
+   "inheritChance": 0.2
+  },
+  {
+   "id": "tr.miner",
+   "name": "Maden Burnu",
+   "group": "skill",
+   "rarity": "normal",
+   "effects": {
+    "pct": {
+     "mineYield": 50.0
+    }
+   },
+   "opposite": null,
+   "inheritChance": 0.2
+  },
+  {
+   "id": "tr.angler",
+   "name": "Olta Ustası",
+   "group": "skill",
+   "rarity": "normal",
+   "effects": {
+    "pct": {
+     "fishYield": 50.0
+    }
+   },
+   "opposite": null,
+   "inheritChance": 0.2
+  },
+  {
+   "id": "tr.hunter",
+   "name": "İzci",
+   "group": "skill",
+   "rarity": "normal",
+   "effects": {
+    "pct": {
+     "huntYield": 50.0,
+     "speed": 5.0
+    }
+   },
+   "opposite": null,
+   "inheritChance": 0.25
+  },
+  {
+   "id": "tr.sailor",
+   "name": "Denizci",
+   "group": "skill",
+   "rarity": "normal",
+   "effects": {
+    "pct": {
+     "boatSpeed": 30.0
+    }
+   },
+   "opposite": null,
+   "inheritChance": 0.2
+  },
+  {
+   "id": "tr.smith",
+   "name": "Demir Döven",
+   "group": "skill",
+   "rarity": "rare",
+   "effects": {
+    "add": {
+     "craftQuality": 1.0
+    }
+   },
+   "opposite": null,
+   "inheritChance": 0.2
+  },
+  {
+   "id": "tr.healer",
+   "name": "Şifacı",
+   "group": "skill",
+   "rarity": "rare",
+   "effects": {
+    "spells": [
+     "heal"
+    ]
+   },
+   "opposite": null,
+   "inheritChance": 0.15
+  },
+  {
+   "id": "tr.trader",
+   "name": "Tüccar Ruhu",
+   "group": "skill",
+   "rarity": "normal",
+   "effects": {
+    "pct": {
+     "tradeProfit": 30.0
+    }
+   },
+   "opposite": null,
+   "inheritChance": 0.2
+  },
+  {
+   "id": "tr.runner",
+   "name": "Maratoncu",
+   "group": "skill",
+   "rarity": "normal",
+   "effects": {
+    "pct": {
+     "stamina": 50.0,
+     "speed": 10.0
+    }
+   },
+   "opposite": null,
+   "inheritChance": 0.25
+  },
+  {
+   "id": "tr.swimmer",
+   "name": "Balık Gibi",
+   "group": "skill",
+   "rarity": "normal",
+   "effects": {
+    "flags": [
+     "swim"
+    ],
+    "pct": {
+     "swimSpeed": 50.0
+    }
+   },
+   "opposite": null,
+   "inheritChance": 0.3
+  },
+  {
+   "id": "tr.climber",
+   "name": "Dağ Keçisi",
+   "group": "skill",
+   "rarity": "normal",
+   "effects": {
+    "pct": {
+     "mountainCost": -60.0
+    }
+   },
+   "opposite": null,
+   "inheritChance": 0.3
+  },
+  {
+   "id": "tr.iron_stomach",
+   "name": "Demir Mide",
+   "group": "skill",
+   "rarity": "normal",
+   "effects": {
+    "pct": {
+     "hungerRate": -30.0
+    },
+    "immunes": [
+     "food_poison"
+    ]
+   },
+   "opposite": "tr.glutton",
+   "inheritChance": 0.25
+  },
+  {
+   "id": "tr.glutton",
+   "name": "Obur",
+   "group": "skill",
+   "rarity": "normal",
+   "effects": {
+    "pct": {
+     "hungerRate": 40.0
+    }
+   },
+   "opposite": "tr.iron_stomach",
+   "inheritChance": 0.25
+  },
+  {
+   "id": "tr.night_owl",
+   "name": "Gece Kuşu",
+   "group": "skill",
+   "rarity": "normal",
+   "effects": {
+    "pct": {
+     "nightBonus": 20.0
+    }
+   },
+   "opposite": null,
+   "inheritChance": 0.2
+  },
+  {
+   "id": "tr.fire_breath",
+   "name": "Ateş Soluğu",
+   "group": "power",
+   "rarity": "epic",
+   "effects": {
+    "spells": [
+     "fire_breath"
+    ],
+    "immunes": [
+     "burning"
+    ]
+   },
+   "opposite": null,
+   "inheritChance": 0.15
+  },
+  {
+   "id": "tr.frost_touch",
+   "name": "Buz Dokunuşu",
+   "group": "power",
+   "rarity": "epic",
+   "effects": {
+    "onHit": "freeze:10"
+   },
+   "opposite": null,
+   "inheritChance": 0.15
+  },
+  {
+   "id": "tr.venom",
+   "name": "Zehirli Isırık",
+   "group": "power",
+   "rarity": "rare",
+   "effects": {
+    "onHit": "poison:30"
+   },
+   "opposite": null,
+   "inheritChance": 0.3
+  },
+  {
+   "id": "tr.regeneration",
+   "name": "Yenilenme",
+   "group": "power",
+   "rarity": "epic",
+   "effects": {
+    "add": {
+     "regen": 2.0
+    }
+   },
+   "opposite": null,
+   "inheritChance": 0.2
+  },
+  {
+   "id": "tr.immortal",
+   "name": "Ölümsüz",
+   "group": "power",
+   "rarity": "legendary",
+   "effects": {
+    "add": {
+     "lifespan": 0.0
+    },
+    "flags": [
+     "no_aging"
+    ]
+   },
+   "opposite": null,
+   "inheritChance": 0.05
+  },
+  {
+   "id": "tr.flight",
+   "name": "Kanatlı",
+   "group": "power",
+   "rarity": "epic",
+   "effects": {
+    "flags": [
+     "fly"
+    ]
+   },
+   "opposite": null,
+   "inheritChance": 0.25
+  },
+  {
+   "id": "tr.teleporter",
+   "name": "Işınlanan",
+   "group": "power",
+   "rarity": "epic",
+   "effects": {
+    "spells": [
+     "teleport"
+    ],
+    "neurons": [
+     "teleport_home"
+    ]
+   },
+   "opposite": null,
+   "inheritChance": 0.1
+  },
+  {
+   "id": "tr.stormcaller",
+   "name": "Şimşek Çağıran",
+   "group": "power",
+   "rarity": "epic",
+   "effects": {
+    "spells": [
+     "lightning"
+    ]
+   },
+   "opposite": null,
+   "inheritChance": 0.1
+  },
+  {
+   "id": "tr.necro",
+   "name": "Ölü Fısıltısı",
+   "group": "power",
+   "rarity": "epic",
+   "effects": {
+    "spells": [
+     "raise_dead"
+    ]
+   },
+   "opposite": null,
+   "inheritChance": 0.1
+  },
+  {
+   "id": "tr.mage_blood",
+   "name": "Büyü Kanı",
+   "group": "power",
+   "rarity": "rare",
+   "effects": {
+    "add": {
+     "mana": 50.0
+    },
+    "pct": {
+     "manaRegen": 50.0
+    }
+   },
+   "opposite": null,
+   "inheritChance": 0.25
+  },
+  {
+   "id": "tr.holy",
+   "name": "Kutsal Işık",
+   "group": "power",
+   "rarity": "epic",
+   "effects": {
+    "spells": [
+     "heal"
+    ],
+    "pct": {
+     "dmgVsUndead": 100.0
+    }
+   },
+   "opposite": null,
+   "inheritChance": 0.1
+  },
+  {
+   "id": "tr.shadowstep",
+   "name": "Gölge Adımı",
+   "group": "power",
+   "rarity": "epic",
+   "effects": {
+    "add": {
+     "dodge": 25.0,
+     "stealth": 1.0
+    }
+   },
+   "opposite": null,
+   "inheritChance": 0.1
+  },
+  {
+   "id": "tr.earthshaker",
+   "name": "Yer Sarsan",
+   "group": "power",
+   "rarity": "epic",
+   "effects": {
+    "spells": [
+     "quake_stomp"
+    ]
+   },
+   "opposite": null,
+   "inheritChance": 0.1
+  },
+  {
+   "id": "tr.vampiric",
+   "name": "Kan Emici",
+   "group": "power",
+   "rarity": "epic",
+   "effects": {
+    "pct": {
+     "lifesteal": 20.0
+    },
+    "weak": "garlic"
+   },
+   "opposite": null,
+   "inheritChance": 0.0
+  },
+  {
+   "id": "tr.thorns",
+   "name": "Diken Kabuk",
+   "group": "power",
+   "rarity": "rare",
+   "effects": {
+    "pct": {
+     "reflect": 15.0
+    }
+   },
+   "opposite": null,
+   "inheritChance": 0.25
+  },
+  {
+   "id": "tr.volatile",
+   "name": "Patlak",
+   "group": "power",
+   "rarity": "rare",
+   "effects": {
+    "onDeath": "explode:small"
+   },
+   "opposite": null,
+   "inheritChance": 0.15
+  },
+  {
+   "id": "tr.berserker",
+   "name": "Cinnet Öfkesi",
+   "group": "power",
+   "rarity": "rare",
+   "effects": {
+    "pct": {
+     "lowHpDmg": 50.0
+    }
+   },
+   "opposite": null,
+   "inheritChance": 0.15
+  },
+  {
+   "id": "tr.courage_aura",
+   "name": "Cesaret Aurası",
+   "group": "power",
+   "rarity": "epic",
+   "effects": {
+    "aura": "morale:+20"
+   },
+   "opposite": null,
+   "inheritChance": 0.1
+  },
+  {
+   "id": "tr.blessed",
+   "name": "Kutsanmış",
+   "group": "power",
+   "rarity": "rare",
+   "effects": {
+    "add": {
+     "luck": 10.0
+    },
+    "pct": {
+     "hp": 10.0
+    }
+   },
+   "opposite": "tr.cursed",
+   "inheritChance": 0.1
+  },
+  {
+   "id": "tr.cursed",
+   "name": "Lanetli",
+   "group": "power",
+   "rarity": "rare",
+   "effects": {
+    "add": {
+     "luck": -10.0,
+     "happiness": -2.0
+    }
+   },
+   "opposite": "tr.blessed",
+   "inheritChance": 0.1
+  },
+  {
+   "id": "tr.blind",
+   "name": "Kör",
+   "group": "cond",
+   "rarity": "normal",
+   "effects": {
+    "add": {
+     "range": -3.0,
+     "crit": -20.0
+    }
+   },
+   "opposite": "tr.eagle_eye",
+   "inheritChance": 0.05
+  },
+  {
+   "id": "tr.lame",
+   "name": "Topal",
+   "group": "cond",
+   "rarity": "normal",
+   "effects": {
+    "pct": {
+     "speed": -35.0
+    }
+   },
+   "opposite": null,
+   "inheritChance": 0.0
+  },
+  {
+   "id": "tr.one_eye",
+   "name": "Tek Göz",
+   "group": "cond",
+   "rarity": "normal",
+   "effects": {
+    "add": {
+     "range": -1.0
+    }
+   },
+   "opposite": null,
+   "inheritChance": 0.0
+  },
+  {
+   "id": "tr.deaf",
+   "name": "Sağır",
+   "group": "cond",
+   "rarity": "normal",
+   "effects": {
+    "pct": {
+     "ambushResist": -30.0
+    }
+   },
+   "opposite": null,
+   "inheritChance": 0.05
+  },
+  {
+   "id": "tr.sickly",
+   "name": "Hastalıklı",
+   "group": "cond",
+   "rarity": "normal",
+   "effects": {
+    "pct": {
+     "diseaseResist": -50.0
+    }
+   },
+   "opposite": "tr.immune",
+   "inheritChance": 0.2
+  },
+  {
+   "id": "tr.mad",
+   "name": "Deli",
+   "group": "cond",
+   "rarity": "normal",
+   "effects": {
+    "flags": [
+     "attack_all"
+    ]
+   },
+   "opposite": null,
+   "inheritChance": 0.0
+  },
+  {
+   "id": "tr.scarred",
+   "name": "Yara İzli",
+   "group": "cond",
+   "rarity": "normal",
+   "effects": {
+    "add": {
+     "fear": 10.0
+    }
+   },
+   "opposite": null,
+   "inheritChance": 0.0
+  },
+  {
+   "id": "tr.sleepless",
+   "name": "Uykusuz",
+   "group": "cond",
+   "rarity": "normal",
+   "effects": {
+    "pct": {
+     "sleepNeed": -50.0
+    },
+    "add": {
+     "happiness": -1.0
+    }
+   },
+   "opposite": null,
+   "inheritChance": 0.15
+  },
+  {
+   "id": "tr.weak_immunity",
+   "name": "Zayıf Bağışıklık",
+   "group": "cond",
+   "rarity": "normal",
+   "effects": {
+    "pct": {
+     "diseaseResist": -30.0
+    }
+   },
+   "opposite": "tr.immune",
+   "inheritChance": 0.25
+  },
+  {
+   "id": "tr.immune",
+   "name": "Bağışık",
+   "group": "cond",
+   "rarity": "rare",
+   "effects": {
+    "immunes": [
+     "plague",
+     "infection"
+    ]
+   },
+   "opposite": "tr.sickly",
+   "inheritChance": 0.3
+  },
+  {
+   "id": "tr.heatproof",
+   "name": "Ateşe Dayanıklı",
+   "group": "cond",
+   "rarity": "normal",
+   "effects": {
+    "immunes": [
+     "heat"
+    ],
+    "pct": {
+     "burnDmg": -70.0
+    }
+   },
+   "opposite": null,
+   "inheritChance": 0.3
+  },
+  {
+   "id": "tr.coldproof",
+   "name": "Soğuğa Dayanıklı",
+   "group": "cond",
+   "rarity": "normal",
+   "effects": {
+    "immunes": [
+     "cold"
+    ]
+   },
+   "opposite": null,
+   "inheritChance": 0.3
+  },
+  {
+   "id": "tr.poisonproof",
+   "name": "Zehre Dayanıklı",
+   "group": "cond",
+   "rarity": "normal",
+   "effects": {
+    "immunes": [
+     "poison"
+    ]
+   },
+   "opposite": null,
+   "inheritChance": 0.3
+  },
+  {
+   "id": "tr.waterborn",
+   "name": "Su Doğumlu",
+   "group": "cond",
+   "rarity": "rare",
+   "effects": {
+    "flags": [
+     "breathe_water",
+     "swim"
+    ]
+   },
+   "opposite": null,
+   "inheritChance": 0.4
+  },
+  {
+   "id": "tr.chosen_one",
+   "name": "Seçilmiş",
+   "group": "legend",
+   "rarity": "legendary",
+   "effects": {
+    "pct": {
+     "allStats": 30.0
+    },
+    "add": {
+     "luck": 20.0
+    }
+   },
+   "opposite": null,
+   "inheritChance": 0.0
+  },
+  {
+   "id": "tr.hero",
+   "name": "Destan Kahramanı",
+   "group": "legend",
+   "rarity": "legendary",
+   "effects": {
+    "pct": {
+     "dmg": 30.0,
+     "hp": 30.0
+    },
+    "aura": "morale:+30"
+   },
+   "opposite": null,
+   "inheritChance": 0.0
+  },
+  {
+   "id": "tr.divine_touch",
+   "name": "İlahi Dokunuş",
+   "group": "legend",
+   "rarity": "legendary",
+   "effects": {
+    "flags": [
+     "edited"
+    ]
+   },
+   "opposite": null,
+   "inheritChance": 0.0
+  },
+  {
+   "id": "tr.plague_bearer",
+   "name": "Salgın Taşıyıcı",
+   "group": "legend",
+   "rarity": "rare",
+   "effects": {
+    "carry": "plague",
+    "immunes": [
+     "plague"
+    ]
+   },
+   "opposite": null,
+   "inheritChance": 0.1
+  },
+  {
+   "id": "tr.undead_curse",
+   "name": "Ölümsüz Laneti",
+   "group": "legend",
+   "rarity": "epic",
+   "effects": {
+    "onDeath": "rise_zombie"
+   },
+   "opposite": null,
+   "inheritChance": 0.0
+  },
+  {
+   "id": "tr.golden_heart",
+   "name": "Altın Yürek",
+   "group": "legend",
+   "rarity": "epic",
+   "effects": {
+    "add": {
+     "happinessOthers": 3.0,
+     "loyalty": 20.0
+    }
+   },
+   "opposite": null,
+   "inheritChance": 0.05
+  },
+  {
+   "id": "tr.kingslayer",
+   "name": "Kral Katili",
+   "group": "legend",
+   "rarity": "epic",
+   "effects": {
+    "add": {
+     "fear": 30.0,
+     "warfare": 2.0
+    }
+   },
+   "opposite": null,
+   "inheritChance": 0.0
+  },
+  {
+   "id": "tr.survivor",
+   "name": "Hayatta Kalan",
+   "group": "legend",
+   "rarity": "rare",
+   "effects": {
+    "pct": {
+     "hp": 15.0,
+     "fleeSuccess": 30.0
+    }
+   },
+   "opposite": null,
+   "inheritChance": 0.05
+  },
+  {
+   "id": "tr.veteran",
+   "name": "Kıdemli",
+   "group": "legend",
+   "rarity": "rare",
+   "effects": {
+    "pct": {
+     "dmg": 10.0
+    },
+    "add": {
+     "armor": 5.0
+    }
+   },
+   "opposite": null,
+   "inheritChance": 0.0
+  },
+  {
+   "id": "tr.lucky",
+   "name": "Şanslı",
+   "group": "legend",
+   "rarity": "rare",
+   "effects": {
+    "add": {
+     "luck": 15.0
+    }
+   },
+   "opposite": "tr.unlucky",
+   "inheritChance": 0.2
+  },
+  {
+   "id": "tr.unlucky",
+   "name": "Talihsiz",
+   "group": "legend",
+   "rarity": "normal",
+   "effects": {
+    "add": {
+     "luck": -15.0
+    }
+   },
+   "opposite": "tr.lucky",
+   "inheritChance": 0.2
+  },
+  {
+   "id": "tr.moonborn",
+   "name": "Ay Çocuğu",
+   "group": "legend",
+   "rarity": "epic",
+   "effects": {
+    "pct": {
+     "nightBonus": 40.0
+    },
+    "add": {
+     "mana": 30.0
+    }
+   },
+   "opposite": null,
+   "inheritChance": 0.15
+  },
+  {
+   "id": "tr.stormborn",
+   "name": "Fırtına Doğumlu",
+   "group": "legend",
+   "rarity": "epic",
+   "effects": {
+    "immunes": [
+     "lightning"
+    ],
+    "pct": {
+     "speed": 15.0
+    }
+   },
+   "opposite": null,
+   "inheritChance": 0.15
+  },
+  {
+   "id": "tr.zombie_hunter",
+   "name": "Ölü Avcısı",
+   "group": "skill",
+   "rarity": "rare",
+   "effects": {
+    "pct": {
+     "dmgVsUndead": 60.0,
+     "infectResist": 30.0
+    }
+   },
+   "opposite": null,
+   "inheritChance": 0.1
+  },
+  {
+   "id": "tr.rot_resistant",
+   "name": "Çürüğe Dirençli",
+   "group": "cond",
+   "rarity": "rare",
+   "effects": {
+    "pct": {
+     "infectResist": 60.0
+    }
+   },
+   "opposite": null,
+   "inheritChance": 0.3
+  },
+  {
+   "id": "tr.hollow",
+   "name": "Oyuk",
+   "group": "cond",
+   "rarity": "normal",
+   "effects": {
+    "flags": [
+     "undead",
+     "no_needs"
+    ],
+    "add": {
+     "happiness": 0.0
+    }
+   },
+   "opposite": null,
+   "inheritChance": 0.0
+  }
+ ]
+}

@@ -1,0 +1,45 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "title": "gene_synergies",
+ "type": "object",
+ "required": [
+  "category",
+  "items"
+ ],
+ "properties": {
+  "category": {
+   "const": "gene_synergies"
+  },
+  "count": {
+   "type": "integer"
+  },
+  "items": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "required": [
+     "bonus",
+     "id",
+     "name",
+     "requires"
+    ],
+    "properties": {
+     "id": {
+      "type": "string",
+      "pattern": "^syn\\.[a-z0-9_]+$"
+     },
+     "name": {
+      "type": "string"
+     },
+     "requires": {
+      "type": "array"
+     },
+     "bonus": {
+      "type": "object"
+     }
+    },
+    "additionalProperties": true
+   }
+  }
+ }
+}

@@ -1,0 +1,83 @@
+{
+ "category": "materials",
+ "count": 11,
+ "items": [
+  {
+   "id": "mat.wood",
+   "name": "Ahşap",
+   "multiplier": 0.6,
+   "tier": 0,
+   "special": ""
+  },
+  {
+   "id": "mat.bone",
+   "name": "Kemik",
+   "multiplier": 0.7,
+   "tier": 0,
+   "special": ""
+  },
+  {
+   "id": "mat.copper",
+   "name": "Bakır",
+   "multiplier": 0.9,
+   "tier": 1,
+   "special": ""
+  },
+  {
+   "id": "mat.bronze",
+   "name": "Tunç",
+   "multiplier": 1.0,
+   "tier": 2,
+   "special": "Bakır+kalay"
+  },
+  {
+   "id": "mat.iron",
+   "name": "Demir",
+   "multiplier": 1.2,
+   "tier": 3,
+   "special": ""
+  },
+  {
+   "id": "mat.steel",
+   "name": "Çelik",
+   "multiplier": 1.45,
+   "tier": 4,
+   "special": "Demir+kömür"
+  },
+  {
+   "id": "mat.silver",
+   "name": "Gümüş",
+   "multiplier": 1.2,
+   "tier": 4,
+   "special": "Ölümsüzlere +%50 hasar"
+  },
+  {
+   "id": "mat.obsidian",
+   "name": "Obsidyen",
+   "multiplier": 1.5,
+   "tier": 5,
+   "special": "Kritik +%10, kırılgan"
+  },
+  {
+   "id": "mat.skyiron",
+   "name": "Gökdemir",
+   "multiplier": 1.8,
+   "tier": 6,
+   "special": "Hafif: hız cezası yok"
+  },
+  {
+   "id": "mat.crystal",
+   "name": "Kristal",
+   "multiplier": 1.4,
+   "tier": 6,
+   "special": "Büyü gücü +%30"
+  },
+  {
+   "id": "mat.starore",
+   "name": "Yıldız Çeliği",
+   "multiplier": 2.3,
+   "tier": 8,
+   "special": "Efsanevi silahların malzemesi"
+  }
+ ]
+}

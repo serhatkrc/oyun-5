@@ -1,0 +1,19 @@
+{
+ "chromosomeCount": {
+  "default": 2,
+  "max": 4
+ },
+ "slotsPerChromosome": {
+  "default": 6,
+  "max": 10
+ },
+ "mutationPerBirth": 0.02,
+ "mutationOps": [
+  "swap_gene",
+  "replace_random",
+  "duplicate",
+  "delete_to_empty"
+ ],
+ "synergyRule": "Aynı kromozomda yan yana dizilen gerekli genler sinerji bonusu açar",
+ "inheritance": "Her kromozom ebeveynlerden birinden (ağırlıklı) alınır; 'Baskın' genler ağırlığı artırır"
+}

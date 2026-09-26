@@ -1,0 +1,306 @@
+{
+ "category": "ui_strings",
+ "count": 60,
+ "items": [
+  {
+   "id": "ui.pause",
+   "tr": "Duraklat",
+   "en": "Pause"
+  },
+  {
+   "id": "ui.play",
+   "tr": "Oynat",
+   "en": "Play"
+  },
+  {
+   "id": "ui.step",
+   "tr": "Tek Adım",
+   "en": "Step"
+  },
+  {
+   "id": "ui.super_speed",
+   "tr": "Süper Hız",
+   "en": "Super Speed"
+  },
+  {
+   "id": "ui.speed_fmt",
+   "tr": "×{0}",
+   "en": "×{0}"
+  },
+  {
+   "id": "ui.date_fmt",
+   "tr": "Yıl {0} · Ay {1}",
+   "en": "Year {0} · Month {1}"
+  },
+  {
+   "id": "ui.tab.world",
+   "tr": "Dünya",
+   "en": "World"
+  },
+  {
+   "id": "ui.tab.civ",
+   "tr": "Medeniyetler",
+   "en": "Civilizations"
+  },
+  {
+   "id": "ui.tab.creatures",
+   "tr": "Yaratıklar",
+   "en": "Creatures"
+  },
+  {
+   "id": "ui.tab.nature",
+   "tr": "Doğa ve Afetler",
+   "en": "Nature & Disasters"
+  },
+  {
+   "id": "ui.tab.destruction",
+   "tr": "Yıkım",
+   "en": "Destruction"
+  },
+  {
+   "id": "ui.tab.other",
+   "tr": "Diğer",
+   "en": "Other"
+  },
+  {
+   "id": "ui.brush_size",
+   "tr": "Fırça",
+   "en": "Brush"
+  },
+  {
+   "id": "ui.shape.circle",
+   "tr": "Daire",
+   "en": "Circle"
+  },
+  {
+   "id": "ui.shape.square",
+   "tr": "Kare",
+   "en": "Square"
+  },
+  {
+   "id": "ui.menu",
+   "tr": "Menü",
+   "en": "Menu"
+  },
+  {
+   "id": "ui.new_world",
+   "tr": "Yeni Dünya",
+   "en": "New World"
+  },
+  {
+   "id": "ui.generate",
+   "tr": "Üret",
+   "en": "Generate"
+  },
+  {
+   "id": "ui.cancel",
+   "tr": "Vazgeç",
+   "en": "Cancel"
+  },
+  {
+   "id": "ui.close",
+   "tr": "Kapat",
+   "en": "Close"
+  },
+  {
+   "id": "ui.template",
+   "tr": "Şablon",
+   "en": "Template"
+  },
+  {
+   "id": "ui.size",
+   "tr": "Boyut",
+   "en": "Size"
+  },
+  {
+   "id": "ui.seed",
+   "tr": "Tohum",
+   "en": "Seed"
+  },
+  {
+   "id": "ui.randomize",
+   "tr": "Rastgele",
+   "en": "Randomize"
+  },
+  {
+   "id": "ui.image_path",
+   "tr": "Görüntü yolu (PNG)",
+   "en": "Image path (PNG)"
+  },
+  {
+   "id": "ui.land_ratio",
+   "tr": "Kara oranı",
+   "en": "Land ratio"
+  },
+  {
+   "id": "ui.mountain_ratio",
+   "tr": "Dağ oranı",
+   "en": "Mountain ratio"
+  },
+  {
+   "id": "ui.hill_ratio",
+   "tr": "Tepe oranı",
+   "en": "Hill ratio"
+  },
+  {
+   "id": "ui.roughness",
+   "tr": "Kıyı girintisi",
+   "en": "Roughness"
+  },
+  {
+   "id": "ui.forest_density",
+   "tr": "Orman yoğunluğu",
+   "en": "Forest density"
+  },
+  {
+   "id": "ui.biome_variety",
+   "tr": "Biyom çeşitliliği",
+   "en": "Biome variety"
+  },
+  {
+   "id": "ui.ore_density",
+   "tr": "Maden yoğunluğu",
+   "en": "Ore density"
+  },
+  {
+   "id": "ui.temperature",
+   "tr": "Sıcaklık",
+   "en": "Temperature"
+  },
+  {
+   "id": "ui.moisture",
+   "tr": "Nem",
+   "en": "Moisture"
+  },
+  {
+   "id": "ui.size.tiny",
+   "tr": "Çok Küçük",
+   "en": "Tiny"
+  },
+  {
+   "id": "ui.size.small",
+   "tr": "Küçük",
+   "en": "Small"
+  },
+  {
+   "id": "ui.size.medium",
+   "tr": "Orta",
+   "en": "Medium"
+  },
+  {
+   "id": "ui.size.large",
+   "tr": "Büyük",
+   "en": "Large"
+  },
+  {
+   "id": "ui.size.huge",
+   "tr": "Çok Büyük",
+   "en": "Huge"
+  },
+  {
+   "id": "ui.size.giant",
+   "tr": "Devasa",
+   "en": "Giant"
+  },
+  {
+   "id": "ui.size.titanic",
+   "tr": "Titanik",
+   "en": "Titanic"
+  },
+  {
+   "id": "ui.save",
+   "tr": "Kaydet",
+   "en": "Save"
+  },
+  {
+   "id": "ui.load",
+   "tr": "Yükle",
+   "en": "Load"
+  },
+  {
+   "id": "ui.delete",
+   "tr": "Sil",
+   "en": "Delete"
+  },
+  {
+   "id": "ui.save_load",
+   "tr": "Kayıtlar",
+   "en": "Saves"
+  },
+  {
+   "id": "ui.slot_fmt",
+   "tr": "Slot {0}",
+   "en": "Slot {0}"
+  },
+  {
+   "id": "ui.autosave_fmt",
+   "tr": "Otomatik {0}",
+   "en": "Autosave {0}"
+  },
+  {
+   "id": "ui.empty_slot",
+   "tr": "Boş",
+   "en": "Empty"
+  },
+  {
+   "id": "ui.slot_info_fmt",
+   "tr": "{0} · Yıl {1} · {2}×{3}",
+   "en": "{0} · Year {1} · {2}×{3}"
+  },
+  {
+   "id": "ui.saved",
+   "tr": "Dünya kaydedildi",
+   "en": "World saved"
+  },
+  {
+   "id": "ui.loaded",
+   "tr": "Dünya yüklendi",
+   "en": "World loaded"
+  },
+  {
+   "id": "ui.save_failed",
+   "tr": "Kayıt başarısız: {0}",
+   "en": "Save failed: {0}"
+  },
+  {
+   "id": "ui.load_failed",
+   "tr": "Yükleme başarısız: {0}",
+   "en": "Load failed: {0}"
+  },
+  {
+   "id": "ui.confirm_delete",
+   "tr": "Silmek için tekrar bas",
+   "en": "Press again to delete"
+  },
+  {
+   "id": "ui.content_errors",
+   "tr": "İçerik verisinde hata var; oyun başlatılamadı:",
+   "en": "Content data has errors; the game cannot start:"
+  },
+  {
+   "id": "ui.load_warnings",
+   "tr": "Kayıttaki bazı içerikler bulunamadı:",
+   "en": "Some saved content was not found:"
+  },
+  {
+   "id": "ui.era_fmt",
+   "tr": "{0} · {1} yıl",
+   "en": "{0} · {1} yrs"
+  },
+  {
+   "id": "ui.era_frozen_fmt",
+   "tr": "{0} · sabit",
+   "en": "{0} · frozen"
+  },
+  {
+   "id": "ui.era_changed_fmt",
+   "tr": "Yeni çağ: {0}",
+   "en": "A new era begins: {0}"
+  },
+  {
+   "id": "ui.disaster_fmt",
+   "tr": "Afet: {0}",
+   "en": "Disaster: {0}"
+  }
+ ]
+}

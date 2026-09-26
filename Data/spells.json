@@ -1,0 +1,230 @@
+{
+ "category": "spells",
+ "count": 28,
+ "items": [
+  {
+   "id": "spell.fireball",
+   "name": "Ateş Topu",
+   "manaCost": 20,
+   "cooldownTicks": 60,
+   "range": 6,
+   "effect": "Alan hasarı 30, tutuşturur"
+  },
+  {
+   "id": "spell.fire_breath",
+   "name": "Ateş Soluğu",
+   "manaCost": 0,
+   "cooldownTicks": 40,
+   "range": 3,
+   "effect": "Koni şeklinde yangın"
+  },
+  {
+   "id": "spell.lightning",
+   "name": "Şimşek",
+   "manaCost": 25,
+   "cooldownTicks": 80,
+   "range": 8,
+   "effect": "Tek hedef 60, zincirlenir"
+  },
+  {
+   "id": "spell.heal",
+   "name": "İyileştirme",
+   "manaCost": 15,
+   "cooldownTicks": 40,
+   "range": 4,
+   "effect": "Can +40"
+  },
+  {
+   "id": "spell.mass_heal",
+   "name": "Toplu Şifa",
+   "manaCost": 40,
+   "cooldownTicks": 200,
+   "range": 4,
+   "effect": "Çevredeki müttefikler +30"
+  },
+  {
+   "id": "spell.shield",
+   "name": "Büyü Kalkanı",
+   "manaCost": 15,
+   "cooldownTicks": 120,
+   "range": 4,
+   "effect": "Kalkanlı statüsü"
+  },
+  {
+   "id": "spell.raise_dead",
+   "name": "Ölü Diriltme",
+   "manaCost": 30,
+   "cooldownTicks": 120,
+   "range": 5,
+   "effect": "Yakındaki cesetlerden iskelet; çağıran medeniyse iskelet onun şehrine katılır"
+  },
+  {
+   "id": "spell.teleport",
+   "name": "Işınlanma",
+   "manaCost": 20,
+   "cooldownTicks": 200,
+   "range": 30,
+   "effect": "Rastgele ya da ev şehrine"
+  },
+  {
+   "id": "spell.curse",
+   "name": "Lanet",
+   "manaCost": 15,
+   "cooldownTicks": 90,
+   "range": 6,
+   "effect": "Lanetli statüsü"
+  },
+  {
+   "id": "spell.bless",
+   "name": "Kutsama",
+   "manaCost": 15,
+   "cooldownTicks": 90,
+   "range": 6,
+   "effect": "Kutsanmış statüsü"
+  },
+  {
+   "id": "spell.freeze",
+   "name": "Dondurma",
+   "manaCost": 20,
+   "cooldownTicks": 80,
+   "range": 6,
+   "effect": "Donmuş statüsü, alan"
+  },
+  {
+   "id": "spell.poison_cloud",
+   "name": "Zehir Bulutu",
+   "manaCost": 25,
+   "cooldownTicks": 120,
+   "range": 5,
+   "effect": "Alan zehirlenmesi"
+  },
+  {
+   "id": "spell.summon_imp",
+   "name": "İblis Çağırma",
+   "manaCost": 40,
+   "cooldownTicks": 300,
+   "range": 4,
+   "effect": "2 kor iblisi"
+  },
+  {
+   "id": "spell.meteor_call",
+   "name": "Göktaşı Çağrısı",
+   "manaCost": 80,
+   "cooldownTicks": 1200,
+   "range": 20,
+   "effect": "Din büyüsü: hedefe küçük göktaşı"
+  },
+  {
+   "id": "spell.quake_stomp",
+   "name": "Yer Sarsıntısı",
+   "manaCost": 30,
+   "cooldownTicks": 150,
+   "range": 2,
+   "effect": "Çevredekileri sersemletir"
+  },
+  {
+   "id": "spell.entangle",
+   "name": "Sarmaşık",
+   "manaCost": 15,
+   "cooldownTicks": 80,
+   "range": 6,
+   "effect": "Kök salmış statüsü"
+  },
+  {
+   "id": "spell.grow",
+   "name": "Büyüme",
+   "manaCost": 10,
+   "cooldownTicks": 60,
+   "range": 6,
+   "effect": "Çevrede ağaç/bitki"
+  },
+  {
+   "id": "spell.haste",
+   "name": "Hızlandırma",
+   "manaCost": 15,
+   "cooldownTicks": 90,
+   "range": 5,
+   "effect": "Hızlanmış statüsü"
+  },
+  {
+   "id": "spell.weaken",
+   "name": "Zayıflatma",
+   "manaCost": 15,
+   "cooldownTicks": 90,
+   "range": 6,
+   "effect": "Zayıflamış statüsü"
+  },
+  {
+   "id": "spell.charm",
+   "name": "Büyüleme",
+   "manaCost": 30,
+   "cooldownTicks": 200,
+   "range": 5,
+   "effect": "Hedef geçici müttefik"
+  },
+  {
+   "id": "spell.invisibility",
+   "name": "Görünmezlik",
+   "manaCost": 25,
+   "cooldownTicks": 240,
+   "range": 0,
+   "effect": "Kendine"
+  },
+  {
+   "id": "spell.rain_call",
+   "name": "Yağmur Duası",
+   "manaCost": 40,
+   "cooldownTicks": 600,
+   "range": 0,
+   "effect": "Üstünde yağmur bulutu"
+  },
+  {
+   "id": "spell.abduct",
+   "name": "Kaçırma Işını",
+   "manaCost": 0,
+   "cooldownTicks": 60,
+   "range": 6,
+   "effect": "Birimi gemiye alır"
+  },
+  {
+   "id": "spell.holy_smite",
+   "name": "Kutsal Darbe",
+   "manaCost": 30,
+   "cooldownTicks": 120,
+   "range": 6,
+   "effect": "Ölümsüzlere 3x hasar"
+  },
+  {
+   "id": "spell.rot_breath",
+   "name": "Çürük Nefes",
+   "manaCost": 20,
+   "cooldownTicks": 120,
+   "range": 4,
+   "effect": "Koni: çürük ısırık bulaştırır"
+  },
+  {
+   "id": "spell.cure_rot",
+   "name": "Çürük Arındırma",
+   "manaCost": 30,
+   "cooldownTicks": 240,
+   "range": 3,
+   "effect": "Dönüşmekte olan birimi iyileştirir"
+  },
+  {
+   "id": "spell.acid_spit",
+   "name": "Asit Tükürüğü",
+   "manaCost": 10,
+   "cooldownTicks": 60,
+   "range": 4,
+   "effect": "Zırhı eritir: zırh -5, 10 hasar/sn"
+  },
+  {
+   "id": "spell.inspire",
+   "name": "İlham Verme",
+   "manaCost": 30,
+   "cooldownTicks": 300,
+   "range": 6,
+   "effect": "Müttefiklere ilham"
+  }
+ ]
+}

@@ -1,0 +1,69 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "title": "buildings",
+ "type": "object",
+ "required": [
+  "category",
+  "items"
+ ],
+ "properties": {
+  "category": {
+   "const": "buildings"
+  },
+  "count": {
+   "type": "integer"
+  },
+  "items": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "required": [
+     "category",
+     "cost",
+     "function",
+     "hp",
+     "id",
+     "jobSlots",
+     "maxPerCity",
+     "name",
+     "requires",
+     "size"
+    ],
+    "properties": {
+     "id": {
+      "type": "string",
+      "pattern": "^bld\\.[a-z0-9_]+$"
+     },
+     "name": {
+      "type": "string"
+     },
+     "category": {
+      "type": "string"
+     },
+     "size": {
+      "type": "string"
+     },
+     "hp": {
+      "type": "integer"
+     },
+     "cost": {
+      "type": "object"
+     },
+     "requires": {
+      "type": "string"
+     },
+     "function": {
+      "type": "string"
+     },
+     "maxPerCity": {
+      "type": "integer"
+     },
+     "jobSlots": {
+      "type": "integer"
+     }
+    },
+    "additionalProperties": true
+   }
+  }
+ }
+}

@@ -1,0 +1,34 @@
+{
+ "category": "war_types",
+ "count": 7,
+ "items": [
+  {
+   "id": "war.conquest",
+   "name": "Fetih Savaşı"
+  },
+  {
+   "id": "war.rebellion",
+   "name": "İsyan Savaşı"
+  },
+  {
+   "id": "war.religious",
+   "name": "Din Savaşı"
+  },
+  {
+   "id": "war.independence",
+   "name": "Bağımsızlık Savaşı"
+  },
+  {
+   "id": "war.revenge",
+   "name": "İntikam Savaşı"
+  },
+  {
+   "id": "war.succession",
+   "name": "Veraset Savaşı"
+  },
+  {
+   "id": "war.world_war",
+   "name": "Herkese Karşı"
+  }
+ ]
+}

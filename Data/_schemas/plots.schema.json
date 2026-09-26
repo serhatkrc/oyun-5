@@ -1,0 +1,57 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "title": "plots",
+ "type": "object",
+ "required": [
+  "category",
+  "items"
+ ],
+ "properties": {
+  "category": {
+   "const": "plots"
+  },
+  "count": {
+   "type": "integer"
+  },
+  "items": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "required": [
+     "conditions",
+     "durationMonths",
+     "id",
+     "initiator",
+     "minParticipants",
+     "name",
+     "outcome"
+    ],
+    "properties": {
+     "id": {
+      "type": "string",
+      "pattern": "^plot\\.[a-z0-9_]+$"
+     },
+     "name": {
+      "type": "string"
+     },
+     "initiator": {
+      "type": "string"
+     },
+     "conditions": {
+      "type": "array"
+     },
+     "minParticipants": {
+      "type": "integer"
+     },
+     "durationMonths": {
+      "type": "integer"
+     },
+     "outcome": {
+      "type": "string"
+     }
+    },
+    "additionalProperties": true
+   }
+  }
+ }
+}

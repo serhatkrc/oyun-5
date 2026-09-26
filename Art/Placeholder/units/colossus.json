@@ -1,0 +1,200 @@
+{
+ "frames": [
+  {
+   "filename": "idle_0",
+   "frame": {
+    "x": 0,
+    "y": 0,
+    "w": 12,
+    "h": 14
+   },
+   "duration": 400
+  },
+  {
+   "filename": "idle_1",
+   "frame": {
+    "x": 12,
+    "y": 0,
+    "w": 12,
+    "h": 14
+   },
+   "duration": 400
+  },
+  {
+   "filename": "walk_0",
+   "frame": {
+    "x": 0,
+    "y": 14,
+    "w": 12,
+    "h": 14
+   },
+   "duration": 120
+  },
+  {
+   "filename": "walk_1",
+   "frame": {
+    "x": 12,
+    "y": 14,
+    "w": 12,
+    "h": 14
+   },
+   "duration": 120
+  },
+  {
+   "filename": "walk_2",
+   "frame": {
+    "x": 24,
+    "y": 14,
+    "w": 12,
+    "h": 14
+   },
+   "duration": 120
+  },
+  {
+   "filename": "walk_3",
+   "frame": {
+    "x": 36,
+    "y": 14,
+    "w": 12,
+    "h": 14
+   },
+   "duration": 120
+  },
+  {
+   "filename": "attack_0",
+   "frame": {
+    "x": 0,
+    "y": 28,
+    "w": 12,
+    "h": 14
+   },
+   "duration": 100
+  },
+  {
+   "filename": "attack_1",
+   "frame": {
+    "x": 12,
+    "y": 28,
+    "w": 12,
+    "h": 14
+   },
+   "duration": 100
+  },
+  {
+   "filename": "attack_2",
+   "frame": {
+    "x": 24,
+    "y": 28,
+    "w": 12,
+    "h": 14
+   },
+   "duration": 100
+  },
+  {
+   "filename": "swim_0",
+   "frame": {
+    "x": 0,
+    "y": 42,
+    "w": 12,
+    "h": 14
+   },
+   "duration": 250
+  },
+  {
+   "filename": "swim_1",
+   "frame": {
+    "x": 12,
+    "y": 42,
+    "w": 12,
+    "h": 14
+   },
+   "duration": 250
+  },
+  {
+   "filename": "sleep_0",
+   "frame": {
+    "x": 0,
+    "y": 56,
+    "w": 12,
+    "h": 14
+   },
+   "duration": 1000
+  },
+  {
+   "filename": "death_0",
+   "frame": {
+    "x": 0,
+    "y": 70,
+    "w": 12,
+    "h": 14
+   },
+   "duration": 150
+  },
+  {
+   "filename": "death_1",
+   "frame": {
+    "x": 12,
+    "y": 70,
+    "w": 12,
+    "h": 14
+   },
+   "duration": 150
+  },
+  {
+   "filename": "death_2",
+   "frame": {
+    "x": 24,
+    "y": 70,
+    "w": 12,
+    "h": 14
+   },
+   "duration": 150
+  }
+ ],
+ "meta": {
+  "frameTags": [
+   {
+    "name": "idle",
+    "from": 0,
+    "to": 1,
+    "direction": "forward"
+   },
+   {
+    "name": "walk",
+    "from": 2,
+    "to": 5,
+    "direction": "forward"
+   },
+   {
+    "name": "attack",
+    "from": 6,
+    "to": 8,
+    "direction": "forward"
+   },
+   {
+    "name": "swim",
+    "from": 9,
+    "to": 10,
+    "direction": "forward"
+   },
+   {
+    "name": "sleep",
+    "from": 11,
+    "to": 11,
+    "direction": "forward"
+   },
+   {
+    "name": "death",
+    "from": 12,
+    "to": 14,
+    "direction": "forward"
+   }
+  ],
+  "size": {
+   "w": 48,
+   "h": 84
+  },
+  "plan": "biped",
+  "placeholder": true
+ }
+}

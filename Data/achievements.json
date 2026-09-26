@@ -1,0 +1,318 @@
+{
+ "category": "achievements",
+ "count": 52,
+ "items": [
+  {
+   "id": "ach.first_life",
+   "name": "İlk Nefes",
+   "condition": "İlk canlıyı yarat",
+   "unlocks": null
+  },
+  {
+   "id": "ach.first_civ",
+   "name": "İlk Köy",
+   "condition": "İlk şehir kurulsun",
+   "unlocks": "pw.monolith, pw.possess"
+  },
+  {
+   "id": "ach.first_mine",
+   "name": "Derinlerde",
+   "condition": "İlk maden ocağı",
+   "unlocks": "pw.ore_skyiron, pw.ore_starore"
+  },
+  {
+   "id": "ach.population_1k",
+   "name": "Kalabalık",
+   "condition": "Dünya nüfusu 1.000",
+   "unlocks": null
+  },
+  {
+   "id": "ach.population_10k",
+   "name": "Mahşer",
+   "condition": "Dünya nüfusu 10.000",
+   "unlocks": null
+  },
+  {
+   "id": "ach.kingmaker",
+   "name": "Kral Yapıcı",
+   "condition": "5 farklı krallık kur/taçlandır",
+   "unlocks": "pw.crown"
+  },
+  {
+   "id": "ach.empire",
+   "name": "İmparatorluk",
+   "condition": "Tek krallık 25 şehir",
+   "unlocks": null
+  },
+  {
+   "id": "ach.ancient_kingdom",
+   "name": "Kadim Taht",
+   "condition": "Bir krallık 500 yıl yaşasın",
+   "unlocks": null
+  },
+  {
+   "id": "ach.world_war",
+   "name": "Dünya Savaşı",
+   "condition": "Aynı anda 5 savaş",
+   "unlocks": null
+  },
+  {
+   "id": "ach.peace_age",
+   "name": "Altın Barış",
+   "condition": "100 yıl hiç savaş olmasın",
+   "unlocks": null
+  },
+  {
+   "id": "ach.plague_lord",
+   "name": "Vebanın Efendisi",
+   "condition": "Aynı anda 1.000 hasta",
+   "unlocks": "pw.plague, pw.cloud_plague"
+  },
+  {
+   "id": "ach.zombie_world",
+   "name": "Ölüler Dünyası",
+   "condition": "500 zombi",
+   "unlocks": null
+  },
+  {
+   "id": "ach.dragon_age",
+   "name": "Ejderha Çağı",
+   "condition": "Doğal bir ejderha uyansın",
+   "unlocks": "pw.spawn_dragon"
+  },
+  {
+   "id": "ach.destroyer",
+   "name": "Yok Edici",
+   "condition": "Tek güçle 100 bina yık",
+   "unlocks": "pw.atomic, pw.spawn_colossus"
+  },
+  {
+   "id": "ach.world_eater",
+   "name": "Dünya Yiyen",
+   "condition": "Karanın %90'ını yok et",
+   "unlocks": "pw.antimatter, pw.black_hole"
+  },
+  {
+   "id": "ach.mad_scientist",
+   "name": "Çılgın Bilgin",
+   "condition": "Alt tür editörüyle 10 değişiklik",
+   "unlocks": "pw.goo, pw.spawn_devourer"
+  },
+  {
+   "id": "ach.gene_splicer",
+   "name": "Gen Terzisi",
+   "condition": "5 gen sinerjisi keşfet",
+   "unlocks": "pw.ed_genes"
+  },
+  {
+   "id": "ach.biome_master",
+   "name": "Biyom Ustası",
+   "condition": "Tüm normal biyomlar aynı dünyada",
+   "unlocks": "özel biyom tohumları"
+  },
+  {
+   "id": "ach.star_gazer",
+   "name": "Göğe Bakan",
+   "condition": "Yıldızbilimciler kültürü 3 krallıkta",
+   "unlocks": "pw.spawn_sky_visitor"
+  },
+  {
+   "id": "ach.puppet_master",
+   "name": "Kukla Ustası",
+   "condition": "Bir krallığı 50 yıl meta kontrolle yönet",
+   "unlocks": "pw.meta_control"
+  },
+  {
+   "id": "ach.hero_born",
+   "name": "Destan",
+   "condition": "Bir birim 'Destan Kahramanı' olsun",
+   "unlocks": null
+  },
+  {
+   "id": "ach.slayer",
+   "name": "Canavar Avcısı",
+   "condition": "Tek birim 100 öldürme",
+   "unlocks": null
+  },
+  {
+   "id": "ach.old_one",
+   "name": "Yaşlı Kurt",
+   "condition": "Bir birim 500 yaşına ulaşsın",
+   "unlocks": null
+  },
+  {
+   "id": "ach.prophet",
+   "name": "Peygamber",
+   "condition": "Plotla yeni din kurulsun",
+   "unlocks": null
+  },
+  {
+   "id": "ach.babel",
+   "name": "Babil",
+   "condition": "Aynı anda 10 dil",
+   "unlocks": null
+  },
+  {
+   "id": "ach.librarian",
+   "name": "Kütüphaneci",
+   "condition": "Dünyada 500 kitap",
+   "unlocks": null
+  },
+  {
+   "id": "ach.master_smith",
+   "name": "Usta Demirci",
+   "condition": "Efsanevi bir eşya üretilsin",
+   "unlocks": null
+  },
+  {
+   "id": "ach.sailor",
+   "name": "Yedi Deniz",
+   "condition": "Başka kıtaya sömürge",
+   "unlocks": null
+  },
+  {
+   "id": "ach.evolution",
+   "name": "Evrim",
+   "condition": "Bir hayvan türü medenileşsin",
+   "unlocks": null
+  },
+  {
+   "id": "ach.uplift_all",
+   "name": "Hayvan Çiftliği",
+   "condition": "5 farklı hayvan uygarlığı",
+   "unlocks": null
+  },
+  {
+   "id": "ach.frozen_world",
+   "name": "Buz Küre",
+   "condition": "Suyun %80'i donsun",
+   "unlocks": null
+  },
+  {
+   "id": "ach.fire_world",
+   "name": "Kor Küre",
+   "condition": "Aynı anda 5.000 tile yansın",
+   "unlocks": null
+  },
+  {
+   "id": "ach.possessed",
+   "name": "Beden Değiştiren",
+   "condition": "Possession ile 50 öldürme",
+   "unlocks": null
+  },
+  {
+   "id": "ach.rebel_king",
+   "name": "Asi Kral",
+   "condition": "İsyanla kurulan krallık başkentini alsın",
+   "unlocks": null
+  },
+  {
+   "id": "ach.assassin",
+   "name": "Gölgedeki El",
+   "condition": "Suikastle kral ölsün",
+   "unlocks": null
+  },
+  {
+   "id": "ach.dynasty",
+   "name": "Hanedan",
+   "condition": "Aynı klandan 10 kral",
+   "unlocks": null
+  },
+  {
+   "id": "ach.mixed_city",
+   "name": "Harman Şehri",
+   "condition": "Tek şehirde 4 farklı tür",
+   "unlocks": null
+  },
+  {
+   "id": "ach.undead_king",
+   "name": "Ölü Kral",
+   "condition": "Bir ölümsüz kral olsun",
+   "unlocks": null
+  },
+  {
+   "id": "ach.fairy_tale",
+   "name": "Masal",
+   "condition": "Peri + ejderha + yürüyen ağaç aynı dünyada",
+   "unlocks": null
+  },
+  {
+   "id": "ach.all_eras",
+   "name": "Çağlar Boyu",
+   "condition": "10 çağın hepsi doğal yaşansın",
+   "unlocks": null
+  },
+  {
+   "id": "ach.apocalypse",
+   "name": "Kıyamet",
+   "condition": "Tek yılda 3 farklı afet",
+   "unlocks": null
+  },
+  {
+   "id": "ach.genesis",
+   "name": "Yaratılış",
+   "condition": "Boş okyanustan 1.000 nüfuslu dünya",
+   "unlocks": null
+  },
+  {
+   "id": "ach.ice_to_fire",
+   "name": "Buzdan Ateşe",
+   "condition": "Buz devrinden hemen sonra kavurucu güneş",
+   "unlocks": null
+  },
+  {
+   "id": "ach.pacifist",
+   "name": "Barış Güvercini",
+   "condition": "Barış Yemini kültürü 200 yıl",
+   "unlocks": null
+  },
+  {
+   "id": "ach.heretic",
+   "name": "Sapkın",
+   "condition": "Din bölünmesi 5 kez",
+   "unlocks": null
+  },
+  {
+   "id": "ach.collector",
+   "name": "Koleksiyoncu",
+   "condition": "100 trait keşfet",
+   "unlocks": null
+  },
+  {
+   "id": "ach.completionist",
+   "name": "Her Şeyi Bilen",
+   "condition": "Tüm trait'leri keşfet",
+   "unlocks": null
+  },
+  {
+   "id": "ach.god_named",
+   "name": "Adım Anılsın",
+   "condition": "Tanrı heykeli 10 şehirde",
+   "unlocks": null
+  },
+  {
+   "id": "ach.colossus_war",
+   "name": "Dev Savaşı",
+   "condition": "Mekanik Dev 1.000 birim yensin",
+   "unlocks": null
+  },
+  {
+   "id": "ach.last_city",
+   "name": "Son Kale",
+   "condition": "Dünyada zombiler 10:1 çoğunluktayken bir şehir 20 yıl dayansın",
+   "unlocks": null
+  },
+  {
+   "id": "ach.cure_found",
+   "name": "Tedavi",
+   "condition": "1.000 birim dönüşümden kurtarılsın",
+   "unlocks": null
+  },
+  {
+   "id": "ach.cellular",
+   "name": "Hücresel",
+   "condition": "Hayat Oyunu 1 şehri yok etsin",
+   "unlocks": null
+  }
+ ]
+}

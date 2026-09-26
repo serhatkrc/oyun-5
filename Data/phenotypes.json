@@ -1,0 +1,506 @@
+{
+ "category": "phenotypes",
+ "count": 50,
+ "items": [
+  {
+   "id": "ph.sand_plain",
+   "name": "Kum Düz",
+   "baseColor": "#D8C08A",
+   "pattern": "plain",
+   "biomeBias": [
+    "bio.desert",
+    "bio.savanna"
+   ]
+  },
+  {
+   "id": "ph.sand_spotted",
+   "name": "Kum Benekli",
+   "baseColor": "#D8C08A",
+   "pattern": "spotted",
+   "biomeBias": [
+    "bio.desert",
+    "bio.savanna"
+   ]
+  },
+  {
+   "id": "ph.sand_striped",
+   "name": "Kum Çizgili",
+   "baseColor": "#D8C08A",
+   "pattern": "striped",
+   "biomeBias": [
+    "bio.desert",
+    "bio.savanna"
+   ]
+  },
+  {
+   "id": "ph.sand_ringed",
+   "name": "Kum Halkalı",
+   "baseColor": "#D8C08A",
+   "pattern": "ringed",
+   "biomeBias": [
+    "bio.desert",
+    "bio.savanna"
+   ]
+  },
+  {
+   "id": "ph.sand_shaded",
+   "name": "Kum Gölgeli",
+   "baseColor": "#D8C08A",
+   "pattern": "shaded",
+   "biomeBias": [
+    "bio.desert",
+    "bio.savanna"
+   ]
+  },
+  {
+   "id": "ph.ash_plain",
+   "name": "Kül Düz",
+   "baseColor": "#8A8580",
+   "pattern": "plain",
+   "biomeBias": [
+    "bio.ash",
+    "bio.volcanic"
+   ]
+  },
+  {
+   "id": "ph.ash_spotted",
+   "name": "Kül Benekli",
+   "baseColor": "#8A8580",
+   "pattern": "spotted",
+   "biomeBias": [
+    "bio.ash",
+    "bio.volcanic"
+   ]
+  },
+  {
+   "id": "ph.ash_striped",
+   "name": "Kül Çizgili",
+   "baseColor": "#8A8580",
+   "pattern": "striped",
+   "biomeBias": [
+    "bio.ash",
+    "bio.volcanic"
+   ]
+  },
+  {
+   "id": "ph.ash_ringed",
+   "name": "Kül Halkalı",
+   "baseColor": "#8A8580",
+   "pattern": "ringed",
+   "biomeBias": [
+    "bio.ash",
+    "bio.volcanic"
+   ]
+  },
+  {
+   "id": "ph.ash_shaded",
+   "name": "Kül Gölgeli",
+   "baseColor": "#8A8580",
+   "pattern": "shaded",
+   "biomeBias": [
+    "bio.ash",
+    "bio.volcanic"
+   ]
+  },
+  {
+   "id": "ph.night_plain",
+   "name": "Gece Düz",
+   "baseColor": "#2E2B3A",
+   "pattern": "plain",
+   "biomeBias": [
+    "bio.void",
+    "bio.corrupted"
+   ]
+  },
+  {
+   "id": "ph.night_spotted",
+   "name": "Gece Benekli",
+   "baseColor": "#2E2B3A",
+   "pattern": "spotted",
+   "biomeBias": [
+    "bio.void",
+    "bio.corrupted"
+   ]
+  },
+  {
+   "id": "ph.night_striped",
+   "name": "Gece Çizgili",
+   "baseColor": "#2E2B3A",
+   "pattern": "striped",
+   "biomeBias": [
+    "bio.void",
+    "bio.corrupted"
+   ]
+  },
+  {
+   "id": "ph.night_ringed",
+   "name": "Gece Halkalı",
+   "baseColor": "#2E2B3A",
+   "pattern": "ringed",
+   "biomeBias": [
+    "bio.void",
+    "bio.corrupted"
+   ]
+  },
+  {
+   "id": "ph.night_shaded",
+   "name": "Gece Gölgeli",
+   "baseColor": "#2E2B3A",
+   "pattern": "shaded",
+   "biomeBias": [
+    "bio.void",
+    "bio.corrupted"
+   ]
+  },
+  {
+   "id": "ph.snow_plain",
+   "name": "Kar Düz",
+   "baseColor": "#EEF2F4",
+   "pattern": "plain",
+   "biomeBias": [
+    "bio.tundra",
+    "bio.snowpine"
+   ]
+  },
+  {
+   "id": "ph.snow_spotted",
+   "name": "Kar Benekli",
+   "baseColor": "#EEF2F4",
+   "pattern": "spotted",
+   "biomeBias": [
+    "bio.tundra",
+    "bio.snowpine"
+   ]
+  },
+  {
+   "id": "ph.snow_striped",
+   "name": "Kar Çizgili",
+   "baseColor": "#EEF2F4",
+   "pattern": "striped",
+   "biomeBias": [
+    "bio.tundra",
+    "bio.snowpine"
+   ]
+  },
+  {
+   "id": "ph.snow_ringed",
+   "name": "Kar Halkalı",
+   "baseColor": "#EEF2F4",
+   "pattern": "ringed",
+   "biomeBias": [
+    "bio.tundra",
+    "bio.snowpine"
+   ]
+  },
+  {
+   "id": "ph.snow_shaded",
+   "name": "Kar Gölgeli",
+   "baseColor": "#EEF2F4",
+   "pattern": "shaded",
+   "biomeBias": [
+    "bio.tundra",
+    "bio.snowpine"
+   ]
+  },
+  {
+   "id": "ph.crimson_plain",
+   "name": "Kızıl Düz",
+   "baseColor": "#A23A2E",
+   "pattern": "plain",
+   "biomeBias": [
+    "bio.infernal",
+    "bio.maple"
+   ]
+  },
+  {
+   "id": "ph.crimson_spotted",
+   "name": "Kızıl Benekli",
+   "baseColor": "#A23A2E",
+   "pattern": "spotted",
+   "biomeBias": [
+    "bio.infernal",
+    "bio.maple"
+   ]
+  },
+  {
+   "id": "ph.crimson_striped",
+   "name": "Kızıl Çizgili",
+   "baseColor": "#A23A2E",
+   "pattern": "striped",
+   "biomeBias": [
+    "bio.infernal",
+    "bio.maple"
+   ]
+  },
+  {
+   "id": "ph.crimson_ringed",
+   "name": "Kızıl Halkalı",
+   "baseColor": "#A23A2E",
+   "pattern": "ringed",
+   "biomeBias": [
+    "bio.infernal",
+    "bio.maple"
+   ]
+  },
+  {
+   "id": "ph.crimson_shaded",
+   "name": "Kızıl Gölgeli",
+   "baseColor": "#A23A2E",
+   "pattern": "shaded",
+   "biomeBias": [
+    "bio.infernal",
+    "bio.maple"
+   ]
+  },
+  {
+   "id": "ph.honey_plain",
+   "name": "Bal Düz",
+   "baseColor": "#D9A441",
+   "pattern": "plain",
+   "biomeBias": [
+    "bio.honey",
+    "bio.flower"
+   ]
+  },
+  {
+   "id": "ph.honey_spotted",
+   "name": "Bal Benekli",
+   "baseColor": "#D9A441",
+   "pattern": "spotted",
+   "biomeBias": [
+    "bio.honey",
+    "bio.flower"
+   ]
+  },
+  {
+   "id": "ph.honey_striped",
+   "name": "Bal Çizgili",
+   "baseColor": "#D9A441",
+   "pattern": "striped",
+   "biomeBias": [
+    "bio.honey",
+    "bio.flower"
+   ]
+  },
+  {
+   "id": "ph.honey_ringed",
+   "name": "Bal Halkalı",
+   "baseColor": "#D9A441",
+   "pattern": "ringed",
+   "biomeBias": [
+    "bio.honey",
+    "bio.flower"
+   ]
+  },
+  {
+   "id": "ph.honey_shaded",
+   "name": "Bal Gölgeli",
+   "baseColor": "#D9A441",
+   "pattern": "shaded",
+   "biomeBias": [
+    "bio.honey",
+    "bio.flower"
+   ]
+  },
+  {
+   "id": "ph.olive_plain",
+   "name": "Zeytin Düz",
+   "baseColor": "#6E7A3A",
+   "pattern": "plain",
+   "biomeBias": [
+    "bio.swamp",
+    "bio.forest"
+   ]
+  },
+  {
+   "id": "ph.olive_spotted",
+   "name": "Zeytin Benekli",
+   "baseColor": "#6E7A3A",
+   "pattern": "spotted",
+   "biomeBias": [
+    "bio.swamp",
+    "bio.forest"
+   ]
+  },
+  {
+   "id": "ph.olive_striped",
+   "name": "Zeytin Çizgili",
+   "baseColor": "#6E7A3A",
+   "pattern": "striped",
+   "biomeBias": [
+    "bio.swamp",
+    "bio.forest"
+   ]
+  },
+  {
+   "id": "ph.olive_ringed",
+   "name": "Zeytin Halkalı",
+   "baseColor": "#6E7A3A",
+   "pattern": "ringed",
+   "biomeBias": [
+    "bio.swamp",
+    "bio.forest"
+   ]
+  },
+  {
+   "id": "ph.olive_shaded",
+   "name": "Zeytin Gölgeli",
+   "baseColor": "#6E7A3A",
+   "pattern": "shaded",
+   "biomeBias": [
+    "bio.swamp",
+    "bio.forest"
+   ]
+  },
+  {
+   "id": "ph.sea_plain",
+   "name": "Deniz Düz",
+   "baseColor": "#3E7FA8",
+   "pattern": "plain",
+   "biomeBias": [
+    "bio.coral"
+   ]
+  },
+  {
+   "id": "ph.sea_spotted",
+   "name": "Deniz Benekli",
+   "baseColor": "#3E7FA8",
+   "pattern": "spotted",
+   "biomeBias": [
+    "bio.coral"
+   ]
+  },
+  {
+   "id": "ph.sea_striped",
+   "name": "Deniz Çizgili",
+   "baseColor": "#3E7FA8",
+   "pattern": "striped",
+   "biomeBias": [
+    "bio.coral"
+   ]
+  },
+  {
+   "id": "ph.sea_ringed",
+   "name": "Deniz Halkalı",
+   "baseColor": "#3E7FA8",
+   "pattern": "ringed",
+   "biomeBias": [
+    "bio.coral"
+   ]
+  },
+  {
+   "id": "ph.sea_shaded",
+   "name": "Deniz Gölgeli",
+   "baseColor": "#3E7FA8",
+   "pattern": "shaded",
+   "biomeBias": [
+    "bio.coral"
+   ]
+  },
+  {
+   "id": "ph.violet_plain",
+   "name": "Menekşe Düz",
+   "baseColor": "#7C5AA6",
+   "pattern": "plain",
+   "biomeBias": [
+    "bio.enchanted",
+    "bio.timewarp",
+    "bio.mushroom"
+   ]
+  },
+  {
+   "id": "ph.violet_spotted",
+   "name": "Menekşe Benekli",
+   "baseColor": "#7C5AA6",
+   "pattern": "spotted",
+   "biomeBias": [
+    "bio.enchanted",
+    "bio.timewarp",
+    "bio.mushroom"
+   ]
+  },
+  {
+   "id": "ph.violet_striped",
+   "name": "Menekşe Çizgili",
+   "baseColor": "#7C5AA6",
+   "pattern": "striped",
+   "biomeBias": [
+    "bio.enchanted",
+    "bio.timewarp",
+    "bio.mushroom"
+   ]
+  },
+  {
+   "id": "ph.violet_ringed",
+   "name": "Menekşe Halkalı",
+   "baseColor": "#7C5AA6",
+   "pattern": "ringed",
+   "biomeBias": [
+    "bio.enchanted",
+    "bio.timewarp",
+    "bio.mushroom"
+   ]
+  },
+  {
+   "id": "ph.violet_shaded",
+   "name": "Menekşe Gölgeli",
+   "baseColor": "#7C5AA6",
+   "pattern": "shaded",
+   "biomeBias": [
+    "bio.enchanted",
+    "bio.timewarp",
+    "bio.mushroom"
+   ]
+  },
+  {
+   "id": "ph.gold_plain",
+   "name": "Altın Düz",
+   "baseColor": "#E0C04A",
+   "pattern": "plain",
+   "biomeBias": [
+    "bio.celestial",
+    "bio.citrus"
+   ]
+  },
+  {
+   "id": "ph.gold_spotted",
+   "name": "Altın Benekli",
+   "baseColor": "#E0C04A",
+   "pattern": "spotted",
+   "biomeBias": [
+    "bio.celestial",
+    "bio.citrus"
+   ]
+  },
+  {
+   "id": "ph.gold_striped",
+   "name": "Altın Çizgili",
+   "baseColor": "#E0C04A",
+   "pattern": "striped",
+   "biomeBias": [
+    "bio.celestial",
+    "bio.citrus"
+   ]
+  },
+  {
+   "id": "ph.gold_ringed",
+   "name": "Altın Halkalı",
+   "baseColor": "#E0C04A",
+   "pattern": "ringed",
+   "biomeBias": [
+    "bio.celestial",
+    "bio.citrus"
+   ]
+  },
+  {
+   "id": "ph.gold_shaded",
+   "name": "Altın Gölgeli",
+   "baseColor": "#E0C04A",
+   "pattern": "shaded",
+   "biomeBias": [
+    "bio.celestial",
+    "bio.citrus"
+   ]
+  }
+ ]
+}

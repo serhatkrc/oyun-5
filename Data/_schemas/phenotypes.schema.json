@@ -1,0 +1,49 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "title": "phenotypes",
+ "type": "object",
+ "required": [
+  "category",
+  "items"
+ ],
+ "properties": {
+  "category": {
+   "const": "phenotypes"
+  },
+  "count": {
+   "type": "integer"
+  },
+  "items": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "required": [
+     "baseColor",
+     "biomeBias",
+     "id",
+     "name",
+     "pattern"
+    ],
+    "properties": {
+     "id": {
+      "type": "string",
+      "pattern": "^ph\\.[a-z0-9_]+$"
+     },
+     "name": {
+      "type": "string"
+     },
+     "baseColor": {
+      "type": "string"
+     },
+     "pattern": {
+      "type": "string"
+     },
+     "biomeBias": {
+      "type": "array"
+     }
+    },
+    "additionalProperties": true
+   }
+  }
+ }
+}

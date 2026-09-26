@@ -1,0 +1,226 @@
+{
+ "category": "equipment_types",
+ "count": 17,
+ "items": [
+  {
+   "id": "eq.sword",
+   "name": "Kılıç",
+   "slot": "weapon",
+   "baseEffects": {
+    "add": {
+     "dmg": 8.0,
+     "atkspd": 0.0
+    }
+   },
+   "usesMaterial": true
+  },
+  {
+   "id": "eq.axe",
+   "name": "Balta",
+   "slot": "weapon",
+   "baseEffects": {
+    "add": {
+     "dmg": 11.0
+    },
+    "pct": {
+     "atkspd": -10.0
+    }
+   },
+   "usesMaterial": true
+  },
+  {
+   "id": "eq.spear",
+   "name": "Mızrak",
+   "slot": "weapon",
+   "baseEffects": {
+    "add": {
+     "dmg": 7.0,
+     "range": 1.0
+    }
+   },
+   "usesMaterial": true
+  },
+  {
+   "id": "eq.bow",
+   "name": "Yay",
+   "slot": "weapon",
+   "baseEffects": {
+    "add": {
+     "dmg": 5.0,
+     "range": 6.0
+    }
+   },
+   "usesMaterial": true
+  },
+  {
+   "id": "eq.crossbow",
+   "name": "Arbalet",
+   "slot": "weapon",
+   "baseEffects": {
+    "add": {
+     "dmg": 9.0,
+     "range": 5.0
+    },
+    "pct": {
+     "atkspd": -25.0
+    }
+   },
+   "usesMaterial": true
+  },
+  {
+   "id": "eq.hammer",
+   "name": "Savaş Çekici",
+   "slot": "weapon",
+   "baseEffects": {
+    "add": {
+     "dmg": 13.0
+    },
+    "pct": {
+     "knockback": 50.0,
+     "atkspd": -20.0
+    }
+   },
+   "usesMaterial": true
+  },
+  {
+   "id": "eq.dagger",
+   "name": "Hançer",
+   "slot": "weapon",
+   "baseEffects": {
+    "add": {
+     "dmg": 4.0,
+     "crit": 10.0
+    },
+    "pct": {
+     "atkspd": 30.0
+    }
+   },
+   "usesMaterial": true
+  },
+  {
+   "id": "eq.staff",
+   "name": "Asa",
+   "slot": "weapon",
+   "baseEffects": {
+    "add": {
+     "mana": 30.0
+    },
+    "pct": {
+     "spellPower": 20.0
+    }
+   },
+   "usesMaterial": true
+  },
+  {
+   "id": "eq.club",
+   "name": "Sopa",
+   "slot": "weapon",
+   "baseEffects": {
+    "add": {
+     "dmg": 4.0
+    }
+   },
+   "usesMaterial": true
+  },
+  {
+   "id": "eq.trident",
+   "name": "Üç Dişli Zıpkın",
+   "slot": "weapon",
+   "baseEffects": {
+    "add": {
+     "dmg": 7.0,
+     "range": 1.0
+    },
+    "pct": {
+     "waterDmg": 30.0
+    }
+   },
+   "usesMaterial": true
+  },
+  {
+   "id": "eq.sling",
+   "name": "Sapan",
+   "slot": "weapon",
+   "baseEffects": {
+    "add": {
+     "dmg": 3.0,
+     "range": 4.0
+    }
+   },
+   "usesMaterial": true
+  },
+  {
+   "id": "eq.helmet",
+   "name": "Miğfer",
+   "slot": "helmet",
+   "baseEffects": {
+    "add": {
+     "armor": 3.0
+    }
+   },
+   "usesMaterial": true
+  },
+  {
+   "id": "eq.armor",
+   "name": "Zırh",
+   "slot": "armor",
+   "baseEffects": {
+    "add": {
+     "armor": 8.0
+    },
+    "pct": {
+     "speed": -5.0
+    }
+   },
+   "usesMaterial": true
+  },
+  {
+   "id": "eq.shield",
+   "name": "Kalkan",
+   "slot": "shield",
+   "baseEffects": {
+    "add": {
+     "armor": 4.0,
+     "block": 15.0
+    }
+   },
+   "usesMaterial": true
+  },
+  {
+   "id": "eq.boots",
+   "name": "Çizme",
+   "slot": "boots",
+   "baseEffects": {
+    "pct": {
+     "speed": 5.0
+    }
+   },
+   "usesMaterial": true
+  },
+  {
+   "id": "eq.ring",
+   "name": "Yüzük",
+   "slot": "ring",
+   "baseEffects": {
+    "add": {
+     "luck": 5.0
+    }
+   },
+   "usesMaterial": false
+  },
+  {
+   "id": "eq.amulet",
+   "name": "Muska",
+   "slot": "amulet",
+   "baseEffects": {
+    "add": {
+     "mana": 10.0
+    },
+    "pct": {
+     "diseaseResist": 10.0
+    }
+   },
+   "usesMaterial": false
+  }
+ ]
+}

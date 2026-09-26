@@ -1,0 +1,60 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "title": "unit_traits",
+ "type": "object",
+ "required": [
+  "category",
+  "items"
+ ],
+ "properties": {
+  "category": {
+   "const": "unit_traits"
+  },
+  "count": {
+   "type": "integer"
+  },
+  "items": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "required": [
+     "effects",
+     "group",
+     "id",
+     "inheritChance",
+     "name",
+     "opposite",
+     "rarity"
+    ],
+    "properties": {
+     "id": {
+      "type": "string",
+      "pattern": "^tr\\.[a-z0-9_]+$"
+     },
+     "name": {
+      "type": "string"
+     },
+     "group": {
+      "type": "string"
+     },
+     "rarity": {
+      "type": "string"
+     },
+     "effects": {
+      "type": "object"
+     },
+     "opposite": {
+      "type": [
+       "null",
+       "string"
+      ]
+     },
+     "inheritChance": {
+      "type": "number"
+     }
+    },
+    "additionalProperties": true
+   }
+  }
+ }
+}

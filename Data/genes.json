@@ -1,0 +1,418 @@
+{
+ "category": "genes",
+ "count": 45,
+ "items": [
+  {
+   "id": "gene.vitality",
+   "name": "Canlılık",
+   "effects": {
+    "pct": {
+     "hp": 10.0
+    }
+   }
+  },
+  {
+   "id": "gene.might",
+   "name": "Kuvvet",
+   "effects": {
+    "pct": {
+     "dmg": 8.0
+    }
+   }
+  },
+  {
+   "id": "gene.haste",
+   "name": "Çabukluk",
+   "effects": {
+    "pct": {
+     "speed": 6.0
+    }
+   }
+  },
+  {
+   "id": "gene.guard",
+   "name": "Muhafız",
+   "effects": {
+    "add": {
+     "armor": 3.0
+    }
+   }
+  },
+  {
+   "id": "gene.focus",
+   "name": "Odak",
+   "effects": {
+    "add": {
+     "crit": 5.0
+    }
+   }
+  },
+  {
+   "id": "gene.reach",
+   "name": "Erim",
+   "effects": {
+    "add": {
+     "range": 1.0
+    }
+   }
+  },
+  {
+   "id": "gene.persistence",
+   "name": "Süreklilik",
+   "effects": {
+    "pct": {
+     "lifespan": 12.0
+    }
+   }
+  },
+  {
+   "id": "gene.brood",
+   "name": "Döl",
+   "effects": {
+    "pct": {
+     "fertility": 15.0
+    }
+   }
+  },
+  {
+   "id": "gene.mind",
+   "name": "Zihin",
+   "effects": {
+    "add": {
+     "intel": 1.0
+    }
+   }
+  },
+  {
+   "id": "gene.charm",
+   "name": "Cazibe",
+   "effects": {
+    "add": {
+     "diplo": 1.0
+    }
+   }
+  },
+  {
+   "id": "gene.battle",
+   "name": "Cenk",
+   "effects": {
+    "add": {
+     "warfare": 1.0
+    }
+   }
+  },
+  {
+   "id": "gene.order",
+   "name": "Düzen",
+   "effects": {
+    "add": {
+     "steward": 1.0
+    }
+   }
+  },
+  {
+   "id": "gene.mana",
+   "name": "Mana",
+   "effects": {
+    "add": {
+     "mana": 15.0
+    }
+   }
+  },
+  {
+   "id": "gene.mending",
+   "name": "Onarım",
+   "effects": {
+    "add": {
+     "regen": 0.5
+    }
+   }
+  },
+  {
+   "id": "gene.stamina",
+   "name": "Soluk",
+   "effects": {
+    "pct": {
+     "stamina": 20.0
+    }
+   }
+  },
+  {
+   "id": "gene.appetite",
+   "name": "Tokluk",
+   "effects": {
+    "pct": {
+     "hungerRate": -12.0
+    }
+   }
+  },
+  {
+   "id": "gene.rest",
+   "name": "Dinçlik",
+   "effects": {
+    "pct": {
+     "sleepNeed": -20.0
+    }
+   }
+  },
+  {
+   "id": "gene.hardiness",
+   "name": "Sertlik",
+   "effects": {
+    "pct": {
+     "diseaseResist": 15.0
+    }
+   }
+  },
+  {
+   "id": "gene.warmth",
+   "name": "Sıcaklık",
+   "effects": {
+    "pct": {
+     "heatResist": 25.0
+    }
+   }
+  },
+  {
+   "id": "gene.chill",
+   "name": "Serinlik",
+   "effects": {
+    "pct": {
+     "coldResist": 25.0
+    }
+   }
+  },
+  {
+   "id": "gene.growth",
+   "name": "Büyüme",
+   "effects": {
+    "add": {
+     "size": 0.5
+    },
+    "pct": {
+     "hp": 5.0
+    }
+   }
+  },
+  {
+   "id": "gene.dwarfism",
+   "name": "Küçülme",
+   "effects": {
+    "add": {
+     "size": -0.5,
+     "dodge": 5.0
+    }
+   }
+  },
+  {
+   "id": "gene.calm",
+   "name": "Sükûnet",
+   "effects": {
+    "add": {
+     "happiness": 1.0
+    }
+   }
+  },
+  {
+   "id": "gene.rage",
+   "name": "Hiddet",
+   "effects": {
+    "pct": {
+     "dmg": 12.0
+    },
+    "add": {
+     "happiness": -1.0
+    }
+   }
+  },
+  {
+   "id": "gene.luck",
+   "name": "Talih",
+   "effects": {
+    "add": {
+     "luck": 5.0
+    }
+   }
+  },
+  {
+   "id": "gene.night",
+   "name": "Gece",
+   "effects": {
+    "pct": {
+     "nightBonus": 10.0
+    }
+   }
+  },
+  {
+   "id": "gene.day",
+   "name": "Gün",
+   "effects": {
+    "pct": {
+     "dayBonus": 10.0
+    }
+   }
+  },
+  {
+   "id": "gene.fin",
+   "name": "Yüzgeç",
+   "effects": {
+    "pct": {
+     "swimSpeed": 30.0
+    }
+   }
+  },
+  {
+   "id": "gene.grip",
+   "name": "Kavrama",
+   "effects": {
+    "pct": {
+     "mountainCost": -20.0
+    }
+   }
+  },
+  {
+   "id": "gene.keen",
+   "name": "Keskinlik",
+   "effects": {
+    "add": {
+     "sight": 2.0
+    }
+   }
+  },
+  {
+   "id": "gene.bones",
+   "name": "Kemik",
+   "effects": {
+    "pct": {
+     "knockbackResist": 25.0
+    }
+   }
+  },
+  {
+   "id": "gene.hide",
+   "name": "Post",
+   "effects": {
+    "add": {
+     "armor": 2.0
+    },
+    "pct": {
+     "coldResist": 10.0
+    }
+   }
+  },
+  {
+   "id": "gene.blood",
+   "name": "Kan",
+   "effects": {
+    "pct": {
+     "bleedResist": 50.0
+    }
+   }
+  },
+  {
+   "id": "gene.nerve",
+   "name": "Sinir",
+   "effects": {
+    "pct": {
+     "atkspd": 8.0
+    }
+   }
+  },
+  {
+   "id": "gene.heart",
+   "name": "Yürek",
+   "effects": {
+    "pct": {
+     "fleeThreshold": -20.0
+    }
+   }
+  },
+  {
+   "id": "gene.lungs",
+   "name": "Ciğer",
+   "effects": {
+    "pct": {
+     "breathHold": 100.0
+    }
+   }
+  },
+  {
+   "id": "gene.liver",
+   "name": "Karaciğer",
+   "effects": {
+    "pct": {
+     "poisonResist": 40.0
+    }
+   }
+  },
+  {
+   "id": "gene.mutagen",
+   "name": "Mutajen",
+   "effects": {
+    "pct": {
+     "mutation": 50.0
+    }
+   }
+  },
+  {
+   "id": "gene.stabilizer",
+   "name": "Dengeleyici",
+   "effects": {
+    "pct": {
+     "mutation": -50.0
+    }
+   }
+  },
+  {
+   "id": "gene.empty",
+   "name": "Boş Dizi",
+   "effects": {}
+  },
+  {
+   "id": "gene.junk",
+   "name": "Hurda Dizi",
+   "effects": {
+    "pct": {
+     "hp": -3.0
+    }
+   }
+  },
+  {
+   "id": "gene.dominant",
+   "name": "Baskın",
+   "effects": {
+    "pct": {
+     "inheritWeight": 50.0
+    }
+   }
+  },
+  {
+   "id": "gene.recessive",
+   "name": "Çekinik",
+   "effects": {
+    "pct": {
+     "inheritWeight": -50.0
+    }
+   }
+  },
+  {
+   "id": "gene.ancient",
+   "name": "Kadim",
+   "effects": {
+    "pct": {
+     "xp": 15.0,
+     "lifespan": 5.0
+    }
+   }
+  },
+  {
+   "id": "gene.chimera",
+   "name": "Kimera",
+   "effects": {
+    "pct": {
+     "randomTraitOnBirth": 5.0
+    }
+   }
+  }
+ ]
+}

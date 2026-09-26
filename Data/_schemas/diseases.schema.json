@@ -1,0 +1,64 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "title": "diseases",
+ "type": "object",
+ "required": [
+  "category",
+  "items"
+ ],
+ "properties": {
+  "category": {
+   "const": "diseases"
+  },
+  "count": {
+   "type": "integer"
+  },
+  "items": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "required": [
+     "contagion",
+     "durationMonths",
+     "id",
+     "lethality",
+     "name",
+     "note",
+     "spread",
+     "transformsInto"
+    ],
+    "properties": {
+     "id": {
+      "type": "string",
+      "pattern": "^dis_[a-z0-9_]+$"
+     },
+     "name": {
+      "type": "string"
+     },
+     "spread": {
+      "type": "array"
+     },
+     "contagion": {
+      "type": "number"
+     },
+     "lethality": {
+      "type": "number"
+     },
+     "durationMonths": {
+      "type": "integer"
+     },
+     "transformsInto": {
+      "type": [
+       "null",
+       "string"
+      ]
+     },
+     "note": {
+      "type": "string"
+     }
+    },
+    "additionalProperties": true
+   }
+  }
+ }
+}

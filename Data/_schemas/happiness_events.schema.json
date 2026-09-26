@@ -1,0 +1,41 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "title": "happiness_events",
+ "type": "object",
+ "required": [
+  "category",
+  "items"
+ ],
+ "properties": {
+  "category": {
+   "const": "happiness_events"
+  },
+  "count": {
+   "type": "integer"
+  },
+  "items": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "required": [
+     "id",
+     "name",
+     "value"
+    ],
+    "properties": {
+     "id": {
+      "type": "string",
+      "pattern": "^hap\\.[a-z0-9_]+$"
+     },
+     "name": {
+      "type": "string"
+     },
+     "value": {
+      "type": "integer"
+     }
+    },
+    "additionalProperties": true
+   }
+  }
+ }
+}

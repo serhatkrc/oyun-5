@@ -1,0 +1,60 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "title": "powers",
+ "type": "object",
+ "required": [
+  "category",
+  "items"
+ ],
+ "properties": {
+  "category": {
+   "const": "powers"
+  },
+  "count": {
+   "type": "integer"
+  },
+  "items": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "required": [
+     "description",
+     "id",
+     "name",
+     "params",
+     "tab",
+     "type",
+     "unlockedBy"
+    ],
+    "properties": {
+     "id": {
+      "type": "string",
+      "pattern": "^pw\\.[a-z0-9_]+$"
+     },
+     "name": {
+      "type": "string"
+     },
+     "tab": {
+      "type": "string"
+     },
+     "type": {
+      "type": "string"
+     },
+     "params": {
+      "type": "object"
+     },
+     "unlockedBy": {
+      "type": [
+       "null",
+       "string"
+      ]
+     },
+     "description": {
+      "type": "string"
+     }
+    },
+    "additionalProperties": true
+   }
+  }
+ }
+}

@@ -1,0 +1,156 @@
+{
+ "category": "happiness_events",
+ "count": 30,
+ "items": [
+  {
+   "id": "hap.new_home",
+   "name": "Yeni ev",
+   "value": 4
+  },
+  {
+   "id": "hap.festival",
+   "name": "Şenlik",
+   "value": 5
+  },
+  {
+   "id": "hap.married",
+   "name": "Evlilik",
+   "value": 6
+  },
+  {
+   "id": "hap.child_born",
+   "name": "Çocuk doğdu",
+   "value": 5
+  },
+  {
+   "id": "hap.ate_well",
+   "name": "İyi yemek",
+   "value": 1
+  },
+  {
+   "id": "hap.hungry",
+   "name": "Açlık",
+   "value": -3
+  },
+  {
+   "id": "hap.homeless",
+   "name": "Evsizlik",
+   "value": -4
+  },
+  {
+   "id": "hap.family_died",
+   "name": "Aile üyesi öldü",
+   "value": -8
+  },
+  {
+   "id": "hap.friend_died",
+   "name": "Arkadaşı öldü",
+   "value": -4
+  },
+  {
+   "id": "hap.war_won",
+   "name": "Savaş zaferi",
+   "value": 4
+  },
+  {
+   "id": "hap.war_lost",
+   "name": "Savaş yenilgisi",
+   "value": -5
+  },
+  {
+   "id": "hap.city_captured",
+   "name": "Şehri ele geçirildi",
+   "value": -10
+  },
+  {
+   "id": "hap.king_died",
+   "name": "Kral öldü",
+   "value": -3
+  },
+  {
+   "id": "hap.plague_nearby",
+   "name": "Yakında salgın",
+   "value": -3
+  },
+  {
+   "id": "hap.read_book",
+   "name": "Kitap okudu",
+   "value": 2
+  },
+  {
+   "id": "hap.prayed",
+   "name": "Dua etti",
+   "value": 1
+  },
+  {
+   "id": "hap.new_king_liked",
+   "name": "Sevilen kral",
+   "value": 3
+  },
+  {
+   "id": "hap.heavy_tax",
+   "name": "Ağır vergi",
+   "value": -2
+  },
+  {
+   "id": "hap.disaster",
+   "name": "Afet yaşadı",
+   "value": -6
+  },
+  {
+   "id": "hap.blessed_by_god",
+   "name": "Tanrı kutsadı",
+   "value": 6
+  },
+  {
+   "id": "hap.cursed_by_god",
+   "name": "Tanrı lanetledi",
+   "value": -6
+  },
+  {
+   "id": "hap.foreign_rule",
+   "name": "Yabancı yönetim",
+   "value": -3
+  },
+  {
+   "id": "hap.same_faith_king",
+   "name": "Aynı dinden kral",
+   "value": 2
+  },
+  {
+   "id": "hap.promoted",
+   "name": "Terfi",
+   "value": 3
+  },
+  {
+   "id": "hap.gift_received",
+   "name": "Hediye aldı",
+   "value": 2
+  },
+  {
+   "id": "hap.insulted",
+   "name": "Hakarete uğradı",
+   "value": -2
+  },
+  {
+   "id": "hap.won_duel",
+   "name": "Düello kazandı",
+   "value": 4
+  },
+  {
+   "id": "hap.saw_miracle",
+   "name": "Mucize gördü",
+   "value": 5
+  },
+  {
+   "id": "hap.statue_nearby",
+   "name": "Heykel yakında",
+   "value": 1
+  },
+  {
+   "id": "hap.era_change",
+   "name": "Çağ değişimi",
+   "value": 0
+  }
+ ]
+}

@@ -1,0 +1,49 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "title": "evolution_rules",
+ "type": "object",
+ "required": [
+  "category",
+  "items"
+ ],
+ "properties": {
+  "category": {
+   "const": "evolution_rules"
+  },
+  "count": {
+   "type": "integer"
+  },
+  "items": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "required": [
+     "grants",
+     "id",
+     "name",
+     "note",
+     "stage"
+    ],
+    "properties": {
+     "id": {
+      "type": "string",
+      "pattern": "^evo\\.[a-z0-9_]+$"
+     },
+     "name": {
+      "type": "string"
+     },
+     "stage": {
+      "type": "integer"
+     },
+     "grants": {
+      "type": "array"
+     },
+     "note": {
+      "type": "string"
+     }
+    },
+    "additionalProperties": true
+   }
+  }
+ }
+}

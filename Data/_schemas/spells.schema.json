@@ -1,0 +1,53 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "title": "spells",
+ "type": "object",
+ "required": [
+  "category",
+  "items"
+ ],
+ "properties": {
+  "category": {
+   "const": "spells"
+  },
+  "count": {
+   "type": "integer"
+  },
+  "items": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "required": [
+     "cooldownTicks",
+     "effect",
+     "id",
+     "manaCost",
+     "name",
+     "range"
+    ],
+    "properties": {
+     "id": {
+      "type": "string",
+      "pattern": "^spell\\.[a-z0-9_]+$"
+     },
+     "name": {
+      "type": "string"
+     },
+     "manaCost": {
+      "type": "integer"
+     },
+     "cooldownTicks": {
+      "type": "integer"
+     },
+     "range": {
+      "type": "integer"
+     },
+     "effect": {
+      "type": "string"
+     }
+    },
+    "additionalProperties": true
+   }
+  }
+ }
+}

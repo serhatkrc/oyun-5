@@ -1,0 +1,454 @@
+{
+ "category": "religion_traits",
+ "count": 40,
+ "items": [
+  {
+   "id": "rel.green_mother",
+   "name": "Yeşil Ana",
+   "group": "deity",
+   "effects": {
+    "spells": [
+     "grow"
+    ],
+    "pct": {
+     "farmYield": 20.0
+    }
+   }
+  },
+  {
+   "id": "rel.serpent_coil",
+   "name": "Yılan Halkası",
+   "group": "deity",
+   "effects": {
+    "onHit": "poison:20"
+   }
+  },
+  {
+   "id": "rel.drowned_god",
+   "name": "Batık Tanrı",
+   "group": "deity",
+   "effects": {
+    "flags": [
+     "swim"
+    ],
+    "pct": {
+     "boatSafety": 50.0
+    }
+   }
+  },
+  {
+   "id": "rel.sun_eye",
+   "name": "Güneş Gözü",
+   "group": "deity",
+   "effects": {
+    "spells": [
+     "bless"
+    ],
+    "immunes": [
+     "heat"
+    ]
+   }
+  },
+  {
+   "id": "rel.deep_hammer",
+   "name": "Derin Çekiç",
+   "group": "deity",
+   "effects": {
+    "add": {
+     "craftQuality": 1.0
+    },
+    "pct": {
+     "mineYield": 20.0
+    }
+   }
+  },
+  {
+   "id": "rel.frost_mother",
+   "name": "Ayaz Ana",
+   "group": "deity",
+   "effects": {
+    "spells": [
+     "freeze"
+    ],
+    "immunes": [
+     "cold"
+    ]
+   }
+  },
+  {
+   "id": "rel.spore_choir",
+   "name": "Spor Korosu",
+   "group": "deity",
+   "effects": {
+    "immunes": [
+     "spores"
+    ],
+    "spells": [
+     "poison_cloud"
+    ]
+   }
+  },
+  {
+   "id": "rel.prism",
+   "name": "Prizma",
+   "group": "deity",
+   "effects": {
+    "pct": {
+     "spellPower": 25.0
+    },
+    "add": {
+     "mana": 20.0
+    }
+   }
+  },
+  {
+   "id": "rel.moon_veil",
+   "name": "Ay Peçesi",
+   "group": "deity",
+   "effects": {
+    "pct": {
+     "nightBonus": 25.0
+    },
+    "spells": [
+     "invisibility"
+    ]
+   }
+  },
+  {
+   "id": "rel.hollow_king",
+   "name": "Oyuk Kral",
+   "group": "deity",
+   "effects": {
+    "spells": [
+     "raise_dead"
+    ]
+   }
+  },
+  {
+   "id": "rel.eternal_flame",
+   "name": "Sönmez Ateş",
+   "group": "deity",
+   "effects": {
+    "spells": [
+     "fireball"
+    ],
+    "immunes": [
+     "burning"
+    ]
+   }
+  },
+  {
+   "id": "rel.star_choir",
+   "name": "Yıldız Korosu",
+   "group": "deity",
+   "effects": {
+    "spells": [
+     "meteor_call"
+    ]
+   }
+  },
+  {
+   "id": "rel.endless_wheel",
+   "name": "Sonsuz Çark",
+   "group": "deity",
+   "effects": {
+    "onDeath": "rebirth:5%"
+   }
+  },
+  {
+   "id": "rel.null",
+   "name": "Hiçlik",
+   "group": "deity",
+   "effects": {
+    "pct": {
+     "spellResist": 50.0
+    },
+    "flags": [
+     "no_spells"
+    ]
+   }
+  },
+  {
+   "id": "rel.hive_mind",
+   "name": "Kovan",
+   "group": "deity",
+   "effects": {
+    "add": {
+     "loyalty": 25.0
+    },
+    "pct": {
+     "plotChance": -50.0
+    }
+   }
+  },
+  {
+   "id": "rel.missionaries",
+   "name": "Misyonerler",
+   "group": "doctrine",
+   "effects": {
+    "pct": {
+     "conversion": 50.0
+    }
+   }
+  },
+  {
+   "id": "rel.holy_war",
+   "name": "Kutsal Savaş",
+   "group": "doctrine",
+   "effects": {
+    "pct": {
+     "religiousWarChance": 60.0
+    }
+   }
+  },
+  {
+   "id": "rel.pilgrimage",
+   "name": "Hac",
+   "group": "doctrine",
+   "effects": {
+    "neurons": [
+     "pilgrimage"
+    ],
+    "add": {
+     "happiness": 2.0
+    }
+   }
+  },
+  {
+   "id": "rel.monasticism",
+   "name": "Manastır",
+   "group": "doctrine",
+   "effects": {
+    "pct": {
+     "priestXp": 50.0,
+     "fertility": -10.0
+    }
+   }
+  },
+  {
+   "id": "rel.offerings",
+   "name": "Adak",
+   "group": "doctrine",
+   "effects": {
+    "add": {
+     "sacrificeFood": 1.0
+    },
+    "pct": {
+     "blessChance": 20.0
+    }
+   }
+  },
+  {
+   "id": "rel.fasting",
+   "name": "Oruç",
+   "group": "doctrine",
+   "effects": {
+    "pct": {
+     "hungerRate": -10.0,
+     "faith": 10.0
+    }
+   }
+  },
+  {
+   "id": "rel.temple_builders",
+   "name": "Tapınakçılar",
+   "group": "doctrine",
+   "effects": {
+    "pct": {
+     "templeBuildSpeed": 50.0
+    }
+   }
+  },
+  {
+   "id": "rel.healing_hands",
+   "name": "Şifa Elleri",
+   "group": "doctrine",
+   "effects": {
+    "spells": [
+     "heal"
+    ]
+   }
+  },
+  {
+   "id": "rel.prophecy",
+   "name": "Kehanet",
+   "group": "doctrine",
+   "effects": {
+    "add": {
+     "disasterWarning": 1.0
+    }
+   }
+  },
+  {
+   "id": "rel.devotion",
+   "name": "Fedakârlık",
+   "group": "doctrine",
+   "effects": {
+    "pct": {
+     "fleeThreshold": -50.0
+    }
+   }
+  },
+  {
+   "id": "rel.paradise",
+   "name": "Cennet İnancı",
+   "group": "doctrine",
+   "effects": {
+    "pct": {
+     "deathMourning": -50.0
+    }
+   }
+  },
+  {
+   "id": "rel.reincarnation",
+   "name": "Ruh Göçü",
+   "group": "doctrine",
+   "effects": {
+    "pct": {
+     "xpInheritance": 10.0
+    }
+   }
+  },
+  {
+   "id": "rel.ancestor_worship",
+   "name": "Ata Kültü",
+   "group": "doctrine",
+   "effects": {
+    "pct": {
+     "clanLoyalty": 20.0
+    }
+   }
+  },
+  {
+   "id": "rel.idol_makers",
+   "name": "Put Ustaları",
+   "group": "doctrine",
+   "effects": {
+    "add": {
+     "buildStatues": 1.0,
+     "happiness": 1.0
+    }
+   }
+  },
+  {
+   "id": "rel.iconoclasm",
+   "name": "Put Kırıcılar",
+   "group": "doctrine",
+   "effects": {
+    "add": {
+     "destroyForeignStatues": 1.0
+    }
+   }
+  },
+  {
+   "id": "rel.tolerance",
+   "name": "Hoşgörü",
+   "group": "doctrine",
+   "effects": {
+    "add": {
+     "foreignReligionOpinion": 20.0
+    }
+   }
+  },
+  {
+   "id": "rel.inquisition",
+   "name": "Engizisyon",
+   "group": "doctrine",
+   "effects": {
+    "add": {
+     "convertOthersForce": 1.0,
+     "happinessOthers": -2.0
+    }
+   }
+  },
+  {
+   "id": "rel.divine_kings",
+   "name": "Tanrı Krallar",
+   "group": "doctrine",
+   "effects": {
+    "add": {
+     "kingLoyalty": 30.0
+    }
+   }
+  },
+  {
+   "id": "rel.rain_dancers",
+   "name": "Yağmur Dansçıları",
+   "group": "doctrine",
+   "effects": {
+    "spells": [
+     "rain_call"
+    ]
+   }
+  },
+  {
+   "id": "rel.relic_keepers",
+   "name": "Emanet Bekçileri",
+   "group": "doctrine",
+   "effects": {
+    "pct": {
+     "legendaryItemChance": 50.0
+    }
+   }
+  },
+  {
+   "id": "rel.charity",
+   "name": "Sadaka",
+   "group": "doctrine",
+   "effects": {
+    "add": {
+     "poorHappiness": 2.0
+    },
+    "pct": {
+     "gold": -10.0
+    }
+   }
+  },
+  {
+   "id": "rel.celibate_priests",
+   "name": "Evlenmeyen Rahipler",
+   "group": "doctrine",
+   "effects": {
+    "pct": {
+     "priestSpellPower": 30.0
+    }
+   }
+  },
+  {
+   "id": "rel.holy_animals",
+   "name": "Kutsal Hayvanlar",
+   "group": "doctrine",
+   "effects": {
+    "pct": {
+     "huntYield": -80.0
+    },
+    "add": {
+     "animalFriend": 1.0
+    }
+   }
+  },
+  {
+   "id": "rel.smiting",
+   "name": "Göksel Ceza",
+   "group": "doctrine",
+   "effects": {
+    "spells": [
+     "holy_smite"
+    ]
+   }
+  },
+  {
+   "id": "rel.rot_purge",
+   "name": "Arınma Ayini",
+   "group": "doctrine",
+   "effects": {
+    "spells": [
+     "cure_rot"
+    ],
+    "pct": {
+     "dmgVsUndead": 30.0
+    }
+   }
+  }
+ ]
+}

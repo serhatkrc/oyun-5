@@ -1,0 +1,128 @@
+{
+ "category": "gene_synergies",
+ "count": 8,
+ "items": [
+  {
+   "id": "syn.titan",
+   "name": "Titan Uyumu",
+   "requires": [
+    "gene.growth",
+    "gene.vitality",
+    "gene.bones"
+   ],
+   "bonus": {
+    "pct": {
+     "hp": 20.0
+    },
+    "add": {
+     "size": 1.0
+    }
+   }
+  },
+  {
+   "id": "syn.hunter_line",
+   "name": "Avcı Soyu",
+   "requires": [
+    "gene.haste",
+    "gene.keen",
+    "gene.focus"
+   ],
+   "bonus": {
+    "add": {
+     "crit": 10.0
+    },
+    "pct": {
+     "speed": 5.0
+    }
+   }
+  },
+  {
+   "id": "syn.sage_line",
+   "name": "Bilge Soyu",
+   "requires": [
+    "gene.mind",
+    "gene.ancient",
+    "gene.persistence"
+   ],
+   "bonus": {
+    "add": {
+     "intel": 2.0
+    },
+    "pct": {
+     "lifespan": 10.0
+    }
+   }
+  },
+  {
+   "id": "syn.berserk_line",
+   "name": "Cinnet Soyu",
+   "requires": [
+    "gene.rage",
+    "gene.nerve",
+    "gene.heart"
+   ],
+   "bonus": {
+    "pct": {
+     "dmg": 15.0
+    }
+   }
+  },
+  {
+   "id": "syn.sea_line",
+   "name": "Deniz Soyu",
+   "requires": [
+    "gene.fin",
+    "gene.lungs",
+    "gene.chill"
+   ],
+   "bonus": {
+    "flags": [
+     "breathe_water"
+    ]
+   }
+  },
+  {
+   "id": "syn.frost_line",
+   "name": "Ayaz Soyu",
+   "requires": [
+    "gene.chill",
+    "gene.hide",
+    "gene.stamina"
+   ],
+   "bonus": {
+    "immunes": [
+     "cold"
+    ]
+   }
+  },
+  {
+   "id": "syn.ember_line",
+   "name": "Kor Soyu",
+   "requires": [
+    "gene.warmth",
+    "gene.blood",
+    "gene.rage"
+   ],
+   "bonus": {
+    "immunes": [
+     "burning"
+    ]
+   }
+  },
+  {
+   "id": "syn.golden_line",
+   "name": "Altın Soy",
+   "requires": [
+    "gene.luck",
+    "gene.charm",
+    "gene.calm"
+   ],
+   "bonus": {
+    "add": {
+     "luck": 15.0,
+     "diplo": 2.0
+    }
+   }
+  }
+ ]
+}

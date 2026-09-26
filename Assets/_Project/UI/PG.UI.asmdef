@@ -1,0 +1,27 @@
+{
+    "name": "PG.UI",
+    "rootNamespace": "PG.UI",
+    "references": [
+        "PG.Core",
+        "PG.Content",
+        "PG.World",
+        "PG.WorldGen",
+        "PG.Sim",
+        "PG.Powers",
+        "PG.Render",
+        "PG.Persistence",
+        "Unity.Collections",
+        "Unity.Mathematics",
+        "Unity.Localization",
+        "Unity.InputSystem"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -1,0 +1,2308 @@
+{
+ "category": "subspecies_traits",
+ "count": 200,
+ "items": [
+  {
+   "id": "sst.herbivore",
+   "name": "Otçul",
+   "group": "diet",
+   "effects": {
+    "diet": "plant"
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.carnivore",
+   "name": "Etçil",
+   "group": "diet",
+   "effects": {
+    "diet": "meat",
+    "pct": {
+     "dmg": 5.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.omnivore",
+   "name": "Hepçil",
+   "group": "diet",
+   "effects": {
+    "diet": "any"
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.insectivore",
+   "name": "Böcekçil",
+   "group": "diet",
+   "effects": {
+    "diet": "insect"
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.piscivore",
+   "name": "Balıkçıl",
+   "group": "diet",
+   "effects": {
+    "diet": "fish",
+    "flags": [
+     "fish_hunt"
+    ]
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.scavenger",
+   "name": "Leşçil",
+   "group": "diet",
+   "effects": {
+    "diet": "corpse",
+    "immunes": [
+     "food_poison"
+    ]
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.nectar",
+   "name": "Nektarcı",
+   "group": "diet",
+   "effects": {
+    "diet": "flower"
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.lithophage",
+   "name": "Taş Yiyen",
+   "group": "diet",
+   "effects": {
+    "diet": "stone"
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.photosynthesis",
+   "name": "Fotosentez",
+   "group": "diet",
+   "effects": {
+    "pct": {
+     "hungerRate": -70.0
+    },
+    "add": {
+     "needsSun": 1.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.brain_eater",
+   "name": "Beyin Yiyen",
+   "group": "diet",
+   "effects": {
+    "diet": "brain"
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.fungivore",
+   "name": "Mantarcıl",
+   "group": "diet",
+   "effects": {
+    "diet": "mushroom"
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.bloodfeeder",
+   "name": "Kan İçen",
+   "group": "diet",
+   "effects": {
+    "diet": "blood",
+    "pct": {
+     "lifesteal": 10.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.cannibal",
+   "name": "Yamyam",
+   "group": "diet",
+   "effects": {
+    "diet": "same_species",
+    "add": {
+     "happinessOthers": -3.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.fasting",
+   "name": "Az Yiyen",
+   "group": "diet",
+   "effects": {
+    "pct": {
+     "hungerRate": -40.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.live_birth",
+   "name": "Canlı Doğum",
+   "group": "repro",
+   "effects": {
+    "repro": "live"
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.egg_laying",
+   "name": "Yumurtlama",
+   "group": "repro",
+   "effects": {
+    "repro": "egg"
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.budding",
+   "name": "Tomurcuklanma",
+   "group": "repro",
+   "effects": {
+    "repro": "bud",
+    "pct": {
+     "fertility": 30.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.fission",
+   "name": "İkiye Bölünme",
+   "group": "repro",
+   "effects": {
+    "repro": "split"
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.spore_birth",
+   "name": "Sporla Üreme",
+   "group": "repro",
+   "effects": {
+    "repro": "spore"
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.parthenogenesis",
+   "name": "Eşeysiz Üreme",
+   "group": "repro",
+   "effects": {
+    "flags": [
+     "no_mate_needed"
+    ]
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.twins",
+   "name": "İkiz Eğilimi",
+   "group": "repro",
+   "effects": {
+    "pct": {
+     "twinChance": 30.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.litter",
+   "name": "Kalabalık Batın",
+   "group": "repro",
+   "effects": {
+    "litterSize": "3-6"
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.single_offspring",
+   "name": "Tek Yavru",
+   "group": "repro",
+   "effects": {
+    "add": {
+     "litterSize": 1.0
+    },
+    "pct": {
+     "childSurvival": 30.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.fast_gestation",
+   "name": "Kısa Gebelik",
+   "group": "repro",
+   "effects": {
+    "pct": {
+     "gestation": -50.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.long_gestation",
+   "name": "Uzun Gebelik",
+   "group": "repro",
+   "effects": {
+    "pct": {
+     "gestation": 100.0,
+     "childStats": 10.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.seasonal_breeding",
+   "name": "Mevsimsel Üreme",
+   "group": "repro",
+   "effects": {
+    "breedMonths": "spring"
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.monogamous",
+   "name": "Tek Eşli",
+   "group": "repro",
+   "effects": {
+    "flags": [
+     "lifelong_mate"
+    ],
+    "add": {
+     "happiness": 2.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.polygamous",
+   "name": "Çok Eşli",
+   "group": "repro",
+   "effects": {
+    "pct": {
+     "fertility": 25.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.fast_maturity",
+   "name": "Erken Olgunlaşma",
+   "group": "life",
+   "effects": {
+    "pct": {
+     "maturity": -50.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.slow_maturity",
+   "name": "Geç Olgunlaşma",
+   "group": "life",
+   "effects": {
+    "pct": {
+     "maturity": 80.0,
+     "xp": 15.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.long_lived_kind",
+   "name": "Uzun Ömürlü Soy",
+   "group": "life",
+   "effects": {
+    "pct": {
+     "lifespan": 60.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.short_lived_kind",
+   "name": "Kısa Ömürlü Soy",
+   "group": "life",
+   "effects": {
+    "pct": {
+     "lifespan": -50.0,
+     "fertility": 30.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.ageless",
+   "name": "Yaşlanmayan",
+   "group": "life",
+   "effects": {
+    "flags": [
+     "no_aging"
+    ]
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.metamorphic",
+   "name": "Başkalaşımcı",
+   "group": "life",
+   "effects": {
+    "flags": [
+     "metamorphosis"
+    ]
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.elder_wisdom",
+   "name": "Yaşlı Bilgeliği",
+   "group": "life",
+   "effects": {
+    "add": {
+     "elderIntel": 3.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.youth_vigor",
+   "name": "Genç Dinçliği",
+   "group": "life",
+   "effects": {
+    "pct": {
+     "youngSpeed": 20.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.hibernation",
+   "name": "Kış Uykusu",
+   "group": "life",
+   "effects": {
+    "add": {
+     "winterSleep": 1.0
+    },
+    "pct": {
+     "hungerRate": -50.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.rebirth",
+   "name": "Küllerden Doğuş",
+   "group": "life",
+   "effects": {
+    "onDeath": "rebirth:10%"
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.primitive_brain",
+   "name": "İlkel Beyin",
+   "group": "brain",
+   "effects": {
+    "add": {
+     "intel": -2.0
+    },
+    "neurons": [
+     "instinct"
+    ]
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.advanced_memory",
+   "name": "Gelişmiş Hafıza",
+   "group": "brain",
+   "effects": {
+    "flags": [
+     "can_hold_culture"
+    ]
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.speech_center",
+   "name": "Konuşma Merkezi",
+   "group": "brain",
+   "effects": {
+    "flags": [
+     "can_speak",
+     "can_hold_language"
+    ]
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.abstract_thought",
+   "name": "Soyut Düşünce",
+   "group": "brain",
+   "effects": {
+    "flags": [
+     "can_hold_religion"
+    ]
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.tool_use",
+   "name": "Alet Kullanımı",
+   "group": "brain",
+   "effects": {
+    "flags": [
+     "can_use_items",
+     "can_build"
+    ]
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.planning",
+   "name": "Planlama",
+   "group": "brain",
+   "effects": {
+    "flags": [
+     "can_plot"
+    ]
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.pattern_seek",
+   "name": "Örüntü Arayıcı",
+   "group": "brain",
+   "effects": {
+    "pct": {
+     "bookWrite": 50.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.empathy",
+   "name": "Empati",
+   "group": "brain",
+   "effects": {
+    "add": {
+     "happinessOthers": 1.0
+    },
+    "pct": {
+     "spareEnemy": 20.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.hive_mind",
+   "name": "Kovan Zihni",
+   "group": "brain",
+   "effects": {
+    "flags": [
+     "shared_mind"
+    ],
+    "add": {
+     "loyalty": 30.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.instinct_driven",
+   "name": "İçgüdüsel",
+   "group": "brain",
+   "effects": {
+    "neurons": [
+     "instinct"
+    ],
+    "add": {
+     "intel": -1.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.curious_minds",
+   "name": "Meraklı Zihinler",
+   "group": "brain",
+   "effects": {
+    "neurons": [
+     "explore"
+    ],
+    "pct": {
+     "xp": 10.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.dream_walkers",
+   "name": "Rüya Gezginleri",
+   "group": "brain",
+   "effects": {
+    "pct": {
+     "sleepXp": 50.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.sapience",
+   "name": "Bilinç",
+   "group": "brain",
+   "effects": {
+    "flags": [
+     "sapient"
+    ]
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.mimicry",
+   "name": "Taklitçilik",
+   "group": "brain",
+   "effects": {
+    "pct": {
+     "learnFromOthers": 50.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.pack_hunter",
+   "name": "Sürü Avcısı",
+   "group": "social",
+   "effects": {
+    "pct": {
+     "packDmg": 20.0
+    },
+    "neurons": [
+     "pack_hunt"
+    ]
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.solitary",
+   "name": "Yalnız",
+   "group": "social",
+   "effects": {
+    "flags": [
+     "no_family"
+    ],
+    "pct": {
+     "dmg": 10.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.herd",
+   "name": "Sürü Güdüsü",
+   "group": "social",
+   "effects": {
+    "neurons": [
+     "follow_herd"
+    ],
+    "add": {
+     "fleeTogether": 1.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.colony",
+   "name": "Koloni",
+   "group": "social",
+   "effects": {
+    "flags": [
+     "colony"
+    ],
+    "pct": {
+     "buildSpeed": 30.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.territorial",
+   "name": "Bölgeci",
+   "group": "social",
+   "effects": {
+    "neurons": [
+     "guard_territory"
+    ],
+    "pct": {
+     "aggro": 30.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.nomadic",
+   "name": "Göçebe",
+   "group": "social",
+   "effects": {
+    "neurons": [
+     "migrate"
+    ],
+    "flags": [
+     "no_permanent_city"
+    ]
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.xenophile",
+   "name": "Yabancı Sever",
+   "group": "social",
+   "effects": {
+    "pct": {
+     "tolerance": 50.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.xenophobe",
+   "name": "Yabancı Düşmanı",
+   "group": "social",
+   "effects": {
+    "pct": {
+     "tolerance": -50.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.matriarchal",
+   "name": "Ana Soylu",
+   "group": "social",
+   "effects": {
+    "leaderRule": "female"
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.patriarchal",
+   "name": "Baba Soylu",
+   "group": "social",
+   "effects": {
+    "leaderRule": "male"
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.egalitarian",
+   "name": "Eşitlikçi",
+   "group": "social",
+   "effects": {
+    "add": {
+     "happiness": 1.0,
+     "loyalty": 5.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.hierarchical",
+   "name": "Hiyerarşik",
+   "group": "social",
+   "effects": {
+    "add": {
+     "warfare": 1.0,
+     "happinessLow": -1.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.communal_care",
+   "name": "Ortak Bakım",
+   "group": "social",
+   "effects": {
+    "pct": {
+     "childSurvival": 30.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.peace_seeking",
+   "name": "Barışçıl Soy",
+   "group": "social",
+   "effects": {
+    "pct": {
+     "warChance": -40.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.cold_adapted",
+   "name": "Soğuğa Uyumlu",
+   "group": "climate",
+   "effects": {
+    "immunes": [
+     "cold"
+    ]
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.heat_adapted",
+   "name": "Sıcağa Uyumlu",
+   "group": "climate",
+   "effects": {
+    "immunes": [
+     "heat"
+    ]
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.arid_adapted",
+   "name": "Kuraklığa Uyumlu",
+   "group": "climate",
+   "effects": {
+    "pct": {
+     "thirst": -60.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.wet_adapted",
+   "name": "Neme Uyumlu",
+   "group": "climate",
+   "effects": {
+    "pct": {
+     "swampCost": -50.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.altitude",
+   "name": "Yüksek Rakım",
+   "group": "climate",
+   "effects": {
+    "pct": {
+     "mountainCost": -50.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.cave_dweller",
+   "name": "Mağara Sakini",
+   "group": "climate",
+   "effects": {
+    "flags": [
+     "lives_in_mountains"
+    ]
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.nocturnal",
+   "name": "Gececi",
+   "group": "climate",
+   "effects": {
+    "activeAt": "night",
+    "pct": {
+     "nightBonus": 20.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.diurnal",
+   "name": "Gündüzcü",
+   "group": "climate",
+   "effects": {
+    "activeAt": "day"
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.sun_sensitive",
+   "name": "Güneş Hassası",
+   "group": "climate",
+   "effects": {
+    "add": {
+     "sunDmg": 1.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.storm_hardy",
+   "name": "Fırtınaya Dayanıklı",
+   "group": "climate",
+   "effects": {
+    "immunes": [
+     "lightning"
+    ]
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.toxic_tolerant",
+   "name": "Zehre Toleranslı",
+   "group": "climate",
+   "effects": {
+    "immunes": [
+     "poison"
+    ]
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.radiation_tolerant",
+   "name": "Radyasyona Dayanıklı",
+   "group": "climate",
+   "effects": {
+    "immunes": [
+     "radiation"
+    ]
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.swimmer_kind",
+   "name": "Yüzücü",
+   "group": "move",
+   "effects": {
+    "flags": [
+     "swim"
+    ]
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.aquatic",
+   "name": "Suda Yaşar",
+   "group": "move",
+   "effects": {
+    "flags": [
+     "water_only",
+     "breathe_water"
+    ]
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.amphibious",
+   "name": "Amfibi",
+   "group": "move",
+   "effects": {
+    "flags": [
+     "swim",
+     "breathe_water"
+    ]
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.flying",
+   "name": "Uçucu",
+   "group": "move",
+   "effects": {
+    "flags": [
+     "fly"
+    ]
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.gliding",
+   "name": "Süzülen",
+   "group": "move",
+   "effects": {
+    "add": {
+     "fallDmg": 0.0,
+     "jumpRange": 3.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.burrowing",
+   "name": "Kazıcı",
+   "group": "move",
+   "effects": {
+    "flags": [
+     "burrow"
+    ]
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.climbing",
+   "name": "Tırmanıcı",
+   "group": "move",
+   "effects": {
+    "pct": {
+     "mountainCost": -60.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.fast_runner",
+   "name": "Koşucu",
+   "group": "move",
+   "effects": {
+    "pct": {
+     "speed": 25.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.slow_mover",
+   "name": "Ağır",
+   "group": "move",
+   "effects": {
+    "pct": {
+     "speed": -30.0
+    },
+    "add": {
+     "armor": 5.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.jumper",
+   "name": "Sıçrayıcı",
+   "group": "move",
+   "effects": {
+    "flags": [
+     "jump"
+    ]
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.migratory",
+   "name": "Göçmen",
+   "group": "move",
+   "effects": {
+    "neurons": [
+     "seasonal_migrate"
+    ]
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.hover",
+   "name": "Havada Süzülen",
+   "group": "move",
+   "effects": {
+    "flags": [
+     "hover"
+    ]
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.keen_sight",
+   "name": "Keskin Görüş",
+   "group": "sense",
+   "effects": {
+    "add": {
+     "sight": 4.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.keen_smell",
+   "name": "Keskin Koku",
+   "group": "sense",
+   "effects": {
+    "add": {
+     "trackRange": 8.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.echolocation",
+   "name": "Yankı Algısı",
+   "group": "sense",
+   "effects": {
+    "flags": [
+     "see_in_dark"
+    ]
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.thermal_vision",
+   "name": "Isıl Görüş",
+   "group": "sense",
+   "effects": {
+    "flags": [
+     "see_invisible"
+    ]
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.tremorsense",
+   "name": "Titreşim Algısı",
+   "group": "sense",
+   "effects": {
+    "pct": {
+     "ambushResist": 50.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.poor_sight",
+   "name": "Zayıf Görüş",
+   "group": "sense",
+   "effects": {
+    "add": {
+     "sight": -3.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.sixth_sense",
+   "name": "Altıncı His",
+   "group": "sense",
+   "effects": {
+    "add": {
+     "dodge": 10.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.magic_sense",
+   "name": "Büyü Algısı",
+   "group": "sense",
+   "effects": {
+    "pct": {
+     "spellResist": 20.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.fur",
+   "name": "Kürk",
+   "group": "cover",
+   "effects": {
+    "pct": {
+     "coldResist": 30.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.thick_fur",
+   "name": "Kalın Kürk",
+   "group": "cover",
+   "effects": {
+    "immunes": [
+     "cold"
+    ],
+    "pct": {
+     "heatDmg": 30.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.scales",
+   "name": "Pullu",
+   "group": "cover",
+   "effects": {
+    "add": {
+     "armor": 5.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.shell",
+   "name": "Kabuklu",
+   "group": "cover",
+   "effects": {
+    "add": {
+     "armor": 12.0
+    },
+    "pct": {
+     "speed": -15.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.exoskeleton",
+   "name": "Dış İskelet",
+   "group": "cover",
+   "effects": {
+    "add": {
+     "armor": 8.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.feathers",
+   "name": "Tüylü",
+   "group": "cover",
+   "effects": {
+    "pct": {
+     "coldResist": 20.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.bare_skin",
+   "name": "Çıplak Deri",
+   "group": "cover",
+   "effects": {
+    "pct": {
+     "speed": 5.0
+    },
+    "add": {
+     "armor": -2.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.slime_coat",
+   "name": "Balçık Kaplı",
+   "group": "cover",
+   "effects": {
+    "pct": {
+     "grabResist": 100.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.bark_skin",
+   "name": "Kabuk Deri",
+   "group": "cover",
+   "effects": {
+    "add": {
+     "armor": 6.0
+    },
+    "pct": {
+     "fireDmg": 50.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.stone_skin",
+   "name": "Taş Deri",
+   "group": "cover",
+   "effects": {
+    "add": {
+     "armor": 15.0
+    },
+    "pct": {
+     "speed": -20.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.spines",
+   "name": "Dikenli",
+   "group": "cover",
+   "effects": {
+    "pct": {
+     "reflect": 15.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.camouflage",
+   "name": "Kamuflaj",
+   "group": "cover",
+   "effects": {
+    "add": {
+     "stealth": 1.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.toxic_skin",
+   "name": "Zehirli Deri",
+   "group": "cover",
+   "effects": {
+    "onHitTaken": "poison"
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.regenerating_tissue",
+   "name": "Yenilenen Doku",
+   "group": "cover",
+   "effects": {
+    "add": {
+     "regen": 1.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.thick_bones",
+   "name": "Kalın Kemik",
+   "group": "cover",
+   "effects": {
+    "pct": {
+     "hp": 15.0,
+     "knockbackResist": 50.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.hollow_bones",
+   "name": "Kof Kemik",
+   "group": "cover",
+   "effects": {
+    "pct": {
+     "speed": 10.0,
+     "hp": -10.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.claws",
+   "name": "Pençe",
+   "group": "attack",
+   "effects": {
+    "add": {
+     "dmg": 4.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.fangs",
+   "name": "Sivri Diş",
+   "group": "attack",
+   "effects": {
+    "add": {
+     "dmg": 3.0,
+     "bleed": 1.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.horns",
+   "name": "Boynuz",
+   "group": "attack",
+   "effects": {
+    "pct": {
+     "chargeDmg": 50.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.tusks",
+   "name": "Fildişi Diş",
+   "group": "attack",
+   "effects": {
+    "add": {
+     "dmg": 5.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.stinger",
+   "name": "İğne",
+   "group": "attack",
+   "effects": {
+    "onHit": "poison:20"
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.venom_glands",
+   "name": "Zehir Bezi",
+   "group": "attack",
+   "effects": {
+    "onHit": "poison:40"
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.acid_spit",
+   "name": "Asit Tükürüğü",
+   "group": "attack",
+   "effects": {
+    "spells": [
+     "acid_spit"
+    ]
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.fire_glands",
+   "name": "Ateş Bezi",
+   "group": "attack",
+   "effects": {
+    "spells": [
+     "fire_breath"
+    ]
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.frost_breath",
+   "name": "Buz Nefesi",
+   "group": "attack",
+   "effects": {
+    "spells": [
+     "freeze"
+    ]
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.tail_whip",
+   "name": "Kuyruk Kamçısı",
+   "group": "attack",
+   "effects": {
+    "add": {
+     "aoeHit": 1.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.crushing_jaw",
+   "name": "Ezici Çene",
+   "group": "attack",
+   "effects": {
+    "pct": {
+     "armorPierce": 30.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.charge",
+   "name": "Hücum",
+   "group": "attack",
+   "effects": {
+    "neurons": [
+     "charge"
+    ]
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.ambusher",
+   "name": "Pusucu",
+   "group": "attack",
+   "effects": {
+    "pct": {
+     "firstStrikeDmg": 100.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.electric_organ",
+   "name": "Elektrik Organı",
+   "group": "attack",
+   "effects": {
+    "onHit": "stun:5"
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.fast_metabolism",
+   "name": "Hızlı Metabolizma",
+   "group": "metab",
+   "effects": {
+    "pct": {
+     "hungerRate": 40.0,
+     "speed": 10.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.slow_metabolism",
+   "name": "Yavaş Metabolizma",
+   "group": "metab",
+   "effects": {
+    "pct": {
+     "hungerRate": -40.0,
+     "speed": -10.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.fat_reserves",
+   "name": "Yağ Deposu",
+   "group": "metab",
+   "effects": {
+    "pct": {
+     "starveTime": 100.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.cold_blooded",
+   "name": "Soğukkanlı",
+   "group": "metab",
+   "effects": {
+    "add": {
+     "coldSlow": 1.0
+    },
+    "pct": {
+     "hungerRate": -30.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.warm_blooded",
+   "name": "Sıcakkanlı",
+   "group": "metab",
+   "effects": {
+    "pct": {
+     "coldResist": 20.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.efficient_digestion",
+   "name": "Verimli Sindirim",
+   "group": "metab",
+   "effects": {
+    "pct": {
+     "foodValue": 30.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.weak_stomach",
+   "name": "Zayıf Mide",
+   "group": "metab",
+   "effects": {
+    "pct": {
+     "foodPoisonChance": 30.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.water_storage",
+   "name": "Su Deposu",
+   "group": "metab",
+   "effects": {
+    "immunes": [
+     "drought"
+    ]
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.high_stamina",
+   "name": "Yüksek Dayanım",
+   "group": "metab",
+   "effects": {
+    "pct": {
+     "stamina": 50.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.low_stamina",
+   "name": "Düşük Dayanım",
+   "group": "metab",
+   "effects": {
+    "pct": {
+     "stamina": -40.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.plague_resist",
+   "name": "Veba Direnci",
+   "group": "immune",
+   "effects": {
+    "pct": {
+     "diseaseResist": 50.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.disease_prone",
+   "name": "Hastalığa Yatkın",
+   "group": "immune",
+   "effects": {
+    "pct": {
+     "diseaseResist": -40.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.infection_immune",
+   "name": "Çürüğe Bağışık",
+   "group": "immune",
+   "effects": {
+    "immunes": [
+     "rotbite"
+    ]
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.spore_immune",
+   "name": "Spora Bağışık",
+   "group": "immune",
+   "effects": {
+    "immunes": [
+     "spores"
+    ]
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.madness_resist",
+   "name": "Cinnet Direnci",
+   "group": "immune",
+   "effects": {
+    "immunes": [
+     "black_madness"
+    ]
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.fast_healing",
+   "name": "Hızlı İyileşme",
+   "group": "immune",
+   "effects": {
+    "pct": {
+     "regenOutOfCombat": 100.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.antivenom",
+   "name": "Panzehirli Kan",
+   "group": "immune",
+   "effects": {
+    "immunes": [
+     "poison"
+    ]
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.curse_ward",
+   "name": "Lanet Kalkanı",
+   "group": "immune",
+   "effects": {
+    "immunes": [
+     "cursed"
+    ]
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.size_tiny",
+   "name": "Minik Boy",
+   "group": "size",
+   "effects": {
+    "add": {
+     "size": 1.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.size_small",
+   "name": "Küçük Boy",
+   "group": "size",
+   "effects": {
+    "add": {
+     "size": 2.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.size_medium",
+   "name": "Orta Boy",
+   "group": "size",
+   "effects": {
+    "add": {
+     "size": 3.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.size_large",
+   "name": "İri Boy",
+   "group": "size",
+   "effects": {
+    "add": {
+     "size": 4.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.size_huge",
+   "name": "Devasa Boy",
+   "group": "size",
+   "effects": {
+    "add": {
+     "size": 5.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.dimorphism",
+   "name": "Eşey Farkı",
+   "group": "size",
+   "effects": {
+    "flags": [
+     "sex_dimorphism"
+    ]
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.artistic",
+   "name": "Sanatçı Ruh",
+   "group": "calling",
+   "effects": {
+    "add": {
+     "happiness": 1.0
+    },
+    "pct": {
+     "bookWrite": 20.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.musical",
+   "name": "Müzikal",
+   "group": "calling",
+   "effects": {
+    "pct": {
+     "festivalHappiness": 50.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.builders",
+   "name": "İnşaatçı Soy",
+   "group": "calling",
+   "effects": {
+    "pct": {
+     "buildSpeed": 40.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.miners_kind",
+   "name": "Madenci Soy",
+   "group": "calling",
+   "effects": {
+    "pct": {
+     "mineYield": 40.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.sailors_kind",
+   "name": "Denizci Soy",
+   "group": "calling",
+   "effects": {
+    "pct": {
+     "boatSpeed": 30.0,
+     "colonizeChance": 30.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.farmers_kind",
+   "name": "Çiftçi Soy",
+   "group": "calling",
+   "effects": {
+    "pct": {
+     "farmYield": 40.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.warrior_kind",
+   "name": "Savaşçı Soy",
+   "group": "calling",
+   "effects": {
+    "add": {
+     "warfare": 2.0
+    },
+    "pct": {
+     "dmg": 5.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.mystic_kind",
+   "name": "Mistik Soy",
+   "group": "calling",
+   "effects": {
+    "add": {
+     "mana": 30.0
+    },
+    "pct": {
+     "faith": 30.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.traders_kind",
+   "name": "Tüccar Soy",
+   "group": "calling",
+   "effects": {
+    "pct": {
+     "tradeProfit": 40.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.scholars_kind",
+   "name": "Âlim Soy",
+   "group": "calling",
+   "effects": {
+    "add": {
+     "intel": 2.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.magic_affinity",
+   "name": "Büyü Yatkınlığı",
+   "group": "arcane",
+   "effects": {
+    "pct": {
+     "spellPower": 30.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.anti_magic",
+   "name": "Büyü Sağırı",
+   "group": "arcane",
+   "effects": {
+    "pct": {
+     "spellResist": 60.0
+    },
+    "flags": [
+     "no_spells"
+    ]
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.radiant",
+   "name": "Işıyan",
+   "group": "arcane",
+   "effects": {
+    "add": {
+     "lightRadius": 3.0
+    },
+    "pct": {
+     "dmgVsUndead": 30.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.shadow_born",
+   "name": "Gölge Doğumlu",
+   "group": "arcane",
+   "effects": {
+    "pct": {
+     "nightBonus": 30.0
+    },
+    "add": {
+     "stealth": 1.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.elemental_fire",
+   "name": "Ateş Özü",
+   "group": "arcane",
+   "effects": {
+    "immunes": [
+     "burning"
+    ],
+    "onHit": "burn:10"
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.elemental_water",
+   "name": "Su Özü",
+   "group": "arcane",
+   "effects": {
+    "flags": [
+     "breathe_water"
+    ],
+    "pct": {
+     "fireResist": 50.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.elemental_earth",
+   "name": "Toprak Özü",
+   "group": "arcane",
+   "effects": {
+    "add": {
+     "armor": 8.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.elemental_air",
+   "name": "Hava Özü",
+   "group": "arcane",
+   "effects": {
+    "pct": {
+     "speed": 15.0
+    },
+    "flags": [
+     "hover"
+    ]
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.undying",
+   "name": "Ölmeyen",
+   "group": "arcane",
+   "effects": {
+    "add": {
+     "reviveOnce": 1.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.soul_bond",
+   "name": "Ruh Bağı",
+   "group": "arcane",
+   "effects": {
+    "mateDeath": "mourning_x2",
+    "pct": {
+     "pairDmg": 15.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.time_touched",
+   "name": "Zaman Dokunmuş",
+   "group": "arcane",
+   "effects": {
+    "add": {
+     "agingRandom": 1.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.void_touched",
+   "name": "Boşluk Dokunmuş",
+   "group": "arcane",
+   "effects": {
+    "add": {
+     "manaDrainAura": 1.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.crystal_body",
+   "name": "Kristal Beden",
+   "group": "arcane",
+   "effects": {
+    "add": {
+     "armor": 10.0
+    },
+    "flags": [
+     "shatter_on_death"
+    ]
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.plant_body",
+   "name": "Bitkisel Beden",
+   "group": "arcane",
+   "effects": {
+    "pct": {
+     "hungerRate": -50.0,
+     "fireDmg": 50.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.gold_digest",
+   "name": "Altın Sindiren",
+   "group": "arcane",
+   "effects": {
+    "diet": "gold"
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.divine_chosen",
+   "name": "Tanrı Seçkini",
+   "group": "arcane",
+   "effects": {
+    "add": {
+     "luck": 15.0
+    },
+    "pct": {
+     "blessChance": 50.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.mutable",
+   "name": "Değişken Genom",
+   "group": "arcane",
+   "effects": {
+    "pct": {
+     "mutation": 100.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.stable_genome",
+   "name": "Sabit Genom",
+   "group": "arcane",
+   "effects": {
+    "pct": {
+     "mutation": -80.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.pure",
+   "name": "Saf Kan",
+   "group": "arcane",
+   "effects": {
+    "pct": {
+     "allStats": 5.0,
+     "mutation": -50.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.hybrid_vigor",
+   "name": "Melez Gücü",
+   "group": "arcane",
+   "effects": {
+    "pct": {
+     "hybridBonus": 15.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.builds_nests",
+   "name": "Yuva Kurar",
+   "group": "behavior",
+   "effects": {
+    "neurons": [
+     "build_nest"
+    ]
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.food_hoarder",
+   "name": "Yiyecek Biriktirir",
+   "group": "behavior",
+   "effects": {
+    "neurons": [
+     "hoard_food"
+    ]
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.gift_giver",
+   "name": "Hediye Verir",
+   "group": "behavior",
+   "effects": {
+    "neurons": [
+     "give_gift"
+    ],
+    "add": {
+     "opinion": 5.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.grave_keepers",
+   "name": "Ölülerini Gömer",
+   "group": "behavior",
+   "effects": {
+    "neurons": [
+     "bury_dead"
+    ],
+    "add": {
+     "happiness": 1.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.stargazers",
+   "name": "Yıldız Gözlemcisi",
+   "group": "behavior",
+   "effects": {
+    "neurons": [
+     "stargaze"
+    ],
+    "add": {
+     "intel": 1.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.dancers",
+   "name": "Dansçılar",
+   "group": "behavior",
+   "effects": {
+    "neurons": [
+     "dance"
+    ],
+    "add": {
+     "happiness": 2.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.fire_makers",
+   "name": "Ateş Yakar",
+   "group": "behavior",
+   "effects": {
+    "neurons": [
+     "make_fire"
+    ],
+    "pct": {
+     "coldResist": 20.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.domesticators",
+   "name": "Evcilleştirici",
+   "group": "behavior",
+   "effects": {
+    "neurons": [
+     "tame_animal"
+    ]
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.story_tellers",
+   "name": "Hikâye Anlatıcı",
+   "group": "behavior",
+   "effects": {
+    "neurons": [
+     "tell_story"
+    ],
+    "pct": {
+     "xpShare": 10.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.raiders",
+   "name": "Yağmacı",
+   "group": "behavior",
+   "effects": {
+    "neurons": [
+     "raid"
+    ],
+    "pct": {
+     "lootBonus": 50.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.shiny_collectors",
+   "name": "Parlak Toplayıcı",
+   "group": "behavior",
+   "effects": {
+    "neurons": [
+     "collect_shiny"
+    ]
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.sun_greeters",
+   "name": "Güneşe Selam",
+   "group": "behavior",
+   "effects": {
+    "neurons": [
+     "greet_sun"
+    ],
+    "pct": {
+     "faith": 10.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.divine_breeding",
+   "name": "İlahi Islah",
+   "group": "mark",
+   "effects": {
+    "flags": [
+     "edited"
+    ]
+   },
+   "canAppearRandomly": false
+  },
+  {
+   "id": "sst.uplifted",
+   "name": "Yükseltilmiş",
+   "group": "mark",
+   "effects": {
+    "flags": [
+     "uplifted"
+    ]
+   },
+   "canAppearRandomly": false
+  },
+  {
+   "id": "sst.unmoving",
+   "name": "Kıpırtısız",
+   "group": "mark",
+   "effects": {
+    "add": {
+     "speed": 0.0
+    }
+   },
+   "canAppearRandomly": false
+  },
+  {
+   "id": "sst.antimatter_core",
+   "name": "Karşı Madde Özü",
+   "group": "mark",
+   "effects": {
+    "onDeath": "explode:huge"
+   },
+   "canAppearRandomly": false
+  },
+  {
+   "id": "sst.monolith_touched",
+   "name": "Monolit Dokunuşu",
+   "group": "mark",
+   "effects": {
+    "pct": {
+     "xp": 20.0,
+     "mutation": 30.0
+    }
+   },
+   "canAppearRandomly": true
+  },
+  {
+   "id": "sst.first_of_kind",
+   "name": "İlk Soy",
+   "group": "mark",
+   "effects": {
+    "flags": [
+     "founder_lineage"
+    ]
+   },
+   "canAppearRandomly": false
+  }
+ ]
+}

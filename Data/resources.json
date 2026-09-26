@@ -1,0 +1,238 @@
+{
+ "category": "resources",
+ "count": 29,
+ "items": [
+  {
+   "id": "res.wood",
+   "name": "Odun",
+   "kind": "material",
+   "nutrition": 0,
+   "value": 1,
+   "source": "Ağaç kesimi"
+  },
+  {
+   "id": "res.stone",
+   "name": "Taş",
+   "kind": "material",
+   "nutrition": 0,
+   "value": 1,
+   "source": "Tepe/dağ madenciliği"
+  },
+  {
+   "id": "res.clay",
+   "name": "Kil",
+   "kind": "material",
+   "nutrition": 0,
+   "value": 1,
+   "source": "Bataklık/nehir kıyısı"
+  },
+  {
+   "id": "res.bone",
+   "name": "Kemik",
+   "kind": "material",
+   "nutrition": 0,
+   "value": 1,
+   "source": "Avlanma, ölüler"
+  },
+  {
+   "id": "res.leather",
+   "name": "Deri",
+   "kind": "material",
+   "nutrition": 0,
+   "value": 2,
+   "source": "Avlanma"
+  },
+  {
+   "id": "res.wool",
+   "name": "Yün",
+   "kind": "material",
+   "nutrition": 0,
+   "value": 2,
+   "source": "Koyun/keçi kırkma"
+  },
+  {
+   "id": "res.copper",
+   "name": "Bakır",
+   "kind": "ore",
+   "nutrition": 0,
+   "value": 3,
+   "source": "Tepe damarları"
+  },
+  {
+   "id": "res.iron",
+   "name": "Demir",
+   "kind": "ore",
+   "nutrition": 0,
+   "value": 4,
+   "source": "Dağ damarları"
+  },
+  {
+   "id": "res.silver",
+   "name": "Gümüş",
+   "kind": "ore",
+   "nutrition": 0,
+   "value": 6,
+   "source": "Dağ damarları (nadir)"
+  },
+  {
+   "id": "res.gold",
+   "name": "Altın",
+   "kind": "currency",
+   "nutrition": 0,
+   "value": 8,
+   "source": "Dağ damarları, ticaret, vergi"
+  },
+  {
+   "id": "res.skyiron",
+   "name": "Gökdemir",
+   "kind": "ore",
+   "nutrition": 0,
+   "value": 14,
+   "source": "Meteor düşüş noktaları, zirve damarları"
+  },
+  {
+   "id": "res.starore",
+   "name": "Yıldız Cevheri",
+   "kind": "ore",
+   "nutrition": 0,
+   "value": 20,
+   "source": "Kristal ve gök biyomları (çok nadir)"
+  },
+  {
+   "id": "res.obsidian",
+   "name": "Obsidyen",
+   "kind": "ore",
+   "nutrition": 0,
+   "value": 10,
+   "source": "Soğumuş lav çevresi"
+  },
+  {
+   "id": "res.crystal",
+   "name": "Kristal",
+   "kind": "magic",
+   "nutrition": 0,
+   "value": 9,
+   "source": "Kristal biyomu"
+  },
+  {
+   "id": "res.essence",
+   "name": "Öz",
+   "kind": "magic",
+   "nutrition": 0,
+   "value": 12,
+   "source": "Büyülü biyomlar, ölü büyücüler"
+  },
+  {
+   "id": "res.wheat",
+   "name": "Buğday",
+   "kind": "food",
+   "nutrition": 2,
+   "value": 1,
+   "source": "Tarla"
+  },
+  {
+   "id": "res.bread",
+   "name": "Ekmek",
+   "kind": "food",
+   "nutrition": 5,
+   "value": 2,
+   "source": "Değirmen + fırın"
+  },
+  {
+   "id": "res.meat",
+   "name": "Et",
+   "kind": "food",
+   "nutrition": 4,
+   "value": 2,
+   "source": "Avlanma, hayvancılık"
+  },
+  {
+   "id": "res.fish",
+   "name": "Balık",
+   "kind": "food",
+   "nutrition": 3,
+   "value": 2,
+   "source": "Balıkçılık"
+  },
+  {
+   "id": "res.berries",
+   "name": "Yaban Meyvesi",
+   "kind": "food",
+   "nutrition": 2,
+   "value": 1,
+   "source": "Meyve çalıları"
+  },
+  {
+   "id": "res.fruit",
+   "name": "Meyve",
+   "kind": "food",
+   "nutrition": 3,
+   "value": 1,
+   "source": "Meyve ağaçları"
+  },
+  {
+   "id": "res.mushroom",
+   "name": "Mantar",
+   "kind": "food",
+   "nutrition": 2,
+   "value": 1,
+   "source": "Mantar biyomu, orman"
+  },
+  {
+   "id": "res.honey",
+   "name": "Bal",
+   "kind": "food",
+   "nutrition": 4,
+   "value": 3,
+   "source": "Arı kovanları, bal korusu"
+  },
+  {
+   "id": "res.milk",
+   "name": "Süt",
+   "kind": "food",
+   "nutrition": 2,
+   "value": 1,
+   "source": "İnek/keçi"
+  },
+  {
+   "id": "res.eggs",
+   "name": "Yumurta",
+   "kind": "food",
+   "nutrition": 2,
+   "value": 1,
+   "source": "Tavuk/kuş"
+  },
+  {
+   "id": "res.candy",
+   "name": "Şekerleme",
+   "kind": "food",
+   "nutrition": 3,
+   "value": 3,
+   "source": "Şekerleme ülkesi"
+  },
+  {
+   "id": "res.herbs",
+   "name": "Şifalı Ot",
+   "kind": "medicine",
+   "nutrition": 1,
+   "value": 3,
+   "source": "Çiçek vadisi, orman"
+  },
+  {
+   "id": "res.salt",
+   "name": "Tuz",
+   "kind": "trade",
+   "nutrition": 0,
+   "value": 3,
+   "source": "Çöl, kıyı"
+  },
+  {
+   "id": "res.spice",
+   "name": "Baharat",
+   "kind": "trade",
+   "nutrition": 0,
+   "value": 5,
+   "source": "Cengel, savan"
+  }
+ ]
+}

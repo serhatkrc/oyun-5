@@ -1,0 +1,42 @@
+{
+ "category": "building_styles",
+ "count": 6,
+ "items": [
+  {
+   "id": "style.human",
+   "name": "İnsan",
+   "description": "Kerpiç/ahşap duvar, kiremit kırmızısı çatı, taş temeller",
+   "accent": "#B5533C"
+  },
+  {
+   "id": "style.elf",
+   "name": "Elf",
+   "description": "Ağaç gövdelerine oyulmuş evler, yaprak çatılar, kıvrımlı hatlar",
+   "accent": "#5C9B5A"
+  },
+  {
+   "id": "style.dwarf",
+   "name": "Cüce",
+   "description": "Kesme taş, dağa gömülü kapılar, bakır süslemeler",
+   "accent": "#7B6A5A"
+  },
+  {
+   "id": "style.orc",
+   "name": "Ork",
+   "description": "Deri gerilmiş kazık çadırlar, kemik süsler, koyu ahşap",
+   "accent": "#6B4F3A"
+  },
+  {
+   "id": "style.beast",
+   "name": "Evrimleşmiş Hayvan",
+   "description": "Toprak ve dal yuvalar; türün rengine göre tonlanır",
+   "accent": "#8A7A5A"
+  },
+  {
+   "id": "style.insect",
+   "name": "Böcek Uygarlığı",
+   "description": "Balmumu ve çamur petekler, tüneller",
+   "accent": "#C9A04A"
+  }
+ ]
+}

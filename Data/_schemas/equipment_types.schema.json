@@ -1,0 +1,49 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "title": "equipment_types",
+ "type": "object",
+ "required": [
+  "category",
+  "items"
+ ],
+ "properties": {
+  "category": {
+   "const": "equipment_types"
+  },
+  "count": {
+   "type": "integer"
+  },
+  "items": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "required": [
+     "baseEffects",
+     "id",
+     "name",
+     "slot",
+     "usesMaterial"
+    ],
+    "properties": {
+     "id": {
+      "type": "string",
+      "pattern": "^eq\\.[a-z0-9_]+$"
+     },
+     "name": {
+      "type": "string"
+     },
+     "slot": {
+      "type": "string"
+     },
+     "baseEffects": {
+      "type": "object"
+     },
+     "usesMaterial": {
+      "type": "boolean"
+     }
+    },
+    "additionalProperties": true
+   }
+  }
+ }
+}
