@@ -10,13 +10,17 @@ namespace PG.Render
 {
     // Bölüm 1.11.2: pixel color per tile for a batch of chunks (4096 pixels each).
     // Alpha carries the shader material code: 0 land, 128 water, 255 lava.
+    // City territory (Bölüm 5.1): owned zones get a faint tint of the city colour and a 1-tile border line inside the
+    // zone wherever the neighbouring zone has another owner.
     [BurstCompile]
     public struct ChunkColorJob : IJobParallelFor
     {
         public const int PixelsPerChunk = WorldMap.ChunkSize * WorldMap.ChunkSize;
 
-        public int Width, Height, ChunksX;
-        public bool ShowRegions;
+        public const float CityTint = 0.12f, CityBorder = 0.8f;
+
+        public int Width, Height, ChunksX, ZonesX;
+        public bool ShowRegions, ShowCities;
         public Color32 Snow, Road;
 
         [ReadOnly] public NativeArray<int> ChunkList;
@@ -28,6 +32,8 @@ namespace PG.Render
         [ReadOnly] public NativeArray<byte> ReliefLevel, Material;
         [ReadOnly] public NativeArray<float> ReliefShade;
         [ReadOnly] public NativeArray<int> LandRegion, WaterRegion, IslandOf;
+        [ReadOnly] public NativeArray<int> ZoneOwner;         // city index per zone, -1 = unowned
+        [ReadOnly] public NativeArray<Color32> CityColors;    // by city index
 
         [WriteOnly] public NativeArray<Color32> Pixels;
 
@@ -55,6 +61,7 @@ namespace PG.Render
                 c.xyz *= 1f + math.clamp(dNorth, -2, 2) * ReliefShade[g];
             }
 
+            if (ShowCities) c = CityTerritory(c, x, y);
             if (ShowRegions) c = RegionTint(c, i, x, y);
 
             byte material = Material[g];
@@ -78,6 +85,24 @@ namespace PG.Render
                 (x > 0 && Island(i - 1) != island) || (y > 0 && Island(i - Width) != island))
                 c.xyz *= 0.35f;
             return c;
+        }
+
+        float4 CityTerritory(float4 c, int x, int y)
+        {
+            int owner = OwnerAt(x, y);
+            if (owner < 0 || owner >= CityColors.Length) return c;
+            const int last = WorldMap.ZoneSize - 1;
+            int lx = x & last, ly = y & last;
+            bool border = (lx == 0 && OwnerAt(x - 1, y) != owner) || (lx == last && OwnerAt(x + 1, y) != owner) ||
+                          (ly == 0 && OwnerAt(x, y - 1) != owner) || (ly == last && OwnerAt(x, y + 1) != owner);
+            return math.lerp(c, ToF(CityColors[owner]), border ? CityBorder : CityTint);
+        }
+
+        int OwnerAt(int x, int y)
+        {
+            if (x < 0 || y < 0 || x >= Width || y >= Height) return -1;
+            int z = (y >> WorldMap.ZoneShift) * ZonesX + (x >> WorldMap.ZoneShift);
+            return z < ZoneOwner.Length ? ZoneOwner[z] : -1;
         }
 
         int Island(int i)

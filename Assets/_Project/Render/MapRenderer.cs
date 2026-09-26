@@ -1,3 +1,4 @@
+using PG.Sim;
 using PG.World;
 using Unity.Collections;
 using Unity.Jobs;
@@ -31,9 +32,12 @@ namespace PG.Render
         Material _material;
         NativeArray<Color32> _tileColors, _biomeColors, _firePalette, _pixels;
         NativeArray<int> _chunkList, _islandOf;
+        NativeArray<int> _zoneOwner;          // zone owners as last drawn (snapshot, compared against the map)
+        NativeArray<Color32> _cityColors;
         int[] _candidates;
-        bool _showRegions;
+        bool _showRegions, _showCities = true;
         int _regionVersion = -1;
+        CivState _civ;
 
         public int LastUploads { get; private set; }
         public int PendingChunks { get; private set; }
@@ -50,11 +54,23 @@ namespace PG.Render
             }
         }
 
-        public void Bind(WorldMap map, RegionGraph regions)
+        public bool ShowCityBorders
+        {
+            get => _showCities;
+            set
+            {
+                if (_showCities == value) return;
+                _showCities = value;
+                _map?.MarkAllDirty(DirtyMask.Render);
+            }
+        }
+
+        public void Bind(WorldMap map, RegionGraph regions, CivState civ = null)
         {
             Unbind();
             _map = map;
             _regions = regions;
+            _civ = civ;
             var db = map.Content;
 
             _tileColors = new NativeArray<Color32>(db.Tiles.Count * 4, Allocator.Persistent);
@@ -67,6 +83,10 @@ namespace PG.Render
             _pixels = new NativeArray<Color32>(UploadBudget * ChunkColorJob.PixelsPerChunk, Allocator.Persistent);
             _chunkList = new NativeArray<int>(UploadBudget, Allocator.Persistent);
             _islandOf = new NativeArray<int>(1, Allocator.Persistent);
+            _zoneOwner = new NativeArray<int>(map.Zones.Length, Allocator.Persistent);
+            for (int z = 0; z < map.Zones.Length; z++) _zoneOwner[z] = civ != null ? map.Zones[z].OwnerCity : -1;
+            _cityColors = new NativeArray<Color32>(1, Allocator.Persistent);
+            SyncCityColors();
             _candidates = new int[map.ChunkCount];
 
             _texture = new Texture2DArray(WorldMap.ChunkSize, WorldMap.ChunkSize, map.ChunkCount, TextureFormat.RGBA32, false, false)
@@ -97,6 +117,9 @@ namespace PG.Render
         {
             _map = null;
             _regions = null;
+            _civ = null;
+            if (_zoneOwner.IsCreated) _zoneOwner.Dispose();
+            if (_cityColors.IsCreated) _cityColors.Dispose();
             if (_tileColors.IsCreated) _tileColors.Dispose();
             if (_biomeColors.IsCreated) _biomeColors.Dispose();
             if (_firePalette.IsCreated) _firePalette.Dispose();
@@ -130,6 +153,11 @@ namespace PG.Render
 
         void UploadDirty()
         {
+            if (_civ != null)
+            {
+                SyncCityColors();
+                SyncZoneOwners();
+            }
             int count = CollectDirty();
             LastUploads = count;
             if (count == 0) return;
@@ -142,7 +170,9 @@ namespace PG.Render
                 Width = _map.Width,
                 Height = _map.Height,
                 ChunksX = _map.ChunksX,
+                ZonesX = _map.ZonesX,
                 ShowRegions = _showRegions,
+                ShowCities = _showCities && _civ != null,
                 Snow = SnowColor,
                 Road = RoadColor,
                 ChunkList = _chunkList,
@@ -160,6 +190,8 @@ namespace PG.Render
                 LandRegion = _regions.LandRegion,
                 WaterRegion = _regions.WaterRegion,
                 IslandOf = _islandOf,
+                ZoneOwner = _zoneOwner,
+                CityColors = _cityColors,
                 Pixels = _pixels,
             }.Schedule(count * ChunkColorJob.PixelsPerChunk, 1024).Complete();
 
@@ -170,6 +202,54 @@ namespace PG.Render
                 _map.ClearDirty(chunk, DirtyMask.Render);
             }
             _texture.Apply(false, false);
+        }
+
+        // City colours never change after founding; the array only grows with the city list.
+        void SyncCityColors()
+        {
+            if (_civ == null) return;
+            var cities = _civ.Cities;
+            if (cities.Count > _cityColors.Length)
+            {
+                _cityColors.Dispose();
+                _cityColors = new NativeArray<Color32>(Mathf.NextPowerOfTwo(cities.Count), Allocator.Persistent);
+            }
+            for (int c = 0; c < cities.Count; c++) _cityColors[c] = cities[c].Color;
+        }
+
+        // CivState marks a zone's chunk Render-dirty when its owner changes. A border line also depends on the
+        // neighbouring zone, which may lie in another chunk: compare the zones of every dirty chunk with the snapshot
+        // and also mark the chunks of the 4 neighbour zones of each changed zone.
+        void SyncZoneOwners()
+        {
+            const int zonesPerChunk = WorldMap.ChunkSize / WorldMap.ZoneSize;
+            int zonesX = _map.ZonesX, zonesY = _map.ZonesY;
+            var zones = _map.Zones;
+            int chunkCount = _map.ChunkCount;
+            for (int chunk = 0; chunk < chunkCount; chunk++)
+            {
+                if ((_map.Chunks[chunk].Dirty & DirtyMask.Render) == 0) continue;
+                int zx0 = (chunk % _map.ChunksX) * zonesPerChunk, zy0 = (chunk / _map.ChunksX) * zonesPerChunk;
+                for (int zy = zy0; zy < zy0 + zonesPerChunk && zy < zonesY; zy++)
+                    for (int zx = zx0; zx < zx0 + zonesPerChunk && zx < zonesX; zx++)
+                    {
+                        int z = zy * zonesX + zx;
+                        int owner = zones[z].OwnerCity;
+                        if (owner == _zoneOwner[z]) continue;
+                        _zoneOwner[z] = owner;
+                        MarkZoneChunk(zx - 1, zy, chunk);
+                        MarkZoneChunk(zx + 1, zy, chunk);
+                        MarkZoneChunk(zx, zy - 1, chunk);
+                        MarkZoneChunk(zx, zy + 1, chunk);
+                    }
+            }
+        }
+
+        void MarkZoneChunk(int zx, int zy, int self)
+        {
+            if (zx < 0 || zy < 0 || zx >= _map.ZonesX || zy >= _map.ZonesY) return;
+            int chunk = _map.ChunkIndexOf(zx << WorldMap.ZoneShift, zy << WorldMap.ZoneShift);
+            if (chunk != self) _map.MarkChunkDirty(chunk, DirtyMask.Render);
         }
 
         // Visible dirty chunks first, then the rest, up to the upload budget.
