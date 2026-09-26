@@ -15,7 +15,7 @@ namespace PG.UI
         readonly IGameHost _host;
         readonly VisualElement _root;
         readonly Label _title;
-        readonly Label _species, _center, _founded, _leader, _population, _happiness, _gold, _famine, _storage, _food;
+        readonly Label _species, _kingdom, _loyalty, _center, _founded, _leader, _population, _happiness, _gold, _famine, _storage, _food;
         readonly Label _stock, _jobs, _buildings;
         readonly StringBuilder _sb = new StringBuilder(512);
         int[] _complete = new int[0], _construction = new int[0];
@@ -40,6 +40,8 @@ namespace PG.UI
             _root.Add(scroll);
 
             _species = Field(scroll, "ui.city.species");
+            _kingdom = Field(scroll, "ui.city.kingdom");
+            _loyalty = Field(scroll, "ui.city.loyalty");
             _center = Field(scroll, "ui.city.center");
             _founded = Field(scroll, "ui.city.founded");
             _leader = Field(scroll, "ui.city.leader");
@@ -95,6 +97,8 @@ namespace PG.UI
 
             _title.text = city.Dead ? Loc.F("ui.city.dead_fmt", city.Name) : city.Name;
             _species.text = Loc.Name(db.Species[city.Species]);
+            _kingdom.text = KingdomText(sim, city);
+            _loyalty.text = city.Kingdom >= 0 ? city.Loyalty.ToString() : Loc.T("ui.city.none");
             _center.text = Loc.F("ui.city.center_fmt", CenterName(civ, city), city.HallTier);
             _founded.text = Loc.F("ui.city.founded_fmt", city.FoundedYear + 1, Mathf.Max(0, year - city.FoundedYear));
             _leader.text = LeaderText(sim, city);
@@ -186,6 +190,18 @@ namespace PG.UI
             var halls = civ.Ids.HallByTier;
             if (tier < halls.Length && halls[tier] >= 0) return Loc.Name(civ.Content.Buildings[halls[tier]]);
             return Loc.T("ui.city.none");
+        }
+
+        // "Name (at war with N)" for the city's kingdom.
+        static string KingdomText(SimWorld sim, City city)
+        {
+            var meta = sim.Meta;
+            if (meta == null || city.Kingdom < 0 || city.Kingdom >= meta.Kingdoms.Count) return Loc.T("ui.city.none");
+            var k = meta.Kingdoms[city.Kingdom];
+            int wars = 0;
+            foreach (var w in meta.Wars) if (w.Active && (w.OnAttackerSide(k.Index) || w.OnDefenderSide(k.Index))) wars++;
+            string text = k.Capital == city.Index ? Loc.F("ui.city.capital_fmt", k.Name) : k.Name;
+            return wars > 0 ? Loc.F("ui.city.at_war_fmt", text, wars) : text;
         }
 
         // Units have no names yet (Bölüm 6.2 NamePool arrives with Faz 5): the leader is shown by species and age.

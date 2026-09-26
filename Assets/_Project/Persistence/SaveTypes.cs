@@ -23,7 +23,8 @@ namespace PG.Persistence
         public const int SectionLaws = 9;
         public const int SectionUnits = 10; // Bölüm 3
         public const int SectionCiv = 11;   // Bölüm 5: cities, buildings, items
-        // Later chapters: Meta, History, Stats
+        public const int SectionMeta = 12;  // Bölüm 6: kingdoms, wars, armies, alliances
+        // Later chapters: History, Stats
     }
 
     public sealed class SaveSlotInfo
@@ -49,7 +50,7 @@ namespace PG.Persistence
         public SimRandomProvider Rng;
         public WorldMap World;
         public readonly List<string> Warnings = new List<string>();
-        internal byte[] NatureRaw, LawsRaw, UnitsRaw, CivRaw;
+        internal byte[] NatureRaw, LawsRaw, UnitsRaw, CivRaw, MetaRaw;
 
         // Call once the SimWorld exists: restores nature state and world laws.
         public void ApplyTo(SimWorld sim)
@@ -58,6 +59,7 @@ namespace PG.Persistence
             NatureSave.ApplyNature(NatureRaw, sim, Warnings);
             UnitSave.Apply(UnitsRaw, sim, Warnings);
             CivSave.Apply(CivRaw, sim, Warnings);
+            MetaSave.Apply(MetaRaw, sim, Warnings);
         }
     }
 

@@ -270,3 +270,17 @@ namespace PG.Content
         static string[] Split(string s) => string.IsNullOrEmpty(s) ? Array.Empty<string>() : s.Split(',');
     }
 }
+
+namespace PG.Content
+{
+    // kingdom_traits.json: effects are behaviour keys read by the meta systems (colonizeChance, armySize, warChance, ...).
+    public sealed class KingdomTraitDef : ContentDef
+    {
+        public EffectBlock Effects { get; set; }
+
+        public float Pct(string key) => Effects?.Pct != null && Effects.Pct.TryGetValue(key, out float v) ? v : 0f;
+        public float Add(string key) => Effects?.Add != null && Effects.Add.TryGetValue(key, out float v) ? v : 0f;
+    }
+
+    public sealed class WarTypeDef : ContentDef { }
+}

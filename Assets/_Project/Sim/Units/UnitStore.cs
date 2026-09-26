@@ -119,6 +119,10 @@ namespace PG.Sim
         public NativeArray<int> Equip;          // capacity * EquipSlots, item index, -1 = empty
         public NativeArray<ushort> HapEvent;    // capacity * HapSlots, HappinessEventDef index + 1, 0 = empty
         public NativeArray<byte> HapLeft;       // months left per happiness slot
+        // Bölüm 6 (meta save section)
+        public NativeArray<int> ArmyOf;         // army index, -1 = none
+        public NativeArray<int> Origin;         // kingdom a settler left, -1 = none
+        public NativeArray<int> Boat;           // boat carrying the unit (Bölüm 5.10), -1 = on foot
         public IItemSource Items;               // equipment effects (set by CivState)
 
         public NativeList<int> Alive;
@@ -226,6 +230,9 @@ namespace PG.Sim
             CarryRes[i] = -1;
             CarryAmount[i] = 0;
             WorkOp[i] = 0;
+            ArmyOf[i] = -1;
+            Origin[i] = -1;
+            Boat[i] = -1;
             for (int s = 0; s < EquipSlots; s++) Equip[i * EquipSlots + s] = -1;
             for (int s = 0; s < HapSlots; s++)
             {
@@ -379,6 +386,7 @@ namespace PG.Sim
             Grow(ref Home, capacity);
             Grow(ref Wants, capacity);
             ForEachCivArray(new Grower(capacity));
+            ForEachMetaArray(new Grower(capacity));
             Capacity = capacity;
         }
 
@@ -487,6 +495,21 @@ namespace PG.Sim
             }
         }
 
+        // Meta arrays (Bölüm 6) live in the meta section.
+        void ForEachMetaArray<TV>(TV v) where TV : IArrayVisitor
+        {
+            v.Visit(ref ArmyOf, 1); v.Visit(ref Origin, 1); v.Visit(ref Boat, 1);
+        }
+
+        public void WriteMeta(BinaryWriter w) => ForEachMetaArray(new Writer(w, HighWater));
+
+        public void ReadMeta(BinaryReader r) => ForEachMetaArray(new Reader(r, HighWater));
+
+        public void ResetMeta()
+        {
+            for (int i = 0; i < HighWater; i++) { ArmyOf[i] = -1; Origin[i] = -1; Boat[i] = -1; }
+        }
+
         readonly struct Grower : IArrayVisitor
         {
             readonly int _capacity;
@@ -536,6 +559,7 @@ namespace PG.Sim
         {
             ForEachArray(new Disposer());
             ForEachCivArray(new Disposer());
+            ForEachMetaArray(new Disposer());
             if (Stats.IsCreated) Stats.Dispose();
             if (StatsDirty.IsCreated) StatsDirty.Dispose();
             if (BaseFlags.IsCreated) BaseFlags.Dispose();

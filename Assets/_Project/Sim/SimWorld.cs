@@ -17,6 +17,7 @@ namespace PG.Sim
         public readonly NatureState Nature;
         public readonly UnitWorld Units;
         public readonly CivState Civ;
+        public readonly MetaState Meta;
         public readonly DisasterSystem Disasters = new DisasterSystem();
         public readonly SimulationPipeline Pipeline = new SimulationPipeline();
 
@@ -39,6 +40,7 @@ namespace PG.Sim
             Disasters.Population = () => Units.Store.Count;
             Civ = new CivState(world, content);
             Civ.Attach(Units);
+            Meta = new MetaState(content, Civ, Units, Nature.Laws);
 
             Pipeline.Add(new BiomeSpreadSystem());
             Pipeline.Add(new FeatureGrowthSystem());
@@ -62,6 +64,11 @@ namespace PG.Sim
             Pipeline.Add(new CityPlannerSystem());
             Pipeline.Add(new CivYearlySystem());
             Pipeline.Add(new BuildingUpkeepSystem());
+            Pipeline.Add(new KingdomSystem());
+            Pipeline.Add(new WarSystem());
+            Pipeline.Add(new ArmySystem());
+            Pipeline.Add(new TradeMigrationSystem());
+            Pipeline.Add(new BoatSystem());
             Pipeline.Add(new EventsFlushSystem());
             Pipeline.Add(new RegionRebuildSystem());
         }

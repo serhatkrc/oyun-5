@@ -96,7 +96,7 @@ def build(csproj, extra):
     return 0 if ok else 1
 
 RUN_LAYERS = ["Core", "Content", "World", "WorldGen", "Sim", "Powers", "Persistence"]
-RUN_EXTRA = ["Boot/Diagnostics.cs", "Editor/NatureSoak.cs", "Editor/UnitAcceptance.cs", "Editor/CivSoak.cs"]
+RUN_EXTRA = ["Boot/Diagnostics.cs", "Editor/NatureSoak.cs", "Editor/UnitAcceptance.cs", "Editor/CivSoak.cs", "Editor/MetaSoak.cs"]
 
 def run(args):
     fetch(); ms = math_stub()

@@ -32,6 +32,16 @@ public static class Program
             case "civsave": return PG.EditorTools.CivSoak.SaveLoad(db);
             case "civperf": return PG.EditorTools.CivSoak.Performance(db);
             case "civdebug": CivDebug.Run(db, args.Length > 1 ? int.Parse(args[1]) : 12); return 0;
+            case "meta": PG.EditorTools.MetaSoak.Run(); return UnityEditor.EditorApplication.ExitCode;
+            case "metaworld": return PG.EditorTools.MetaSoak.World(db, args.Length > 1 ? int.Parse(args[1]) : 200, args.Length > 2 ? ulong.Parse(args[2]) : 31);
+            case "loyalty": return PG.EditorTools.MetaSoak.Loyalty();
+            case "succession": return PG.EditorTools.MetaSoak.Succession(db);
+            case "conquest": return PG.EditorTools.MetaSoak.Conquest(db);
+            case "metaperf": return PG.EditorTools.MetaSoak.Performance(db);
+            case "colony": return PG.EditorTools.MetaSoak.Colony(db);
+            case "metasave": return PG.EditorTools.MetaSoak.SaveLoad(db);
+            case "metadebug": MetaDebug.Run(db, args.Length > 1 ? int.Parse(args[1]) : 120, args.Length > 2 ? ulong.Parse(args[2]) : 31); return 0;
+            case "colonydebug": ColonyDebug.Run(db); return 0;
             case "temp": TempDebug.Run(db); return 0;
             case "profile": Profile.Run(db, args.Length > 1 ? int.Parse(args[1]) : 5000, args.Length > 2 ? int.Parse(args[2]) : 600, MapSizePreset.Huge); return 0;
         }

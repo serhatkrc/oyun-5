@@ -204,7 +204,8 @@ namespace PG.Render
             _texture.Apply(false, false);
         }
 
-        // City colours never change after founding; the array only grows with the city list.
+        // Borders take the kingdom's colour (Bölüm 6.4), the city's own before it has one. A kingdom change marks the city's
+        // chunks dirty (CivState.MarkCityDirty), so the array is refreshed every upload.
         void SyncCityColors()
         {
             if (_civ == null) return;
@@ -214,7 +215,12 @@ namespace PG.Render
                 _cityColors.Dispose();
                 _cityColors = new NativeArray<Color32>(Mathf.NextPowerOfTwo(cities.Count), Allocator.Persistent);
             }
-            for (int c = 0; c < cities.Count; c++) _cityColors[c] = cities[c].Color;
+            var meta = _civ.Units?.Meta;
+            for (int c = 0; c < cities.Count; c++)
+            {
+                int k = cities[c].Kingdom;
+                _cityColors[c] = meta != null && k >= 0 && k < meta.Kingdoms.Count ? meta.Kingdoms[k].Color : cities[c].Color;
+            }
         }
 
         // CivState marks a zone's chunk Render-dirty when its owner changes. A border line also depends on the

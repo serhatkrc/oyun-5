@@ -1,5 +1,28 @@
 # Changelog
 
+## [Unreleased] — Faz 5: Krallık ve savaş (06.1–06.6, 05.9–05.11)
+
+### Eklendi
+- Content: `KingdomTraitDef` (`kingdom_traits.json`), `WarTypeDef` (`war_types.json`).
+- Sim (`Sim/Meta`): `MetaState` — krallıklar (arma, renk, ad + unvan, kral/veliaht, başkent, fikir matrisi, trait'ler), savaşlar (taraflar, müttefik katılımı, kayıplar, alınan şehirler), ordular, ittifaklar, kervanlar, gemiler.
+  - `KingdomSystem` (aylık): şehirlerin krallığa bağlanması (göçmenler geldikleri krallığa katılır), başkent seçimi, veraset (en büyük çocuk → başkent lideri), güç önbelleği, sadakat formülü, isyan (yeni krallık + isyan savaşı), fikir yakınsaması, ittifak kurma/ayrılma, unvanla yeniden adlandırma.
+  - `WarSystem` (yıllık): barış kontrolü, sigmoid savaş ilanı (fikir, güç oranı, uzaklık, kan çağı, trait'ler), barış sonrası 10 yıl bekleme.
+  - `ArmySystem` (20 tick): toplanma → yürüyüş → kuşatma (bina hasarı) → fetih/yıkım → dönüş; savaş sırasında milis kotası; askerler `March` görevinde.
+  - `TradeMigrationSystem`: pazarlar arası kervanlar (`Caravan` görevi, altın, fikir +2/−5) ve mutsuz şehirlerden göç (`st.homesick`).
+  - `BoatSystem`: iskeleli kalabalık şehirlerden başka adaya sömürge gemisi; yolcular gemiyle taşınır, karaya çıkıp aynı krallığa bağlı köy kurar (5.12 #2).
+- Savaştaki krallıkların savaşçıları birbirine görüşte saldırır (`UnitWorld.Hostile`).
+- Persistence: bölüm 12 (meta; birimlerin `ArmyOf`/`Origin`/`Boat` sütunları, şehir sadakati).
+- Editör: `PixelGenesis/Meta Soak` — sadakat formülü, veraset, fetih/yıkım, 20 krallık performansı, sömürge, meta kayıt/yükleme, 4 türlü 200 yıllık dünya.
+- Render/UI: sınırlar krallık renginde; şehir penceresinde krallık (başkent, savaş cephesi sayısı) ve sadakat; gemiler (gövde + yelken) çizilir, yolcular gizlenir.
+
+### Değişti
+- Göçmen grupları (ve kral) ayrılırken ellerindeki yükü şehre bırakır; kral göçmen olmaz.
+
+### Bilinen eksik
+- Plotlar, kültür, din, dil (06.7–06.13) Faz 7'de; o zamana kadar tür = kültür = din (DECISIONS #63).
+- Balıkçı/ticaret/savaş gemileri ve gemi arayüzü; krallık penceresi ve arma çizimi (Faz 10).
+- Görsel doğrulama Unity'de bekliyor.
+
 ## [Unreleased] — Faz 4: Medeniyet temeli (05.1–05.8)
 
 ### Eklendi

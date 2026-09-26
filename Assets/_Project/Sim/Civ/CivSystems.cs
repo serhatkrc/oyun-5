@@ -496,7 +496,10 @@ namespace PG.Sim
             Q(ids.JobHerder, Slots(ids.Pasture));
             Q(ids.JobSmith, Slots(ids.Smithy));
             Q(ids.JobBaker, Slots(ids.Bakery));
-            if (civ.HasComplete(city, ids.Barracks)) Q(ids.JobWarrior, (int)(pop * 0.05f));
+            // Bölüm 6.5: a kingdom at war raises a militia of a fifth of its people, barracks or not (DECISIONS #63)
+            bool atWar = w.Meta != null && city.Kingdom >= 0 && w.Meta.InAnyWar(city.Kingdom);
+            if (atWar) Q(ids.JobWarrior, (int)(pop * 0.2f));
+            else if (civ.HasComplete(city, ids.Barracks)) Q(ids.JobWarrior, (int)(pop * 0.05f));
             Q(ids.JobGuard, Slots(ids.Watchtower));
 
             // Desired head count per job: tiers hand out the available adults so a small village still gets food, one builder,
@@ -518,6 +521,7 @@ namespace PG.Sim
             Want(ids.JobBuilder, 1 + city.ActiveConstructions / 2);
             Want(ids.JobLumberjack, 1);
             Want(ids.JobHunter, 1);
+            if (atWar) Want(ids.JobWarrior, int.MaxValue);
             Want(ids.JobFarmer, int.MaxValue);
             Want(ids.JobFisher, int.MaxValue);
             Want(ids.JobGatherer, int.MaxValue);
@@ -536,6 +540,8 @@ namespace PG.Sim
             {
                 int job = u.Job[i] - 1;
                 if (job < 0 || job == ids.JobLeader) continue;
+                // soldiers on campaign keep their job until the army disbands (Bölüm 6.5)
+                if (u.ArmyOf[i] >= 0 && w.Meta != null && w.Meta.ArmyActive(u.ArmyOf[i])) { city.JobCount[job]++; continue; }
                 if (!CanWork(u, i) || city.JobCount[job] >= Desired[job])
                 {
                     u.Job[i] = 0;

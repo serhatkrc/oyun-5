@@ -118,7 +118,7 @@ namespace PG.Persistence
             public int SpeedIndex, Year, Population, Width, Height;
             public ulong Seed;
             public ulong[] RngState, RngInc;
-            public byte[] Ground, Biome, Variant, Fire, FeatureState, Thumbnail, NatureRaw, LawsRaw, UnitsRaw, CivRaw;
+            public byte[] Ground, Biome, Variant, Fire, FeatureState, Thumbnail, NatureRaw, LawsRaw, UnitsRaw, CivRaw, MetaRaw;
             public ushort[] Flags, Feature;
             public ZoneData[] Zones;
             public string[] TileKeys, BiomeKeys, FeatureKeys;
@@ -153,6 +153,7 @@ namespace PG.Persistence
                     LawsRaw = NatureSave.WriteLaws(s),
                     UnitsRaw = UnitSave.Write(s),
                     CivRaw = CivSave.Write(s),
+                    MetaRaw = MetaSave.Write(s),
                     TileKeys = Keys(db.Tiles),
                     BiomeKeys = Keys(db.Biomes),
                     FeatureKeys = Keys(db.Features),
@@ -290,6 +291,7 @@ namespace PG.Persistence
                 WriteSection(w, SaveFormat.SectionLaws, b => b.Write(s.LawsRaw));
                 WriteSection(w, SaveFormat.SectionUnits, b => b.Write(s.UnitsRaw));
                 WriteSection(w, SaveFormat.SectionCiv, b => b.Write(s.CivRaw));
+                WriteSection(w, SaveFormat.SectionMeta, b => b.Write(s.MetaRaw));
             }
 
             if (File.Exists(path))
@@ -561,6 +563,7 @@ namespace PG.Persistence
             doc.Sections.TryGetValue(SaveFormat.SectionLaws, out state.LawsRaw);
             doc.Sections.TryGetValue(SaveFormat.SectionUnits, out state.UnitsRaw);
             doc.Sections.TryGetValue(SaveFormat.SectionCiv, out state.CivRaw);
+            doc.Sections.TryGetValue(SaveFormat.SectionMeta, out state.MetaRaw);
             return state;
         }
 

@@ -526,7 +526,11 @@ namespace PG.Sim
             {
                 if (sent >= want) break;
                 if ((AgeStage)u.Age[i] != AgeStage.Adult || u.Uid[i] == city.LeaderUid) continue;
+                if (ctx.Units.Meta != null && city.Kingdom >= 0 && ctx.Units.Meta.Kingdoms[city.Kingdom].KingUid == u.Uid[i]) continue; // the king stays
+                UnitActSystem.Unload(civ, city, i);
                 u.City[i] = -1;
+                u.Origin[i] = city.Kingdom; // the new village joins this kingdom (Bölüm 6.4)
+                u.ArmyOf[i] = -1;
                 u.Job[i] = 0;
                 u.HomeBuilding[i] = -1;
                 u.WorkBuilding[i] = -1;
@@ -555,7 +559,7 @@ namespace PG.Sim
                 int2 p = city.Center + (int2)math.round(new float2(math.cos(angle), math.sin(angle)) * dist);
                 if (!map.InBounds(p.x, p.y) || !map.IsWalkable(p.x, p.y) || map.IsWater(p.x, p.y)) continue;
                 if (!civ.Units.Paths.CanStand(p.x, p.y, Mobility.Land)) continue;
-                if (!SameIsland(civ, city.Center, p)) continue;
+                if (!SameIsland(civ, civ.Units.Paths.NearestStandable(city.Center, Mobility.Land, out int2 a) ? a : city.Center, p)) continue;
                 int z = map.ZoneIndexOf(p.x, p.y);
                 if (map.Zones[z].OwnerCity >= 0 || SettlementSystem.CityWithin(civ, city.Species, p, CivState.NoCityRadius)) continue;
                 float score = CityPlanner.ZoneScore(civ, z, true);

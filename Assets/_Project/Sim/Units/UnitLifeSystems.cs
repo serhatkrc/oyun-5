@@ -147,7 +147,7 @@ namespace PG.Sim
             }
             int ti = map.Index(t.x, t.y);
             ushort flags = map.Flags[ti];
-            bool fly = u.Has(i, UnitFlags.Fly);
+            bool fly = u.Has(i, UnitFlags.Fly) || u.Boat[i] >= 0; // passengers are above the water (Bölüm 5.10)
 
             if (!fly && map.Tables.Material[map.Ground[ti]] == TileTables.MaterialLava && !Immune(w, i, "heat"))
             {
@@ -201,8 +201,8 @@ namespace PG.Sim
             var sp = u.SpeciesOf(i);
             var laws = nature.Laws;
 
-            // needs; eggs live on the yolk (DECISIONS #50)
-            bool inEgg = w.StInEgg >= 0 && u.HasStatus(i, w.StInEgg);
+            // needs; eggs live on the yolk (DECISIONS #50), passengers on ship's stores (DECISIONS #64)
+            bool inEgg = (w.StInEgg >= 0 && u.HasStatus(i, w.StInEgg)) || u.Boat[i] >= 0;
             if (!u.Has(i, UnitFlags.NoNeeds) && !inEgg)
             {
                 if (laws.IsOn(w.LawHunger))

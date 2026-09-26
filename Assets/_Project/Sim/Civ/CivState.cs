@@ -198,6 +198,16 @@ namespace PG.Sim
             _map.MarkChunkDirty(_map.ChunkIndexOf(zx << WorldMap.ZoneShift, zy << WorldMap.ZoneShift), DirtyMask.Overlay | DirtyMask.Render | DirtyMask.Save);
         }
 
+        // Kingdom change (Bölüm 6): border colours are drawn per kingdom, so every zone of the city is redrawn.
+        public void MarkCityDirty(City city)
+        {
+            foreach (int zone in city.Zones)
+            {
+                int zx = zone % _map.ZonesX, zy = zone / _map.ZonesX;
+                _map.MarkChunkDirty(_map.ChunkIndexOf(zx << WorldMap.ZoneShift, zy << WorldMap.ZoneShift), DirtyMask.Overlay | DirtyMask.Render);
+            }
+        }
+
         public int ZoneOwner(int x, int y) => _map.InBounds(x, y) ? _map.Zones[_map.ZoneIndexOf(x, y)].OwnerCity : -1;
 
         // ---------------- buildings ----------------

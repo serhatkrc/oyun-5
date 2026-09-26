@@ -49,6 +49,8 @@ namespace PG.Content
         public readonly Registry<MaterialDef> Materials = new Registry<MaterialDef>("materials");
         public readonly Registry<ItemQualityDef> ItemQualities = new Registry<ItemQualityDef>("item_qualities");
         public readonly Registry<HappinessEventDef> HappinessEvents = new Registry<HappinessEventDef>("happiness_events");
+        public readonly Registry<KingdomTraitDef> KingdomTraits = new Registry<KingdomTraitDef>("kingdom_traits");
+        public readonly Registry<WarTypeDef> WarTypes = new Registry<WarTypeDef>("war_types");
         public GeneRules GeneRules { get; private set; } = new GeneRules();
         public ZombieRules ZombieRules { get; private set; } = new ZombieRules();
         public NameSets NameSets { get; private set; } = new NameSets();
@@ -112,6 +114,8 @@ namespace PG.Content
             LoadFile(Materials, folder, required, serializer, errors);
             LoadFile(ItemQualities, folder, required, serializer, errors);
             LoadFile(HappinessEvents, folder, required, serializer, errors);
+            LoadFile(KingdomTraits, folder, required, serializer, errors);
+            LoadFile(WarTypes, folder, required, serializer, errors);
             var geneRules = LoadObject(folder, "gene_rules", required, errors);
             if (geneRules != null) GeneRules = GeneRules.From(geneRules);
             var zombieRules = LoadObject(folder, "zombie_rules", required, errors);
@@ -208,6 +212,8 @@ namespace PG.Content
             ResolveAll(Materials, errors);
             ResolveAll(ItemQualities, errors);
             ResolveAll(HappinessEvents, errors);
+            ResolveAll(KingdomTraits, errors);
+            ResolveAll(WarTypes, errors);
 
             int maxLevel = -1;
             for (int i = 0; i < Tiles.Count; i++) maxLevel = Math.Max(maxLevel, Tiles[i].Level);

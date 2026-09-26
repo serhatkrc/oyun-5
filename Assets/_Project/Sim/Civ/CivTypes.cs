@@ -53,6 +53,7 @@ namespace PG.Sim
         public string Name;
         public ushort Species;
         public int Kingdom = -1;           // Bölüm 6
+        public int Loyalty = 50;           // Bölüm 6.4, saved with the meta section
         public int2 Center;
         public int CenterBuilding = -1;
         public byte HallTier;              // 0 bonfire, 1-3 halls

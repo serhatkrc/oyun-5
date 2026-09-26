@@ -59,7 +59,7 @@ namespace PG.Sim
             {
                 int i = alive[k];
                 if (u.State[i] != UnitStore.StateAlive || u.NextThink[i] > tick) continue;
-                if (u.Has(i, UnitFlags.Stunned) || u.Has(i, UnitFlags.Immobile) || u.Has(i, UnitFlags.PlayerControlled))
+                if (u.Has(i, UnitFlags.Stunned) || u.Has(i, UnitFlags.Immobile) || u.Has(i, UnitFlags.PlayerControlled) || u.Boat[i] >= 0)
                 {
                     u.NextThink[i] = tick + ThinkNormal;
                     continue;
@@ -164,10 +164,13 @@ namespace PG.Sim
             // work (Bölüm 5.6): city residents with a job; hunger, sleep and danger still win
             if (u.City[i] >= 0 && u.Job[i] != 0 && _w.Civ != null && JobAssigner.CanWork(u, i)) Consider(UnitTask.Work, WorkScore, EntityId.None, ref rng);
 
+            // war (Bölüm 6.5): soldiers of a marching army follow it; fights on the way and real hunger still win
+            if (u.ArmyOf[i] >= 0 && _w.Meta != null && _w.Meta.ArmyActive(u.ArmyOf[i])) Consider(UnitTask.March, MarchScore, EntityId.None, ref rng);
+
             // Tasks in progress keep running unless something clearly more urgent came up.
             bool lowPriority = current == UnitTask.None || current == UnitTask.Wander || current == UnitTask.Rest || current == UnitTask.Follow;
             // work is kept against small wishes (a snack, a stroll), not against real hunger, tiredness or danger (DECISIONS #55)
-            float needed = current == UnitTask.Work ? WorkInterrupt : 90f;
+            float needed = current == UnitTask.Work ? WorkInterrupt : current == UnitTask.March ? MarchInterrupt : 90f;
             bool switchTask = lowPriority ? best != current || current == UnitTask.None : bestScore >= needed && best != current;
             if (switchTask) StartTask(i, best, bestTarget);
             if (switchTask && best == UnitTask.Flee && bestTarget == EntityId.None && fireAt.x >= 0) u.TargetTile[i] = fireAt; // flee from here
@@ -223,6 +226,7 @@ namespace PG.Sim
         }
 
         public const float FireFleeScore = 110f;
+        public const float MarchScore = 65f, MarchInterrupt = 66f;
 
         bool NearFire(int i, out int2 at)
         {
@@ -310,7 +314,7 @@ namespace PG.Sim
                 if (u.AttackCooldown[i] > 0) u.AttackCooldown[i]--;
                 for (int s = 0; s < UnitStore.SpellSlots; s++)
                     if (u.SpellCooldown[i * UnitStore.SpellSlots + s] > 0) u.SpellCooldown[i * UnitStore.SpellSlots + s]--;
-                if (u.Has(i, UnitFlags.Stunned)) continue;
+                if (u.Has(i, UnitFlags.Stunned) || u.Boat[i] >= 0) continue; // passengers ride (Bölüm 5.10)
 
                 bool done;
                 switch ((UnitTask)u.Task[i])
@@ -328,6 +332,8 @@ namespace PG.Sim
                     case UnitTask.Cast: done = Cast(i, tick, ref combatRng); break;
                     case UnitTask.Work: done = Work(i, dt, tick, ref rng, ref combatRng); break;
                     case UnitTask.Migrate: done = Migrate(i, dt); break;
+                    case UnitTask.March: done = March(i, dt); break;
+                    case UnitTask.Caravan: done = Caravan(i, dt, tick); break;
                     default: done = false; break;
                 }
                 if (done)

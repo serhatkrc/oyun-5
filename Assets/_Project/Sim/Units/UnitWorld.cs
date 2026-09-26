@@ -7,7 +7,7 @@ using Unity.Mathematics;
 
 namespace PG.Sim
 {
-    public enum UnitTask : byte { None, Wander, FindFood, Hunt, Attack, Flee, Sleep, Mate, Follow, Rest, GoLand, Cast, Work, Migrate }
+    public enum UnitTask : byte { None, Wander, FindFood, Hunt, Attack, Flee, Sleep, Mate, Follow, Rest, GoLand, Cast, Work, Migrate, March, Caravan }
 
     public enum MoveResult : byte { Moving, Arrived, Waiting, Failed }
 
@@ -33,6 +33,7 @@ namespace PG.Sim
         public readonly PathService Paths;
         public NativeList<Projectile> Projectiles;
         public CivState Civ;                     // Bölüm 5 (set by CivState.Attach)
+        public MetaState Meta;                   // Bölüm 6 (set by the MetaState constructor)
         public readonly int[] SpeciesCount;
         readonly WorldMap _map;
         readonly ContentDB _content;
@@ -109,6 +110,7 @@ namespace PG.Sim
             var sb = Store.SpeciesOf(b);
             if (Store.Has(a, UnitFlags.Charmed) || Store.Has(b, UnitFlags.Untargetable)) return false;
             if (Store.Has(a, UnitFlags.AttackAll)) return true;
+            if (Meta != null && Meta.WarHostile(a, b)) return true;
             if (Store.Species[a] == Store.Species[b]) return false;
             if (sa.IsMonster && !sb.IsMonster) return true;
             if (IsUndead(a) && !IsUndead(b)) return true;

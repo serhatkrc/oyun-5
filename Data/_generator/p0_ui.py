@@ -42,5 +42,7 @@ S = [
 ("ui.city.amount_fmt","{0} {1}","{0} {1}"),("ui.city.job_fmt","{0} {1}/{2}","{0} {1}/{2}"),
 ("ui.city.building_fmt","{0} ×{1}","{0} ×{1}"),("ui.city.building_construction_fmt","{0} ×{1} (+{2} inşaatta)","{0} ×{1} (+{2} under construction)"),
 ("ui.city.none","-","-"),("ui.city.empty","Yok","None"),
+("ui.city.kingdom","Krallık","Kingdom"),("ui.city.loyalty","Sadakat","Loyalty"),
+("ui.city.capital_fmt","{0} (başkent)","{0} (capital)"),("ui.city.at_war_fmt","{0} · {1} savaşta","{0} · at war on {1} fronts"),
 ]
 save("ui_strings",[dict(id=a,tr=b,en=c) for a,b,c in S],"Arayüz Metinleri",["id","tr","en"])

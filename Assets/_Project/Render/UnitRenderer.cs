@@ -183,7 +183,7 @@ namespace PG.Render
             {
                 int i = u.Alive[k];
                 float2 pos = u.Pos[i];
-                if (math.any(pos < min) || math.any(pos > max)) continue;
+                if (math.any(pos < min) || math.any(pos > max) || u.Boat[i] >= 0) continue; // passengers are inside their boat
                 _order[visible] = i;
                 _keys[visible] = -pos.y; // north first, so southern units overlap them
                 visible++;
@@ -222,6 +222,17 @@ namespace PG.Render
                 var p = proj[k];
                 Quad(new Vector2(p.Pos.x - 0.5f, p.Pos.y - 0.5f + p.Z), new Vector2(1f, 1f), _dot, false, prow, new Color32(255, 255, 255, 255));
             }
+
+            // Bölüm 5.10 boats: a hull and a mast until ship sprites exist (EkC)
+            var meta = _sim.Meta;
+            if (meta != null)
+                foreach (var b in meta.Boats)
+                {
+                    if (b.State != BoatState.Sailing || math.any(b.Pos < min) || math.any(b.Pos > max)) continue;
+                    Quad(new Vector2(b.Pos.x - 2f, b.Pos.y - 0.8f), new Vector2(4f, 1.4f), _dot, false, prow, new Color32(122, 84, 48, 255));
+                    Quad(new Vector2(b.Pos.x - 0.2f, b.Pos.y + 0.6f), new Vector2(0.4f, 2.6f), _dot, false, prow, new Color32(92, 64, 40, 255));
+                    Quad(new Vector2(b.Pos.x - 1.2f, b.Pos.y + 1.2f), new Vector2(1.4f, 1.6f), _dot, false, prow, new Color32(236, 230, 212, 255));
+                }
 
             _mesh.Clear();
             _mesh.SetVertices(_v);

@@ -1,6 +1,6 @@
 {
  "category": "ui_strings",
- "count": 86,
+ "count": 90,
  "items": [
   {
    "id": "ui.pause",
@@ -431,6 +431,26 @@
    "id": "ui.city.empty",
    "tr": "Yok",
    "en": "None"
+  },
+  {
+   "id": "ui.city.kingdom",
+   "tr": "Krallık",
+   "en": "Kingdom"
+  },
+  {
+   "id": "ui.city.loyalty",
+   "tr": "Sadakat",
+   "en": "Loyalty"
+  },
+  {
+   "id": "ui.city.capital_fmt",
+   "tr": "{0} (başkent)",
+   "en": "{0} (capital)"
+  },
+  {
+   "id": "ui.city.at_war_fmt",
+   "tr": "{0} · {1} savaşta",
+   "en": "{0} · at war on {1} fronts"
   }
  ]
 }
