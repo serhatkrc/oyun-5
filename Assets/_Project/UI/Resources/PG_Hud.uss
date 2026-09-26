@@ -181,3 +181,53 @@
     white-space: normal;
     margin-bottom: 4px;
 }
+
+/* City window (Faz 4 basic version): docked left (toasts use the right edge), not modal. */
+.pg-window.pg-city {
+    left: 8px;
+    top: 44px;
+    translate: 0 0;
+    min-width: 0;
+    width: 380px;
+}
+
+.pg-city-body {
+    max-height: 560px;
+}
+
+.pg-city-field {
+    flex-direction: row;
+    margin-bottom: 2px;
+}
+
+.pg-city-key {
+    width: 110px;
+}
+
+.pg-window .pg-city-key {
+    color: rgb(160, 170, 190);
+}
+
+.pg-city-value {
+    flex-grow: 1;
+    flex-shrink: 1;
+    white-space: normal;
+}
+
+.pg-city-section {
+    -unity-font-style: bold;
+    margin-top: 8px;
+    margin-bottom: 2px;
+}
+
+.pg-window .pg-city-section {
+    color: rgb(255, 236, 170);
+}
+
+.pg-city-list {
+    white-space: normal;
+}
+
+.pg-civ {
+    color: rgb(200, 225, 255);
+}

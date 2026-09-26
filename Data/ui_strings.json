@@ -1,6 +1,6 @@
 {
  "category": "ui_strings",
- "count": 60,
+ "count": 86,
  "items": [
   {
    "id": "ui.pause",
@@ -301,6 +301,136 @@
    "id": "ui.disaster_fmt",
    "tr": "Afet: {0}",
    "en": "Disaster: {0}"
+  },
+  {
+   "id": "ui.hud.civ_fmt",
+   "tr": "Şehir {0} · Medeni nüfus {1}",
+   "en": "Cities {0} · Civilized {1}"
+  },
+  {
+   "id": "ui.city.dead_fmt",
+   "tr": "{0} (yıkıldı)",
+   "en": "{0} (fallen)"
+  },
+  {
+   "id": "ui.city.species",
+   "tr": "Tür",
+   "en": "Species"
+  },
+  {
+   "id": "ui.city.center",
+   "tr": "Merkez",
+   "en": "Centre"
+  },
+  {
+   "id": "ui.city.center_fmt",
+   "tr": "{0} · kademe {1}",
+   "en": "{0} · tier {1}"
+  },
+  {
+   "id": "ui.city.founded",
+   "tr": "Kuruluş",
+   "en": "Founded"
+  },
+  {
+   "id": "ui.city.founded_fmt",
+   "tr": "Yıl {0} ({1} yıl önce)",
+   "en": "Year {0} ({1} years ago)"
+  },
+  {
+   "id": "ui.city.leader",
+   "tr": "Lider",
+   "en": "Leader"
+  },
+  {
+   "id": "ui.city.leader_fmt",
+   "tr": "{0}, {1} yaş",
+   "en": "{0}, age {1}"
+  },
+  {
+   "id": "ui.city.population",
+   "tr": "Nüfus",
+   "en": "Population"
+  },
+  {
+   "id": "ui.city.population_fmt",
+   "tr": "{0} / {1} konut",
+   "en": "{0} / {1} housing"
+  },
+  {
+   "id": "ui.city.happiness",
+   "tr": "Mutluluk",
+   "en": "Happiness"
+  },
+  {
+   "id": "ui.city.gold",
+   "tr": "Altın",
+   "en": "Gold"
+  },
+  {
+   "id": "ui.city.famine",
+   "tr": "Kıtlık",
+   "en": "Famine"
+  },
+  {
+   "id": "ui.city.famine_fmt",
+   "tr": "{0} ay",
+   "en": "{0} months"
+  },
+  {
+   "id": "ui.city.storage",
+   "tr": "Depo",
+   "en": "Storage"
+  },
+  {
+   "id": "ui.city.food",
+   "tr": "Yiyecek",
+   "en": "Food"
+  },
+  {
+   "id": "ui.city.stock",
+   "tr": "Stok",
+   "en": "Stock"
+  },
+  {
+   "id": "ui.city.jobs",
+   "tr": "Meslekler",
+   "en": "Jobs"
+  },
+  {
+   "id": "ui.city.buildings",
+   "tr": "Binalar",
+   "en": "Buildings"
+  },
+  {
+   "id": "ui.city.amount_fmt",
+   "tr": "{0} {1}",
+   "en": "{0} {1}"
+  },
+  {
+   "id": "ui.city.job_fmt",
+   "tr": "{0} {1}/{2}",
+   "en": "{0} {1}/{2}"
+  },
+  {
+   "id": "ui.city.building_fmt",
+   "tr": "{0} ×{1}",
+   "en": "{0} ×{1}"
+  },
+  {
+   "id": "ui.city.building_construction_fmt",
+   "tr": "{0} ×{1} (+{2} inşaatta)",
+   "en": "{0} ×{1} (+{2} under construction)"
+  },
+  {
+   "id": "ui.city.none",
+   "tr": "-",
+   "en": "-"
+  },
+  {
+   "id": "ui.city.empty",
+   "tr": "Yok",
+   "en": "None"
   }
  ]
 }

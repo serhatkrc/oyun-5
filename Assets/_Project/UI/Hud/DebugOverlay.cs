@@ -60,6 +60,10 @@ namespace PG.UI
             var units = sim.Units;
             _sb.Append("units ").Append(units.Store.Count).Append("  corpses ").Append(units.Store.Corpses.Length)
                .Append("  projectiles ").Append(units.Projectiles.Length).Append("  paths/tick ").Append(units.Paths.SolvedThisTick).Append('\n');
+            var civ = sim.Civ;
+            if (civ != null)
+                _sb.Append("cities ").Append(civ.AliveCities).Append('/').Append(civ.Cities.Count)
+                   .Append("  building slots ").Append(civ.Buildings.Length).Append("  item slots ").Append(civ.Items.Length).Append('\n');
 
             int x = Mathf.FloorToInt(cursorWorld.x), y = Mathf.FloorToInt(cursorWorld.y);
             if (map.InBounds(x, y))
@@ -79,9 +83,35 @@ namespace PG.UI
                    .Append(" water ").Append(regions.RegionAt(x, y, MoveClass.Water))
                    .Append("  island land ").Append(regions.IslandAt(x, y, MoveClass.Land))
                    .Append(" water ").Append(regions.IslandAt(x, y, MoveClass.Water));
+                if (civ != null) AppendCivUnderCursor(civ, map, x, y);
                 AppendUnitUnderCursor(sim, cursorWorld);
             }
             _label.text = _sb.ToString();
+        }
+
+        // Faz 4: zone owner and the building under the cursor.
+        void AppendCivUnderCursor(PG.Sim.CivState civ, WorldMap map, int x, int y)
+        {
+            int owner = civ.ZoneOwner(x, y);
+            _sb.Append("\nzone city ");
+            AppendCity(civ, owner);
+            int b = map.Building[map.Index(x, y)];
+            if (b < 0 || b >= civ.Buildings.Length) return;
+            var data = civ.Buildings[b];
+            _sb.Append("\nbuilding #").Append(b).Append(' ').Append(civ.Content.Buildings[data.Def].Id).Append(' ').Append(data.State)
+               .Append("  progress ").Append((data.BuildProgress * 100f).ToString("0")).Append('%')
+               .Append("  hp ").Append(data.Hp.ToString("0")).Append('/').Append(data.MaxHp.ToString("0"))
+               .Append("  residents ").Append(data.Residents).Append("  city ");
+            AppendCity(civ, data.City);
+            if (data.Flags != PG.Sim.BuildingFlags.None) _sb.Append("  ").Append(data.Flags);
+        }
+
+        void AppendCity(PG.Sim.CivState civ, int city)
+        {
+            if (city < 0 || city >= civ.Cities.Count) { _sb.Append('-'); return; }
+            var c = civ.Cities[city];
+            _sb.Append(c.Name).Append(" #").Append(city);
+            if (c.Dead) _sb.Append(" (dead)");
         }
 
         void AppendUnitUnderCursor(PG.Sim.SimWorld sim, Vector2 cursor)
@@ -102,6 +132,17 @@ namespace PG.UI
                .Append("\n  task ").Append((PG.Sim.UnitTask)u.Task[best]).Append('.').Append(u.Action[best])
                .Append("  sat ").Append(u.Saturation[best]).Append("  energy ").Append(u.Energy[best])
                .Append("  stamina ").Append(u.Stamina[best].ToString("0")).Append("  lvl ").Append(u.Level[best]).Append("  kills ").Append(u.Kills[best]);
+            var civ = sim.Civ;
+            if (civ == null || u.City[best] < 0) return;
+            var db = sim.Content;
+            int job = u.Job[best] - 1;
+            _sb.Append("\n  city ");
+            AppendCity(civ, u.City[best]);
+            _sb.Append("  job ").Append(job >= 0 && job < db.Jobs.Count ? db.Jobs[job].Id : "-")
+               .Append(" op ").Append(u.WorkOp[best])
+               .Append("  home ").Append(u.HomeBuilding[best]).Append("  work ").Append(u.WorkBuilding[best]);
+            int res = u.CarryRes[best];
+            if (res >= 0 && res < db.Resources.Count) _sb.Append("  carry ").Append(db.Resources[res].Id).Append(" x").Append(u.CarryAmount[best]);
         }
     }
 }

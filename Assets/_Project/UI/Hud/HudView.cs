@@ -8,6 +8,7 @@ using UnityEngine.UIElements;
 namespace PG.UI
 {
     // Bölüm 8.2 HUD, basic Faz 1 version: top bar (date, speed, step, menu), power bar with tabs, brush panel, toasts.
+    // Faz 4: city count and civilized population (sum of the monthly city population caches) in the top bar.
     public sealed class HudView
     {
         static readonly string[] TabOrder = { "world", "civ", "creatures", "nature", "destruction", "other" };
@@ -16,7 +17,7 @@ namespace PG.UI
 
         readonly IGameHost _host;
         readonly PowerTool _tool;
-        readonly Label _date, _era;
+        readonly Label _date, _era, _civ;
         readonly Button[] _speed = new Button[GameClock.SpeedLevels.Length];
         readonly Button _super, _step;
         readonly VisualElement _tabs, _powers, _toasts;
@@ -30,6 +31,7 @@ namespace PG.UI
         long _shownTick = -1;
         int _shownSpeed = -1;
         bool _shownSuper;
+        int _shownCities = -1;
 
         public HudView(VisualElement layer, IGameHost host, PowerTool tool)
         {
@@ -50,6 +52,11 @@ namespace PG.UI
             _era.AddToClassList("pg-label");
             _era.AddToClassList("pg-date");
             top.Add(_era);
+
+            _civ = new Label();
+            _civ.AddToClassList("pg-label");
+            _civ.AddToClassList("pg-civ");
+            top.Add(_civ);
 
             for (int i = 0; i < _speed.Length; i++)
             {
@@ -236,6 +243,13 @@ namespace PG.UI
             var clock = _host.Sim?.Clock;
             if (clock == null) return;
             long month = clock.Tick / SimConst.TicksPerMonth;
+            var civ = _host.Sim.Civ;
+            int cities = civ != null ? civ.AliveCities : 0;
+            if (month != _shownTick || cities != _shownCities)
+            {
+                _shownCities = cities;
+                _civ.text = Loc.F("ui.hud.civ_fmt", cities, CivilizedPopulation(civ));
+            }
             if (month != _shownTick)
             {
                 _shownTick = month;
@@ -260,6 +274,16 @@ namespace PG.UI
         {
             _shownTick = -1;
             _shownSpeed = -1;
+            _shownCities = -1;
+        }
+
+        static int CivilizedPopulation(PG.Sim.CivState civ)
+        {
+            if (civ == null) return 0;
+            int n = 0;
+            foreach (var city in civ.Cities)
+                if (!city.Dead) n += city.Population;
+            return n;
         }
 
         static Button MakeButton(string text, Action onClick)
