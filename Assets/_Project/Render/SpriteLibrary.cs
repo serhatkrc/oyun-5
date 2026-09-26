@@ -17,21 +17,36 @@ namespace PG.Render
         public Texture2D Atlas { get; private set; }
         readonly Dictionary<string, Entry> _entries = new Dictionary<string, Entry>();
 
+        // Id of the optional 1x1 opaque pixel added by Load(..., solid); sample it at Entry.Uv.center for plain quads.
+        public const string SolidId = "#solid";
+        static readonly string[] Tiers = { "Final", "Placeholder" };
+
         public static string ArtRoot => Path.Combine(Application.streamingAssetsPath, "Art");
 
         // ids like "feat.tree_oak" -> <category>/tree_oak.png
-        public static SpriteLibrary Load(string category, IReadOnlyList<string> ids)
+        public static SpriteLibrary Load(string category, IReadOnlyList<string> ids) => Load(category, ids, null);
+
+        // Same, plus a SolidId entry: a single pixel of the given colour packed into the atlas.
+        public static SpriteLibrary Load(string category, IReadOnlyList<string> ids, Color32? solid)
         {
             var lib = new SpriteLibrary();
-            var textures = new Texture2D[ids.Count];
+            int count = ids.Count + (solid.HasValue ? 1 : 0);
+            var textures = new Texture2D[count];
             for (int i = 0; i < ids.Count; i++) textures[i] = LoadOne(category, ids[i]);
+            if (solid.HasValue)
+            {
+                var px = new Texture2D(1, 1, TextureFormat.RGBA32, false) { filterMode = FilterMode.Point };
+                px.SetPixel(0, 0, solid.Value);
+                px.Apply();
+                textures[ids.Count] = px;
+            }
 
             lib.Atlas = new Texture2D(2, 2, TextureFormat.RGBA32, false) { filterMode = FilterMode.Point, wrapMode = TextureWrapMode.Clamp, name = category + "Atlas" };
             var rects = lib.Atlas.PackTextures(textures, 1, 2048, false);
             lib.Atlas.filterMode = FilterMode.Point;
-            for (int i = 0; i < ids.Count; i++)
+            for (int i = 0; i < count; i++)
             {
-                lib._entries[ids[i]] = new Entry { Uv = rects[i], Size = new Vector2(textures[i].width, textures[i].height) };
+                lib._entries[i < ids.Count ? ids[i] : SolidId] = new Entry { Uv = rects[i], Size = new Vector2(textures[i].width, textures[i].height) };
                 Object.DestroyImmediate(textures[i]);
             }
             return lib;
@@ -39,12 +54,22 @@ namespace PG.Render
 
         public bool TryGet(string id, out Entry entry) => _entries.TryGetValue(id, out entry);
 
+        // True when real (final or placeholder) art exists for the id; Load would otherwise pack a generated block.
+        public static bool Exists(string category, string id)
+        {
+            foreach (string tier in Tiers)
+                if (File.Exists(PathOf(tier, category, id))) return true;
+            return false;
+        }
+
+        static string PathOf(string tier, string category, string id) =>
+            Path.Combine(ArtRoot, tier, category, id.Substring(id.IndexOf('.') + 1) + ".png");
+
         static Texture2D LoadOne(string category, string id)
         {
-            string name = id.Substring(id.IndexOf('.') + 1);
-            foreach (string tier in new[] { "Final", "Placeholder" })
+            foreach (string tier in Tiers)
             {
-                string path = Path.Combine(ArtRoot, tier, category, name + ".png");
+                string path = PathOf(tier, category, id);
                 if (!File.Exists(path)) continue;
                 var tex = new Texture2D(2, 2, TextureFormat.RGBA32, false) { filterMode = FilterMode.Point };
                 if (tex.LoadImage(File.ReadAllBytes(path))) return tex;

@@ -9,6 +9,7 @@
 - Birim işleri: inşaatçı, çiftçi (tarla açma/ekme/hasat), oduncu/taşçı, toplayıcı, madenci, balıkçı, avcı, demirci, fırıncı, çoban, devriye; `Work` ve `Migrate` görevleri; ekipman etkileri stat formülünde.
 - Persistence: bölüm 11 (şehirler, binalar, eşyalar, birimlerin şehir sütunları); yüklemede kaplamalar ve region'lar yeniden kurulur.
 - Editör: `PixelGenesis/Civ Soak` (5.12 #1, #3–#8).
+- Render: `BuildingRenderer` (bina sprite'ları `{stil}_{bina}_{durum}`, `human` stiline ve düz quad'a düşer; şehir renginde çatı paleti, yanma/terk tonu, kuzey→güney sıralama, yalnızca değişimde mesh kurulumu, uzak zoom'da gizli) ve harita üzerinde şehir toprakları: sahipli zone'larda hafif şehir rengi ve 1 tile'lık sınır çizgisi (DECISIONS #61). `SpriteLibrary.Exists` ve düz piksel girdisi.
 
 ### Değişti
 - Ateşten kaçma nöronu; evi olan şehirliler sıcak/soğuktan korunur (#59). Şehirlerde hayvan kalabalık sınırı yerine konut sınırı.

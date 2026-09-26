@@ -34,6 +34,7 @@ namespace PG.Boot
         public MapRenderer Renderer { get; private set; }
         FeatureRenderer _features;
         NatureRenderer _nature;
+        BuildingRenderer _buildings;
         UnitRenderer _units;
         public int TicksLastSecond => _runner != null ? _runner.TicksLastSecond : 0;
 
@@ -125,6 +126,8 @@ namespace PG.Boot
             _features.ViewCamera = cam;
             _nature = new GameObject("Nature").AddComponent<NatureRenderer>();
             _nature.ViewCamera = cam;
+            _buildings = new GameObject("Buildings").AddComponent<BuildingRenderer>();
+            _buildings.ViewCamera = cam;
             _units = new GameObject("Units").AddComponent<UnitRenderer>();
             _units.ViewCamera = cam;
 
@@ -164,9 +167,10 @@ namespace PG.Boot
             new DisasterExecutor(sim.Events, Commands, Content, sim.Clock); // lives as long as the sim's event bus
             Sim = sim;
             _lastYear = sim.Clock.Year;
-            if (Renderer != null) Renderer.Bind(sim.World, sim.Regions);
+            if (Renderer != null) Renderer.Bind(sim.World, sim.Regions, sim.Civ);
             if (_features != null) _features.Bind(sim.World);
             if (_nature != null) _nature.Bind(sim.Nature);
+            if (_buildings != null) _buildings.Bind(sim);
             if (_units != null) _units.Bind(sim);
             if (_runner != null) _runner.Bind(sim);
             old?.Dispose();
@@ -218,6 +222,7 @@ namespace PG.Boot
             if (Renderer != null) Renderer.Unbind();
             if (_features != null) _features.Unbind();
             if (_nature != null) _nature.Unbind();
+            if (_buildings != null) _buildings.Unbind();
             if (_units != null) _units.Unbind();
             Sim?.Dispose();
             Sim = null;
