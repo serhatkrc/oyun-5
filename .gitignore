@@ -82,3 +82,6 @@ Thumbs.db
 
 # Offline harness build output
 /Tools/headless/.build/
+
+# Claude Code agent worktrees
+/.claude/worktrees/
